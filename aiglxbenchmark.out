@@ -1,0 +1,76 @@
+arnt@celsius:~/github.com$ alias aiglxbenchmark='w ; cat /proc/version ;cat /proc/pci |grep VGA ||lspci |grep VGA |colrm 1 4 ;cat /proc/cpuinfo |egrep "model name|MHz|bogomips" ;xdpyinfo |egrep "version:|dimensions|depth of" ;glxinfo |egrep -A2 "direct rendering|OpenGL vendor" ;cat /var/log/Xorg.0.log |grep architecture ;cat /var/log/Xorg.0.log |grep flip ;glxgears -info & sleep 51 ;killall glxgears ;w ;glxgears -fullscreen & sleep 51 ;killall glxgears ;w '                   
+arnt@celsius:~/github.com$ aiglxbenchmark >aiglxbenchmark.out
+ 18:22:25 up  6:03,  9 users,  load average: 0.01, 0.03, 0.05
+USER     TTY      FROM              LOGIN@   IDLE   JCPU   PCPU WHAT                                                                                                                                                                            
+arnt     pts/0    :0               12:21    6:00m  0.31s  0.31s /bin/bash                                                                                                                                                                       
+arnt     pts/1    :0               12:21   45:18   0.42s  0.42s /bin/bash                                                                                                                                                                       
+arnt     pts/2    :0               12:21    8:10   0.32s  0.32s /bin/bash                                                                                                                                                                       
+arnt     pts/3    :0               12:21    6:00m  0.31s  0.31s /bin/bash                                                                                                                                                                       
+arnt     pts/4    :0               12:21    0.00s  0.67s  0.67s /bin/bash                                                                                                                                                                       
+arnt     pts/5    :0               12:21    1:28m  0.34s  0.34s /bin/bash                                                                                                                                                                       
+arnt     pts/6    :0               12:21    1:11m  0.51s  0.20s ssh -X root@127.0.0.1                                                                                                                                                           
+arnt     pts/7    :0               12:21    6:00m  0.00s 14.46s kdeinit4: kded4 [kdeinit]                                                                                                                                                       
+root     pts/8    localhost        12:22    1:11m  0.11s  0.11s -bash                                                                                                                                                                           
+Linux version 2.6.37-trunk-amd64 (Debian 2.6.37-1~experimental.1) (ben@decadent.org.uk) (gcc version 4.4.5 (Debian 4.4.5-10) ) #1 SMP Thu Jan 6 14:13:28 UTC 2011                                                                               
+cat: /proc/pci: No such file or directory                                                                                                                                                                                                       
+0.0 VGA compatible controller: ATI Technologies Inc M56GL [Mobility FireGL V5200]                                                                                                                                                               
+model name      : Intel(R) Core(TM)2 CPU         T7200  @ 2.00GHz
+cpu MHz         : 1000.000
+bogomips        : 3990.34
+model name      : Intel(R) Core(TM)2 CPU         T7200  @ 2.00GHz
+cpu MHz         : 2000.000
+bogomips        : 3989.93
+X.Org version: 1.9.3.901
+  dimensions:    1920x1200 pixels (508x317 millimeters)
+  depth of root window:    24 planes
+direct rendering: Yes
+server glx vendor string: SGI
+server glx version string: 1.4
+--
+OpenGL vendor string: X.Org R300 Project
+OpenGL renderer string: Gallium 0.4 on RV530
+OpenGL version string: 2.1 Mesa 7.9
+[1] 4266
+Running synchronized to the vertical refresh.  The framerate should be
+approximately the same as the monitor refresh rate.
+GL_RENDERER   = Gallium 0.4 on RV530
+GL_VERSION    = 2.1 Mesa 7.9
+GL_VENDOR     = X.Org R300 Project
+GL_EXTENSIONS = GL_ARB_copy_buffer GL_ARB_depth_texture GL_ARB_draw_buffers GL_ARB_draw_elements_base_vertex GL_ARB_fragment_coord_conventions GL_ARB_fragment_program GL_ARB_fragment_program_shadow GL_ARB_fragment_shader GL_ARB_framebuffer_object GL_ARB_half_float_vertex GL_ARB_map_buffer_range GL_ARB_multisample GL_ARB_multitexture GL_ARB_occlusion_query GL_ARB_pixel_buffer_object GL_ARB_point_parameters GL_ARB_point_sprite GL_ARB_provoking_vertex GL_ARB_shader_objects GL_ARB_shading_language_100 GL_ARB_shadow GL_ARB_texture_border_clamp GL_ARB_texture_compression GL_ARB_texture_cube_map GL_ARB_texture_env_add GL_ARB_texture_env_combine GL_ARB_texture_env_crossbar GL_ARB_texture_env_dot3 GL_ARB_texture_mirrored_repeat GL_ARB_texture_non_power_of_two GL_ARB_texture_rectangle GL_ARB_texture_swizzle GL_ARB_transpose_matrix GL_ARB_vertex_array_bgra GL_ARB_vertex_array_object GL_ARB_vertex_buffer_object GL_ARB_vertex_program GL_ARB_vertex_shader GL_ARB_window_pos GL_EXT_abgr GL_EXT_bgra GL_EXT_blend_color GL_EXT_blend_equation_separate GL_EXT_blend_func_separate GL_EXT_blend_logic_op GL_EXT_blend_minmax GL_EXT_blend_subtract GL_EXT_compiled_vertex_array GL_EXT_copy_texture GL_EXT_draw_range_elements GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXT_framebuffer_object GL_EXT_fog_coord GL_EXT_gpu_program_parameters GL_EXT_multi_draw_arrays GL_EXT_packed_depth_stencil GL_EXT_packed_pixels GL_EXT_pixel_buffer_object GL_EXT_point_parameters GL_EXT_polygon_offset GL_EXT_provoking_vertex GL_EXT_rescale_normal GL_EXT_secondary_color GL_EXT_separate_specular_color GL_EXT_shadow_funcs GL_EXT_stencil_two_side GL_EXT_stencil_wrap GL_EXT_subtexture GL_EXT_texture GL_EXT_texture3D GL_EXT_texture_cube_map GL_EXT_texture_edge_clamp GL_EXT_texture_env_add GL_EXT_texture_env_combine GL_EXT_texture_env_dot3 GL_EXT_texture_filter_anisotropic GL_EXT_texture_lod_bias GL_EXT_texture_mirror_clamp GL_EXT_texture_object GL_EXT_texture_rectangle GL_EXT_texture_sRGB GL_EXT_texture_swizzle GL_EXT_vertex_array GL_EXT_vertex_array_bgra GL_APPLE_packed_pixels GL_APPLE_vertex_array_object GL_ATI_blend_equation_separate GL_ATI_texture_env_combine3 GL_ATI_texture_mirror_once GL_ATI_separate_stencil GL_IBM_multimode_draw_arrays GL_IBM_rasterpos_clip GL_IBM_texture_mirrored_repeat GL_INGR_blend_func_separate GL_MESA_pack_invert GL_MESA_ycbcr_texture GL_MESA_window_pos GL_NV_blend_square GL_NV_conditional_render GL_NV_light_max_exponent GL_NV_packed_depth_stencil GL_NV_texgen_reflection GL_NV_texture_env_combine4 GL_NV_texture_rectangle GL_OES_read_format GL_SGI_color_matrix GL_SGIS_generate_mipmap GL_SGIS_texture_border_clamp GL_SGIS_texture_edge_clamp GL_SGIS_texture_lod GL_SUN_multi_draw_arrays GL_OES_EGL_image GL_OES_draw_texture
+105 frames in 5.0 seconds = 20.942 FPS
+116 frames in 5.0 seconds = 23.004 FPS
+121 frames in 5.0 seconds = 24.183 FPS
+113 frames in 5.0 seconds = 22.559 FPS
+115 frames in 5.0 seconds = 22.827 FPS
+117 frames in 5.0 seconds = 23.341 FPS
+118 frames in 5.0 seconds = 23.448 FPS
+123 frames in 5.0 seconds = 24.538 FPS
+122 frames in 5.0 seconds = 24.330 FPS
+117 frames in 5.0 seconds = 23.386 FPS
+[1]+  Terminated              glxgears -info
+ 18:23:17 up  6:04,  9 users,  load average: 0.00, 0.02, 0.05
+USER     TTY      FROM              LOGIN@   IDLE   JCPU   PCPU WHAT
+arnt     pts/0    :0               12:21    6:01m  0.31s  0.31s /bin/bash
+arnt     pts/1    :0               12:21   46:10   0.42s  0.42s /bin/bash
+arnt     pts/2    :0               12:21    9:02   0.32s  0.32s /bin/bash
+arnt     pts/3    :0               12:21    6:01m  0.31s  0.31s /bin/bash
+arnt     pts/4    :0               12:21   52.00s  0.68s  0.68s /bin/bash
+arnt     pts/5    :0               12:21    1:29m  0.34s  0.34s /bin/bash
+arnt     pts/6    :0               12:21    1:12m  0.51s  0.20s ssh -X root@127.0.0.1
+arnt     pts/7    :0               12:21    6:01m  0.00s 14.47s kdeinit4: kded4 [kdeinit]                      
+root     pts/8    localhost        12:22    1:12m  0.11s  0.11s -bash
+[1] 4299
+Running synchronized to the vertical refresh.  The framerate should be
+approximately the same as the monitor refresh rate.
+101 frames in 5.0 seconds = 20.110 FPS
+104 frames in 5.0 seconds = 20.624 FPS
+100 frames in 5.0 seconds = 19.897 FPS
+103 frames in 5.0 seconds = 20.426 FPS
+99 frames in 5.0 seconds = 19.764 FPS
+101 frames in 5.0 seconds = 20.163 FPS
+100 frames in 5.0 seconds = 19.897 FPS
+101 frames in 5.0 seconds = 20.096 FPS
+100 frames in 5.0 seconds = 19.897 FPS
+100 frames in 5.0 seconds = 19.897 FPS
+[1]+  Terminated              glxgears -fullscreen
+arnt@celsius:~/github.com$

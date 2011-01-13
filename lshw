@@ -1,0 +1,319 @@
+celsius
+    description: Computer
+    width: 64 bits
+    capabilities: vsyscall64 vsyscall32
+  *-core
+       description: Motherboard
+       physical id: 0
+     *-memory
+          description: System memory
+          physical id: 0
+          size: 3273MiB
+     *-cpu
+          product: Intel(R) Core(TM)2 CPU         T7200  @ 2.00GHz
+          vendor: Intel Corp.
+          physical id: 1
+          bus info: cpu@0
+          size: 1GHz
+          capacity: 1GHz
+          width: 64 bits
+          capabilities: fpu fpu_exception wp vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx x86-64 constant_tsc arch_perfmon pebs bts rep_good nopl aperfmperf pni dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm lahf_lm tpr_shadow cpufreq
+     *-pci
+          description: Host bridge
+          product: Mobile 945GM/PM/GMS, 943/940GML and 945GT Express Memory Controller Hub
+          vendor: Intel Corporation
+          physical id: 100
+          bus info: pci@0000:00:00.0
+          version: 03
+          width: 32 bits
+          clock: 33MHz
+        *-pci:0
+             description: PCI bridge
+             product: Mobile 945GM/PM/GMS, 943/940GML and 945GT Express PCI Express Root Port
+             vendor: Intel Corporation
+             physical id: 1
+             bus info: pci@0000:00:01.0
+             version: 03
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             resources: ioport:2000(size=4096) memory:f0000000-f00fffff ioport:e0000000(size=268435456)
+           *-display
+                description: VGA compatible controller
+                product: M56GL [Mobility FireGL V5200]
+                vendor: ATI Technologies Inc
+                physical id: 0
+                bus info: pci@0000:01:00.0
+                version: 00
+                width: 32 bits
+                clock: 33MHz
+                capabilities: vga_controller bus_master cap_list rom
+                configuration: driver=radeon latency=0
+                resources: irq:16 memory:e0000000-efffffff ioport:2000(size=256) memory:f0000000-f000ffff memory:f0020000-f003ffff
+        *-multimedia
+             description: Audio device
+             product: N10/ICH 7 Family High Definition Audio Controller
+             vendor: Intel Corporation
+             physical id: 1b
+             bus info: pci@0000:00:1b.0
+             version: 02
+             width: 64 bits
+             clock: 33MHz
+             capabilities: bus_master cap_list
+             configuration: driver=HDA Intel latency=0
+             resources: irq:42 memory:f0600000-f0603fff
+        *-pci:1
+             description: PCI bridge
+             product: N10/ICH 7 Family PCI Express Port 1
+             vendor: Intel Corporation
+             physical id: 1c
+             bus info: pci@0000:00:1c.0
+             version: 02
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             resources: ioport:3000(size=4096) memory:f0100000-f01fffff ioport:d8000000(size=2097152)
+           *-network
+                description: Ethernet interface
+                product: 88E8055 PCI-E Gigabit Ethernet Controller
+                vendor: Marvell Technology Group Ltd.
+                physical id: 0
+                bus info: pci@0000:02:00.0
+                logical name: eth0
+                version: 12
+                serial: aa:00:04:00:0c:04
+                capacity: 1GB/s
+                width: 64 bits
+                clock: 33MHz
+                capabilities: cap_list rom ethernet physical tp 10bt 10bt-fd 100bt 100bt-fd 1000bt 1000bt-fd autonegotiation
+                configuration: autonegotiation=on broadcast=yes driver=sky2 driverversion=1.28 firmware=N/A latency=0 multicast=yes port=twisted pair
+                resources: irq:40 memory:f0100000-f0103fff ioport:3000(size=256) memory:d8000000-d801ffff
+        *-pci:2
+             description: PCI bridge
+             product: N10/ICH 7 Family PCI Express Port 2
+             vendor: Intel Corporation
+             physical id: 1c.1
+             bus info: pci@0000:00:1c.1
+             version: 02
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             resources: ioport:4000(size=4096) memory:d8200000-d83fffff ioport:d8400000(size=2097152)
+        *-pci:3
+             description: PCI bridge
+             product: N10/ICH 7 Family PCI Express Port 4
+             vendor: Intel Corporation
+             physical id: 1c.3
+             bus info: pci@0000:00:1c.3
+             version: 02
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             resources: ioport:5000(size=4096) memory:d8600000-d87fffff ioport:d8800000(size=2097152)
+           *-network
+                description: Wireless interface
+                product: PRO/Wireless 3945ABG [Golan] Network Connection
+                vendor: Intel Corporation
+                physical id: 0
+                bus info: pci@0000:06:00.0
+                logical name: wlan0
+                version: 02
+                serial: 00:19:d2:52:10:b9
+                width: 32 bits
+                clock: 33MHz
+                capabilities: bus_master cap_list ethernet physical wireless
+                configuration: broadcast=yes driver=iwl3945 driverversion=2.6.37-trunk-amd64 firmware=15.32.2.9 ip=10.0.0.8 latency=0 multicast=yes wireless=IEEE 802.11abg
+                resources: irq:43 memory:d8600000-d8600fff
+        *-usb:0
+             description: USB Controller
+             product: N10/ICH 7 Family USB UHCI Controller #1
+             vendor: Intel Corporation
+             physical id: 1d
+             bus info: pci@0000:00:1d.0
+             version: 02
+             width: 32 bits
+             clock: 33MHz
+             capabilities: uhci bus_master
+             configuration: driver=uhci_hcd latency=0
+             resources: irq:23 ioport:1800(size=32)
+        *-usb:1
+             description: USB Controller
+             product: N10/ICH 7 Family USB UHCI Controller #2
+             vendor: Intel Corporation
+             physical id: 1d.1
+             bus info: pci@0000:00:1d.1
+             version: 02
+             width: 32 bits
+             clock: 33MHz
+             capabilities: uhci bus_master
+             configuration: driver=uhci_hcd latency=0
+             resources: irq:20 ioport:1820(size=32)
+        *-usb:2
+             description: USB Controller
+             product: N10/ICH 7 Family USB UHCI Controller #3
+             vendor: Intel Corporation
+             physical id: 1d.2
+             bus info: pci@0000:00:1d.2
+             version: 02
+             width: 32 bits
+             clock: 33MHz
+             capabilities: uhci bus_master
+             configuration: driver=uhci_hcd latency=0
+             resources: irq:18 ioport:1840(size=32)
+        *-usb:3
+             description: USB Controller
+             product: N10/ICH 7 Family USB UHCI Controller #4
+             vendor: Intel Corporation
+             physical id: 1d.3
+             bus info: pci@0000:00:1d.3
+             version: 02
+             width: 32 bits
+             clock: 33MHz
+             capabilities: uhci bus_master
+             configuration: driver=uhci_hcd latency=0
+             resources: irq:16 ioport:1860(size=32)
+        *-usb:4
+             description: USB Controller
+             product: N10/ICH 7 Family USB2 EHCI Controller
+             vendor: Intel Corporation
+             physical id: 1d.7
+             bus info: pci@0000:00:1d.7
+             version: 02
+             width: 32 bits
+             clock: 33MHz
+             capabilities: ehci bus_master cap_list
+             configuration: driver=ehci_hcd latency=0
+             resources: irq:23 memory:f0604000-f06043ff
+        *-pci:4
+             description: PCI bridge
+             product: 82801 Mobile PCI Bridge
+             vendor: Intel Corporation
+             physical id: 1e
+             bus info: pci@0000:00:1e.0
+             version: e2
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci subtractive_decode bus_master cap_list
+             resources: ioport:6000(size=4096) memory:f0300000-f03fffff ioport:d0000000(size=134217728)
+           *-pcmcia:0
+                description: CardBus bridge
+                product: OZ711MP1/MS1 MemoryCardBus Controller
+                vendor: O2 Micro, Inc.
+                physical id: 3
+                bus info: pci@0000:08:03.0
+                version: 21
+                width: 32 bits
+                clock: 33MHz
+                capabilities: pcmcia bus_master cap_list
+                configuration: driver=yenta_cardbus latency=176 maxlatency=5 mingnt=192
+                resources: irq:16 memory:f0303000-f0303fff ioport:6000(size=256) ioport:6400(size=256) memory:d0000000-d3ffffff memory:dc000000-dfffffff
+           *-pcmcia:1
+                description: CardBus bridge
+                product: OZ711MP1/MS1 MemoryCardBus Controller
+                vendor: O2 Micro, Inc.
+                physical id: 3.1
+                bus info: pci@0000:08:03.1
+                version: 21
+                width: 32 bits
+                clock: 33MHz
+                capabilities: pcmcia bus_master cap_list
+                configuration: driver=yenta_cardbus latency=176 maxlatency=5 mingnt=128
+                resources: irq:16 memory:f0304000-f0304fff ioport:6800(size=256) ioport:6c00(size=256) memory:d4000000-d7ffffff memory:f4000000-f7ffffff
+           *-generic
+                description: SD Host controller
+                product: Integrated MMC/SD Controller
+                vendor: O2 Micro, Inc.
+                physical id: 3.2
+                bus info: pci@0000:08:03.2
+                version: 01
+                width: 32 bits
+                clock: 33MHz
+                capabilities: cap_list
+                configuration: driver=sdhci-pci latency=32
+                resources: irq:16 memory:f0300000-f03000ff
+           *-bridge UNCLAIMED
+                description: Bridge
+                product: Integrated MS/xD Controller
+                vendor: O2 Micro, Inc.
+                physical id: 3.3
+                bus info: pci@0000:08:03.3
+                version: 01
+                width: 32 bits
+                clock: 33MHz
+                capabilities: bridge cap_list
+                configuration: latency=32
+                resources: memory:f0301000-f0301fff
+           *-firewire
+                description: FireWire (IEEE 1394)
+                product: Firewire (IEEE 1394)
+                vendor: O2 Micro, Inc.
+                physical id: 3.4
+                bus info: pci@0000:08:03.4
+                version: 02
+                width: 32 bits
+                clock: 33MHz
+                capabilities: ohci bus_master cap_list
+                configuration: driver=firewire_ohci latency=32
+                resources: irq:16 memory:f0302000-f0302fff memory:f0300800-f0300fff
+        *-isa
+             description: ISA bridge
+             product: 82801GBM (ICH7-M) LPC Interface Bridge
+             vendor: Intel Corporation
+             physical id: 1f
+             bus info: pci@0000:00:1f.0
+             version: 02
+             width: 32 bits
+             clock: 33MHz
+             capabilities: isa bus_master cap_list
+             configuration: latency=0
+        *-ide
+             description: IDE interface
+             product: 82801G (ICH7 Family) IDE Controller
+             vendor: Intel Corporation
+             physical id: 1f.1
+             bus info: pci@0000:00:1f.1
+             logical name: scsi0
+             version: 02
+             width: 32 bits
+             clock: 33MHz
+             capabilities: ide bus_master emulated
+             configuration: driver=ata_piix latency=0
+             resources: irq:18 ioport:1f0(size=8) ioport:3f6 ioport:170(size=8) ioport:376 ioport:1880(size=16)
+           *-cdrom
+                description: DVD-RAM writer
+                product: DVD-RAM UJ-841S
+                vendor: MATSHITA
+                physical id: 0.0.0
+                bus info: scsi@0:0.0.0
+                logical name: /dev/cdrom
+                logical name: /dev/cdrw
+                logical name: /dev/dvd
+                logical name: /dev/dvdrw
+                logical name: /dev/scd0
+                logical name: /dev/sr0
+                version: 1.30
+                capabilities: removable audio cd-r cd-rw dvd dvd-r dvd-ram
+                configuration: ansiversion=5 status=nodisc
+        *-storage
+             description: SATA controller
+             product: 82801GBM/GHM (ICH7 Family) SATA AHCI Controller
+             vendor: Intel Corporation
+             physical id: 1f.2
+             bus info: pci@0000:00:1f.2
+             version: 02
+             width: 32 bits
+             clock: 66MHz
+             capabilities: storage ahci_1.0 bus_master cap_list
+             configuration: driver=ahci latency=0
+             resources: irq:41 ioport:18c8(size=8) ioport:18ac(size=4) ioport:18c0(size=8) ioport:18a8(size=4) ioport:18b0(size=16) memory:f0604400-f06047ff
+        *-serial
+             description: SMBus
+             product: N10/ICH 7 Family SMBus Controller
+             vendor: Intel Corporation
+             physical id: 1f.3
+             bus info: pci@0000:00:1f.3
+             version: 02
+             width: 32 bits
+             clock: 33MHz
+             configuration: driver=i801_smbus latency=0
+             resources: irq:19 ioport:18e0(size=32)
