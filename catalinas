@@ -1,0 +1,118 @@
+arnt@celsius:~/FG-git$ ./run_fgfs.sh --geometry=1920x1200 --httpd=9999 --jpg-httpd=9876 --prop:controls/gear/brake-parking=1 --prop:sim/frame-rate=true --fov=90 --enable-fullscreen  --timeofday=noon --aircraft=Catalina  &
+[1] 26855
+arnt@celsius:~/FG-git$ Processing command line arguments
+Httpd server started on port 9999
+HttpdImage server started on port 9876
+FGPropertyManager::GetNode() No node found for /systems/electrical/outputs/instrument-lights
+  In condition: /systems/electrical/outputs/instrument-lights gt 27. Unknown property /systems/electrical/outputs/instrument-lights referenced.
+Creating property.  Check usage.                                                                                                                                                                                                                          
+FGPropertyManager::GetNode() No node found for /instrumentation/lights/blinker-kinemat-out
+  In condition: /instrumentation/lights/blinker-kinemat-out == 0. Unknown property /instrumentation/lights/blinker-kinemat-out referenced.
+Creating property.  Check usage.                                                                                                                                                                                                                          
+FGPropertyManager::GetNode() No node found for /systems/electrical/outputs/landing-light
+  In condition: /systems/electrical/outputs/landing-light  gt 27. Unknown property /systems/electrical/outputs/landing-light referenced.
+Creating property.  Check usage.                                                                                                                                                                                                                          
+FGPropertyManager::GetNode() No node found for fcs/water-switch
+  In condition: fcs/water-switch == 0. Unknown property fcs/water-switch referenced.
+Creating property.  Check usage.                                                                                                                                                                                                                          
+FGPropertyManager::GetNode() No node found for /gear/gear[9]/wow
+  In condition: /gear/gear[9]/wow   == 1. Unknown property /gear/gear[9]/wow referenced.
+Creating property.  Check usage.                                                                                                                                                                                                                          
+FGPropertyManager::GetNode() No node found for fcs/floats-pos-norm
+  In condition: fcs/floats-pos-norm == 1. Unknown property fcs/floats-pos-norm referenced.
+Creating property.  Check usage.                                                                                                                                                                                                                          
+FGPropertyManager::GetNode() No node found for fcs/water-loaded-pos
+FGPropertyManager::GetNode() No node found for /sim/model/waterbombing
+  In condition: /sim/model/waterbombing == 1. Unknown property /sim/model/waterbombing referenced.
+Creating property.  Check usage.                                                                                                                                                                                                                          
+FGPropertyManager::GetNode() No node found for /gear/gear[11]/wow
+  In condition: /gear/gear[11]/wow   == 1. Unknown property /gear/gear[11]/wow referenced.
+Creating property.  Check usage.                                                                                                                                                                                                                          
+FGPropertyManager::GetNode() No node found for /gear/gear[10]/wow
+  In condition: /gear/gear[10]/wow   == 1. Unknown property /gear/gear[10]/wow referenced.
+Creating property.  Check usage.                                                                                                                                                                                                                          
+Failed to tie property propulsion/mixture-value to object methods
+FGPropertyManager::GetNode() No node found for /gear/gear[3]/wow
+  In condition: /gear/gear[3]/wow   == 1. Unknown property /gear/gear[3]/wow referenced.
+Creating property.  Check usage.                                                                                                                                                                                                                          
+FGPropertyManager::GetNode() No node found for systems/boost-cmd/climb
+  In condition: systems/boost-cmd/climb == 1. Unknown property systems/boost-cmd/climb referenced.
+Creating property.  Check usage.                                                                                                                                                                                                                          
+FGPropertyManager::GetNode() No node found for systems/boost-cmd/cruise
+  In condition: systems/boost-cmd/cruise == 1. Unknown property systems/boost-cmd/cruise referenced.
+Creating property.  Check usage.                                                                                                                                                                                                                          
+FGPropertyManager::GetNode() No node found for systems/boost-cmd/takeoff
+  In condition: systems/boost-cmd/takeoff == 1. Unknown property systems/boost-cmd/takeoff referenced.
+Creating property.  Check usage.                                                                                                                                                                                                                          
+
+Error loading aerodynamic function in aero/coefficient/CDhump:
+  FGTable: row lookup is not monotonically increasing                                                                                                                                                                                                     
+  in row 2 of table in aero/coefficient/CDhump:                                                                                                                                                                                                           
+  21252<=42841
+ Aborting.
+
+Aircraft aerodynamics element has problems in file /home/arnt/FG-git/install/fgfs/bin/../fgdata//Aircraft/PBY-Catalina/PBY-6.xml
+Unknown exception in the main loop. Aborting...
+./run_fgfs.sh: line 5: 26857 Segmentation fault      ./fgfs --fg-root=$PWD/../fgdata/ $@
+
+[1]+  Exit 139                ./run_fgfs.sh --geometry=1920x1200 --httpd=9999 --jpg-httpd=9876 --prop:controls/gear/brake-parking=1 --prop:sim/frame-rate=true --fov=90 --enable-fullscreen --timeofday=noon --aircraft=Catalina
+arnt@celsius:~/FG-git$ ./run_fgfs.sh --geometry=1920x1200 --httpd=9999 --jpg-httpd=9876 --prop:controls/gear/brake-parking=1 --prop:sim/frame-rate=true --fov=90 --enable-fullscreen  --timeofday=noon --aircraft=Catalina-plib  &
+[1] 26939
+arnt@celsius:~/FG-git$ Processing command line arguments
+Httpd server started on port 9999
+HttpdImage server started on port 9876
+FGPropertyManager::GetNode() No node found for /systems/electrical/outputs/instrument-lights
+  In condition: /systems/electrical/outputs/instrument-lights gt 27. Unknown property /systems/electrical/outputs/instrument-lights referenced.
+Creating property.  Check usage.                                                                                                                                                                                                                          
+FGPropertyManager::GetNode() No node found for /instrumentation/lights/blinker-kinemat-out
+  In condition: /instrumentation/lights/blinker-kinemat-out == 0. Unknown property /instrumentation/lights/blinker-kinemat-out referenced.
+Creating property.  Check usage.                                                                                                                                                                                                                          
+FGPropertyManager::GetNode() No node found for /systems/electrical/outputs/landing-light
+  In condition: /systems/electrical/outputs/landing-light  gt 27. Unknown property /systems/electrical/outputs/landing-light referenced.
+Creating property.  Check usage.                                                                                                                                                                                                                          
+FGPropertyManager::GetNode() No node found for fcs/water-switch
+  In condition: fcs/water-switch == 0. Unknown property fcs/water-switch referenced.
+Creating property.  Check usage.                                                                                                                                                                                                                          
+FGPropertyManager::GetNode() No node found for /gear/gear[9]/wow
+  In condition: /gear/gear[9]/wow   == 1. Unknown property /gear/gear[9]/wow referenced.
+Creating property.  Check usage.                                                                                                                                                                                                                          
+FGPropertyManager::GetNode() No node found for fcs/floats-pos-norm
+  In condition: fcs/floats-pos-norm == 1. Unknown property fcs/floats-pos-norm referenced.
+Creating property.  Check usage.                                                                                                                                                                                                                          
+FGPropertyManager::GetNode() No node found for fcs/water-loaded-pos
+FGPropertyManager::GetNode() No node found for /sim/model/waterbombing
+  In condition: /sim/model/waterbombing == 1. Unknown property /sim/model/waterbombing referenced.
+Creating property.  Check usage.                                                                                                                                                                                                                          
+FGPropertyManager::GetNode() No node found for /gear/gear[11]/wow
+  In condition: /gear/gear[11]/wow   == 1. Unknown property /gear/gear[11]/wow referenced.
+Creating property.  Check usage.                                                                                                                                                                                                                          
+FGPropertyManager::GetNode() No node found for /gear/gear[10]/wow
+  In condition: /gear/gear[10]/wow   == 1. Unknown property /gear/gear[10]/wow referenced.
+Creating property.  Check usage.                                                                                                                                                                                                                          
+Failed to tie property propulsion/mixture-value to object methods
+FGPropertyManager::GetNode() No node found for /gear/gear[3]/wow
+  In condition: /gear/gear[3]/wow   == 1. Unknown property /gear/gear[3]/wow referenced.
+Creating property.  Check usage.                                                                                                                                                                                                                          
+FGPropertyManager::GetNode() No node found for systems/boost-cmd/climb
+  In condition: systems/boost-cmd/climb == 1. Unknown property systems/boost-cmd/climb referenced.
+Creating property.  Check usage.                                                                                                                                                                                                                          
+FGPropertyManager::GetNode() No node found for systems/boost-cmd/cruise
+  In condition: systems/boost-cmd/cruise == 1. Unknown property systems/boost-cmd/cruise referenced.
+Creating property.  Check usage.                                                                                                                                                                                                                          
+FGPropertyManager::GetNode() No node found for systems/boost-cmd/takeoff
+  In condition: systems/boost-cmd/takeoff == 1. Unknown property systems/boost-cmd/takeoff referenced.
+Creating property.  Check usage.                                                                                                                                                                                                                          
+
+Error loading aerodynamic function in aero/coefficient/CDhump:
+  FGTable: row lookup is not monotonically increasing                                                                                                                                                                                                     
+  in row 2 of table in aero/coefficient/CDhump:                                                                                                                                                                                                           
+  21252<=42841
+ Aborting.
+
+Aircraft aerodynamics element has problems in file /home/arnt/FG-git/install/fgfs/bin/../fgdata//Aircraft/PBY-Catalina/PBY-6.xml
+Unknown exception in the main loop. Aborting...
+./run_fgfs.sh: line 5: 26941 Segmentation fault      ./fgfs --fg-root=$PWD/../fgdata/ $@
+
+[1]+  Exit 139                ./run_fgfs.sh --geometry=1920x1200 --httpd=9999 --jpg-httpd=9876 --prop:controls/gear/brake-parking=1 --prop:sim/frame-rate=true --fov=90 --enable-fullscreen --timeofday=noon --aircraft=Catalina-plib
+arnt@celsius:~/FG-git$ 
+
