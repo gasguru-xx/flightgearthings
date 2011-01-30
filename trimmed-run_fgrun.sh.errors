@@ -1,0 +1,120 @@
+arnt@celsius:~/FG-git$ ./run_fgrun.sh &
+[1] 15414
+arnt@celsius:~/FG-git$ osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: could not find texture "side_1.jpg"
+osgDB ac3d reader: could not find texture "inhg.png"
+Warning: Could not find plugin to read objects from file "/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/AH-1/Models/Cockpit/radar.png".
+osgDB ac3d reader: could not read texture "radar.png"
+This is not a valid .mdl file
+
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: could not find texture "profile.png"
+osgDB ac3d reader: could not find texture "F:/Program Files/FlightGear/data/Aircraft/Lockheed-SR71/Models/glass.png"
+osgDB ac3d reader: could not find texture "glass.png"
+osgDB ac3d reader: could not find texture "browning50.png"
+osgDB ac3d reader: could not find texture "jrb-wbd-bezel.png"
+osgDB ac3d reader: could not find texture "ignswitch.rgb"
+osgDB ac3d reader: could not find texture "aoa_indexer-new.png"
+osgDB ac3d reader: could not find texture "Right_Rudder.png"
+osgDB ac3d reader: could not find texture "Right_Airiloin.png"
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: could not find texture "gpws.png"
+osgDB ac3d reader: could not find texture "Untitled"
+osgDB ac3d reader: could not find texture "boeing747-400-bezel-jw.png"
+osgDB ac3d reader: could not find texture "main.png"
+osgDB ac3d reader: could not find texture "digits.png"
+osgDB ac3d reader: could not find texture "Aircraft/Instruments-3d/clock/M877/M877.rgb"
+osgDB ac3d reader: could not find texture "M877.rgb"
+osgDB ac3d reader: could not find texture "Aircraft/Instruments-3d/clock/M877/M877.rgb"
+osgDB ac3d reader: could not find texture "M877.rgb"
+osgDB ac3d reader: could not find texture "Aircraft/Instruments-3d/clock/M877/M877.rgb"
+osgDB ac3d reader: could not find texture "M877.rgb"
+osgDB ac3d reader: could not find texture "Aircraft/Instruments-3d/clock/M877/M877.rgb"
+osgDB ac3d reader: could not find texture "M877.rgb"
+osgDB ac3d reader: could not find texture "Aircraft/Instruments-3d/clock/M877/M877.rgb"
+osgDB ac3d reader: could not find texture "M877.rgb"
+osgDB ac3d reader: could not find texture "Aircraft/Instruments-3d/clock/M877/M877.rgb"
+osgDB ac3d reader: could not find texture "M877.rgb"
+osgDB ac3d reader: could not find texture "Aircraft/fokker50/Models/mainpanel.rgb"
+osgDB ac3d reader: could not find texture "mainpanel.rgb"
+osgDB ac3d reader: could not find texture "Aircraft/dhc8/Models/panel.rgb"
+osgDB ac3d reader: could not find texture "panel.rgb"
+osgDB ac3d reader: could not find texture "glass.rgb"
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: could not find texture "default.fuselage.png"
+osgDB ac3d reader: could not find texture "flightdeck.png"
+osgDB ac3d reader: could not find texture "txt_cockpit_palette.rgb"
+Warning: Could not find plugin to read objects from file "/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/fokker100/Models/fabric.png".
+osgDB ac3d reader: could not read texture "fabric.png"
+Warning: Could not find plugin to read objects from file "/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/fokker100/Models/fabric.png".
+osgDB ac3d reader: could not read texture "fabric.png"
+Warning: Could not find plugin to read objects from file "/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/fokker100/Models/fabric.png".
+osgDB ac3d reader: could not read texture "fabric.png"
+osgDB ac3d reader: could not find texture "metalshader.png"
+osgDB ac3d reader: could not find texture "bf109-5.rgb"
+osgDB ac3d reader: could not find texture "profiles.png"
+osgDB ac3d reader: could not find texture "general_pilot.png"
+osgDB ac3d reader: detected line with less than 2 vertices!
+This is not a valid .mdl file
+
+osgDB ac3d reader: could not find texture "livery.png"
+osgDB ac3d reader: could not find texture "interiour.png"
+osgDB ac3d reader: could not find texture "me323-1.png"
+osgDB ac3d reader: could not find texture "Untitled"
+osgDB ac3d reader: could not find texture "d�tresse.png"
+osgDB ac3d reader: could not find texture "GondoleDroite.png"
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: could not find texture "glass.rgb"
+osgDB ac3d reader: detected surface with less than 3 vertices!
+This is not a valid .mdl file
+
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: could not find texture "mk%20i.jpg"
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: could not find texture "D:/Git_New/fgdata/Aircraft/spitfireIX/Models/Instruments/oil_temp_black.png"
+osgDB ac3d reader: could not find texture "oil_temp_black.png"
+osgDB ac3d reader: could not find texture "D:/Git_New/fgdata/Aircraft/spitfireIX/Models/Instruments/oil_temp_black.png"
+osgDB ac3d reader: could not find texture "oil_temp_black.png"
+osgDB ac3d reader: could not find texture "D:/Git_New/fgdata/Aircraft/spitfireIX/Models/Instruments/oil_temp_black.png"
+osgDB ac3d reader: could not find texture "oil_temp_black.png"
+osgDB ac3d reader: could not find texture "D:/Git_New/fgdata/Aircraft/spitfireIX/Models/Instruments/oil_temp_black.png"
+osgDB ac3d reader: could not find texture "oil_temp_black.png"
+osgDB ac3d reader: could not find texture "D:/Git_New/fgdata/Aircraft/spitfireIX/Models/Instruments/slot_screw_med_flat.png"
+osgDB ac3d reader: could not find texture "slot_screw_med_flat.png"
+osgDB ac3d reader: could not find texture "D:/Git_New/fgdata/Aircraft/Buccaneer/Instruments/indicator_red.png"
+osgDB ac3d reader: could not find texture "indicator_red.png"
+osgDB ac3d reader: could not find texture "D:/Git_New/fgdata/Aircraft/Buccaneer/Instruments/indicator_red.png"
+osgDB ac3d reader: could not find texture "indicator_red.png"
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: could not find texture "profiles.png"
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: could not find texture "common.rgb"
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: could not find texture "D:/Git_New/fgdata/Aircraft/Buccaneer/Instruments/indicator_red.png"
+osgDB ac3d reader: could not find texture "indicator_red.png"
+osgDB ac3d reader: could not find texture "D:/Git_New/fgdata/Aircraft/Buccaneer/Instruments/indicator_red.png"
+osgDB ac3d reader: could not find texture "indicator_red.png"
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: could not find texture "mk%20i.jpg"
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: could not find texture "D:/Git_New/fgdata/Aircraft/spitfireIX/Models/Instruments/oil_temp_black.png"
+osgDB ac3d reader: could not find texture "oil_temp_black.png"
+osgDB ac3d reader: could not find texture "D:/Git_New/fgdata/Aircraft/spitfireIX/Models/Instruments/oil_temp_black.png"
+osgDB ac3d reader: could not find texture "oil_temp_black.png"
+osgDB ac3d reader: could not find texture "D:/Git_New/fgdata/Aircraft/spitfireIX/Models/Instruments/oil_temp_black.png"
+osgDB ac3d reader: could not find texture "oil_temp_black.png"
+osgDB ac3d reader: could not find texture "D:/Git_New/fgdata/Aircraft/spitfireIX/Models/Instruments/oil_temp_black.png"
+osgDB ac3d reader: could not find texture "oil_temp_black.png"
+osgDB ac3d reader: could not find texture "D:/Git_New/fgdata/Aircraft/spitfireIX/Models/Instruments/slot_screw_med_flat.png"
+osgDB ac3d reader: could not find texture "slot_screw_med_flat.png"
+^C
+[1]+  Done                    ./run_fgrun.sh
+arnt@celsius:~/FG-git$ 
+

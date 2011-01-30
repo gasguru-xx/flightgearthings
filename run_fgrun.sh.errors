@@ -1,0 +1,584 @@
+arnt@celsius:~/FG-git$ ./run_fgrun.sh &
+[1] 15414
+arnt@celsius:~/FG-git$ osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Unknown Chunk: ***UNKNOWN*** (0xA08A)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/A380/Textures/Common/mcdu_icons.png' from (150,150) to (128,128)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/A380/Textures/Panels/ecam/sd_cab-press_01.png' from (351,315) to (256,256)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/A380/Textures/Panels/ecam/sd_elec-dc_01.png' from (351,315) to (256,256)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/A380/Textures/Panels/ecam/sd_elec-ac_01.png' from (351,315) to (256,256)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/A380/Textures/Panels/ecam/sd_cruise_01.png' from (489,435) to (512,512)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/A380/Textures/Panels/ecam/sd_bleed_01.png' from (351,315) to (256,256)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/A380/Textures/Panels/ecam/sd_apu_01.png' from (326,312) to (256,256)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/A380/Textures/Panels/ecam/sd_engine_01.png' from (326,290) to (256,256)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/A380/Textures/Panels/ecam/sd_doors_01.png' from (342,237) to (256,256)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/A380/Textures/Common/keyboards.png' from (300,200) to (256,256)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/A380/Textures/Common/keyboards.png' from (300,200) to (256,256)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/A380/Textures/Instruments/pedastal1.png' from (1152,1024) to (1024,1024)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/A380/Textures/Instruments/pedastal1.png' from (1152,1024) to (1024,1024)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/A380/Textures/Instruments/pedastal1.png' from (1152,1024) to (1024,1024)
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: could not find texture "side_1.jpg"
+osgDB ac3d reader: could not find texture "side_1.jpg"
+osgDB ac3d reader: could not find texture "side_1.jpg"
+osgDB ac3d reader: could not find texture "side_1.jpg"
+osgDB ac3d reader: could not find texture "inhg.png"
+Warning: Could not find plugin to read objects from file "/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/AH-1/Models/Cockpit/radar.png".
+osgDB ac3d reader: could not read texture "radar.png"
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/AH-1/Models/firecobra4.png' from (400,400) to (512,512)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/AH-1/Models/firecobra.png' from (2045,2048) to (2048,2048)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/AH-1/Models/Cockpit/seatbase.png' from (716,718) to (512,512)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/AH-1/Models/Cockpit/seat.png' from (624,625) to (512,512)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/AH-1/Models/Cockpit/tolocheck.png' from (500,500) to (512,512)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/AH-1/Models/Cockpit/cyclic.png' from (800,800) to (1024,1024)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/AH-1/Models/Cockpit/firelev.png' from (344,344) to (256,256)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/AH-1/Models/Cockpit/dash.png' from (624,625) to (512,512)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/AH-1/Models/Cockpit/cpu.png' from (800,800) to (1024,1024)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/AH-1/Models/Cockpit/circuitbreaker.png' from (800,800) to (1024,1024)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/AH-1/Models/Cockpit/auxfuel.png' from (624,625) to (512,512)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/AH-1/Models/Cockpit/genpanel.png' from (450,450) to (512,512)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/AH-1/Models/Cockpit/misc.png' from (500,500) to (512,512)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/AH-1/Models/Cockpit/syspanel.png' from (800,800) to (1024,1024)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/AH-1/Models/Cockpit/phood.png' from (624,625) to (512,512)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/AH-1/Models/Cockpit/text1.png' from (464,464) to (512,512)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/AH-1/Models/MainRotor/colors.png' from (534,534) to (512,512)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/AH-1/Models/MainRotor/colors.png' from (534,534) to (512,512)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/AH-1/Models/TailRotor/colors.png' from (534,534) to (512,512)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/AH-1/Models/TailRotor/colors.png' from (534,534) to (512,512)
+This is not a valid .mdl file
+
+osgDB ac3d reader: detected line with less than 2 vertices!
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/AR-234/Models/Pilot/trans.png' from (90,54) to (64,64)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/as332/Models/dummy.png' from (10,10) to (8,8)
+osgDB ac3d reader: could not find texture "profile.png"
+osgDB ac3d reader: could not find texture "F:/Program Files/FlightGear/data/Aircraft/Lockheed-SR71/Models/glass.png"
+osgDB ac3d reader: could not find texture "glass.png"
+osgDB ac3d reader: could not find texture "browning50.png"
+osgDB ac3d reader: could not find texture "browning50.png"
+osgDB ac3d reader: could not find texture "browning50.png"
+osgDB ac3d reader: could not find texture "browning50.png"
+osgDB ac3d reader: could not find texture "jrb-wbd-bezel.png"
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/b26/Models/Instruments/alt-us.png' from (491,491) to (512,512)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/b26/Models/Instruments/asi300.png' from (495,491) to (512,512)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/b26/Models/Instruments/man60.png' from (658,658) to (512,512)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/b26/Models/Instruments/oilp200.png' from (570,568) to (512,512)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/b26/Models/Instruments/rpm45.png' from (689,688) to (512,512)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/b26/Models/Instruments/temp150multi.png' from (556,556) to (512,512)
+osgDB ac3d reader: could not find texture "ignswitch.rgb"
+osgDB ac3d reader: could not find texture "ignswitch.rgb"
+osgDB ac3d reader: could not find texture "ignswitch.rgb"
+osgDB ac3d reader: could not find texture "ignswitch.rgb"
+osgDB ac3d reader: could not find texture "ignswitch.rgb"
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/bf109/Models/Instruments/ring-green.png' from (498,498) to (512,512)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/bf109/Models/Instruments/cooltemp.png' from (302,302) to (256,256)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/bf109/Models/Instruments/fuel109.png' from (308,308) to (256,256)
+osgDB ac3d reader: could not find texture "aoa_indexer-new.png"
+osgDB ac3d reader: could not find texture "Right_Rudder.png"
+osgDB ac3d reader: could not find texture "Right_Airiloin.png"
+osgDB ac3d reader: could not find texture "Right_Airiloin.png"
+osgDB ac3d reader: could not find texture "Right_Airiloin.png"
+osgDB ac3d reader: could not find texture "Right_Airiloin.png"
+osgDB ac3d reader: could not find texture "Right_Airiloin.png"
+osgDB ac3d reader: could not find texture "Right_Airiloin.png"
+osgDB ac3d reader: could not find texture "Right_Airiloin.png"
+osgDB ac3d reader: could not find texture "Right_Airiloin.png"
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: could not find texture "gpws.png"
+osgDB ac3d reader: could not find texture "Untitled"
+osgDB ac3d reader: could not find texture "Untitled"
+osgDB ac3d reader: could not find texture "Untitled"
+osgDB ac3d reader: could not find texture "Untitled"
+osgDB ac3d reader: could not find texture "Untitled"
+osgDB ac3d reader: could not find texture "Untitled"
+osgDB ac3d reader: could not find texture "boeing747-400-bezel-jw.png"
+osgDB ac3d reader: could not find texture "boeing747-400-bezel-jw.png"
+osgDB ac3d reader: could not find texture "boeing747-400-bezel-jw.png"
+osgDB ac3d reader: could not find texture "main.png"
+osgDB ac3d reader: could not find texture "digits.png"
+osgDB ac3d reader: could not find texture "digits.png"
+osgDB ac3d reader: could not find texture "digits.png"
+osgDB ac3d reader: could not find texture "digits.png"
+osgDB ac3d reader: could not find texture "digits.png"
+osgDB ac3d reader: could not find texture "digits.png"
+osgDB ac3d reader: could not find texture "digits.png"
+osgDB ac3d reader: could not find texture "digits.png"
+osgDB ac3d reader: could not find texture "digits.png"
+osgDB ac3d reader: could not find texture "digits.png"
+osgDB ac3d reader: could not find texture "digits.png"
+osgDB ac3d reader: could not find texture "digits.png"
+osgDB ac3d reader: could not find texture "Aircraft/Instruments-3d/clock/M877/M877.rgb"
+osgDB ac3d reader: could not find texture "M877.rgb"
+osgDB ac3d reader: could not find texture "Aircraft/Instruments-3d/clock/M877/M877.rgb"
+osgDB ac3d reader: could not find texture "M877.rgb"
+osgDB ac3d reader: could not find texture "Aircraft/Instruments-3d/clock/M877/M877.rgb"
+osgDB ac3d reader: could not find texture "M877.rgb"
+osgDB ac3d reader: could not find texture "Aircraft/Instruments-3d/clock/M877/M877.rgb"
+osgDB ac3d reader: could not find texture "M877.rgb"
+osgDB ac3d reader: could not find texture "Aircraft/Instruments-3d/clock/M877/M877.rgb"
+osgDB ac3d reader: could not find texture "M877.rgb"
+osgDB ac3d reader: could not find texture "Aircraft/Instruments-3d/clock/M877/M877.rgb"
+osgDB ac3d reader: could not find texture "M877.rgb"
+osgDB ac3d reader: could not find texture "Aircraft/fokker50/Models/mainpanel.rgb"
+osgDB ac3d reader: could not find texture "mainpanel.rgb"
+osgDB ac3d reader: could not find texture "Aircraft/dhc8/Models/panel.rgb"
+osgDB ac3d reader: could not find texture "panel.rgb"
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/dhc8/Models/dashpanel.rgb' from (1024,768) to (1024,1024)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/Diamond-Da42/zkv1000/Textures/alt.tape.png' from (64,8192) to (64,4096)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/Diamond-Da42/zkv1000/Textures/alt.tape.png' from (64,8192) to (64,4096)
+osgDB ac3d reader: could not find texture "glass.rgb"
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/ec130/Models/Instruments/CWS/panel.png' from (742,221) to (1024,256)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/ec130/Models/Instruments/Lighting/panel.png' from (456,108) to (512,128)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/ec130/Models/Instruments/VEMD/enginepagestart.png' from (849,614) to (1024,512)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/ec130/Models/Instruments/VEMD/initphase.png' from (845,614) to (1024,512)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/ec130/Models/Instruments/VEMD/FLIpage.png' from (738,514) to (1024,512)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/ec130/Models/Instruments/VEMD/vehiclepage.png' from (746,536) to (1024,512)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/ec130/Models/Instruments/VEMD/flightreportpage.png' from (749,540) to (1024,512)
+osgDB ac3d reader: could not find texture "default.fuselage.png"
+osgDB ac3d reader: could not find texture "default.fuselage.png"
+osgDB ac3d reader: could not find texture "flightdeck.png"
+osgDB ac3d reader: could not find texture "txt_cockpit_palette.rgb"
+osgDB ac3d reader: could not find texture "txt_cockpit_palette.rgb"
+osgDB ac3d reader: could not find texture "txt_cockpit_palette.rgb"
+Warning: Could not find plugin to read objects from file "/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/fokker100/Models/fabric.png".
+osgDB ac3d reader: could not read texture "fabric.png"
+Warning: Could not find plugin to read objects from file "/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/fokker100/Models/fabric.png".
+osgDB ac3d reader: could not read texture "fabric.png"
+Warning: Could not find plugin to read objects from file "/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/fokker100/Models/fabric.png".
+osgDB ac3d reader: could not read texture "fabric.png"
+osgDB ac3d reader: could not find texture "metalshader.png"
+osgDB ac3d reader: could not find texture "metalshader.png"
+osgDB ac3d reader: could not find texture "metalshader.png"
+osgDB ac3d reader: could not find texture "metalshader.png"
+osgDB ac3d reader: could not find texture "bf109-5.rgb"
+osgDB ac3d reader: could not find texture "bf109-5.rgb"
+osgDB ac3d reader: could not find texture "bf109-5.rgb"
+osgDB ac3d reader: could not find texture "bf109-5.rgb"
+osgDB ac3d reader: could not find texture "profiles.png"
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/HM-14/Models/shadow.png' from (592,850) to (512,1024)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/HondaJet/zkv1000/Textures/alt.tape.png' from (64,8192) to (64,4096)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/HondaJet/zkv1000/Textures/alt.tape.png' from (64,8192) to (64,4096)
+osgDB ac3d reader: could not find texture "general_pilot.png"
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/jetman/Models/body.png' from (125,361) to (128,256)
+osgDB ac3d reader: detected line with less than 2 vertices!
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/Lockheed-NF104/Instruments/right-fwd-panel/oxy-quant.png' from (963,963) to (1024,1024)
+This is not a valid .mdl file
+
+osgDB ac3d reader: could not find texture "livery.png"
+osgDB ac3d reader: could not find texture "livery.png"
+osgDB ac3d reader: could not find texture "livery.png"
+osgDB ac3d reader: could not find texture "interiour.png"
+osgDB ac3d reader: could not find texture "interiour.png"
+osgDB ac3d reader: could not find texture "me323-1.png"
+osgDB ac3d reader: could not find texture "me323-1.png"
+osgDB ac3d reader: could not find texture "Untitled"
+osgDB ac3d reader: could not find texture "Untitled"
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/me323/Models/Instruments/turn-ger.png' from (420,420) to (512,512)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/me323/Models/Instruments/bezel-fr.png' from (250,250) to (256,256)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/me323/Models/Instruments/tach30-fr.png' from (250,250) to (256,256)
+osgDB ac3d reader: could not find texture "d�tresse.png"
+osgDB ac3d reader: could not find texture "GondoleDroite.png"
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/Nordstern/Instruments/Inclinometers/inclinometer_5deg.png' from (1024,151) to (1024,128)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/Nordstern/Instruments/Inclinometers/inclinometer_20deg.png' from (1024,211) to (1024,256)
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: could not find texture "glass.rgb"
+osgDB ac3d reader: detected surface with less than 3 vertices!
+This is not a valid .mdl file
+
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: could not find texture "mk%20i.jpg"
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: could not find texture "D:/Git_New/fgdata/Aircraft/spitfireIX/Models/Instruments/oil_temp_black.png"
+osgDB ac3d reader: could not find texture "oil_temp_black.png"
+osgDB ac3d reader: could not find texture "D:/Git_New/fgdata/Aircraft/spitfireIX/Models/Instruments/oil_temp_black.png"
+osgDB ac3d reader: could not find texture "oil_temp_black.png"
+osgDB ac3d reader: could not find texture "D:/Git_New/fgdata/Aircraft/spitfireIX/Models/Instruments/oil_temp_black.png"
+osgDB ac3d reader: could not find texture "oil_temp_black.png"
+osgDB ac3d reader: could not find texture "D:/Git_New/fgdata/Aircraft/spitfireIX/Models/Instruments/oil_temp_black.png"
+osgDB ac3d reader: could not find texture "oil_temp_black.png"
+osgDB ac3d reader: could not find texture "D:/Git_New/fgdata/Aircraft/spitfireIX/Models/Instruments/slot_screw_med_flat.png"
+osgDB ac3d reader: could not find texture "slot_screw_med_flat.png"
+osgDB ac3d reader: could not find texture "D:/Git_New/fgdata/Aircraft/Buccaneer/Instruments/indicator_red.png"
+osgDB ac3d reader: could not find texture "indicator_red.png"
+osgDB ac3d reader: could not find texture "D:/Git_New/fgdata/Aircraft/Buccaneer/Instruments/indicator_red.png"
+osgDB ac3d reader: could not find texture "indicator_red.png"
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/Spitfire/Models/wire-00.rgb' from (124,124) to (128,128)
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: could not find texture "profiles.png"
+osgDB ac3d reader: detected line with less than 2 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: could not find texture "common.rgb"
+osgDB ac3d reader: could not find texture "common.rgb"
+osgDB ac3d reader: could not find texture "common.rgb"
+osgDB ac3d reader: could not find texture "common.rgb"
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/YF-23/Models/YF-23-Fuselage-Wings.png' from (1600,1600) to (2048,2048)
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/YF-23/Models/YF-23-Hstabs.png' from (1600,800) to (2048,1024)
+osgDB ac3d reader: detected line with less than 2 vertices!
+Scaling image '/home/arnt/FG-git/install/fgfs/fgdata/Aircraft/Spitfire/Models/wire-00.rgb' from (124,124) to (128,128)
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: could not find texture "D:/Git_New/fgdata/Aircraft/Buccaneer/Instruments/indicator_red.png"
+osgDB ac3d reader: could not find texture "indicator_red.png"
+osgDB ac3d reader: could not find texture "D:/Git_New/fgdata/Aircraft/Buccaneer/Instruments/indicator_red.png"
+osgDB ac3d reader: could not find texture "indicator_red.png"
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: could not find texture "mk%20i.jpg"
+osgDB ac3d reader: detected surface with less than 3 vertices!
+osgDB ac3d reader: could not find texture "D:/Git_New/fgdata/Aircraft/spitfireIX/Models/Instruments/oil_temp_black.png"
+osgDB ac3d reader: could not find texture "oil_temp_black.png"
+osgDB ac3d reader: could not find texture "D:/Git_New/fgdata/Aircraft/spitfireIX/Models/Instruments/oil_temp_black.png"
+osgDB ac3d reader: could not find texture "oil_temp_black.png"
+osgDB ac3d reader: could not find texture "D:/Git_New/fgdata/Aircraft/spitfireIX/Models/Instruments/oil_temp_black.png"
+osgDB ac3d reader: could not find texture "oil_temp_black.png"
+osgDB ac3d reader: could not find texture "D:/Git_New/fgdata/Aircraft/spitfireIX/Models/Instruments/oil_temp_black.png"
+osgDB ac3d reader: could not find texture "oil_temp_black.png"
+osgDB ac3d reader: could not find texture "D:/Git_New/fgdata/Aircraft/spitfireIX/Models/Instruments/slot_screw_med_flat.png"
+osgDB ac3d reader: could not find texture "slot_screw_med_flat.png"
+^C
+[1]+  Done                    ./run_fgrun.sh
+arnt@celsius:~/FG-git$ 
+
