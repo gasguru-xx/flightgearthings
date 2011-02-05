@@ -1071,3 +1071,5 @@ arnt@celsius:~/FG-git$
 ..I got this from the above command line, plus h for HUD, then selecting the 
 Autostart menu, and then ]]]] to set T/O flaps and then a few "W" that got 
 me too far back, so a coupla "w", the last one was caught by the shell.
+
+..post-crash dmesg @ https://github.com/gasguru/flightgearthings/blob/master/jumbo-crash.dmesg
