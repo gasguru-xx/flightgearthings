@@ -1,0 +1,1718 @@
+[    0.000000] Initializing cgroup subsys cpuset
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Linux version 2.6.37-trunk-amd64 (Debian 2.6.37-1~experimental.1) (ben@decadent.org.uk) (gcc version 4.4.5 (Debian 4.4.5-10) ) #1 SMP Thu Jan 6 14:13:28 UTC 2011
+[    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-2.6.37-trunk-amd64 root=UUID=6b0c0ec9-0cf8-4faf-a1d2-dfd549a8a07a ro
+[    0.000000] BIOS-provided physical RAM map:
+[    0.000000]  BIOS-e820: 0000000000000000 - 000000000009f800 (usable)
+[    0.000000]  BIOS-e820: 000000000009f800 - 00000000000a0000 (reserved)
+[    0.000000]  BIOS-e820: 00000000000dc000 - 0000000000100000 (reserved)
+[    0.000000]  BIOS-e820: 0000000000100000 - 00000000cfe50000 (usable)
+[    0.000000]  BIOS-e820: 00000000cfe50000 - 00000000cfe59000 (ACPI data)
+[    0.000000]  BIOS-e820: 00000000cfe59000 - 00000000cff00000 (ACPI NVS)
+[    0.000000]  BIOS-e820: 00000000cff00000 - 00000000d0000000 (reserved)
+[    0.000000]  BIOS-e820: 00000000f8000000 - 00000000fc000000 (reserved)
+[    0.000000]  BIOS-e820: 00000000fec00000 - 00000000fed90000 (reserved)
+[    0.000000]  BIOS-e820: 00000000fee00000 - 00000000fee01000 (reserved)
+[    0.000000]  BIOS-e820: 00000000ff000000 - 0000000100000000 (reserved)
+[    0.000000] NX (Execute Disable) protection: active
+[    0.000000] DMI 2.4 present.
+[    0.000000] DMI: FJNB1C0/CELSIUS H240, BIOS Version 1.18  10/18/2006
+[    0.000000] e820 update range: 0000000000000000 - 0000000000010000 (usable) ==> (reserved)
+[    0.000000] e820 remove range: 00000000000a0000 - 0000000000100000 (usable)
+[    0.000000] No AGP bridge found
+[    0.000000] last_pfn = 0xcfe50 max_arch_pfn = 0x400000000
+[    0.000000] MTRR default type: uncachable
+[    0.000000] MTRR fixed ranges enabled:
+[    0.000000]   00000-9FFFF write-back
+[    0.000000]   A0000-BFFFF uncachable
+[    0.000000]   C0000-D3FFF write-protect
+[    0.000000]   D4000-DBFFF uncachable
+[    0.000000]   DC000-DFFFF write-back
+[    0.000000]   E0000-FFFFF write-protect
+[    0.000000] MTRR variable ranges enabled:
+[    0.000000]   0 base 000000000 mask F80000000 write-back
+[    0.000000]   1 base 080000000 mask FC0000000 write-back
+[    0.000000]   2 base 0C0000000 mask FF0000000 write-back
+[    0.000000]   3 base 0CFF00000 mask FFFF00000 uncachable
+[    0.000000]   4 disabled
+[    0.000000]   5 disabled
+[    0.000000]   6 disabled
+[    0.000000]   7 disabled
+[    0.000000] x86 PAT enabled: cpu 0, old 0x7040600070406, new 0x7010600070106
+[    0.000000] initial memory mapped : 0 - 20000000
+[    0.000000] init_memory_mapping: 0000000000000000-00000000cfe50000
+[    0.000000]  0000000000 - 00cfe00000 page 2M
+[    0.000000]  00cfe00000 - 00cfe50000 page 4k
+[    0.000000] kernel direct mapping tables up to cfe50000 @ 1fffa000-20000000
+[    0.000000] RAMDISK: 36348000 - 3719c000
+[    0.000000] ACPI: RSDP 00000000000f55e0 00014 (v00 FUJ   )
+[    0.000000] ACPI: RSDT 00000000cfe510c4 00044 (v01 FUJ    FJNB1C0  01180000 FUJ  00000100)
+[    0.000000] ACPI: FACP 00000000cfe58f8c 00074 (v01 FUJ    FJNB1C0  01180000 FUJ  00000100)
+[    0.000000] ACPI: DSDT 00000000cfe51118 06D2A (v01 FUJ    FJNB1C0  01180000 MSFT 0100000E)
+[    0.000000] ACPI: FACS 00000000cfe59fc0 00040
+[    0.000000] ACPI: SSDT 00000000cfe57e42 00265 (v01 FUJ    FJNB1C0  01180000 MSFT 0100000E)
+[    0.000000] ACPI: MCFG 00000000cfe580a7 0003C (v01 FUJ    FJNB1C0  01180000 FUJ  00000100)
+[    0.000000] ACPI: SSDT 00000000cfe580e3 004DC (v01 FUJ    FJNB1C0  01180000 INTL 20050624)
+[    0.000000] ACPI: SSDT 00000000cfe58c93 00231 (v01 FUJ    FJNB1C0  01180000 INTL 20050624)
+[    0.000000] ACPI: APIC 00000000cfe58ec4 00068 (v01 FUJ    FJNB1C0  01180000  LTP 00000000)
+[    0.000000] ACPI: HPET 00000000cfe58f2c 00038 (v01 FUJ    FJNB1C0  01180000 FUJ  00000100)
+[    0.000000] ACPI: BOOT 00000000cfe58f64 00028 (v01 FUJ    FJNB1C0  01180000 FUJ  00000100)
+[    0.000000] ACPI: Local APIC address 0xfee00000
+[    0.000000] No NUMA configuration found
+[    0.000000] Faking a node at 0000000000000000-00000000cfe50000
+[    0.000000] Initmem setup node 0 0000000000000000-00000000cfe50000
+[    0.000000]   NODE_DATA [00000000cfe4b000 - 00000000cfe4ffff]
+[    0.000000]  [ffffea0000000000-ffffea0002dfffff] PMD -> [ffff8800cc200000-ffff8800ceffffff] on node 0
+[    0.000000] Zone PFN ranges:
+[    0.000000]   DMA      0x00000010 -> 0x00001000
+[    0.000000]   DMA32    0x00001000 -> 0x00100000
+[    0.000000]   Normal   empty
+[    0.000000] Movable zone start PFN for each node
+[    0.000000] early_node_map[2] active PFN ranges
+[    0.000000]     0: 0x00000010 -> 0x0000009f
+[    0.000000]     0: 0x00000100 -> 0x000cfe50
+[    0.000000] On node 0 totalpages: 851423
+[    0.000000]   DMA zone: 56 pages used for memmap
+[    0.000000]   DMA zone: 6 pages reserved
+[    0.000000]   DMA zone: 3921 pages, LIFO batch:0
+[    0.000000]   DMA32 zone: 11587 pages used for memmap
+[    0.000000]   DMA32 zone: 835853 pages, LIFO batch:31
+[    0.000000] ACPI: PM-Timer IO Port: 0x1008
+[    0.000000] ACPI: Local APIC address 0xfee00000
+[    0.000000] ACPI: LAPIC (acpi_id[0x00] lapic_id[0x00] enabled)
+[    0.000000] ACPI: LAPIC (acpi_id[0x01] lapic_id[0x01] enabled)
+[    0.000000] ACPI: LAPIC_NMI (acpi_id[0x00] high edge lint[0x1])
+[    0.000000] ACPI: LAPIC_NMI (acpi_id[0x01] high edge lint[0x1])
+[    0.000000] ACPI: IOAPIC (id[0x02] address[0xfec00000] gsi_base[0])
+[    0.000000] IOAPIC[0]: apic_id 2, version 32, address 0xfec00000, GSI 0-23
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 high edge)
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+[    0.000000] ACPI: IRQ0 used by override.
+[    0.000000] ACPI: IRQ2 used by override.
+[    0.000000] ACPI: IRQ9 used by override.
+[    0.000000] Using ACPI (MADT) for SMP configuration information
+[    0.000000] ACPI: HPET id: 0x8086a201 base: 0xfed00000
+[    0.000000] SMP: Allowing 2 CPUs, 0 hotplug CPUs
+[    0.000000] nr_irqs_gsi: 40
+[    0.000000] PM: Registered nosave memory: 000000000009f000 - 00000000000a0000
+[    0.000000] PM: Registered nosave memory: 00000000000a0000 - 00000000000dc000
+[    0.000000] PM: Registered nosave memory: 00000000000dc000 - 0000000000100000
+[    0.000000] Allocating PCI resources starting at d0000000 (gap: d0000000:28000000)
+[    0.000000] Booting paravirtualized kernel on bare hardware
+[    0.000000] setup_percpu: NR_CPUS:512 nr_cpumask_bits:512 nr_cpu_ids:2 nr_node_ids:1
+[    0.000000] PERCPU: Embedded 28 pages/cpu @ffff8800cfc00000 s82688 r8192 d23808 u1048576
+[    0.000000] pcpu-alloc: s82688 r8192 d23808 u1048576 alloc=1*2097152
+[    0.000000] pcpu-alloc: [0] 0 1 
+[    0.000000] Built 1 zonelists in Node order, mobility grouping on.  Total pages: 839774
+[    0.000000] Policy zone: DMA32
+[    0.000000] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-2.6.37-trunk-amd64 root=UUID=6b0c0ec9-0cf8-4faf-a1d2-dfd549a8a07a ro
+[    0.000000] PID hash table entries: 4096 (order: 3, 32768 bytes)
+[    0.000000] Checking aperture...
+[    0.000000] No AGP bridge found
+[    0.000000] Calgary: detecting Calgary via BIOS EBDA area
+[    0.000000] Calgary: Unable to locate Rio Grande table in EBDA - bailing!
+[    0.000000] Memory: 3335212k/3406144k available (3229k kernel code, 452k absent, 70480k reserved, 3439k data, 608k init)
+[    0.000000] SLUB: Genslabs=15, HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+[    0.000000] Hierarchical RCU implementation.
+[    0.000000] 	RCU dyntick-idle grace-period acceleration is enabled.
+[    0.000000] 	RCU-based detection of stalled CPUs is disabled.
+[    0.000000] NR_IRQS:33024 nr_irqs:512 16
+[    0.000000] Console: colour VGA+ 80x25
+[    0.000000] console [tty0] enabled
+[    0.000000] hpet clockevent registered
+[    0.000000] Fast TSC calibration using PIT
+[    0.000000] Detected 1995.489 MHz processor.
+[    0.004011] Calibrating delay loop (skipped), value calculated using timer frequency.. 3990.97 BogoMIPS (lpj=7981956)
+[    0.004143] pid_max: default: 32768 minimum: 301
+[    0.004229] Security Framework initialized
+[    0.004298] SELinux:  Disabled at boot.
+[    0.004813] Dentry cache hash table entries: 524288 (order: 10, 4194304 bytes)
+[    0.009888] Inode-cache hash table entries: 262144 (order: 9, 2097152 bytes)
+[    0.011412] Mount-cache hash table entries: 256
+[    0.011662] Initializing cgroup subsys ns
+[    0.011731] ns_cgroup deprecated: consider using the 'clone_children' flag without the ns_cgroup.
+[    0.011807] Initializing cgroup subsys cpuacct
+[    0.011876] Initializing cgroup subsys devices
+[    0.011940] Initializing cgroup subsys freezer
+[    0.012015] Initializing cgroup subsys net_cls
+[    0.012080] Initializing cgroup subsys blkio
+[    0.012190] CPU: Physical Processor ID: 0
+[    0.012256] CPU: Processor Core ID: 0
+[    0.012322] mce: CPU supports 6 MCE banks
+[    0.012393] CPU0: Thermal monitoring enabled (TM2)
+[    0.012462] using mwait in idle threads.
+[    0.012527] Performance Events: PEBS fmt0-, Core2 events, Intel PMU driver.
+[    0.012753] PEBS disabled due to CPU errata.
+[    0.012821] ... version:                2
+[    0.012885] ... bit width:              40
+[    0.012949] ... generic registers:      2
+[    0.013014] ... value mask:             000000ffffffffff
+[    0.013080] ... max period:             000000007fffffff
+[    0.013144] ... fixed-purpose events:   3
+[    0.013209] ... event mask:             0000000700000003
+[    0.014338] ACPI: Core revision 20101013
+[    0.024081] Setting APIC routing to flat
+[    0.024523] ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+[    0.065445] CPU0: Intel(R) Core(TM)2 CPU         T7200  @ 2.00GHz stepping 06
+[    0.068000] NMI watchdog enabled, takes one hw-pmu counter.
+[    0.068000] Booting Node   0, Processors  #1 Ok.
+[    0.156028] NMI watchdog enabled, takes one hw-pmu counter.
+[    0.156135] Brought up 2 CPUs
+[    0.156202] Total of 2 processors activated (7981.02 BogoMIPS).
+[    0.156938] devtmpfs: initialized
+[    0.160373] regulator: core version 0.5
+[    0.160373] regulator: dummy: 
+[    0.160373] NET: Registered protocol family 16
+[    0.160528] ACPI: bus type pci registered
+[    0.160683] PCI: MMCONFIG for domain 0000 [bus 00-3f] at [mem 0xf8000000-0xfbffffff] (base 0xf8000000)
+[    0.160761] PCI: MMCONFIG at [mem 0xf8000000-0xfbffffff] reserved in E820
+[    0.166415] PCI: Using configuration type 1 for base access
+[    0.166882] bio: create slab <bio-0> at 0
+[    0.168441] ACPI: EC: Look up EC in DSDT
+[    0.171200] ACPI: SSDT 00000000cfe59ad9 00389 (v01 FUJ    FJNB1C0  01180000 INTL 20050624)
+[    0.171801] ACPI: Dynamic OEM Table Load:
+[    0.171973] ACPI: SSDT           (null) 00389 (v01 FUJ    FJNB1C0  01180000 INTL 20050624)
+[    0.174637] ACPI: SSDT 00000000cfe585bf 001E8 (v01 FUJ    FJNB1C0  01180000 INTL 20050624)
+[    0.175111] ACPI: Dynamic OEM Table Load:
+[    0.175283] ACPI: SSDT           (null) 001E8 (v01 FUJ    FJNB1C0  01180000 INTL 20050624)
+[    0.175645] ACPI: SSDT 00000000cfe58a3e 001D0 (v01 FUJ    FJNB1C0  01180000 INTL 20050624)
+[    0.176139] ACPI: Dynamic OEM Table Load:
+[    0.176311] ACPI: SSDT           (null) 001D0 (v01 FUJ    FJNB1C0  01180000 INTL 20050624)
+[    0.176845] ACPI: SSDT 00000000cfe589b7 00087 (v01 FUJ    FJNB1C0  01180000 INTL 20050624)
+[    0.177306] ACPI: Dynamic OEM Table Load:
+[    0.177477] ACPI: SSDT           (null) 00087 (v01 FUJ    FJNB1C0  01180000 INTL 20050624)
+[    0.177799] ACPI: SSDT 00000000cfe58c0e 00085 (v01 FUJ    FJNB1C0  01180000 INTL 20050624)
+[    0.178254] ACPI: Dynamic OEM Table Load:
+[    0.178424] ACPI: SSDT           (null) 00085 (v01 FUJ    FJNB1C0  01180000 INTL 20050624)
+[    0.178868] ACPI: Interpreter enabled
+[    0.178934] ACPI: (supports S0 S3 S4 S5)
+[    0.179231] ACPI: Using IOAPIC for interrupt routing
+[    0.180034] ACPI Exception: AE_NOT_FOUND, Evaluating _PRW (20101013/scan-723)
+[    0.180316] ACPI Exception: AE_NOT_FOUND, Evaluating _PRW (20101013/scan-723)
+[    0.181011] ACPI Exception: AE_NOT_FOUND, Evaluating _PRW (20101013/scan-723)
+[    0.181687] ACPI Exception: AE_NOT_FOUND, Evaluating _PRW (20101013/scan-723)
+[    0.181902] ACPI Exception: AE_NOT_FOUND, Evaluating _PRW (20101013/scan-723)
+[    0.182905] ACPI Exception: AE_NOT_FOUND, Evaluating _PRW (20101013/scan-723)
+[    0.183133] ACPI Exception: AE_NOT_FOUND, Evaluating _PRW (20101013/scan-723)
+[    0.184659] ACPI Exception: AE_NOT_FOUND, Evaluating _PRW (20101013/scan-723)
+[    0.187320] ACPI Exception: AE_NOT_FOUND, Evaluating _PRW (20101013/scan-723)
+[    0.187769] ACPI: EC: GPE = 0x17, I/O: command/status = 0x66, data = 0x62
+[    0.188667] ACPI: ACPI Dock Station Driver: 2 docks/bays found
+[    0.188735] PCI: Ignoring host bridge windows from ACPI; if necessary, use "pci=use_crs" and report a bug
+[    0.189361] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+[    0.190530] pci_root PNP0A08:00: host bridge window [io  0x0000-0x0cf7] (ignored)
+[    0.190533] pci_root PNP0A08:00: host bridge window [io  0x0d00-0xffff] (ignored)
+[    0.190536] pci_root PNP0A08:00: host bridge window [mem 0x000a0000-0x000bffff] (ignored)
+[    0.190540] pci_root PNP0A08:00: host bridge window [mem 0x000d4000-0x000d7fff] (ignored)
+[    0.190542] pci_root PNP0A08:00: host bridge window [mem 0x000d8000-0x000dbfff] (ignored)
+[    0.190546] pci_root PNP0A08:00: host bridge window [mem 0xd0000000-0xfebfffff] (ignored)
+[    0.190557] pci 0000:00:00.0: [8086:27a0] type 0 class 0x000600
+[    0.190604] pci 0000:00:01.0: [8086:27a1] type 1 class 0x000604
+[    0.190641] pci 0000:00:01.0: PME# supported from D0 D3hot D3cold
+[    0.190645] pci 0000:00:01.0: PME# disabled
+[    0.190708] pci 0000:00:1b.0: [8086:27d8] type 0 class 0x000403
+[    0.190731] pci 0000:00:1b.0: reg 10: [mem 0xf0600000-0xf0603fff 64bit]
+[    0.190813] pci 0000:00:1b.0: PME# supported from D0 D3hot D3cold
+[    0.190818] pci 0000:00:1b.0: PME# disabled
+[    0.190849] pci 0000:00:1c.0: [8086:27d0] type 1 class 0x000604
+[    0.190934] pci 0000:00:1c.0: PME# supported from D0 D3hot D3cold
+[    0.190939] pci 0000:00:1c.0: PME# disabled
+[    0.190971] pci 0000:00:1c.1: [8086:27d2] type 1 class 0x000604
+[    0.191056] pci 0000:00:1c.1: PME# supported from D0 D3hot D3cold
+[    0.191061] pci 0000:00:1c.1: PME# disabled
+[    0.191094] pci 0000:00:1c.3: [8086:27d6] type 1 class 0x000604
+[    0.191178] pci 0000:00:1c.3: PME# supported from D0 D3hot D3cold
+[    0.191183] pci 0000:00:1c.3: PME# disabled
+[    0.191216] pci 0000:00:1d.0: [8086:27c8] type 0 class 0x000c03
+[    0.191273] pci 0000:00:1d.0: reg 20: [io  0x1800-0x181f]
+[    0.191313] pci 0000:00:1d.1: [8086:27c9] type 0 class 0x000c03
+[    0.191369] pci 0000:00:1d.1: reg 20: [io  0x1820-0x183f]
+[    0.191410] pci 0000:00:1d.2: [8086:27ca] type 0 class 0x000c03
+[    0.191466] pci 0000:00:1d.2: reg 20: [io  0x1840-0x185f]
+[    0.191506] pci 0000:00:1d.3: [8086:27cb] type 0 class 0x000c03
+[    0.191562] pci 0000:00:1d.3: reg 20: [io  0x1860-0x187f]
+[    0.191614] pci 0000:00:1d.7: [8086:27cc] type 0 class 0x000c03
+[    0.191638] pci 0000:00:1d.7: reg 10: [mem 0xf0604000-0xf06043ff]
+[    0.191727] pci 0000:00:1d.7: PME# supported from D0 D3hot D3cold
+[    0.191732] pci 0000:00:1d.7: PME# disabled
+[    0.191758] pci 0000:00:1e.0: [8086:2448] type 1 class 0x000604
+[    0.191844] pci 0000:00:1f.0: [8086:27b9] type 0 class 0x000601
+[    0.191954] pci 0000:00:1f.0: quirk: [io  0x1000-0x107f] claimed by ICH6 ACPI/GPIO/TCO
+[    0.192006] pci 0000:00:1f.0: quirk: [io  0x1180-0x11bf] claimed by ICH6 GPIO
+[    0.192076] pci 0000:00:1f.0: ICH7 LPC Generic IO decode 1 PIO at fd00 (mask 007f)
+[    0.192153] pci 0000:00:1f.0: ICH7 LPC Generic IO decode 2 PIO at 06e8 (mask 0007)
+[    0.196045] pci 0000:00:1f.1: [8086:27df] type 0 class 0x000101
+[    0.196062] pci 0000:00:1f.1: reg 10: [io  0x0000-0x0007]
+[    0.196075] pci 0000:00:1f.1: reg 14: [io  0x0000-0x0003]
+[    0.196087] pci 0000:00:1f.1: reg 18: [io  0x0000-0x0007]
+[    0.196099] pci 0000:00:1f.1: reg 1c: [io  0x0000-0x0003]
+[    0.196111] pci 0000:00:1f.1: reg 20: [io  0x1880-0x188f]
+[    0.196159] pci 0000:00:1f.2: [8086:27c5] type 0 class 0x000106
+[    0.196183] pci 0000:00:1f.2: reg 10: [io  0x18c8-0x18cf]
+[    0.196195] pci 0000:00:1f.2: reg 14: [io  0x18ac-0x18af]
+[    0.196208] pci 0000:00:1f.2: reg 18: [io  0x18c0-0x18c7]
+[    0.196220] pci 0000:00:1f.2: reg 1c: [io  0x18a8-0x18ab]
+[    0.196232] pci 0000:00:1f.2: reg 20: [io  0x18b0-0x18bf]
+[    0.196244] pci 0000:00:1f.2: reg 24: [mem 0xf0604400-0xf06047ff]
+[    0.196286] pci 0000:00:1f.2: PME# supported from D3hot
+[    0.196291] pci 0000:00:1f.2: PME# disabled
+[    0.196312] pci 0000:00:1f.3: [8086:27da] type 0 class 0x000c05
+[    0.196385] pci 0000:00:1f.3: reg 20: [io  0x18e0-0x18ff]
+[    0.196474] pci 0000:01:00.0: [1002:71c4] type 0 class 0x000300
+[    0.196490] pci 0000:01:00.0: reg 10: [mem 0xe0000000-0xefffffff pref]
+[    0.196501] pci 0000:01:00.0: reg 14: [io  0x2000-0x20ff]
+[    0.196513] pci 0000:01:00.0: reg 18: [mem 0xf0000000-0xf000ffff]
+[    0.196552] pci 0000:01:00.0: reg 30: [mem 0x00000000-0x0001ffff pref]
+[    0.196577] pci 0000:01:00.0: supports D1 D2
+[    0.196591] pci 0000:01:00.0: disabling ASPM on pre-1.1 PCIe device.  You can enable it with 'pcie_aspm=force'
+[    0.196675] pci 0000:00:01.0: PCI bridge to [bus 01-01]
+[    0.196732] pci 0000:00:01.0:   bridge window [io  0x2000-0x2fff]
+[    0.196736] pci 0000:00:01.0:   bridge window [mem 0xf0000000-0xf00fffff]
+[    0.196741] pci 0000:00:01.0:   bridge window [mem 0xe0000000-0xefffffff 64bit pref]
+[    0.196829] pci 0000:02:00.0: [11ab:4363] type 0 class 0x000200
+[    0.196860] pci 0000:02:00.0: reg 10: [mem 0xf0100000-0xf0103fff 64bit]
+[    0.196877] pci 0000:02:00.0: reg 18: [io  0x3000-0x30ff]
+[    0.196937] pci 0000:02:00.0: reg 30: [mem 0x00000000-0x0001ffff pref]
+[    0.196992] pci 0000:02:00.0: supports D1 D2
+[    0.196994] pci 0000:02:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+[    0.197001] pci 0000:02:00.0: PME# disabled
+[    0.204021] pci 0000:00:1c.0: PCI bridge to [bus 02-02]
+[    0.204080] pci 0000:00:1c.0:   bridge window [io  0x3000-0x3fff]
+[    0.204085] pci 0000:00:1c.0:   bridge window [mem 0xf0100000-0xf01fffff]
+[    0.204094] pci 0000:00:1c.0:   bridge window [mem 0xfff00000-0x000fffff pref] (disabled)
+[    0.204155] pci 0000:00:1c.1: PCI bridge to [bus 03-04]
+[    0.204214] pci 0000:00:1c.1:   bridge window [io  0x0000-0x0000] (disabled)
+[    0.204220] pci 0000:00:1c.1:   bridge window [mem 0x00000000-0x000fffff] (disabled)
+[    0.204228] pci 0000:00:1c.1:   bridge window [mem 0x00000000-0x000fffff pref] (disabled)
+[    0.204389] pci 0000:06:00.0: [8086:4222] type 0 class 0x000280
+[    0.204445] pci 0000:06:00.0: reg 10: [mem 0xf0200000-0xf0200fff]
+[    0.204785] pci 0000:06:00.0: PME# supported from D0 D3hot D3cold
+[    0.204798] pci 0000:06:00.0: PME# disabled
+[    0.204868] pci 0000:06:00.0: disabling ASPM on pre-1.1 PCIe device.  You can enable it with 'pcie_aspm=force'
+[    0.204960] pci 0000:00:1c.3: PCI bridge to [bus 06-07]
+[    0.205019] pci 0000:00:1c.3:   bridge window [io  0x0000-0x0000] (disabled)
+[    0.205025] pci 0000:00:1c.3:   bridge window [mem 0x00000000-0x000fffff] (disabled)
+[    0.205033] pci 0000:00:1c.3:   bridge window [mem 0x00000000-0x000fffff pref] (disabled)
+[    0.205088] pci 0000:08:03.0: [1217:7134] type 2 class 0x000607
+[    0.205114] pci 0000:08:03.0: reg 10: [mem 0x00000000-0x00000fff]
+[    0.205142] pci 0000:08:03.0: supports D1 D2
+[    0.205145] pci 0000:08:03.0: PME# supported from D0 D1 D2 D3hot D3cold
+[    0.205151] pci 0000:08:03.0: PME# disabled
+[    0.205176] pci 0000:08:03.1: [1217:7134] type 2 class 0x000607
+[    0.205202] pci 0000:08:03.1: reg 10: [mem 0x00000000-0x00000fff]
+[    0.205230] pci 0000:08:03.1: supports D1 D2
+[    0.205233] pci 0000:08:03.1: PME# supported from D0 D1 D2 D3hot D3cold
+[    0.205238] pci 0000:08:03.1: PME# disabled
+[    0.205263] pci 0000:08:03.2: [1217:7120] type 0 class 0x000805
+[    0.205289] pci 0000:08:03.2: reg 10: [mem 0xf0300000-0xf03000ff]
+[    0.205389] pci 0000:08:03.2: supports D1 D2
+[    0.205392] pci 0000:08:03.2: PME# supported from D0 D1 D2 D3hot D3cold
+[    0.205398] pci 0000:08:03.2: PME# disabled
+[    0.205422] pci 0000:08:03.3: [1217:7130] type 0 class 0x000680
+[    0.205448] pci 0000:08:03.3: reg 10: [mem 0xf0301000-0xf0301fff]
+[    0.205549] pci 0000:08:03.3: supports D1 D2
+[    0.205551] pci 0000:08:03.3: PME# supported from D0 D1 D2 D3hot D3cold
+[    0.205557] pci 0000:08:03.3: PME# disabled
+[    0.205579] pci 0000:08:03.4: [1217:00f7] type 0 class 0x000c00
+[    0.205600] pci 0000:08:03.4: reg 10: [mem 0xf0302000-0xf0302fff]
+[    0.205613] pci 0000:08:03.4: reg 14: [mem 0xf0300800-0xf0300fff]
+[    0.205685] pci 0000:08:03.4: supports D1 D2
+[    0.205687] pci 0000:08:03.4: PME# supported from D0 D1 D2 D3hot
+[    0.205692] pci 0000:08:03.4: PME# disabled
+[    0.205758] pci 0000:00:1e.0: PCI bridge to [bus 08-09] (subtractive decode)
+[    0.205819] pci 0000:00:1e.0:   bridge window [io  0xf000-0x0000] (disabled)
+[    0.205824] pci 0000:00:1e.0:   bridge window [mem 0xf0300000-0xf03fffff]
+[    0.205833] pci 0000:00:1e.0:   bridge window [mem 0xfff00000-0x000fffff pref] (disabled)
+[    0.205836] pci 0000:00:1e.0:   bridge window [io  0x0000-0xffff] (subtractive decode)
+[    0.205839] pci 0000:00:1e.0:   bridge window [mem 0x00000000-0xfffffffff] (subtractive decode)
+[    0.205900] pci_bus 0000:09: [bus 09-0c] partially hidden behind transparent bridge 0000:08 [bus 08-09]
+[    0.206010] pci_bus 0000:0d: [bus 0d-10] partially hidden behind transparent bridge 0000:08 [bus 08-09]
+[    0.206106] ACPI: PCI Interrupt Routing Table [\_SB_.PCI0._PRT]
+[    0.206261] ACPI: PCI Interrupt Routing Table [\_SB_.PCI0.PEGP._PRT]
+[    0.206297] ACPI: PCI Interrupt Routing Table [\_SB_.PCI0.PCIB._PRT]
+[    0.206375] ACPI: PCI Interrupt Routing Table [\_SB_.PCI0.RP01._PRT]
+[    0.206433] ACPI: PCI Interrupt Routing Table [\_SB_.PCI0.RP02._PRT]
+[    0.206487] ACPI: PCI Interrupt Routing Table [\_SB_.PCI0.RP04._PRT]
+[    0.210512] ACPI: PCI Interrupt Link [LNKA] (IRQs 1 3 4 5 6 7 10 12 14 15) *11
+[    0.211219] ACPI: PCI Interrupt Link [LNKB] (IRQs 1 3 4 5 6 7 *11 12 14 15)
+[    0.211872] ACPI: PCI Interrupt Link [LNKC] (IRQs 1 3 4 5 6 7 10 12 14 15) *11
+[    0.212568] ACPI: PCI Interrupt Link [LNKD] (IRQs 1 3 4 5 6 7 *11 12 14 15)
+[    0.213221] ACPI: PCI Interrupt Link [LNKE] (IRQs 1 3 4 5 6 7 10 12 14 15) *11
+[    0.213927] ACPI: PCI Interrupt Link [LNKF] (IRQs 1 3 4 5 6 7 *11 12 14 15)
+[    0.214580] ACPI: PCI Interrupt Link [LNKG] (IRQs 1 3 4 5 6 7 10 12 14 15) *11
+[    0.215284] ACPI: PCI Interrupt Link [LNKH] (IRQs 3 4 5 6 7 *11 12 14 15)
+[    0.215859] HEST: Table is not found!
+[    0.216006] vgaarb: device added: PCI:0000:01:00.0,decodes=io+mem,owns=io+mem,locks=none
+[    0.216075] vgaarb: loaded
+[    0.216144] PCI: Using ACPI for IRQ routing
+[    0.216144] PCI: pci_cache_line_size set to 64 bytes
+[    0.216150] pci 0000:06:00.0: no compatible bridge window for [mem 0xf0200000-0xf0200fff]
+[    0.216285] reserve RAM buffer: 000000000009f800 - 000000000009ffff 
+[    0.216288] reserve RAM buffer: 00000000cfe50000 - 00000000cfffffff 
+[    0.216395] HPET: 3 timers in total, 0 timers will be used for per-cpu timer
+[    0.216458] hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0
+[    0.216694] hpet0: 3 comparators, 64-bit 14.318180 MHz counter
+[    0.220019] Switching to clocksource tsc
+[    0.221379] pnp: PnP ACPI init
+[    0.221453] ACPI: bus type pnp registered
+[    0.221525] pnp 00:00: [mem 0xf8000000-0xfbffffff]
+[    0.221577] pnp 00:00: Plug and Play ACPI device, IDs PNP0c02 (active)
+[    0.222124] pnp 00:01: [bus 00-ff]
+[    0.222127] pnp 00:01: [io  0x0000-0x0cf7 window]
+[    0.222129] pnp 00:01: [io  0x0cf8-0x0cff]
+[    0.222132] pnp 00:01: [io  0x0d00-0xffff window]
+[    0.222134] pnp 00:01: [mem 0x000a0000-0x000bffff window]
+[    0.222137] pnp 00:01: [mem 0x000c0000-0x000c3fff window]
+[    0.222139] pnp 00:01: [mem 0x000c4000-0x000c7fff window]
+[    0.222141] pnp 00:01: [mem 0x000c8000-0x000cbfff window]
+[    0.222144] pnp 00:01: [mem 0x000cc000-0x000cffff window]
+[    0.222146] pnp 00:01: [mem 0x000d0000-0x000d3fff window]
+[    0.222149] pnp 00:01: [mem 0x000d4000-0x000d7fff window]
+[    0.222151] pnp 00:01: [mem 0x000d8000-0x000dbfff window]
+[    0.222153] pnp 00:01: [mem 0x000dc000-0x000dffff window]
+[    0.222156] pnp 00:01: [mem 0x000e0000-0x000e3fff window]
+[    0.222158] pnp 00:01: [mem 0x000e4000-0x000e7fff window]
+[    0.222161] pnp 00:01: [mem 0x000e8000-0x000ebfff window]
+[    0.222163] pnp 00:01: [mem 0x000ec000-0x000effff window]
+[    0.222165] pnp 00:01: [mem 0x000f0000-0x000fffff window]
+[    0.222168] pnp 00:01: [mem 0xd0000000-0xfebfffff window]
+[    0.222170] pnp 00:01: [mem 0x00000000 window]
+[    0.222234] pnp 00:01: Plug and Play ACPI device, IDs PNP0a08 PNP0a03 (active)
+[    0.222341] pnp 00:02: [io  0x0010-0x001f]
+[    0.222343] pnp 00:02: [io  0x0024-0x0025]
+[    0.222345] pnp 00:02: [io  0x0028-0x0029]
+[    0.222347] pnp 00:02: [io  0x002c-0x002d]
+[    0.222349] pnp 00:02: [io  0x002e-0x002f]
+[    0.222351] pnp 00:02: [io  0x0030-0x0031]
+[    0.222353] pnp 00:02: [io  0x0034-0x0035]
+[    0.222358] pnp 00:02: [io  0x0038-0x0039]
+[    0.222360] pnp 00:02: [io  0x003c-0x003d]
+[    0.222362] pnp 00:02: [io  0x0050-0x0053]
+[    0.222364] pnp 00:02: [io  0x0072-0x0077]
+[    0.222366] pnp 00:02: [io  0x0080]
+[    0.222368] pnp 00:02: [io  0x0090-0x009f]
+[    0.222370] pnp 00:02: [io  0x00a4-0x00a5]
+[    0.222372] pnp 00:02: [io  0x00a8-0x00a9]
+[    0.222374] pnp 00:02: [io  0x00ac-0x00ad]
+[    0.222376] pnp 00:02: [io  0x00b0-0x00b1]
+[    0.222378] pnp 00:02: [io  0x00b2-0x00b3]
+[    0.222380] pnp 00:02: [io  0x00b4-0x00b5]
+[    0.222382] pnp 00:02: [io  0x00b8-0x00b9]
+[    0.222384] pnp 00:02: [io  0x00bc-0x00bd]
+[    0.222386] pnp 00:02: [io  0x04d0-0x04d1]
+[    0.222388] pnp 00:02: [io  0x0800-0x080f]
+[    0.222390] pnp 00:02: [io  0x1000-0x107f]
+[    0.222392] pnp 00:02: [io  0x1080-0x10ff]
+[    0.222394] pnp 00:02: [io  0x1100-0x111f]
+[    0.222396] pnp 00:02: [io  0x1180-0x11bf]
+[    0.222398] pnp 00:02: [io  0xf800-0xf87f]
+[    0.222400] pnp 00:02: [io  0xf880-0xf8ff]
+[    0.222402] pnp 00:02: [io  0xfc00-0xfc7f]
+[    0.222404] pnp 00:02: [io  0xfc80-0xfcff]
+[    0.222406] pnp 00:02: [io  0xfd0c-0xfd7f]
+[    0.222408] pnp 00:02: [io  0xfe00-0xfe01]
+[    0.222411] pnp 00:02: [mem 0xf8000000-0xfbffffff]
+[    0.222413] pnp 00:02: [mem 0xfed14000-0xfed17fff]
+[    0.222415] pnp 00:02: [mem 0xfed18000-0xfed18fff]
+[    0.222417] pnp 00:02: [mem 0xfed19000-0xfed19fff]
+[    0.222419] pnp 00:02: [mem 0xfed1c000-0xfed1ffff]
+[    0.222422] pnp 00:02: [mem 0xfed20000-0xfed3ffff]
+[    0.222424] pnp 00:02: [mem 0xfed45000-0xfed8ffff]
+[    0.222426] pnp 00:02: [mem 0xfec00000-0xfec00fff]
+[    0.222428] pnp 00:02: [mem 0xfee00000-0xfee00fff]
+[    0.222430] pnp 00:02: [mem 0xfef00000-0xfeffffff]
+[    0.222432] pnp 00:02: [mem 0x000d1000-0x000d11ff]
+[    0.222435] pnp 00:02: [mem 0xffb00000-0xffbfffff]
+[    0.222437] pnp 00:02: [mem 0xfed40000-0xfed44fff]
+[    0.222568] pnp 00:02: Plug and Play ACPI device, IDs PNP0c02 (active)
+[    0.222669] pnp 00:03: [io  0x0000-0x000f]
+[    0.222671] pnp 00:03: [io  0x0081-0x008f]
+[    0.222676] pnp 00:03: [io  0x00c0-0x00df]
+[    0.222679] pnp 00:03: [dma 4]
+[    0.222712] pnp 00:03: Plug and Play ACPI device, IDs PNP0200 (active)
+[    0.222742] pnp 00:04: [io  0x0070-0x0071]
+[    0.222753] pnp 00:04: [irq 8]
+[    0.222786] pnp 00:04: Plug and Play ACPI device, IDs PNP0b00 (active)
+[    0.222803] pnp 00:05: [io  0x0061]
+[    0.222841] pnp 00:05: Plug and Play ACPI device, IDs PNP0800 (active)
+[    0.222857] pnp 00:06: [io  0x00f0-0x00fe]
+[    0.222863] pnp 00:06: [irq 13]
+[    0.222896] pnp 00:06: Plug and Play ACPI device, IDs PNP0c04 (active)
+[    0.222917] pnp 00:07: [io  0x0060]
+[    0.222919] pnp 00:07: [io  0x0064]
+[    0.222925] pnp 00:07: [irq 1]
+[    0.222958] pnp 00:07: Plug and Play ACPI device, IDs PNP0303 (active)
+[    0.222979] pnp 00:08: [irq 12]
+[    0.223012] pnp 00:08: Plug and Play ACPI device, IDs PNP0f13 (active)
+[    0.223125] pnp 00:09: [mem 0xfed00000-0xfed003ff]
+[    0.223179] pnp 00:09: Plug and Play ACPI device, IDs PNP0103 PNP0c01 (active)
+[    0.223454] pnp 00:0a: [io  0x03f8-0x03ff]
+[    0.223460] pnp 00:0a: [irq 4]
+[    0.223522] pnp 00:0a: Plug and Play ACPI device, IDs PNP0501 (active)
+[    0.223912] pnp 00:0b: [io  0x02e8-0x02ef]
+[    0.223915] pnp 00:0b: [io  0x06e8-0x06ef]
+[    0.223921] pnp 00:0b: [irq 3]
+[    0.223923] pnp 00:0b: [dma 3]
+[    0.223991] pnp 00:0b: Plug and Play ACPI device, IDs SMCf010 (active)
+[    0.224369] pnp 00:0c: [io  0x0378-0x037f]
+[    0.224372] pnp 00:0c: [io  0x0778-0x077b]
+[    0.224378] pnp 00:0c: [irq 7]
+[    0.224463] pnp 00:0c: Plug and Play ACPI device, IDs PNP0400 (active)
+[    0.224972] pnp: PnP ACPI: found 13 devices
+[    0.225028] ACPI: ACPI bus type pnp unregistered
+[    0.225091] system 00:00: [mem 0xf8000000-0xfbffffff] has been reserved
+[    0.225153] system 00:02: [io  0x04d0-0x04d1] has been reserved
+[    0.225211] system 00:02: [io  0x0800-0x080f] has been reserved
+[    0.225268] system 00:02: [io  0x1000-0x107f] has been reserved
+[    0.225326] system 00:02: [io  0x1080-0x10ff] has been reserved
+[    0.225384] system 00:02: [io  0x1100-0x111f] has been reserved
+[    0.225441] system 00:02: [io  0x1180-0x11bf] has been reserved
+[    0.225499] system 00:02: [io  0xf800-0xf87f] has been reserved
+[    0.225557] system 00:02: [io  0xf880-0xf8ff] has been reserved
+[    0.225614] system 00:02: [io  0xfc00-0xfc7f] has been reserved
+[    0.225672] system 00:02: [io  0xfc80-0xfcff] has been reserved
+[    0.225729] system 00:02: [io  0xfd0c-0xfd7f] has been reserved
+[    0.225787] system 00:02: [io  0xfe00-0xfe01] has been reserved
+[    0.225845] system 00:02: [mem 0xf8000000-0xfbffffff] has been reserved
+[    0.225903] system 00:02: [mem 0xfed14000-0xfed17fff] has been reserved
+[    0.225961] system 00:02: [mem 0xfed18000-0xfed18fff] has been reserved
+[    0.226019] system 00:02: [mem 0xfed19000-0xfed19fff] has been reserved
+[    0.226077] system 00:02: [mem 0xfed1c000-0xfed1ffff] has been reserved
+[    0.226136] system 00:02: [mem 0xfed20000-0xfed3ffff] has been reserved
+[    0.226194] system 00:02: [mem 0xfed45000-0xfed8ffff] has been reserved
+[    0.226252] system 00:02: [mem 0xfec00000-0xfec00fff] could not be reserved
+[    0.226311] system 00:02: [mem 0xfee00000-0xfee00fff] has been reserved
+[    0.226369] system 00:02: [mem 0xfef00000-0xfeffffff] has been reserved
+[    0.226427] system 00:02: [mem 0x000d1000-0x000d11ff] has been reserved
+[    0.226485] system 00:02: [mem 0xffb00000-0xffbfffff] has been reserved
+[    0.226544] system 00:02: [mem 0xfed40000-0xfed44fff] has been reserved
+[    0.226607] system 00:09: [mem 0xfed00000-0xfed003ff] has been reserved
+[    0.233408] pci 0000:00:1e.0: BAR 15: assigned [mem 0xd0000000-0xd7ffffff pref]
+[    0.233475] pci 0000:00:1c.0: BAR 15: assigned [mem 0xd8000000-0xd81fffff pref]
+[    0.233541] pci 0000:00:1c.1: BAR 14: assigned [mem 0xd8200000-0xd83fffff]
+[    0.233601] pci 0000:00:1c.1: BAR 15: assigned [mem 0xd8400000-0xd85fffff 64bit pref]
+[    0.233667] pci 0000:00:1c.3: BAR 14: assigned [mem 0xd8600000-0xd87fffff]
+[    0.233727] pci 0000:00:1c.3: BAR 15: assigned [mem 0xd8800000-0xd89fffff 64bit pref]
+[    0.233793] pci 0000:00:1c.1: BAR 13: assigned [io  0x4000-0x4fff]
+[    0.233851] pci 0000:00:1c.3: BAR 13: assigned [io  0x5000-0x5fff]
+[    0.233910] pci 0000:00:1e.0: BAR 13: assigned [io  0x6000-0x6fff]
+[    0.233969] pci 0000:01:00.0: BAR 6: assigned [mem 0xf0020000-0xf003ffff pref]
+[    0.234034] pci 0000:00:01.0: PCI bridge to [bus 01-01]
+[    0.234091] pci 0000:00:01.0:   bridge window [io  0x2000-0x2fff]
+[    0.234150] pci 0000:00:01.0:   bridge window [mem 0xf0000000-0xf00fffff]
+[    0.234209] pci 0000:00:01.0:   bridge window [mem 0xe0000000-0xefffffff 64bit pref]
+[    0.234277] pci 0000:02:00.0: BAR 6: assigned [mem 0xd8000000-0xd801ffff pref]
+[    0.234341] pci 0000:00:1c.0: PCI bridge to [bus 02-02]
+[    0.234398] pci 0000:00:1c.0:   bridge window [io  0x3000-0x3fff]
+[    0.234459] pci 0000:00:1c.0:   bridge window [mem 0xf0100000-0xf01fffff]
+[    0.234520] pci 0000:00:1c.0:   bridge window [mem 0xd8000000-0xd81fffff pref]
+[    0.234589] pci 0000:00:1c.1: PCI bridge to [bus 03-04]
+[    0.234647] pci 0000:00:1c.1:   bridge window [io  0x4000-0x4fff]
+[    0.234708] pci 0000:00:1c.1:   bridge window [mem 0xd8200000-0xd83fffff]
+[    0.234768] pci 0000:00:1c.1:   bridge window [mem 0xd8400000-0xd85fffff 64bit pref]
+[    0.234839] pci 0000:06:00.0: BAR 0: assigned [mem 0xd8600000-0xd8600fff]
+[    0.234908] pci 0000:06:00.0: BAR 0: set to [mem 0xd8600000-0xd8600fff] (PCI address [0xd8600000-0xd8600fff])
+[    0.234975] pci 0000:00:1c.3: PCI bridge to [bus 06-07]
+[    0.235032] pci 0000:00:1c.3:   bridge window [io  0x5000-0x5fff]
+[    0.235094] pci 0000:00:1c.3:   bridge window [mem 0xd8600000-0xd87fffff]
+[    0.235154] pci 0000:00:1c.3:   bridge window [mem 0xd8800000-0xd89fffff 64bit pref]
+[    0.235226] pci 0000:08:03.0: BAR 15: assigned [mem 0xd0000000-0xd3ffffff pref]
+[    0.235293] pci 0000:08:03.0: BAR 16: assigned [mem 0xdc000000-0xdfffffff]
+[    0.235352] pci 0000:08:03.1: BAR 15: assigned [mem 0xd4000000-0xd7ffffff pref]
+[    0.235419] pci 0000:08:03.1: BAR 16: assigned [mem 0xf4000000-0xf7ffffff]
+[    0.235477] pci 0000:08:03.0: BAR 0: assigned [mem 0xf0303000-0xf0303fff]
+[    0.235539] pci 0000:08:03.0: BAR 0: set to [mem 0xf0303000-0xf0303fff] (PCI address [0xf0303000-0xf0303fff])
+[    0.235607] pci 0000:08:03.1: BAR 0: assigned [mem 0xf0304000-0xf0304fff]
+[    0.235669] pci 0000:08:03.1: BAR 0: set to [mem 0xf0304000-0xf0304fff] (PCI address [0xf0304000-0xf0304fff])
+[    0.235736] pci 0000:08:03.0: BAR 13: assigned [io  0x6000-0x60ff]
+[    0.235793] pci 0000:08:03.0: BAR 14: assigned [io  0x6400-0x64ff]
+[    0.235851] pci 0000:08:03.1: BAR 13: assigned [io  0x6800-0x68ff]
+[    0.235913] pci 0000:08:03.1: BAR 14: assigned [io  0x6c00-0x6cff]
+[    0.235970] pci 0000:08:03.0: CardBus bridge to [bus 09-0c]
+[    0.236027] pci 0000:08:03.0:   bridge window [io  0x6000-0x60ff]
+[    0.236087] pci 0000:08:03.0:   bridge window [io  0x6400-0x64ff]
+[    0.236148] pci 0000:08:03.0:   bridge window [mem 0xd0000000-0xd3ffffff pref]
+[    0.236215] pci 0000:08:03.0:   bridge window [mem 0xdc000000-0xdfffffff]
+[    0.236276] pci 0000:08:03.1: CardBus bridge to [bus 0d-10]
+[    0.236332] pci 0000:08:03.1:   bridge window [io  0x6800-0x68ff]
+[    0.236392] pci 0000:08:03.1:   bridge window [io  0x6c00-0x6cff]
+[    0.236453] pci 0000:08:03.1:   bridge window [mem 0xd4000000-0xd7ffffff pref]
+[    0.236520] pci 0000:08:03.1:   bridge window [mem 0xf4000000-0xf7ffffff]
+[    0.236581] pci 0000:00:1e.0: PCI bridge to [bus 08-09]
+[    0.236639] pci 0000:00:1e.0:   bridge window [io  0x6000-0x6fff]
+[    0.236700] pci 0000:00:1e.0:   bridge window [mem 0xf0300000-0xf03fffff]
+[    0.236760] pci 0000:00:1e.0:   bridge window [mem 0xd0000000-0xd7ffffff pref]
+[    0.236839] pci 0000:00:01.0: PCI INT A -> GSI 16 (level, low) -> IRQ 16
+[    0.236899] pci 0000:00:01.0: setting latency timer to 64
+[    0.236909] pci 0000:00:1c.0: PCI INT A -> GSI 22 (level, low) -> IRQ 22
+[    0.236969] pci 0000:00:1c.0: setting latency timer to 64
+[    0.236976] pci 0000:00:1c.1: enabling device (0000 -> 0003)
+[    0.237037] pci 0000:00:1c.1: PCI INT B -> GSI 21 (level, low) -> IRQ 21
+[    0.237099] pci 0000:00:1c.1: setting latency timer to 64
+[    0.237106] pci 0000:00:1c.3: enabling device (0000 -> 0003)
+[    0.237167] pci 0000:00:1c.3: PCI INT D -> GSI 19 (level, low) -> IRQ 19
+[    0.237229] pci 0000:00:1c.3: setting latency timer to 64
+[    0.237238] pci 0000:00:1e.0: setting latency timer to 64
+[    0.237246] pci 0000:08:03.0: PCI INT A -> GSI 16 (level, low) -> IRQ 16
+[    0.237312] pci 0000:08:03.1: enabling device (0080 -> 0083)
+[    0.237371] pci 0000:08:03.1: PCI INT A -> GSI 16 (level, low) -> IRQ 16
+[    0.237435] pci_bus 0000:00: resource 0 [io  0x0000-0xffff]
+[    0.237438] pci_bus 0000:00: resource 1 [mem 0x00000000-0xfffffffff]
+[    0.237440] pci_bus 0000:01: resource 0 [io  0x2000-0x2fff]
+[    0.237443] pci_bus 0000:01: resource 1 [mem 0xf0000000-0xf00fffff]
+[    0.237446] pci_bus 0000:01: resource 2 [mem 0xe0000000-0xefffffff 64bit pref]
+[    0.237448] pci_bus 0000:02: resource 0 [io  0x3000-0x3fff]
+[    0.237451] pci_bus 0000:02: resource 1 [mem 0xf0100000-0xf01fffff]
+[    0.237453] pci_bus 0000:02: resource 2 [mem 0xd8000000-0xd81fffff pref]
+[    0.237456] pci_bus 0000:03: resource 0 [io  0x4000-0x4fff]
+[    0.237458] pci_bus 0000:03: resource 1 [mem 0xd8200000-0xd83fffff]
+[    0.237461] pci_bus 0000:03: resource 2 [mem 0xd8400000-0xd85fffff 64bit pref]
+[    0.237464] pci_bus 0000:06: resource 0 [io  0x5000-0x5fff]
+[    0.237466] pci_bus 0000:06: resource 1 [mem 0xd8600000-0xd87fffff]
+[    0.237469] pci_bus 0000:06: resource 2 [mem 0xd8800000-0xd89fffff 64bit pref]
+[    0.237471] pci_bus 0000:08: resource 0 [io  0x6000-0x6fff]
+[    0.237474] pci_bus 0000:08: resource 1 [mem 0xf0300000-0xf03fffff]
+[    0.237476] pci_bus 0000:08: resource 2 [mem 0xd0000000-0xd7ffffff pref]
+[    0.237479] pci_bus 0000:08: resource 4 [io  0x0000-0xffff]
+[    0.237481] pci_bus 0000:08: resource 5 [mem 0x00000000-0xfffffffff]
+[    0.237484] pci_bus 0000:09: resource 0 [io  0x6000-0x60ff]
+[    0.237486] pci_bus 0000:09: resource 1 [io  0x6400-0x64ff]
+[    0.237489] pci_bus 0000:09: resource 2 [mem 0xd0000000-0xd3ffffff pref]
+[    0.237491] pci_bus 0000:09: resource 3 [mem 0xdc000000-0xdfffffff]
+[    0.237494] pci_bus 0000:0d: resource 0 [io  0x6800-0x68ff]
+[    0.237496] pci_bus 0000:0d: resource 1 [io  0x6c00-0x6cff]
+[    0.237499] pci_bus 0000:0d: resource 2 [mem 0xd4000000-0xd7ffffff pref]
+[    0.237501] pci_bus 0000:0d: resource 3 [mem 0xf4000000-0xf7ffffff]
+[    0.237537] NET: Registered protocol family 2
+[    0.237762] IP route cache hash table entries: 131072 (order: 8, 1048576 bytes)
+[    0.239225] TCP established hash table entries: 524288 (order: 11, 8388608 bytes)
+[    0.244747] TCP bind hash table entries: 65536 (order: 8, 1048576 bytes)
+[    0.245572] TCP: Hash tables configured (established 524288 bind 65536)
+[    0.245630] TCP reno registered
+[    0.245695] UDP hash table entries: 2048 (order: 4, 65536 bytes)
+[    0.245805] UDP-Lite hash table entries: 2048 (order: 4, 65536 bytes)
+[    0.246046] NET: Registered protocol family 1
+[    0.246257] pci 0000:01:00.0: Boot video device
+[    0.246289] PCI: CLS 64 bytes, default 64
+[    0.246353] Unpacking initramfs...
+[    0.594331] Freeing initrd memory: 14672k freed
+[    0.602277] Simple Boot Flag at 0x7b set to 0x1
+[    0.602758] audit: initializing netlink socket (disabled)
+[    0.602828] type=2000 audit(1296840524.596:1): initialized
+[    0.612412] HugeTLB registered 2 MB page size, pre-allocated 0 pages
+[    0.614435] VFS: Disk quotas dquot_6.5.2
+[    0.614554] Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.614713] msgmni has been set to 6542
+[    0.614974] alg: No test for stdrng (krng)
+[    0.615086] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 253)
+[    0.615154] io scheduler noop registered
+[    0.615209] io scheduler deadline registered
+[    0.615299] io scheduler cfq registered (default)
+[    0.615615] ERST: Table is not found!
+[    0.615957] Linux agpgart interface v0.103
+[    0.616197] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+[    0.636833] serial8250: ttyS0 at I/O 0x3f8 (irq = 4) is a 16550A
+[    0.716233] serial8250: ttyS3 at I/O 0x2e8 (irq = 3) is a 16550A
+[    0.756417] 00:0a: ttyS0 at I/O 0x3f8 (irq = 4) is a 16550A
+[    0.775803] PNP: PS/2 Controller [PNP0303:KBC,PNP0f13:PS2M] at 0x60,0x64 irq 1,12
+[    0.778090] i8042.c: Detected active multiplexing controller, rev 1.1.
+[    0.780204] serio: i8042 KBD port at 0x60,0x64 irq 1
+[    0.780265] serio: i8042 AUX0 port at 0x60,0x64 irq 12
+[    0.780326] serio: i8042 AUX1 port at 0x60,0x64 irq 12
+[    0.780385] serio: i8042 AUX2 port at 0x60,0x64 irq 12
+[    0.780444] serio: i8042 AUX3 port at 0x60,0x64 irq 12
+[    0.780582] mice: PS/2 mouse device common for all mice
+[    0.780683] rtc_cmos 00:04: RTC can wake from S4
+[    0.799710] rtc_cmos 00:04: rtc core: registered rtc_cmos as rtc0
+[    0.799798] rtc0: alarms up to one month, y3k, 114 bytes nvram, hpet irqs
+[    0.799866] cpuidle: using governor ladder
+[    0.799921] cpuidle: using governor menu
+[    0.800212] TCP cubic registered
+[    0.800404] NET: Registered protocol family 10
+[    0.800816] lo: Disabled Privacy Extensions
+[    0.801072] Mobile IPv6
+[    0.801128] NET: Registered protocol family 17
+[    0.801186] Registering the dns_resolver key type
+[    0.801357] PM: Hibernation image not present or could not be loaded.
+[    0.801368] registered taskstats version 1
+[    0.801843] rtc_cmos 00:04: setting system clock to 2011-02-04 17:28:45 UTC (1296840525)
+[    0.801937] Initalizing network drop monitor service
+[    0.802049] Freeing unused kernel memory: 608k freed
+[    0.802337] Write protecting the kernel read-only data: 6144k
+[    0.802560] Freeing unused kernel memory: 848k freed
+[    0.803043] Freeing unused kernel memory: 792k freed
+[    0.808943] input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input0
+[    0.824708] udev[54]: starting version 164
+[    0.872190] thermal LNXTHERM:00: registered as thermal_zone0
+[    0.872255] ACPI: Thermal Zone [TZ00] (27 C)
+[    0.872472] thermal LNXTHERM:01: registered as thermal_zone1
+[    0.872531] ACPI: Thermal Zone [TZ01] (27 C)
+[    0.951968] sky2: driver version 1.28
+[    0.952063] sky2 0000:02:00.0: PCI INT A -> GSI 16 (level, low) -> IRQ 16
+[    0.952136] sky2 0000:02:00.0: setting latency timer to 64
+[    0.952169] sky2 0000:02:00.0: Yukon-2 EC Ultra chip revision 2
+[    0.952361] sky2 0000:02:00.0: irq 40 for MSI/MSI-X
+[    0.963884] firewire_ohci 0000:08:03.4: PCI INT A -> GSI 16 (level, low) -> IRQ 16
+[    0.965180] sky2 0000:02:00.0: eth0: addr 00:17:42:23:80:24
+[    0.965922] usbcore: registered new interface driver usbfs
+[    0.966102] usbcore: registered new interface driver hub
+[    0.969638] usbcore: registered new device driver usb
+[    0.974924] SCSI subsystem initialized
+[    0.976164] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    0.976257] ehci_hcd 0000:00:1d.7: PCI INT A -> GSI 23 (level, low) -> IRQ 23
+[    0.976332] ehci_hcd 0000:00:1d.7: setting latency timer to 64
+[    0.976336] ehci_hcd 0000:00:1d.7: EHCI Host Controller
+[    0.976413] ehci_hcd 0000:00:1d.7: new USB bus registered, assigned bus number 1
+[    0.978312] sdhci: Secure Digital Host Controller Interface driver
+[    0.978369] sdhci: Copyright(c) Pierre Ossman
+[    0.994364] libata version 3.00 loaded.
+[    0.996098] ehci_hcd 0000:00:1d.7: using broken periodic workaround
+[    0.996168] ehci_hcd 0000:00:1d.7: debug port 1
+[    1.000122] ehci_hcd 0000:00:1d.7: cache line size of 64 is not supported
+[    1.000201] ehci_hcd 0000:00:1d.7: irq 23, io mem 0xf0604000
+[    1.015791] ehci_hcd 0000:00:1d.7: USB 2.0 started, EHCI 1.00
+[    1.015872] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+[    1.015935] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    1.015999] usb usb1: Product: EHCI Host Controller
+[    1.016055] usb usb1: Manufacturer: Linux 2.6.37-trunk-amd64 ehci_hcd
+[    1.016113] usb usb1: SerialNumber: 0000:00:1d.7
+[    1.016374] hub 1-0:1.0: USB hub found
+[    1.016433] hub 1-0:1.0: 8 ports detected
+[    1.019778] firewire_ohci: Added fw-ohci device 0000:08:03.4, OHCI v1.10, 8 IR + 8 IT contexts, quirks 0x0
+[    1.019879] sdhci-pci 0000:08:03.2: SDHCI controller found [1217:7120] (rev 1)
+[    1.019968] sdhci-pci 0000:08:03.2: PCI INT A -> GSI 16 (level, low) -> IRQ 16
+[    1.020078] mmc0: Unknown controller version (16). You may experience problems.
+[    1.020116] ata_piix 0000:00:1f.1: version 2.13
+[    1.020135] ata_piix 0000:00:1f.1: PCI INT A -> GSI 18 (level, low) -> IRQ 18
+[    1.020180] ata_piix 0000:00:1f.1: setting latency timer to 64
+[    1.020250] mmc0: no vmmc regulator found
+[    1.020344] Registered led device: mmc0::
+[    1.020398] mmc0: SDHCI controller on PCI [0000:08:03.2] using PIO
+[    1.023497] uhci_hcd: USB Universal Host Controller Interface driver
+[    1.023755] scsi0 : ata_piix
+[    1.023946] scsi1 : ata_piix
+[    1.024585] ata1: PATA max UDMA/100 cmd 0x1f0 ctl 0x3f6 bmdma 0x1880 irq 14
+[    1.024645] ata2: PATA max UDMA/100 cmd 0x170 ctl 0x376 bmdma 0x1888 irq 15
+[    1.024784] ahci 0000:00:1f.2: version 3.0
+[    1.024795] ahci 0000:00:1f.2: PCI INT B -> GSI 19 (level, low) -> IRQ 19
+[    1.024995] ahci 0000:00:1f.2: irq 41 for MSI/MSI-X
+[    1.025093] ahci 0000:00:1f.2: AHCI 0001.0100 32 slots 4 ports 1.5 Gbps 0x5 impl SATA mode
+[    1.025160] ahci 0000:00:1f.2: flags: 64bit ncq pm led clo pio slum part 
+[    1.025220] ahci 0000:00:1f.2: setting latency timer to 64
+[    1.025270] ata2: port disabled. ignoring.
+[    1.025900] scsi2 : ahci
+[    1.026045] scsi3 : ahci
+[    1.026180] scsi4 : ahci
+[    1.026322] scsi5 : ahci
+[    1.026516] ata3: SATA max UDMA/133 abar m1024@0xf0604400 port 0xf0604500 irq 41
+[    1.026580] ata4: DUMMY
+[    1.026635] ata5: SATA max UDMA/133 abar m1024@0xf0604400 port 0xf0604600 irq 41
+[    1.026699] ata6: DUMMY
+[    1.026775] uhci_hcd 0000:00:1d.0: PCI INT A -> GSI 23 (level, low) -> IRQ 23
+[    1.026841] uhci_hcd 0000:00:1d.0: setting latency timer to 64
+[    1.026845] uhci_hcd 0000:00:1d.0: UHCI Host Controller
+[    1.026910] uhci_hcd 0000:00:1d.0: new USB bus registered, assigned bus number 2
+[    1.035712] uhci_hcd 0000:00:1d.0: irq 23, io base 0x00001800
+[    1.035809] usb usb2: New USB device found, idVendor=1d6b, idProduct=0001
+[    1.035867] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    1.035931] usb usb2: Product: UHCI Host Controller
+[    1.035987] usb usb2: Manufacturer: Linux 2.6.37-trunk-amd64 uhci_hcd
+[    1.036044] usb usb2: SerialNumber: 0000:00:1d.0
+[    1.036220] hub 2-0:1.0: USB hub found
+[    1.036278] hub 2-0:1.0: 2 ports detected
+[    1.036423] uhci_hcd 0000:00:1d.1: PCI INT B -> GSI 20 (level, low) -> IRQ 20
+[    1.036485] uhci_hcd 0000:00:1d.1: setting latency timer to 64
+[    1.036489] uhci_hcd 0000:00:1d.1: UHCI Host Controller
+[    1.036553] uhci_hcd 0000:00:1d.1: new USB bus registered, assigned bus number 3
+[    1.047716] uhci_hcd 0000:00:1d.1: irq 20, io base 0x00001820
+[    1.047808] usb usb3: New USB device found, idVendor=1d6b, idProduct=0001
+[    1.047867] usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    1.047931] usb usb3: Product: UHCI Host Controller
+[    1.047987] usb usb3: Manufacturer: Linux 2.6.37-trunk-amd64 uhci_hcd
+[    1.048044] usb usb3: SerialNumber: 0000:00:1d.1
+[    1.048214] hub 3-0:1.0: USB hub found
+[    1.048272] hub 3-0:1.0: 2 ports detected
+[    1.048411] uhci_hcd 0000:00:1d.2: PCI INT C -> GSI 18 (level, low) -> IRQ 18
+[    1.048474] uhci_hcd 0000:00:1d.2: setting latency timer to 64
+[    1.048477] uhci_hcd 0000:00:1d.2: UHCI Host Controller
+[    1.048538] uhci_hcd 0000:00:1d.2: new USB bus registered, assigned bus number 4
+[    1.058776] uhci_hcd 0000:00:1d.2: irq 18, io base 0x00001840
+[    1.058870] usb usb4: New USB device found, idVendor=1d6b, idProduct=0001
+[    1.058928] usb usb4: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    1.058992] usb usb4: Product: UHCI Host Controller
+[    1.059047] usb usb4: Manufacturer: Linux 2.6.37-trunk-amd64 uhci_hcd
+[    1.059104] usb usb4: SerialNumber: 0000:00:1d.2
+[    1.059267] hub 4-0:1.0: USB hub found
+[    1.059326] hub 4-0:1.0: 2 ports detected
+[    1.059462] uhci_hcd 0000:00:1d.3: PCI INT D -> GSI 16 (level, low) -> IRQ 16
+[    1.059525] uhci_hcd 0000:00:1d.3: setting latency timer to 64
+[    1.059529] uhci_hcd 0000:00:1d.3: UHCI Host Controller
+[    1.059591] uhci_hcd 0000:00:1d.3: new USB bus registered, assigned bus number 5
+[    1.059698] uhci_hcd 0000:00:1d.3: irq 16, io base 0x00001860
+[    1.059796] usb usb5: New USB device found, idVendor=1d6b, idProduct=0001
+[    1.059854] usb usb5: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    1.059918] usb usb5: Product: UHCI Host Controller
+[    1.059974] usb usb5: Manufacturer: Linux 2.6.37-trunk-amd64 uhci_hcd
+[    1.060036] usb usb5: SerialNumber: 0000:00:1d.3
+[    1.060199] hub 5-0:1.0: USB hub found
+[    1.060257] hub 5-0:1.0: 2 ports detected
+[    1.140387] ata1.00: ATAPI: MATSHITADVD-RAM UJ-841S, 1.30, max UDMA/33
+[    1.156293] ata1.00: configured for UDMA/33
+[    1.158613] scsi 0:0:0:0: CD-ROM            MATSHITA DVD-RAM UJ-841S  1.30 PQ: 0 ANSI: 5
+[    1.296021] ata5: SATA link down (SStatus 0 SControl 300)
+[    1.296106] ata3: SATA link up 1.5 Gbps (SStatus 113 SControl 300)
+[    1.297017] ata3.00: ACPI cmd ef/10:03:00:00:00:a0 (SET FEATURES) filtered out
+[    1.297082] ata3.00: ACPI cmd f5/00:00:00:00:00:a0 (SECURITY FREEZE LOCK) filtered out
+[    1.297419] ata3.00: ATA-8: WDC WD1600BEKT-00F3T0, 11.01A11, max UDMA/133
+[    1.297478] ata3.00: 312581808 sectors, multi 16: LBA48 NCQ (depth 31/32), AA
+[    1.298385] ata3.00: ACPI cmd ef/10:03:00:00:00:a0 (SET FEATURES) filtered out
+[    1.298451] ata3.00: ACPI cmd f5/00:00:00:00:00:a0 (SECURITY FREEZE LOCK) filtered out
+[    1.298631] ata3.00: configured for UDMA/133
+[    1.298779] scsi 2:0:0:0: Direct-Access     ATA      WDC WD1600BEKT-0 11.0 PQ: 0 ANSI: 5
+[    1.311775] sd 2:0:0:0: [sda] 312581808 512-byte logical blocks: (160 GB/149 GiB)
+[    1.311903] sd 2:0:0:0: [sda] Write Protect is off
+[    1.311960] sd 2:0:0:0: [sda] Mode Sense: 00 3a 00 00
+[    1.311985] sd 2:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+[    1.316820] sr0: scsi3-mmc drive: 24x/24x writer dvd-ram cd/rw xa/form2 cdda tray
+[    1.316886] cdrom: Uniform CD-ROM driver Revision: 3.20
+[    1.317051] sr 0:0:0:0: Attached scsi CD-ROM sr0
+[    1.363189]  sda: sda1 sda2 < sda5 >
+[    1.363566] sd 2:0:0:0: [sda] Attached SCSI disk
+[    1.368489] sr 0:0:0:0: Attached scsi generic sg0 type 5
+[    1.369351] sd 2:0:0:0: Attached scsi generic sg1 type 0
+[    1.472096] firewire_core: created device fw0: GUID 00000e100366d4d4, S400
+[    1.598754] Btrfs loaded
+[    1.615686] md: linear personality registered for level -1
+[    1.618226] md: multipath personality registered for level -4
+[    1.620338] md: raid0 personality registered for level 0
+[    1.623870] md: raid1 personality registered for level 1
+[    1.625719] async_tx: api initialized (async)
+[    1.626316] xor: automatically using best checksumming function: generic_sse
+[    1.632026] usb 5-1: new full speed USB device using uhci_hcd and address 2
+[    1.644005]    generic_sse:  7114.000 MB/sec
+[    1.644062] xor: using function: generic_sse (7114.000 MB/sec)
+[    1.712027] raid6: int64x1   1705 MB/s
+[    1.780027] raid6: int64x2   1799 MB/s
+[    1.795616] usb 5-1: New USB device found, idVendor=08ff, idProduct=2580
+[    1.795676] usb 5-1: New USB device strings: Mfr=0, Product=1, SerialNumber=0
+[    1.795734] usb 5-1: Product: Fingerprint Sensor
+[    1.848036] raid6: int64x4   1562 MB/s
+[    1.916048] raid6: int64x8   1171 MB/s
+[    1.984013] raid6: sse2x1    3227 MB/s
+[    2.036010] usb 5-2: new full speed USB device using uhci_hcd and address 3
+[    2.052018] raid6: sse2x2    3840 MB/s
+[    2.120010] raid6: sse2x4    5997 MB/s
+[    2.120065] raid6: using algorithm sse2x4 (5997 MB/s)
+[    2.125691] md: raid6 personality registered for level 6
+[    2.125749] md: raid5 personality registered for level 5
+[    2.125806] md: raid4 personality registered for level 4
+[    2.132380] md: raid10 personality registered for level 10
+[    2.146594] device-mapper: uevent: version 1.0.3
+[    2.146864] device-mapper: ioctl: 4.18.0-ioctl (2010-06-29) initialised: dm-devel@redhat.com
+[    2.211523] usb 5-2: New USB device found, idVendor=0c24, idProduct=000f
+[    2.211589] usb 5-2: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+[    2.222382] PM: Starting manual resume from disk
+[    2.222440] PM: Hibernation image partition 8:5 present
+[    2.222442] PM: Looking for hibernation image.
+[    2.222611] PM: Image not found (code -22)
+[    2.222613] PM: Hibernation image not present or could not be loaded.
+[    2.227003] PM: Marking nosave pages: 000000000009f000 - 0000000000100000
+[    2.227009] PM: Basic memory bitmaps created
+[    2.242158] PM: Basic memory bitmaps freed
+[    2.261726] EXT3-fs (sda1): recovery required on readonly filesystem
+[    2.261875] EXT3-fs (sda1): write access will be enabled during recovery
+[    2.266898] EXT3-fs: barriers not enabled
+[    2.504469] kjournald starting.  Commit interval 5 seconds
+[    2.504529] EXT3-fs (sda1): orphan cleanup on readonly fs
+[    2.504535] ext3_orphan_cleanup: deleting unreferenced inode 2944186
+[    2.504557] ext3_orphan_cleanup: deleting unreferenced inode 2944178
+[    2.504564] ext3_orphan_cleanup: deleting unreferenced inode 2943208
+[    2.504571] ext3_orphan_cleanup: deleting unreferenced inode 2942448
+[    2.504578] ext3_orphan_cleanup: deleting unreferenced inode 2943184
+[    2.504585] ext3_orphan_cleanup: deleting unreferenced inode 2944176
+[    2.504591] ext3_orphan_cleanup: deleting unreferenced inode 2943202
+[    2.504598] ext3_orphan_cleanup: deleting unreferenced inode 2943197
+[    2.504604] ext3_orphan_cleanup: deleting unreferenced inode 2943195
+[    2.504609] ext3_orphan_cleanup: deleting unreferenced inode 2943181
+[    2.504616] ext3_orphan_cleanup: deleting unreferenced inode 2942449
+[    2.529385] ext3_orphan_cleanup: deleting unreferenced inode 2941742
+[    2.529403] ext3_orphan_cleanup: deleting unreferenced inode 2932903
+[    2.529412] ext3_orphan_cleanup: deleting unreferenced inode 2932901
+[    2.538615] ext3_orphan_cleanup: deleting unreferenced inode 2936014
+[    2.538623] ext3_orphan_cleanup: deleting unreferenced inode 2936013
+[    2.550166] ext3_orphan_cleanup: deleting unreferenced inode 4481032
+[    2.571931] ext3_orphan_cleanup: deleting unreferenced inode 2936009
+[    2.585825] ext3_orphan_cleanup: deleting unreferenced inode 4432740
+[    2.585967] ext3_orphan_cleanup: deleting unreferenced inode 2935984
+[    2.586090] ext3_orphan_cleanup: deleting unreferenced inode 2935879
+[    2.586098] ext3_orphan_cleanup: deleting unreferenced inode 2935881
+[    2.586235] ext3_orphan_cleanup: deleting unreferenced inode 2935915
+[    2.586244] ext3_orphan_cleanup: deleting unreferenced inode 2935878
+[    2.591936] ext3_orphan_cleanup: deleting unreferenced inode 4583298
+[    2.608222] ext3_orphan_cleanup: deleting unreferenced inode 4583297
+[    2.613356] ext3_orphan_cleanup: deleting unreferenced inode 2935772
+[    2.627909] ext3_orphan_cleanup: deleting unreferenced inode 2935242
+[    2.635884] ext3_orphan_cleanup: deleting unreferenced inode 2932745
+[    2.648861] ext3_orphan_cleanup: deleting unreferenced inode 2425545
+[    2.691556] ext3_orphan_cleanup: deleting unreferenced inode 8421572
+[    2.721731] ext3_orphan_cleanup: deleting unreferenced inode 2935872
+[    2.721860] ext3_orphan_cleanup: deleting unreferenced inode 2935940
+[    2.721869] ext3_orphan_cleanup: deleting unreferenced inode 2935875
+[    2.722010] ext3_orphan_cleanup: deleting unreferenced inode 2935274
+[    2.722018] ext3_orphan_cleanup: deleting unreferenced inode 2935868
+[    2.722024] ext3_orphan_cleanup: deleting unreferenced inode 2935866
+[    2.722146] ext3_orphan_cleanup: deleting unreferenced inode 2935851
+[    2.746497] ext3_orphan_cleanup: deleting unreferenced inode 4472989
+[    2.760394] ext3_orphan_cleanup: deleting unreferenced inode 2393291
+[    2.783347] ext3_orphan_cleanup: deleting unreferenced inode 4432058
+[    2.783363] ext3_orphan_cleanup: deleting unreferenced inode 2935233
+[    2.794191] ext3_orphan_cleanup: deleting unreferenced inode 2935204
+[    2.794200] ext3_orphan_cleanup: deleting unreferenced inode 2935202
+[    2.802969] ext3_orphan_cleanup: deleting unreferenced inode 2932979
+[    2.803094] ext3_orphan_cleanup: deleting unreferenced inode 2935251
+[    2.812784] ext3_orphan_cleanup: deleting unreferenced inode 4433516
+[    2.825584] ext3_orphan_cleanup: deleting unreferenced inode 4588095
+[    2.832482] ext3_orphan_cleanup: deleting unreferenced inode 4407476
+[    2.832497] EXT3-fs (sda1): 49 orphan inodes deleted
+[    2.832643] EXT3-fs (sda1): recovery complete
+[    2.947714] EXT3-fs (sda1): mounted filesystem with ordered data mode
+[    6.237277] udev[404]: starting version 164
+[    6.689513] input: Lid Switch as /devices/LNXSYSTM:00/device:00/PNP0C0D:00/input/input1
+[    6.689651] ACPI: Lid Switch [LID]
+[    6.689779] input: Power Button as /devices/LNXSYSTM:00/device:00/PNP0C0C:00/input/input2
+[    6.689847] ACPI: Power Button [PWRB]
+[    6.689964] input: Sleep Button as /devices/LNXSYSTM:00/device:00/PNP0C0E:00/input/input3
+[    6.690030] ACPI: Sleep Button [SLPB]
+[    6.690146] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input4
+[    6.690212] ACPI: Power Button [PWRF]
+[    6.780480] input: PC Speaker as /devices/platform/pcspkr/input/input5
+[    6.986402] ACPI: AC Adapter [AC] (on-line)
+[    6.990202] ACPI: Battery Slot [CMB1] (battery present)
+[    6.990287] ACPI: Battery Slot [CMB2] (battery absent)
+[    6.991767] ACPI: acpi_idle registered with cpuidle
+[    6.991879] Marking TSC unstable due to TSC halts in idle
+[    6.994638] Switching to clocksource hpet
+[    6.996784] leds_ss4200: no LED devices found
+[    6.997386] acpi device:03: registered as cooling_device2
+[    6.997629] input: Video Bus as /devices/LNXSYSTM:00/device:00/PNP0A08:00/device:01/LNXVIDEO:00/input/input6
+[    6.997760] ACPI: Video Device [VGA] (multi-head: yes  rom: no  post: no)
+[    7.176555] input: Fujitsu FUJ02B1 as /devices/LNXSYSTM:00/device:00/PNP0A08:00/device:07/FUJ02B1:00/input/input7
+[    7.176684] ACPI: Fujitsu FUJ02B1 [FJEX] (on)
+[    7.176995] input: Fujitsu FUJ02E3 as /devices/LNXSYSTM:00/device:00/FUJ02E3:00/input/input8
+[    7.177131] ACPI: Fujitsu FUJ02E3 [FEXT] (on)
+[    7.177414] fujitsu-laptop: BTNI: [0xff0101]
+[    7.177579] fujitsu-laptop: driver 0.6.0 successfully loaded.
+[    7.275172] pci_hotplug: PCI Hot Plug PCI Core version: 0.5
+[    7.282034] shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+[    7.360929] NET: Registered protocol family 23
+[    7.503754] i801_smbus 0000:00:1f.3: PCI INT B -> GSI 19 (level, low) -> IRQ 19
+[    7.587779] intel_rng: FWH not detected
+[    7.609893] yenta_cardbus 0000:08:03.0: CardBus bridge found [10cf:131e]
+[    7.609978] yenta_cardbus 0000:08:03.0: O2: enabling read prefetch/write burst. If you experience problems or performance issues, use the yenta_socket parameter 'o2_speedup=off'
+[    7.736951] yenta_cardbus 0000:08:03.0: ISA IRQ mask 0x0cb8, PCI irq 16
+[    7.737014] yenta_cardbus 0000:08:03.0: Socket status: 30000006
+[    7.737073] pci_bus 0000:08: Raising subordinate bus# of parent bus (#08) from #09 to #0c
+[    7.737144] yenta_cardbus 0000:08:03.0: pcmcia: parent PCI bridge window: [io  0x6000-0x6fff]
+[    7.737209] yenta_cardbus 0000:08:03.0: pcmcia: parent PCI bridge window: [mem 0xf0300000-0xf03fffff]
+[    7.737276] pcmcia_socket pcmcia_socket0: cs: memory probe 0xf0300000-0xf03fffff: excluding 0xf0300000-0xf030ffff
+[    7.737491] yenta_cardbus 0000:08:03.0: pcmcia: parent PCI bridge window: [mem 0xd0000000-0xd7ffffff pref]
+[    7.737558] pcmcia_socket pcmcia_socket0: cs: memory probe 0xd0000000-0xd7ffffff: excluding 0xd0000000-0xd7ffffff
+[    7.738463] yenta_cardbus 0000:08:03.1: CardBus bridge found [10cf:131e]
+[    7.779557] parport_pc 00:0c: reported by Plug and Play ACPI
+[    7.779658] parport0: PC-style at 0x378, irq 7 [PCSPP,TRISTATE,EPP]
+[    7.864961] yenta_cardbus 0000:08:03.1: ISA IRQ mask 0x0c38, PCI irq 16
+[    7.865024] yenta_cardbus 0000:08:03.1: Socket status: 30000410
+[    7.865082] pci_bus 0000:08: Raising subordinate bus# of parent bus (#08) from #0c to #10
+[    7.865154] yenta_cardbus 0000:08:03.1: pcmcia: parent PCI bridge window: [io  0x6000-0x6fff]
+[    7.865220] yenta_cardbus 0000:08:03.1: pcmcia: parent PCI bridge window: [mem 0xf0300000-0xf03fffff]
+[    7.868124] pcmcia_socket pcmcia_socket1: cs: memory probe 0xf0300000-0xf03fffff: excluding 0xf0300000-0xf030ffff
+[    7.868353] yenta_cardbus 0000:08:03.1: pcmcia: parent PCI bridge window: [mem 0xd0000000-0xd7ffffff pref]
+[    7.868420] pcmcia_socket pcmcia_socket1: cs: memory probe 0xd0000000-0xd7ffffff: excluding 0xd0000000-0xd7ffffff
+[    7.913538] found SMC SuperIO Chip (devid=0x7a rev=00 base=0x002e): LPC47N227
+[    7.913625] smsc_superio_flat(): fir: 0x6e8, sir: 0x2e8, dma: 03, irq: 3, mode: 0x0e
+[    7.913692] smsc_ircc_present: can't get sir_base of 0x2e8
+[    8.098394] [drm] Initialized drm 1.1.0 20060810
+[    8.382613] Synaptics Touchpad, model: 1, fw: 6.2, id: 0x1a0b1, caps: 0xa04793/0x302000/0x0
+[    8.382698] serio: Synaptics pass-through port at isa0060/serio4/input0
+[    8.420570] input: SynPS/2 Synaptics TouchPad as /devices/platform/i8042/serio4/input/input9
+[    8.760082] pcmcia_socket pcmcia_socket1: pccard: PCMCIA card inserted into slot 1
+[    8.760181] pcmcia_socket pcmcia_socket1: cs: memory probe 0xf0310000-0xf03fffff: excluding 0xf03fe000-0xf040bfff
+[    8.780305] pcmcia 1.0: pcmcia: registering new device pcmcia1.0 (IRQ: 16)
+[    8.984048] pcmcia_socket pcmcia_socket1: cs: memory probe 0x0c0000-0x0fffff:
+[    8.984052] pcmcia_socket pcmcia_socket0: cs: memory probe 0x0c0000-0x0fffff: excluding 0xd0000-0xd3fff 0xdc000-0xfffff
+[    8.984115] pcmcia_socket pcmcia_socket0: cs: memory probe 0xa0000000-0xa0ffffff: excluding 0xa0000000-0xa0ffffff
+[    8.984172] pcmcia_socket pcmcia_socket0: cs: memory probe 0x60000000-0x60ffffff: excluding 0x60000000-0x60ffffff
+[    8.984361]  excluding 0xd0000-0xd3fff 0xdc000-0xfffff
+[    8.984658] pcmcia_socket pcmcia_socket1: cs: memory probe 0xa0000000-0xa0ffffff: excluding 0xa0000000-0xa0ffffff
+[    8.984931] pcmcia_socket pcmcia_socket1: cs: memory probe 0x60000000-0x60ffffff: excluding 0x60000000-0x60ffffff
+[    8.989199] HDA Intel 0000:00:1b.0: PCI INT A -> GSI 17 (level, low) -> IRQ 17
+[    8.989348] HDA Intel 0000:00:1b.0: irq 42 for MSI/MSI-X
+[    8.989380] HDA Intel 0000:00:1b.0: setting latency timer to 64
+[    9.000583] cfg80211: Calling CRDA to update world regulatory domain
+[    9.110476] input: HDA Digital PCBeep as /devices/pci0000:00/0000:00:1b.0/input/input10
+[    9.222930] [drm] radeon kernel modesetting enabled.
+[    9.223057] radeon 0000:01:00.0: PCI INT A -> GSI 16 (level, low) -> IRQ 16
+[    9.223118] radeon 0000:01:00.0: setting latency timer to 64
+[    9.225447] [drm] initializing kernel modesetting (RV530 0x1002:0x71C4).
+[    9.225652] [drm] register mmio base: 0xF0000000
+[    9.225709] [drm] register mmio size: 65536
+[    9.226008] ATOM BIOS: Fujitsu
+[    9.226094] [drm] Generation 2 PCI interface, using max accessible memory
+[    9.226155] radeon 0000:01:00.0: VRAM: 256M 0x0000000000000000 - 0x000000000FFFFFFF (256M used)
+[    9.226221] radeon 0000:01:00.0: GTT: 512M 0x0000000010000000 - 0x000000002FFFFFFF
+[    9.226332] [drm] radeon: irq initialized.
+[    9.227816] [drm] Detected VRAM RAM=256M, BAR=256M
+[    9.227879] [drm] RAM width 128bits DDR
+[    9.228063] [TTM] Zone  kernel: Available graphics memory: 1676066 kiB.
+[    9.228122] [TTM] Initializing pool allocator.
+[    9.228197] [drm] radeon: 256M of VRAM memory ready
+[    9.228253] [drm] radeon: 512M of GTT memory ready.
+[    9.228333] [drm] GART: num cpu pages 131072, num gpu pages 131072
+[    9.230106] [drm] radeon: 1 quad pipes, 2 z pipes initialized.
+[    9.230975] [drm] PCIE GART of 512M enabled (table at 0x00040000).
+[    9.231048] radeon 0000:01:00.0: WB enabled
+[    9.231163] [drm] Loading R500 Microcode
+[    9.383235] [drm] radeon: ring at 0x0000000010001000
+[    9.383335] [drm] ring test succeeded in 9 usecs
+[    9.383524] [drm] radeon: ib pool ready.
+[    9.383702] [drm] ib test succeeded in 0 usecs
+[    9.384142] [drm] Radeon Display Connectors
+[    9.384200] [drm] Connector 0:
+[    9.384255] [drm]   VGA
+[    9.384319] [drm]   DDC: 0x7e40 0x7e40 0x7e44 0x7e44 0x7e48 0x7e48 0x7e4c 0x7e4c
+[    9.384386] [drm]   Encoders:
+[    9.384448] [drm]     CRT1: INTERNAL_KLDSCP_DAC1
+[    9.384507] [drm] Connector 1:
+[    9.384567] [drm]   LVDS
+[    9.384620] [drm]   Encoders:
+[    9.384679] [drm]     LCD1: INTERNAL_LVTM1
+[    9.384736] [drm] Connector 2:
+[    9.384790] [drm]   S-video
+[    9.384844] [drm]   Encoders:
+[    9.384898] [drm]     TV1: INTERNAL_KLDSCP_DAC2
+[    9.384953] [drm] Connector 3:
+[    9.385007] [drm]   DVI-I
+[    9.385061] [drm]   HPD1
+[    9.385115] [drm]   DDC: 0x7e50 0x7e50 0x7e54 0x7e54 0x7e58 0x7e58 0x7e5c 0x7e5c
+[    9.385179] [drm]   Encoders:
+[    9.385233] [drm]     DFP1: INTERNAL_KLDSCP_TMDS1
+[    9.392761] [drm] radeon: power management initialized
+[    9.395297] Bluetooth: Core ver 2.15
+[    9.395375] NET: Registered protocol family 31
+[    9.395434] Bluetooth: HCI device and connection manager initialized
+[    9.395493] Bluetooth: HCI socket layer initialized
+[    9.438268] Bluetooth: Generic Bluetooth USB driver ver 0.6
+[    9.438647] usbcore: registered new interface driver btusb
+[    9.668456] iwl3945: Intel(R) PRO/Wireless 3945ABG/BG Network Connection driver for Linux, in-tree:s
+[    9.668530] iwl3945: Copyright(c) 2003-2010 Intel Corporation
+[    9.668656] iwl3945 0000:06:00.0: PCI INT A -> GSI 19 (level, low) -> IRQ 19
+[    9.668726] iwl3945 0000:06:00.0: setting latency timer to 64
+[    9.722842] iwl3945 0000:06:00.0: Tunable channels: 13 802.11bg, 23 802.11a channels
+[    9.723002] iwl3945 0000:06:00.0: Detected Intel Wireless WiFi Link 3945ABG
+[    9.723421] iwl3945 0000:06:00.0: irq 43 for MSI/MSI-X
+[    9.727426] [drm] fb mappable at 0xE00C0000
+[    9.727483] [drm] vram apper at 0xE0000000
+[    9.727538] [drm] size 9216000
+[    9.727593] [drm] fb depth is 24
+[    9.727647] [drm]    pitch is 7680
+[    9.906107] ieee80211 phy0: Selected rate control algorithm 'iwl-3945-rs'
+[   10.243648] Console: switching to colour frame buffer device 240x75
+[   10.251082] fb0: radeondrmfb frame buffer device
+[   10.251084] drm: registered panic notifier
+[   10.251152] [drm] Initialized radeon 2.7.0 20080528 for 0000:01:00.0 on minor 0
+[   12.793411] input: PS/2 Generic Mouse as /devices/platform/i8042/serio4/serio5/input/input11
+[   13.417891] Adding 6032372k swap on /dev/sda5.  Priority:-1 extents:1 across:6032372k 
+[   13.751644] EXT3-fs (sda1): using internal journal
+[   14.325899] loop: module loaded
+[   14.634607] coretemp coretemp.0: TjMax is assumed as 100 C!
+[   14.634706] coretemp coretemp.1: TjMax is assumed as 100 C!
+[   20.084580] sky2 0000:02:00.0: eth0: enabling interface
+[   20.087352] ADDRCONF(NETDEV_UP): eth0: link is not ready
+[   20.549613] DLM (built Jan  6 2011 13:38:43) installed
+[   21.817713] fuse init (API version 7.15)
+[   23.313538] NET4: DECnet for Linux: V.2.5.68s (C) 1995-2003 Linux DECnet Project Team
+[   23.314050] DECnet: Routing cache hash table of 1024 buckets, 16Kbytes
+[   23.314099] NET: Registered protocol family 12
+[   23.926022] input: ACPI Virtual Keyboard Device as /devices/virtual/input/input12
+[   31.760100] Bluetooth: L2CAP ver 2.15
+[   31.760103] Bluetooth: L2CAP socket layer initialized
+[   32.001648] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+[   32.001653] Bluetooth: BNEP filters: protocol multicast
+[   32.261178] lp0: using parport0 (interrupt-driven).
+[   32.322684] ppdev: user-space parallel port driver
+[   32.608446] Bluetooth: RFCOMM TTY layer initialized
+[   32.608452] Bluetooth: RFCOMM socket layer initialized
+[   32.608454] Bluetooth: RFCOMM ver 1.11
+[   32.774789] Bluetooth: SCO (Voice Link) ver 0.6
+[   32.774792] Bluetooth: SCO socket layer initialized
+[   43.544094] sky2 0000:02:00.0: eth0: disabling interface
+[   46.537185] Ebtables v2.0 registered
+[   47.264624] ip_tables: (C) 2000-2006 Netfilter Core Team
+[   47.902571] ip6_tables: (C) 2000-2006 Netfilter Core Team
+[   49.947794] sky2 0000:02:00.0: eth0: enabling interface
+[   49.948595] ADDRCONF(NETDEV_UP): eth0: link is not ready
+[   53.077601] microcode: CPU0 sig=0x6f6, pf=0x20, revision=0x48
+[   53.083875] microcode: CPU1 sig=0x6f6, pf=0x20, revision=0x48
+[   53.087928] microcode: Microcode Update Driver: v2.00 <tigran@aivazian.fsnet.co.uk>, Peter Oruba
+[   53.496970] microcode: CPU0 updated to revision 0xd1, date = 2010-10-01
+[   53.497397] microcode: CPU1 updated to revision 0xd1, date = 2010-10-01
+[   56.015723] lo: Disabled Privacy Extensions
+[   66.984900] RPC: Registered udp transport module.
+[   66.987446] RPC: Registered tcp transport module.
+[   66.989931] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[   67.882255] Installing knfsd (copyright (C) 1996 okir@monad.swb.de).
+[   68.384169] svc: failed to register lockdv1 RPC service (errno 97).
+[   68.386642] NFSD: Using /var/lib/nfs/v4recovery as the NFSv4 state recovery directory
+[   68.419416] NFSD: starting 90-second grace period
+[   83.269236] vboxdrv: Found 2 processor cores.
+[   83.269315] VBoxDrv: dbg - g_abExecMemory=ffffffffa09a8e60
+[   83.269345] vboxdrv: fAsync=0 offMin=0x324 offMax=0xd68
+[   83.272657] vboxdrv: TSC mode is 'synchronous', kernel timer mode is 'normal'.
+[   83.275341] vboxdrv: Successfully loaded version 4.0.2_OSE (interface 0x00160000).
+[   84.750665] iwl3945 0000:06:00.0: loaded firmware version 15.32.2.9
+[   84.761350] CE: hpet increased min_delta_ns to 20113 nsec
+[   84.829554] ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   92.988089] ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   93.260064] sky2 0000:02:00.0: eth0: disabling interface
+[   93.271803] sky2 0000:02:00.0: eth0: enabling interface
+[   93.275125] ADDRCONF(NETDEV_UP): eth0: link is not ready
+[   93.436095] ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   98.814588] wlan0: authenticate with 00:14:7f:da:ed:a9 (try 1)
+[   98.816462] wlan0: authenticated
+[   98.817677] wlan0: associate with 00:14:7f:da:ed:a9 (try 1)
+[   98.820314] wlan0: RX AssocResp from 00:14:7f:da:ed:a9 (capab=0x411 status=0 aid=1)
+[   98.820318] wlan0: associated
+[   98.822533] ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+[   99.122148] padlock: VIA PadLock not detected.
+[  109.384034] wlan0: no IPv6 routers present
+[  123.359522] start_kdeinit (5643): /proc/5710/oom_adj is deprecated, please use /proc/5710/oom_score_adj instead.
+[  129.631427] tun: Universal TUN/TAP device driver, 1.6
+[  129.631432] tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+[  129.632143] tun: Disabled Privacy Extensions
+[  130.674199] CPUFREQ: Per core ondemand sysfs interface is deprecated - up_threshold
+[  255.847495] CE: hpet increased min_delta_ns to 30169 nsec
+[  735.026233] CE: hpet increased min_delta_ns to 45253 nsec
+[ 1007.426954] CE: hpet increased min_delta_ns to 67879 nsec
+[ 1246.306532] hda-intel: IRQ timing workaround is activated for card #0. Suggest a bigger bdl_pos_adj.
+[ 1340.856045] iwl3945 0000:06:00.0: queue 4 stuck 3 time. Fw reload.
+[ 1340.856053] iwl3945 0000:06:00.0: On demand firmware reload
+[ 1356.297515] HDA Intel 0000:00:1b.0: PCI INT A disabled
+[ 1356.389337] HDA Intel 0000:00:1b.0: PCI INT A -> GSI 17 (level, low) -> IRQ 17
+[ 1356.389407] HDA Intel 0000:00:1b.0: irq 42 for MSI/MSI-X
+[ 1356.389442] HDA Intel 0000:00:1b.0: setting latency timer to 64
+[ 1356.431160] input: HDA Digital PCBeep as /devices/pci0000:00/0000:00:1b.0/input/input13
+[ 1362.491850] pulseaudio[4145]: segfault at 7f64e3662300 ip 00007f64e3662300 sp 00007fff81db70e8 error 14 in pulse-shm-480388989[7f64e3c84000+4001000]
+[ 1452.264041] iwl3945 0000:06:00.0: queue 2 stuck 3 time. Fw reload.
+[ 1452.264051] iwl3945 0000:06:00.0: On demand firmware reload
+[ 1695.676284] iwl3945 0000:06:00.0: queue 2 stuck 3 time. Fw reload.
+[ 1695.676295] iwl3945 0000:06:00.0: On demand firmware reload
+[ 1705.088033] iwl3945 0000:06:00.0: queue 2 stuck 3 time. Fw reload.
+[ 1705.088038] iwl3945 0000:06:00.0: On demand firmware reload
+[ 1728.500034] iwl3945 0000:06:00.0: queue 2 stuck 3 time. Fw reload.
+[ 1728.500043] iwl3945 0000:06:00.0: On demand firmware reload
+[ 1737.212607] iwl3945 0000:06:00.0: queue 4 stuck 3 time. Fw reload.
+[ 1737.212616] iwl3945 0000:06:00.0: On demand firmware reload
+[ 1737.212628] iwl3945 0000:06:00.0: queue 2 stuck 3 time. Fw reload.
+[ 1737.212633] iwl3945 0000:06:00.0: On demand firmware reload
+[ 1738.783771] hda-intel: IRQ timing workaround is activated for card #0. Suggest a bigger bdl_pos_adj.
+[ 1743.624036] iwl3945 0000:06:00.0: queue 2 stuck 3 time. Fw reload.
+[ 1743.624043] iwl3945 0000:06:00.0: On demand firmware reload
+[ 1752.044028] iwl3945 0000:06:00.0: queue 2 stuck 3 time. Fw reload.
+[ 1752.044034] iwl3945 0000:06:00.0: On demand firmware reload
+[ 1764.456056] iwl3945 0000:06:00.0: queue 2 stuck 3 time. Fw reload.
+[ 1764.456065] iwl3945 0000:06:00.0: On demand firmware reload
+[ 1770.868028] iwl3945 0000:06:00.0: queue 0 stuck 3 time. Fw reload.
+[ 1770.868034] iwl3945 0000:06:00.0: On demand firmware reload
+[ 1783.280019] iwl3945 0000:06:00.0: queue 2 stuck 3 time. Fw reload.
+[ 1783.280024] iwl3945 0000:06:00.0: On demand firmware reload
+[ 1792.792049] iwl3945 0000:06:00.0: queue 4 stuck 3 time. Fw reload.
+[ 1792.792058] iwl3945 0000:06:00.0: On demand firmware reload
+[ 1805.212065] iwl3945 0000:06:00.0: queue 2 stuck 3 time. Fw reload.
+[ 1805.212072] iwl3945 0000:06:00.0: On demand firmware reload
+[ 1819.624042] iwl3945 0000:06:00.0: queue 2 stuck 3 time. Fw reload.
+[ 1819.624051] iwl3945 0000:06:00.0: On demand firmware reload
+[ 1831.040038] iwl3945 0000:06:00.0: queue 2 stuck 3 time. Fw reload.
+[ 1831.040046] iwl3945 0000:06:00.0: On demand firmware reload
+[ 1837.560031] iwl3945 0000:06:00.0: queue 4 stuck 3 time. Fw reload.
+[ 1837.560036] iwl3945 0000:06:00.0: On demand firmware reload
+[ 1846.976041] iwl3945 0000:06:00.0: queue 2 stuck 3 time. Fw reload.
+[ 1846.976049] iwl3945 0000:06:00.0: On demand firmware reload
+[ 1850.484037] iwl3945 0000:06:00.0: queue 4 stuck 3 time. Fw reload.
+[ 1850.484045] iwl3945 0000:06:00.0: On demand firmware reload
+[ 1853.896047] iwl3945 0000:06:00.0: queue 2 stuck 3 time. Fw reload.
+[ 1853.896055] iwl3945 0000:06:00.0: On demand firmware reload
+[ 1866.312066] iwl3945 0000:06:00.0: queue 2 stuck 3 time. Fw reload.
+[ 1866.312075] iwl3945 0000:06:00.0: On demand firmware reload
+[ 1874.724034] iwl3945 0000:06:00.0: queue 2 stuck 3 time. Fw reload.
+[ 1874.724041] iwl3945 0000:06:00.0: On demand firmware reload
+[ 1879.136049] iwl3945 0000:06:00.0: queue 2 stuck 3 time. Fw reload.
+[ 1879.136058] iwl3945 0000:06:00.0: On demand firmware reload
+[ 1892.648062] iwl3945 0000:06:00.0: queue 4 stuck 3 time. Fw reload.
+[ 1892.648071] iwl3945 0000:06:00.0: On demand firmware reload
+[ 1903.060065] iwl3945 0000:06:00.0: queue 2 stuck 3 time. Fw reload.
+[ 1903.060074] iwl3945 0000:06:00.0: On demand firmware reload
+[ 1909.472030] iwl3945 0000:06:00.0: queue 2 stuck 3 time. Fw reload.
+[ 1909.472036] iwl3945 0000:06:00.0: On demand firmware reload
+[ 1922.284048] iwl3945 0000:06:00.0: queue 4 stuck 3 time. Fw reload.
+[ 1922.284056] iwl3945 0000:06:00.0: On demand firmware reload
+[ 1929.696029] iwl3945 0000:06:00.0: queue 2 stuck 3 time. Fw reload.
+[ 1929.696034] iwl3945 0000:06:00.0: On demand firmware reload
+[ 1937.112043] iwl3945 0000:06:00.0: queue 4 stuck 3 time. Fw reload.
+[ 1937.112051] iwl3945 0000:06:00.0: On demand firmware reload
+[ 1952.524042] iwl3945 0000:06:00.0: queue 4 stuck 3 time. Fw reload.
+[ 1952.524050] iwl3945 0000:06:00.0: On demand firmware reload
+[ 1967.232803] iwl3945 0000:06:00.0: queue 4 stuck 3 time. Fw reload.
+[ 1967.232809] iwl3945 0000:06:00.0: On demand firmware reload
+[ 1967.232816] iwl3945 0000:06:00.0: queue 0 stuck 3 time. Fw reload.
+[ 1967.232818] iwl3945 0000:06:00.0: On demand firmware reload
+[ 1973.648048] iwl3945 0000:06:00.0: queue 4 stuck 3 time. Fw reload.
+[ 1973.648057] iwl3945 0000:06:00.0: On demand firmware reload
+[ 1982.160048] iwl3945 0000:06:00.0: queue 0 stuck 3 time. Fw reload.
+[ 1982.160057] iwl3945 0000:06:00.0: On demand firmware reload
+[ 1998.672041] iwl3945 0000:06:00.0: queue 4 stuck 3 time. Fw reload.
+[ 1998.672050] iwl3945 0000:06:00.0: On demand firmware reload
+[ 2006.284039] iwl3945 0000:06:00.0: queue 0 stuck 3 time. Fw reload.
+[ 2006.284047] iwl3945 0000:06:00.0: On demand firmware reload
+[ 2009.696041] iwl3945 0000:06:00.0: queue 2 stuck 3 time. Fw reload.
+[ 2009.696046] iwl3945 0000:06:00.0: On demand firmware reload
+[ 2014.212036] iwl3945 0000:06:00.0: queue 4 stuck 3 time. Fw reload.
+[ 2014.212044] iwl3945 0000:06:00.0: On demand firmware reload
+[ 2023.628070] iwl3945 0000:06:00.0: queue 2 stuck 3 time. Fw reload.
+[ 2023.628078] iwl3945 0000:06:00.0: On demand firmware reload
+[ 2031.040049] iwl3945 0000:06:00.0: queue 2 stuck 3 time. Fw reload.
+[ 2031.040057] iwl3945 0000:06:00.0: On demand firmware reload
+[ 2037.452029] iwl3945 0000:06:00.0: queue 4 stuck 3 time. Fw reload.
+[ 2037.452034] iwl3945 0000:06:00.0: On demand firmware reload
+[ 2048.965565] iwl3945 0000:06:00.0: queue 4 stuck 3 time. Fw reload.
+[ 2048.965570] iwl3945 0000:06:00.0: On demand firmware reload
+[ 2057.480042] iwl3945 0000:06:00.0: queue 4 stuck 3 time. Fw reload.
+[ 2057.480051] iwl3945 0000:06:00.0: On demand firmware reload
+[ 2066.996032] iwl3945 0000:06:00.0: queue 4 stuck 3 time. Fw reload.
+[ 2066.996037] iwl3945 0000:06:00.0: On demand firmware reload
+[ 2072.404026] iwl3945 0000:06:00.0: queue 2 stuck 3 time. Fw reload.
+[ 2072.404035] iwl3945 0000:06:00.0: On demand firmware reload
+[ 2081.916061] iwl3945 0000:06:00.0: queue 4 stuck 3 time. Fw reload.
+[ 2081.916069] iwl3945 0000:06:00.0: On demand firmware reload
+[ 2097.328038] iwl3945 0000:06:00.0: queue 2 stuck 3 time. Fw reload.
+[ 2097.328046] iwl3945 0000:06:00.0: On demand firmware reload
+[ 2117.331807] CE: hpet increased min_delta_ns to 101818 nsec
+[ 2325.744044] iwl3945 0000:06:00.0: queue 2 stuck 3 time. Fw reload.
+[ 2325.744052] iwl3945 0000:06:00.0: On demand firmware reload
+[ 2326.042329] luakit[10614]: segfault at 471 ip 00007fdd47519a9b sp 00007fff00b8f1f0 error 4 in libwebkit-1.0.so.2.17.8[7fdd46dcf000+1082000]
+[ 4776.268054] iwl3945 0000:06:00.0: queue 4 stuck 3 time. Fw reload.
+[ 4776.268063] iwl3945 0000:06:00.0: On demand firmware reload
+[ 4780.688040] iwl3945 0000:06:00.0: queue 4 stuck 3 time. Fw reload.
+[ 4780.688048] iwl3945 0000:06:00.0: On demand firmware reload
+[ 4841.428076] iwl3945 0000:06:00.0: Error sending REPLY_TX_PWR_TABLE_CMD: time out after 500ms.
+[ 4843.100038] iwl3945 0000:06:00.0: queue 4 stuck 3 time. Fw reload.
+[ 4843.100046] iwl3945 0000:06:00.0: On demand firmware reload
+[ 5236.512967] iwl3945 0000:06:00.0: queue 4 stuck 3 time. Fw reload.
+[ 5236.512973] iwl3945 0000:06:00.0: On demand firmware reload
+[ 5243.028035] iwl3945 0000:06:00.0: queue 4 stuck 3 time. Fw reload.
+[ 5243.028041] iwl3945 0000:06:00.0: On demand firmware reload
+[ 5249.740043] iwl3945 0000:06:00.0: queue 4 stuck 3 time. Fw reload.
+[ 5249.740052] iwl3945 0000:06:00.0: On demand firmware reload
+[ 5249.740061] iwl3945 0000:06:00.0: queue 2 stuck 3 time. Fw reload.
+[ 5249.740065] iwl3945 0000:06:00.0: On demand firmware reload
+[ 5254.152043] iwl3945 0000:06:00.0: queue 2 stuck 3 time. Fw reload.
+[ 5254.152051] iwl3945 0000:06:00.0: On demand firmware reload
+[ 5258.564054] iwl3945 0000:06:00.0: queue 2 stuck 3 time. Fw reload.
+[ 5258.564062] iwl3945 0000:06:00.0: On demand firmware reload
+[ 5263.080042] iwl3945 0000:06:00.0: queue 4 stuck 3 time. Fw reload.
+[ 5263.080048] iwl3945 0000:06:00.0: On demand firmware reload
+[ 5266.496061] iwl3945 0000:06:00.0: queue 2 stuck 3 time. Fw reload.
+[ 5266.496069] iwl3945 0000:06:00.0: On demand firmware reload
+[ 5271.904065] iwl3945 0000:06:00.0: queue 4 stuck 3 time. Fw reload.
+[ 5271.904073] iwl3945 0000:06:00.0: On demand firmware reload
+[ 5278.320035] iwl3945 0000:06:00.0: queue 0 stuck 3 time. Fw reload.
+[ 5278.320041] iwl3945 0000:06:00.0: On demand firmware reload
+[ 5285.828028] iwl3945 0000:06:00.0: queue 4 stuck 3 time. Fw reload.
+[ 5285.828037] iwl3945 0000:06:00.0: On demand firmware reload
+[ 5295.344071] iwl3945 0000:06:00.0: queue 4 stuck 3 time. Fw reload.
+[ 5295.344079] iwl3945 0000:06:00.0: On demand firmware reload
+[ 5300.756061] iwl3945 0000:06:00.0: queue 2 stuck 3 time. Fw reload.
+[ 5300.756069] iwl3945 0000:06:00.0: On demand firmware reload
+[ 5306.168069] iwl3945 0000:06:00.0: queue 2 stuck 3 time. Fw reload.
+[ 5306.168077] iwl3945 0000:06:00.0: On demand firmware reload
+[ 5310.676036] iwl3945 0000:06:00.0: queue 4 stuck 3 time. Fw reload.
+[ 5310.676045] iwl3945 0000:06:00.0: On demand firmware reload
+[ 5315.093511] iwl3945 0000:06:00.0: queue 2 stuck 3 time. Fw reload.
+[ 5315.093516] iwl3945 0000:06:00.0: On demand firmware reload
+[ 7441.786427] nepomukservices[7544]: segfault at 1 ip 00007f7a373fe75f sp 00007f7a31f11dc0 error 6 in nepomukstrigiservice.so[7f7a373ea000+2c000]
+[10408.346478] CE: hpet increased min_delta_ns to 152727 nsec
+[10414.684138] CE: hpet increased min_delta_ns to 229090 nsec
+[10715.944819] hrtimer: interrupt took 12878488 ns
+[10734.708571] iwl3945 0000:06:00.0: Hardware error detected.  Restarting.
+[10734.708578] iwl3945 0000:06:00.0: Loaded firmware version: 15.32.2.9
+[10734.708614] iwl3945 0000:06:00.0: Desc       Time       asrtPC  blink2 ilink1  nmiPC   Line
+[10734.708751] iwl3945 0000:06:00.0: Start IWL Event Log Dump: display last 20 count
+[10734.708793] iwl3945 0000:06:00.0: 1727041581	0x66f0902c	0503
+[10734.708815] iwl3945 0000:06:00.0: 1727041582	0x0000003a	0503
+[10734.708838] iwl3945 0000:06:00.0: 1727041582	0xbc000fd4	0503
+[10734.708860] iwl3945 0000:06:00.0: 1727041583	0x66f0902a	0503
+[10734.708882] iwl3945 0000:06:00.0: 1727041584	0x0000003a	0503
+[10734.708904] iwl3945 0000:06:00.0: 1727041585	0xbc000fd6	0503
+[10734.708926] iwl3945 0000:06:00.0: 1727041587	0xbc000fcd	0500
+[10734.708949] iwl3945 0000:06:00.0: 1727041588	0xbc000fcd	0600
+[10734.708971] iwl3945 0000:06:00.0: 1727041589	0x00000002	0600
+[10734.708993] iwl3945 0000:06:00.0: 1727041599	0x000000a2	0600
+[10734.709015] iwl3945 0000:06:00.0: 1727042925	0x000000d9	0106
+[10734.709037] iwl3945 0000:06:00.0: 1727042927	0x00000000	0302
+[10734.709059] iwl3945 0000:06:00.0: 1727042935	0x00008000	0350
+[10734.709081] iwl3945 0000:06:00.0: 1727057490	0x000000d9	0106
+[10734.709103] iwl3945 0000:06:00.0: 1727057492	0x00000000	0301
+[10734.709125] iwl3945 0000:06:00.0: 1727057565	0x0000a7ea	0353
+[10734.709148] iwl3945 0000:06:00.0: 1727057575	0x00000000	0352
+[10734.709170] iwl3945 0000:06:00.0: 1727062084	0x000000d9	0106
+[10734.709192] iwl3945 0000:06:00.0: 1727062086	0x00000000	0301
+[10734.709214] iwl3945 0000:06:00.0: 1727062095	0x00008000	0350
+[10744.341736] iwl3945 0000:06:00.0: Hardware error detected.  Restarting.
+[10744.341743] iwl3945 0000:06:00.0: Loaded firmware version: 15.32.2.9
+[10744.341781] iwl3945 0000:06:00.0: Desc       Time       asrtPC  blink2 ilink1  nmiPC   Line
+[10744.341915] iwl3945 0000:06:00.0: Start IWL Event Log Dump: display last 20 count
+[10744.341955] iwl3945 0000:06:00.0: 1736667179	0x67837029	0503
+[10744.341978] iwl3945 0000:06:00.0: 1736667180	0x0000003a	0503
+[10744.342000] iwl3945 0000:06:00.0: 1736667181	0x5c000fd7	0503
+[10744.342022] iwl3945 0000:06:00.0: 1736667182	0x67837029	0503
+[10744.342044] iwl3945 0000:06:00.0: 1736667182	0x0000003a	0503
+[10744.342066] iwl3945 0000:06:00.0: 1736667183	0x5c000fd7	0503
+[10744.342088] iwl3945 0000:06:00.0: 1736667185	0x5c000fcf	0500
+[10744.342111] iwl3945 0000:06:00.0: 1736667186	0x5c000fcf	0600
+[10744.342133] iwl3945 0000:06:00.0: 1736667187	0x00000001	0600
+[10744.342155] iwl3945 0000:06:00.0: 1736667197	0x000000a2	0600
+[10744.342177] iwl3945 0000:06:00.0: 1736670834	0x00000181	0631
+[10744.342199] iwl3945 0000:06:00.0: 1736670834	0x5c00018e	0631
+[10744.342221] iwl3945 0000:06:00.0: 1736673841	0x000000d9	0106
+[10744.342243] iwl3945 0000:06:00.0: 1736673842	0x00000000	0302
+[10744.342265] iwl3945 0000:06:00.0: 1736673867	0x0000029b	0353
+[10744.342287] iwl3945 0000:06:00.0: 1736676234	0x0000019c	0637
+[10744.342310] iwl3945 0000:06:00.0: 1736676235	0x5d017c76	0637
+[10744.342332] iwl3945 0000:06:00.0: 1736676241	0x000000a2	0600
+[10744.342354] iwl3945 0000:06:00.0: 1736676254	0x5f000190	0630
+[10744.342376] iwl3945 0000:06:00.0: 1736676254	0x60017c78	0630
+[10766.969613] CE: hpet increased min_delta_ns to 343635 nsec
+[10777.409741] iwl3945 0000:06:00.0: Hardware error detected.  Restarting.
+[10777.409749] iwl3945 0000:06:00.0: Loaded firmware version: 15.32.2.9
+[10777.410007] iwl3945 0000:06:00.0: Desc       Time       asrtPC  blink2 ilink1  nmiPC   Line
+[10777.410615] iwl3945 0000:06:00.0: Start IWL Event Log Dump: display last 20 count
+[10777.410871] iwl3945 0000:06:00.0: 1769741380	0x000001fe	0501
+[10777.410915] iwl3945 0000:06:00.0: 1769741768	0x00000000	0502
+[10777.410941] iwl3945 0000:06:00.0: 1769742379	0x000000c3	0310
+[10777.410967] iwl3945 0000:06:00.0: 1769742380	0x00000000	0314
+[10777.411020] iwl3945 0000:06:00.0: 1769742381	0x0000031a	0501
+[10777.411234] iwl3945 0000:06:00.0: 1769742385	0x000003fc	0504
+[10777.411264] iwl3945 0000:06:00.0: 1769742386	0x697c202f	0503
+[10777.411292] iwl3945 0000:06:00.0: 1769742386	0x0000003a	0503
+[10777.411316] iwl3945 0000:06:00.0: 1769742387	0x41000fd1	0503
+[10777.411546] iwl3945 0000:06:00.0: 1769742388	0x697c202f	0503
+[10777.411576] iwl3945 0000:06:00.0: 1769742388	0x0000003a	0503
+[10777.411601] iwl3945 0000:06:00.0: 1769742389	0x41000fd1	0503
+[10777.411630] iwl3945 0000:06:00.0: 1769742391	0x41000fc9	0500
+[10777.411652] iwl3945 0000:06:00.0: 1769742393	0x41000fc9	0600
+[10777.411903] iwl3945 0000:06:00.0: 1769742394	0x00000002	0600
+[10777.411934] iwl3945 0000:06:00.0: 1769742403	0x000000a2	0600
+[10777.411967] iwl3945 0000:06:00.0: 1769755820	0x000000d9	0106
+[10777.411990] iwl3945 0000:06:00.0: 1769755822	0x00000000	0301
+[10777.412015] iwl3945 0000:06:00.0: 1769755895	0x00000215	0353
+[10777.412272] iwl3945 0000:06:00.0: 1769755905	0x00000000	0352
+[10918.818395] CE: hpet increased min_delta_ns to 515452 nsec
+[11203.109086] iwl3945 0000:06:00.0: Hardware error detected.  Restarting.
+[11203.109094] iwl3945 0000:06:00.0: Loaded firmware version: 15.32.2.9
+[11203.109130] iwl3945 0000:06:00.0: Desc       Time       asrtPC  blink2 ilink1  nmiPC   Line
+[11203.109262] iwl3945 0000:06:00.0: Start IWL Event Log Dump: display last 20 count
+[11203.109304] iwl3945 0000:06:00.0: 2195418172	0x00000080	0313
+[11203.109329] iwl3945 0000:06:00.0: 2195418174	0x000001fe	0501
+[11203.109353] iwl3945 0000:06:00.0: 2195418562	0x00000000	0502
+[11203.109377] iwl3945 0000:06:00.0: 2195419170	0x000000c3	0310
+[11203.109403] iwl3945 0000:06:00.0: 2195419171	0x00000000	0314
+[11203.109425] iwl3945 0000:06:00.0: 2195419172	0x0000031a	0501
+[11203.109452] iwl3945 0000:06:00.0: 2195419177	0x000003fc	0504
+[11203.109474] iwl3945 0000:06:00.0: 2195419178	0x82db7027	0503
+[11203.109496] iwl3945 0000:06:00.0: 2195419178	0x0000003a	0503
+[11203.109519] iwl3945 0000:06:00.0: 2195419179	0x3b000fd9	0503
+[11203.109541] iwl3945 0000:06:00.0: 2195419180	0x82db7027	0503
+[11203.109565] iwl3945 0000:06:00.0: 2195419180	0x0000003a	0503
+[11203.109588] iwl3945 0000:06:00.0: 2195419181	0x3b000fd9	0503
+[11203.109613] iwl3945 0000:06:00.0: 2195419183	0x3b000fd1	0500
+[11203.109635] iwl3945 0000:06:00.0: 2195419185	0x3b000fd1	0600
+[11203.109658] iwl3945 0000:06:00.0: 2195419185	0x00000002	0600
+[11203.109680] iwl3945 0000:06:00.0: 2195419195	0x000000a2	0600
+[11203.109702] iwl3945 0000:06:00.0: 2195432830	0x000000d9	0106
+[11203.109724] iwl3945 0000:06:00.0: 2195432832	0x00000000	0301
+[11203.109746] iwl3945 0000:06:00.0: 2195432842	0x00008000	0350
+[11224.503051] iwl3945 0000:06:00.0: Hardware error detected.  Restarting.
+[11224.503058] iwl3945 0000:06:00.0: Loaded firmware version: 15.32.2.9
+[11224.503098] iwl3945 0000:06:00.0: Desc       Time       asrtPC  blink2 ilink1  nmiPC   Line
+[11224.503246] iwl3945 0000:06:00.0: Start IWL Event Log Dump: display last 20 count
+[11224.503288] iwl3945 0000:06:00.0: 2216820783	0x0000003a	0503
+[11224.503313] iwl3945 0000:06:00.0: 2216820783	0xd0000fd3	0503
+[11224.503336] iwl3945 0000:06:00.0: 2216820784	0x8422002b	0503
+[11224.503358] iwl3945 0000:06:00.0: 2216820785	0x0000003a	0503
+[11224.503383] iwl3945 0000:06:00.0: 2216820785	0xd0000fd5	0503
+[11224.503410] iwl3945 0000:06:00.0: 2216820788	0xd0000fcc	0500
+[11224.503433] iwl3945 0000:06:00.0: 2216820789	0xd0000fcc	0600
+[11224.503455] iwl3945 0000:06:00.0: 2216820790	0x00000000	0600
+[11224.503481] iwl3945 0000:06:00.0: 2216820800	0x000000a2	0600
+[11224.503503] iwl3945 0000:06:00.0: 2216820805	0x00000005	0631
+[11224.503525] iwl3945 0000:06:00.0: 2216820809	0x00000004	0631
+[11224.503547] iwl3945 0000:06:00.0: 2216820821	0xd2000190	0630
+[11224.503570] iwl3945 0000:06:00.0: 2216820821	0xd3017c78	0630
+[11224.503594] iwl3945 0000:06:00.0: 2216848669	0x000000d9	0106
+[11224.503616] iwl3945 0000:06:00.0: 2216848671	0x00000000	0302
+[11224.503639] iwl3945 0000:06:00.0: 2216848680	0x00008000	0350
+[11224.503664] iwl3945 0000:06:00.0: 2216850354	0x000000d9	0106
+[11224.503687] iwl3945 0000:06:00.0: 2216850356	0x00000000	0301
+[11224.503713] iwl3945 0000:06:00.0: 2216850430	0x00000121	0353
+[11224.503739] iwl3945 0000:06:00.0: 2216850440	0x00000000	0352
+[11445.990812] iwl3945 0000:06:00.0: Hardware error detected.  Restarting.
+[11445.990819] iwl3945 0000:06:00.0: Loaded firmware version: 15.32.2.9
+[11445.990864] iwl3945 0000:06:00.0: Desc       Time       asrtPC  blink2 ilink1  nmiPC   Line
+[11445.991205] iwl3945 0000:06:00.0: Start IWL Event Log Dump: display last 20 count
+[11445.991263] iwl3945 0000:06:00.0: 2438311980	0x72000fda	0503
+[11445.991295] iwl3945 0000:06:00.0: 2438311982	0x72000fd2	0500
+[11445.991317] iwl3945 0000:06:00.0: 2438311983	0x72000fd2	0600
+[11445.991340] iwl3945 0000:06:00.0: 2438311984	0x00000001	0600
+[11445.991364] iwl3945 0000:06:00.0: 2438311994	0x000000a2	0600
+[11445.991407] iwl3945 0000:06:00.0: 2438315634	0x00000181	0631
+[11445.991442] iwl3945 0000:06:00.0: 2438315634	0x7200018e	0631
+[11445.991493] iwl3945 0000:06:00.0: 2438321034	0x0000019c	0637
+[11445.991580] iwl3945 0000:06:00.0: 2438321034	0x73017c76	0637
+[11445.991671] iwl3945 0000:06:00.0: 2438321041	0x000000a2	0600
+[11445.991758] iwl3945 0000:06:00.0: 2438321053	0x75000190	0630
+[11445.991783] iwl3945 0000:06:00.0: 2438321054	0x76017c78	0630
+[11445.991881] iwl3945 0000:06:00.0: 2438324447	0x000000d9	0106
+[11445.991963] iwl3945 0000:06:00.0: 2438324449	0x00000000	0301
+[11445.992021] iwl3945 0000:06:00.0: 2438324520	0x0000088a	0353
+[11445.992306] iwl3945 0000:06:00.0: 2438324530	0x00000000	0352
+[11445.992450] iwl3945 0000:06:00.0: 2438325716	0x000000d9	0106
+[11445.992486] iwl3945 0000:06:00.0: 2438325718	0x00000000	0301
+[11445.992510] iwl3945 0000:06:00.0: 2438325791	0x0000088b	0353
+[11445.992534] iwl3945 0000:06:00.0: 2438325801	0x00000000	0352
+[11452.865640] iwl3945 0000:06:00.0: Hardware error detected.  Restarting.
+[11452.865647] iwl3945 0000:06:00.0: Loaded firmware version: 15.32.2.9
+[11452.865683] iwl3945 0000:06:00.0: Desc       Time       asrtPC  blink2 ilink1  nmiPC   Line
+[11452.865817] iwl3945 0000:06:00.0: Start IWL Event Log Dump: display last 20 count
+[11452.865858] iwl3945 0000:06:00.0: 2445180202	0x00000000	0301
+[11452.865880] iwl3945 0000:06:00.0: 2445180276	0x00000097	0353
+[11452.865902] iwl3945 0000:06:00.0: 2445180287	0x00000000	0352
+[11452.865926] iwl3945 0000:06:00.0: 2445192372	0x000000d9	0106
+[11452.865948] iwl3945 0000:06:00.0: 2445192374	0x00000000	0301
+[11452.865970] iwl3945 0000:06:00.0: 2445192383	0x00008000	0350
+[11452.865992] iwl3945 0000:06:00.0: 2445202478	0x000000d9	0106
+[11452.866014] iwl3945 0000:06:00.0: 2445202479	0x00000000	0301
+[11452.866036] iwl3945 0000:06:00.0: 2445202552	0x00000098	0353
+[11452.866058] iwl3945 0000:06:00.0: 2445202562	0x00000000	0352
+[11452.866081] iwl3945 0000:06:00.0: 2445207796	0x000000d9	0106
+[11452.866103] iwl3945 0000:06:00.0: 2445207798	0x00000000	0301
+[11452.866125] iwl3945 0000:06:00.0: 2445207807	0x00008000	0350
+[11452.866147] iwl3945 0000:06:00.0: 2445213057	0x000000d9	0106
+[11452.866171] iwl3945 0000:06:00.0: 2445213059	0x00000000	0301
+[11452.866193] iwl3945 0000:06:00.0: 2445213147	0x00000099	0353
+[11452.866215] iwl3945 0000:06:00.0: 2445213158	0x00000000	0352
+[11452.866238] iwl3945 0000:06:00.0: 2445220073	0x000000d9	0106
+[11452.866260] iwl3945 0000:06:00.0: 2445220074	0x00000000	0302
+[11452.866282] iwl3945 0000:06:00.0: 2445220083	0x00008000	0350
+[11455.524538] iwl3945 0000:06:00.0: Hardware error detected.  Restarting.
+[11455.524545] iwl3945 0000:06:00.0: Loaded firmware version: 15.32.2.9
+[11455.524582] iwl3945 0000:06:00.0: Desc       Time       asrtPC  blink2 ilink1  nmiPC   Line
+[11455.524715] iwl3945 0000:06:00.0: Start IWL Event Log Dump: display last 20 count
+[11455.524757] iwl3945 0000:06:00.0: 2447835190	0x19000fca	0500
+[11455.524779] iwl3945 0000:06:00.0: 2447835191	0x19000fca	0600
+[11455.524802] iwl3945 0000:06:00.0: 2447835192	0x00000001	0600
+[11455.524824] iwl3945 0000:06:00.0: 2447835202	0x000000a2	0600
+[11455.524847] iwl3945 0000:06:00.0: 2447838280	0x000000d9	0106
+[11455.524869] iwl3945 0000:06:00.0: 2447838282	0x00000000	0301
+[11455.524893] iwl3945 0000:06:00.0: 2447838292	0x00008000	0350
+[11455.524916] iwl3945 0000:06:00.0: 2447838730	0x000000d9	0106
+[11455.524942] iwl3945 0000:06:00.0: 2447838731	0x00000000	0302
+[11455.524965] iwl3945 0000:06:00.0: 2447838772	0x00000163	0353
+[11455.524988] iwl3945 0000:06:00.0: 2447838834	0x00000181	0631
+[11455.525011] iwl3945 0000:06:00.0: 2447838835	0x1900018e	0631
+[11455.525033] iwl3945 0000:06:00.0: 2447844234	0x0000019c	0637
+[11455.525056] iwl3945 0000:06:00.0: 2447844235	0x1a017c76	0637
+[11455.525078] iwl3945 0000:06:00.0: 2447844242	0x000000a2	0600
+[11455.525100] iwl3945 0000:06:00.0: 2447844255	0x1c000190	0630
+[11455.525122] iwl3945 0000:06:00.0: 2447844255	0x1d017c78	0630
+[11455.525144] iwl3945 0000:06:00.0: 2447866728	0x000000d9	0106
+[11455.525167] iwl3945 0000:06:00.0: 2447866730	0x00000000	0302
+[11455.525189] iwl3945 0000:06:00.0: 2447866738	0x00008000	0350
+[11461.469071] iwl3945 0000:06:00.0: Hardware error detected.  Restarting.
+[11461.469079] iwl3945 0000:06:00.0: Loaded firmware version: 15.32.2.9
+[11461.469154] iwl3945 0000:06:00.0: Desc       Time       asrtPC  blink2 ilink1  nmiPC   Line
+[11461.470382] iwl3945 0000:06:00.0: Start IWL Event Log Dump: display last 20 count
+[11461.470438] iwl3945 0000:06:00.0: 2453773373	0x000001fe	0501
+[11461.470546] iwl3945 0000:06:00.0: 2453773761	0x00000000	0502
+[11461.470569] iwl3945 0000:06:00.0: 2453774372	0x000000c3	0310
+[11461.470592] iwl3945 0000:06:00.0: 2453774373	0x00000000	0314
+[11461.470614] iwl3945 0000:06:00.0: 2453774375	0x0000031a	0501
+[11461.470638] iwl3945 0000:06:00.0: 2453774379	0x000003fc	0504
+[11461.470661] iwl3945 0000:06:00.0: 2453774380	0x9241a029	0503
+[11461.470683] iwl3945 0000:06:00.0: 2453774380	0x0000003a	0503
+[11461.470706] iwl3945 0000:06:00.0: 2453774381	0x39000fd7	0503
+[11461.470729] iwl3945 0000:06:00.0: 2453774382	0x9241a029	0503
+[11461.470751] iwl3945 0000:06:00.0: 2453774382	0x0000003a	0503
+[11461.470773] iwl3945 0000:06:00.0: 2453774383	0x39000fd7	0503
+[11461.470795] iwl3945 0000:06:00.0: 2453774385	0x39000fcf	0500
+[11461.470818] iwl3945 0000:06:00.0: 2453774387	0x39000fcf	0600
+[11461.470840] iwl3945 0000:06:00.0: 2453774387	0x00000000	0600
+[11461.470862] iwl3945 0000:06:00.0: 2453774397	0x000000a2	0600
+[11461.470884] iwl3945 0000:06:00.0: 2453774403	0x00000005	0631
+[11461.470907] iwl3945 0000:06:00.0: 2453774408	0x00000004	0631
+[11461.470929] iwl3945 0000:06:00.0: 2453774420	0x3b000190	0630
+[11461.470951] iwl3945 0000:06:00.0: 2453774420	0x3c017c78	0630
+[11462.576525] iwl3945 0000:06:00.0: Hardware error detected.  Restarting.
+[11462.576534] iwl3945 0000:06:00.0: Loaded firmware version: 15.32.2.9
+[11462.576598] iwl3945 0000:06:00.0: Desc       Time       asrtPC  blink2 ilink1  nmiPC   Line
+[11462.577055] iwl3945 0000:06:00.0: Start IWL Event Log Dump: display last 20 count
+[11462.577144] iwl3945 0000:06:00.0: 2454908400	0x000000d9	0106
+[11462.577866] iwl3945 0000:06:00.0: 2454908402	0x00000000	0302
+[11462.577890] iwl3945 0000:06:00.0: 2454908410	0x00008000	0350
+[11462.577917] iwl3945 0000:06:00.0: 2454909834	0x0000019c	0637
+[11462.578041] iwl3945 0000:06:00.0: 2454909834	0x0b017c76	0637
+[11462.578065] iwl3945 0000:06:00.0: 2454909842	0x000000a2	0600
+[11462.578088] iwl3945 0000:06:00.0: 2454909854	0x0d000190	0630
+[11462.578111] iwl3945 0000:06:00.0: 2454909855	0x0e017c78	0630
+[11462.578133] iwl3945 0000:06:00.0: 2454910864	0x000000d9	0106
+[11462.578155] iwl3945 0000:06:00.0: 2454910866	0x00000000	0302
+[11462.578178] iwl3945 0000:06:00.0: 2454910874	0x00008000	0350
+[11462.578204] iwl3945 0000:06:00.0: 2454911985	0x000000d9	0106
+[11462.578226] iwl3945 0000:06:00.0: 2454911987	0x00000000	0302
+[11462.578250] iwl3945 0000:06:00.0: 2454912027	0x000000a4	0353
+[11462.578274] iwl3945 0000:06:00.0: 2454917137	0x000000d9	0106
+[11462.578297] iwl3945 0000:06:00.0: 2454917138	0x00000000	0302
+[11462.578319] iwl3945 0000:06:00.0: 2454917147	0x00008000	0350
+[11462.578341] iwl3945 0000:06:00.0: 2454932039	0x000000d9	0106
+[11462.578363] iwl3945 0000:06:00.0: 2454932040	0x00000000	0301
+[11462.578385] iwl3945 0000:06:00.0: 2454932050	0x00008000	0350
+[11466.380696] iwl3945 0000:06:00.0: Hardware error detected.  Restarting.
+[11466.380705] iwl3945 0000:06:00.0: Loaded firmware version: 15.32.2.9
+[11466.380766] iwl3945 0000:06:00.0: Desc       Time       asrtPC  blink2 ilink1  nmiPC   Line
+[11466.381197] iwl3945 0000:06:00.0: Start IWL Event Log Dump: display last 20 count
+[11466.381273] iwl3945 0000:06:00.0: 2458689580	0x928ca02b	0503
+[11466.381401] iwl3945 0000:06:00.0: 2458689581	0x0000003a	0503
+[11466.381448] iwl3945 0000:06:00.0: 2458689581	0x24000fd5	0503
+[11466.381483] iwl3945 0000:06:00.0: 2458689582	0x928ca029	0503
+[11466.381508] iwl3945 0000:06:00.0: 2458689583	0x0000003a	0503
+[11466.381540] iwl3945 0000:06:00.0: 2458689584	0x24000fd7	0503
+[11466.381566] iwl3945 0000:06:00.0: 2458689586	0x24000fce	0500
+[11466.381690] iwl3945 0000:06:00.0: 2458689587	0x24000fce	0600
+[11466.381731] iwl3945 0000:06:00.0: 2458689588	0x00000000	0600
+[11466.381767] iwl3945 0000:06:00.0: 2458689598	0x000000a2	0600
+[11466.381801] iwl3945 0000:06:00.0: 2458689603	0x00000005	0631
+[11466.381830] iwl3945 0000:06:00.0: 2458689608	0x00000004	0631
+[11466.382367] iwl3945 0000:06:00.0: 2458689620	0x26000190	0630
+[11466.382390] iwl3945 0000:06:00.0: 2458689621	0x27017c78	0630
+[11466.382420] iwl3945 0000:06:00.0: 2458706542	0x000000d9	0106
+[11466.382543] iwl3945 0000:06:00.0: 2458706543	0x00000000	0302
+[11466.382566] iwl3945 0000:06:00.0: 2458706565	0x0000019d	0353
+[11466.382589] iwl3945 0000:06:00.0: 2458722970	0x000000d9	0106
+[11466.382613] iwl3945 0000:06:00.0: 2458722972	0x00000000	0302
+[11466.382649] iwl3945 0000:06:00.0: 2458723015	0x00000000	0304
+[11467.198246] iwl3945 0000:06:00.0: Hardware error detected.  Restarting.
+[11467.198254] iwl3945 0000:06:00.0: Loaded firmware version: 15.32.2.9
+[11467.198335] iwl3945 0000:06:00.0: Desc       Time       asrtPC  blink2 ilink1  nmiPC   Line
+[11467.198727] iwl3945 0000:06:00.0: Start IWL Event Log Dump: display last 20 count
+[11467.198810] iwl3945 0000:06:00.0: 2459540338	0x00008000	0350
+[11467.198862] iwl3945 0000:06:00.0: 2459540650	0x000000d9	0106
+[11467.198908] iwl3945 0000:06:00.0: 2459540652	0x00000000	0302
+[11467.198938] iwl3945 0000:06:00.0: 2459540694	0x000000a5	0353
+[11467.198969] iwl3945 0000:06:00.0: 2459545032	0x000000d9	0106
+[11467.199000] iwl3945 0000:06:00.0: 2459545034	0x00000000	0301
+[11467.199158] iwl3945 0000:06:00.0: 2459545111	0x00000041	0353
+[11467.199193] iwl3945 0000:06:00.0: 2459545121	0x00000000	0352
+[11467.199230] iwl3945 0000:06:00.0: 2459545628	0x000000d9	0106
+[11467.199262] iwl3945 0000:06:00.0: 2459545630	0x00000000	0302
+[11467.199296] iwl3945 0000:06:00.0: 2459545639	0x00008000	0350
+[11467.199807] iwl3945 0000:06:00.0: 2459550333	0x000000d9	0106
+[11467.199833] iwl3945 0000:06:00.0: 2459550335	0x00000000	0302
+[11467.199881] iwl3945 0000:06:00.0: 2459550380	0x000000a6	0353
+[11467.199980] iwl3945 0000:06:00.0: 2459551377	0x000000d9	0106
+[11467.200005] iwl3945 0000:06:00.0: 2459551379	0x00000000	0302
+[11467.200029] iwl3945 0000:06:00.0: 2459551387	0x00008000	0350
+[11467.200055] iwl3945 0000:06:00.0: 2459554370	0x000000d9	0106
+[11467.200083] iwl3945 0000:06:00.0: 2459554372	0x00000000	0301
+[11467.200109] iwl3945 0000:06:00.0: 2459554381	0x00008000	0350
+[11580.427308] CE: hpet increased min_delta_ns to 773178 nsec
+[11582.937504] CE: hpet increased min_delta_ns to 1159767 nsec
+[11876.075482] iwl3945 0000:06:00.0: Hardware error detected.  Restarting.
+[11876.075490] iwl3945 0000:06:00.0: Loaded firmware version: 15.32.2.9
+[11876.075550] iwl3945 0000:06:00.0: Desc       Time       asrtPC  blink2 ilink1  nmiPC   Line
+[11876.076250] iwl3945 0000:06:00.0: Start IWL Event Log Dump: display last 20 count
+[11876.076330] iwl3945 0000:06:00.0: 2868397023	0x99018c27	0503
+[11876.076365] iwl3945 0000:06:00.0: 2868397025	0x99018c1f	0500
+[11876.076398] iwl3945 0000:06:00.0: 2868397027	0x99018c1f	0600
+[11876.076632] iwl3945 0000:06:00.0: 2868397027	0x00000002	0600
+[11876.076696] iwl3945 0000:06:00.0: 2868397037	0x000000a2	0600
+[11876.076752] iwl3945 0000:06:00.0: 2868397365	0x000000d9	0106
+[11876.076784] iwl3945 0000:06:00.0: 2868397367	0x00000000	0301
+[11876.076816] iwl3945 0000:06:00.0: 2868397441	0x00000e50	0353
+[11876.076848] iwl3945 0000:06:00.0: 2868397452	0x00000000	0352
+[11876.076879] iwl3945 0000:06:00.0: 2868402667	0x000000d9	0106
+[11876.076902] iwl3945 0000:06:00.0: 2868402668	0x00000000	0301
+[11876.076930] iwl3945 0000:06:00.0: 2868402741	0x00000e51	0353
+[11876.077140] iwl3945 0000:06:00.0: 2868402752	0x00000000	0352
+[11876.077174] iwl3945 0000:06:00.0: 2868408937	0x000000d9	0106
+[11876.077204] iwl3945 0000:06:00.0: 2868408939	0x00000000	0301
+[11876.077235] iwl3945 0000:06:00.0: 2868409013	0x00000e52	0353
+[11876.077260] iwl3945 0000:06:00.0: 2868409023	0x00000000	0352
+[11876.077286] iwl3945 0000:06:00.0: 2868419913	0x000000d9	0106
+[11876.077316] iwl3945 0000:06:00.0: 2868419915	0x00000000	0301
+[11876.077340] iwl3945 0000:06:00.0: 2868419925	0x00008000	0350
+[11916.560367] iwl3945 0000:06:00.0: queue 2 stuck 3 time. Fw reload.
+[11916.560376] iwl3945 0000:06:00.0: On demand firmware reload
+[11927.212154] iwl3945 0000:06:00.0: queue 0 stuck 3 time. Fw reload.
+[11927.212162] iwl3945 0000:06:00.0: On demand firmware reload
+[12200.575576] iwl3945 0000:06:00.0: Hardware error detected.  Restarting.
+[12200.575584] iwl3945 0000:06:00.0: Loaded firmware version: 15.32.2.9
+[12200.575619] iwl3945 0000:06:00.0: Desc       Time       asrtPC  blink2 ilink1  nmiPC   Line
+[12200.575764] iwl3945 0000:06:00.0: Start IWL Event Log Dump: display last 20 count
+[12200.575807] iwl3945 0000:06:00.0: 3192897584	0xbe4fc02e	0503
+[12200.575830] iwl3945 0000:06:00.0: 3192897585	0x0000003a	0503
+[12200.575852] iwl3945 0000:06:00.0: 3192897586	0x6c000fd2	0503
+[12200.575875] iwl3945 0000:06:00.0: 3192897587	0xbe4fc02e	0503
+[12200.575898] iwl3945 0000:06:00.0: 3192897587	0x0000003a	0503
+[12200.575920] iwl3945 0000:06:00.0: 3192897588	0x6c000fd2	0503
+[12200.576054] iwl3945 0000:06:00.0: 3192897590	0x6c000fca	0500
+[12200.576082] iwl3945 0000:06:00.0: 3192897591	0x6c000fca	0600
+[12200.576104] iwl3945 0000:06:00.0: 3192897592	0x00000001	0600
+[12200.576131] iwl3945 0000:06:00.0: 3192897602	0x000000a2	0600
+[12200.576157] iwl3945 0000:06:00.0: 3192901234	0x00000181	0631
+[12200.576187] iwl3945 0000:06:00.0: 3192901234	0x6c00018e	0631
+[12200.576232] iwl3945 0000:06:00.0: 3192906634	0x0000019c	0637
+[12200.576256] iwl3945 0000:06:00.0: 3192906634	0x6d017c76	0637
+[12200.576292] iwl3945 0000:06:00.0: 3192906641	0x000000a2	0600
+[12200.576339] iwl3945 0000:06:00.0: 3192906653	0x6f000190	0630
+[12200.576472] iwl3945 0000:06:00.0: 3192906654	0x70017c78	0630
+[12200.576499] iwl3945 0000:06:00.0: 3192909467	0x000000d9	0106
+[12200.576522] iwl3945 0000:06:00.0: 3192909468	0x00000000	0301
+[12200.576544] iwl3945 0000:06:00.0: 3192909478	0x00008000	0350
+[13168.291431] fgfs[20013] general protection ip:7fc21fddbddd sp:7fff1c0a8870 error:0 in libc-2.11.2.so[7fc21fd6a000+158000]
+[13766.476056] iwl3945 0000:06:00.0: queue 4 stuck 3 time. Fw reload.
+[13766.476063] iwl3945 0000:06:00.0: On demand firmware reload
+[14642.488457] nepomukservices[17879]: segfault at 1 ip 00007fbb671f775f sp 00007fbb6544edc0 error 6 in nepomukstrigiservice.so[7fbb671e3000+2c000]
+[16278.036056] iwl3945 0000:06:00.0: queue 4 stuck 3 time. Fw reload.
+[16278.036064] iwl3945 0000:06:00.0: On demand firmware reload
+[20293.129262] CE: hpet increased min_delta_ns to 1739650 nsec
+[21234.868766] CE: hpet increased min_delta_ns to 2609475 nsec
+[21843.802000] nepomukservices[22920]: segfault at 1 ip 00007f5a2247675f sp 00007f5a206cddc0 error 6 in nepomukstrigiservice.so[7f5a22462000+2c000]
+[23139.707595] iwl3945 0000:06:00.0: Hardware error detected.  Restarting.
+[23139.707602] iwl3945 0000:06:00.0: Loaded firmware version: 15.32.2.9
+[23139.707639] iwl3945 0000:06:00.0: Desc       Time       asrtPC  blink2 ilink1  nmiPC   Line
+[23139.707775] iwl3945 0000:06:00.0: Start IWL Event Log Dump: display last 20 count
+[23139.707816] iwl3945 0000:06:00.0: 1247080487	0x00000000	0314
+[23139.707841] iwl3945 0000:06:00.0: 1247080488	0x0000031a	0501
+[23139.707863] iwl3945 0000:06:00.0: 1247080493	0x000003fc	0504
+[23139.707886] iwl3945 0000:06:00.0: 1247080493	0x4a54f02b	0503
+[23139.707909] iwl3945 0000:06:00.0: 1247080494	0x0000003d	0503
+[23139.707932] iwl3945 0000:06:00.0: 1247080495	0xbf000fd5	0503
+[23139.707954] iwl3945 0000:06:00.0: 1247080496	0x4a54f02b	0503
+[23139.707976] iwl3945 0000:06:00.0: 1247080496	0x0000003d	0503
+[23139.707999] iwl3945 0000:06:00.0: 1247080497	0xbf000fd5	0503
+[23139.708329] iwl3945 0000:06:00.0: 1247080499	0xbf000fcd	0500
+[23139.708388] iwl3945 0000:06:00.0: 1247080500	0xbf000fcd	0600
+[23139.708430] iwl3945 0000:06:00.0: 1247080501	0x00000001	0600
+[23139.708454] iwl3945 0000:06:00.0: 1247080511	0x000000a2	0600
+[23139.708480] iwl3945 0000:06:00.0: 1247084146	0x00000181	0631
+[23139.708541] iwl3945 0000:06:00.0: 1247084147	0xbf00018e	0631
+[23139.708568] iwl3945 0000:06:00.0: 1247089546	0x0000019c	0637
+[23139.708595] iwl3945 0000:06:00.0: 1247089547	0xc0017c76	0637
+[23139.708728] iwl3945 0000:06:00.0: 1247089553	0x000000a2	0600
+[23139.708768] iwl3945 0000:06:00.0: 1247089566	0xc2000190	0630
+[23139.708803] iwl3945 0000:06:00.0: 1247089566	0xc3017c78	0630
+[23166.643205] iwl3945 0000:06:00.0: Hardware error detected.  Restarting.
+[23166.643217] iwl3945 0000:06:00.0: Loaded firmware version: 15.32.2.9
+[23166.643253] iwl3945 0000:06:00.0: Desc       Time       asrtPC  blink2 ilink1  nmiPC   Line
+[23166.643391] iwl3945 0000:06:00.0: Start IWL Event Log Dump: display last 20 count
+[23166.643435] iwl3945 0000:06:00.0: 1274011691	0x000000c3	0310
+[23166.643460] iwl3945 0000:06:00.0: 1274011692	0x00000000	0314
+[23166.643487] iwl3945 0000:06:00.0: 1274011693	0x0000031a	0501
+[23166.643518] iwl3945 0000:06:00.0: 1274011697	0x000003fc	0504
+[23166.643543] iwl3945 0000:06:00.0: 1274011697	0x4befe02f	0503
+[23166.643571] iwl3945 0000:06:00.0: 1274011698	0x0000003d	0503
+[23166.643597] iwl3945 0000:06:00.0: 1274011699	0x06000fd1	0503
+[23166.643623] iwl3945 0000:06:00.0: 1274011700	0x4befe02f	0503
+[23166.643648] iwl3945 0000:06:00.0: 1274011700	0x0000003d	0503
+[23166.643673] iwl3945 0000:06:00.0: 1274011701	0x06000fd1	0503
+[23166.643697] iwl3945 0000:06:00.0: 1274011703	0x06000fc9	0500
+[23166.643723] iwl3945 0000:06:00.0: 1274011704	0x06000fc9	0600
+[23166.643750] iwl3945 0000:06:00.0: 1274011705	0x00000002	0600
+[23166.643779] iwl3945 0000:06:00.0: 1274011715	0x000000a2	0600
+[23166.643807] iwl3945 0000:06:00.0: 1274026584	0x000000d9	0106
+[23166.643833] iwl3945 0000:06:00.0: 1274026586	0x00000000	0301
+[23166.643860] iwl3945 0000:06:00.0: 1274026596	0x00008000	0350
+[23166.643889] iwl3945 0000:06:00.0: 1274033752	0x000000d9	0106
+[23166.643915] iwl3945 0000:06:00.0: 1274033754	0x00000000	0302
+[23166.643940] iwl3945 0000:06:00.0: 1274033762	0x00008000	0350
+[23180.878158] iwl3945 0000:06:00.0: Hardware error detected.  Restarting.
+[23180.878169] iwl3945 0000:06:00.0: Loaded firmware version: 15.32.2.9
+[23180.878207] iwl3945 0000:06:00.0: Desc       Time       asrtPC  blink2 ilink1  nmiPC   Line
+[23180.878453] iwl3945 0000:06:00.0: Start IWL Event Log Dump: display last 20 count
+[23180.878505] iwl3945 0000:06:00.0: 1288245284	0x00000000	0314
+[23180.878531] iwl3945 0000:06:00.0: 1288245285	0x0000031a	0501
+[23180.878560] iwl3945 0000:06:00.0: 1288245289	0x000003f8	0504
+[23180.878586] iwl3945 0000:06:00.0: 1288245290	0x4cc91029	0503
+[23180.878612] iwl3945 0000:06:00.0: 1288245291	0x0000003d	0503
+[23180.878641] iwl3945 0000:06:00.0: 1288245291	0x8a000fd7	0503
+[23180.878667] iwl3945 0000:06:00.0: 1288245292	0x4cc91027	0503
+[23180.878693] iwl3945 0000:06:00.0: 1288245293	0x0000003d	0503
+[23180.878717] iwl3945 0000:06:00.0: 1288245293	0x8a000fd9	0503
+[23180.878742] iwl3945 0000:06:00.0: 1288245296	0x8a000fd1	0500
+[23180.878767] iwl3945 0000:06:00.0: 1288245297	0x8a000fd1	0600
+[23180.878793] iwl3945 0000:06:00.0: 1288245298	0x00000002	0600
+[23180.878818] iwl3945 0000:06:00.0: 1288245308	0x000000a2	0600
+[23180.878844] iwl3945 0000:06:00.0: 1288258969	0x000000d9	0106
+[23180.878869] iwl3945 0000:06:00.0: 1288258971	0x00000000	0301
+[23180.878895] iwl3945 0000:06:00.0: 1288259048	0x000001c6	0353
+[23180.878925] iwl3945 0000:06:00.0: 1288259058	0x00000000	0352
+[23180.878951] iwl3945 0000:06:00.0: 1288271066	0x000000d9	0106
+[23180.878976] iwl3945 0000:06:00.0: 1288271067	0x00000000	0302
+[23180.879011] iwl3945 0000:06:00.0: 1288271076	0x00008000	0350
+[23650.091795] iwl3945 0000:06:00.0: Hardware error detected.  Restarting.
+[23650.091807] iwl3945 0000:06:00.0: Loaded firmware version: 15.32.2.9
+[23650.091850] iwl3945 0000:06:00.0: Desc       Time       asrtPC  blink2 ilink1  nmiPC   Line
+[23650.092104] iwl3945 0000:06:00.0: Start IWL Event Log Dump: display last 20 count
+[23650.092147] iwl3945 0000:06:00.0: 1757447125	0x00000000	0314
+[23650.092173] iwl3945 0000:06:00.0: 1757447127	0x0000031a	0501
+[23650.092200] iwl3945 0000:06:00.0: 1757447131	0x000003fc	0504
+[23650.092222] iwl3945 0000:06:00.0: 1757447131	0x68c083d9	0503
+[23650.092245] iwl3945 0000:06:00.0: 1757447132	0x0000003d	0503
+[23650.092267] iwl3945 0000:06:00.0: 1757447133	0xe6018c27	0503
+[23650.092289] iwl3945 0000:06:00.0: 1757447134	0x68c083d9	0503
+[23650.092312] iwl3945 0000:06:00.0: 1757447134	0x0000003d	0503
+[23650.092334] iwl3945 0000:06:00.0: 1757447135	0xe6018c27	0503
+[23650.092356] iwl3945 0000:06:00.0: 1757447137	0xe6018c1f	0500
+[23650.092379] iwl3945 0000:06:00.0: 1757447138	0xe6018c1f	0600
+[23650.092401] iwl3945 0000:06:00.0: 1757447139	0x00000001	0600
+[23650.092431] iwl3945 0000:06:00.0: 1757447149	0x000000a2	0600
+[23650.092453] iwl3945 0000:06:00.0: 1757451757	0x000000d9	0106
+[23650.092475] iwl3945 0000:06:00.0: 1757451759	0x00000000	0301
+[23650.092498] iwl3945 0000:06:00.0: 1757451831	0x00001385	0353
+[23650.092522] iwl3945 0000:06:00.0: 1757451841	0x00000000	0352
+[23650.092544] iwl3945 0000:06:00.0: 1757482595	0x000000d9	0106
+[23650.092567] iwl3945 0000:06:00.0: 1757482597	0x00000000	0302
+[23650.092590] iwl3945 0000:06:00.0: 1757482604	0x00008000	0350
+[23657.984924] iwl3945 0000:06:00.0: Hardware error detected.  Restarting.
+[23657.984933] iwl3945 0000:06:00.0: Loaded firmware version: 15.32.2.9
+[23657.985028] iwl3945 0000:06:00.0: Desc       Time       asrtPC  blink2 ilink1  nmiPC   Line
+[23657.985353] iwl3945 0000:06:00.0: Start IWL Event Log Dump: display last 20 count
+[23657.985470] iwl3945 0000:06:00.0: 1765331941	0x4d018c1f	0503
+[23657.985525] iwl3945 0000:06:00.0: 1765331942	0x6938d3e1	0503
+[23657.985574] iwl3945 0000:06:00.0: 1765331942	0x0000003d	0503
+[23657.985607] iwl3945 0000:06:00.0: 1765331943	0x4d018c1f	0503
+[23657.985653] iwl3945 0000:06:00.0: 1765331945	0x4d018c17	0500
+[23657.985707] iwl3945 0000:06:00.0: 1765331947	0x4d018c17	0600
+[23657.985741] iwl3945 0000:06:00.0: 1765331947	0x00000002	0600
+[23657.985773] iwl3945 0000:06:00.0: 1765331957	0x000000a2	0600
+[23657.985801] iwl3945 0000:06:00.0: 1765339189	0x000000d9	0106
+[23657.985833] iwl3945 0000:06:00.0: 1765339191	0x00000000	0302
+[23657.985864] iwl3945 0000:06:00.0: 1765339199	0x00008000	0350
+[23657.985894] iwl3945 0000:06:00.0: 1765349344	0x000000d9	0106
+[23657.985937] iwl3945 0000:06:00.0: 1765349346	0x00000000	0302
+[23657.985977] iwl3945 0000:06:00.0: 1765349354	0x00008000	0350
+[23657.986021] iwl3945 0000:06:00.0: 1765360219	0x000000d9	0106
+[23657.986051] iwl3945 0000:06:00.0: 1765360221	0x00000000	0302
+[23657.986092] iwl3945 0000:06:00.0: 1765360230	0x00008000	0350
+[23657.986122] iwl3945 0000:06:00.0: 1765372789	0x000000d9	0106
+[23657.986158] iwl3945 0000:06:00.0: 1765372791	0x00000000	0302
+[23657.986195] iwl3945 0000:06:00.0: 1765372798	0x00008000	0350
+[24229.300566] fgfs[30201] general protection ip:7fd762319ddd sp:7fff7b4989e0 error:0 in libc-2.11.2.so[7fd7622a8000+158000]
