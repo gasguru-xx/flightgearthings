@@ -1,0 +1,27 @@
+
+..chasing "the" ati|radeon shader bug
+http://code.google.com/p/flightgear-bugs/issues/detail?id=264
+a radeon driver update "washed off the tar leaving a smoke 
+sheen", that goes away if you disable the "Material shaders".
+Furthermore, if you dis|enable the "Random objects", and time 
+your screenshot _just_ right (takes a little practice ;o)), 
+you'll be able to capture that wee little blink of right colors.
+
+..the fgfs-2.0.0-3-00[1-5].png are Debian Sid 2.0.0-3 shots, 
+the fgfs-screen-0*.png etc are FG-git screen shots:
+https://github.com/gasguru/flightgearthings/tree/master/smoke-sheen
+
+..the paint colors looks right when the "Material shaders" are off:
+https://github.com/gasguru/flightgearthings/raw/master/smoke-sheen/fgfs-screen-003.png
+https://github.com/gasguru/flightgearthings/raw/master/smoke-sheen/fgfs-screen-004.png
+https://github.com/gasguru/flightgearthings/raw/master/smoke-sheen/fgfs-screen-007.png
+https://github.com/gasguru/flightgearthings/raw/master/smoke-sheen/fgfs-screen-006.png
+
+
+..but Emmanuel's(?) splash screen match 'the "Material shaders" are on':
+https://github.com/gasguru/flightgearthings/raw/master/smoke-sheen/fgfs-screen-012.png
+https://github.com/gasguru/flightgearthings/raw/master/smoke-sheen/fgfs-screen-018.png
+
+..the wire frame bird is FG's own "737" 737-700:
+https://github.com/gasguru/flightgearthings/raw/master/smoke-sheen/fgfs-screen-005.png
+
