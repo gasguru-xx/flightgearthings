@@ -1,0 +1,644 @@
+./download_and_compile.sh OSG
+APT_GET_UPDATE=n
+DOWNLOAD_PACKAGES=n
+COMPILE=y
+RECONFIGURE=y
+DOWNLOAD=y
+JOPTION= -j2 
+DEBUG=
+***********************************
+DEBIAN I SUPPOUSE
+***********************************
+DIRECTORY= /home/arnt/FG-git
+***********************************
+****************************************
+**************** OSG *******************
+****************************************
+SVN FROM http://www.openscenegraph.org/svn/osg/OpenSceneGraph/trunk ...  OK
+RECONFIGURE OSG ...  OK
+-- Could NOT find CURL (missing:  CURL_LIBRARY CURL_INCLUDE_DIR) 
+-- Please set ITK_DIR to the directory containing ITKConfig.cmake.  This is either the root of the build tree, or PREFIX/lib/InsightToolkit for an installation.
+-- checking for module 'xulrunner-xpcom<=1.8.9'
+--   package 'xulrunner-xpcom<=1.8.9' not found
+-- checking for module 'xulrunner-js'
+--   package 'xulrunner-js' not found
+-- checking for module 'xulrunner-nspr'
+--   package 'xulrunner-nspr' not found
+-- checking for module 'xulrunner-nss'
+--   package 'xulrunner-nss' not found
+-- checking for module 'gtkglext-x11-1.0'
+--   package 'gtkglext-x11-1.0' not found
+-- checking for module 'librsvg-2.0'
+--   package 'librsvg-2.0' not found
+-- checking for module 'poppler-glib'
+--   package 'poppler-glib' not found
+CMake Warning (dev) at /usr/share/cmake-2.8/Modules/FindPNG.cmake:29 (find_package):
+  File /usr/share/cmake-2.8/Modules/FindPNG.cmake includes
+  /home/arnt/FG-git/OpenSceneGraph/CMakeModules/FindZLIB.cmake (found via
+  CMAKE_MODULE_PATH) which shadows
+  /usr/share/cmake-2.8/Modules/FindZLIB.cmake.  This may cause errors later
+  on .
+
+  Policy CMP0017 is not set: Prefer files from the CMake module directory
+  when including from there.  Run "cmake --help-policy CMP0017" for policy
+  details.  Use the cmake_policy command to set the policy and suppress this
+  warning.
+Call Stack (most recent call first):
+  CMakeLists.txt:505 (FIND_PACKAGE)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/arnt/FG-git/OpenSceneGraph
+RECONFIGURE OSG DONE.
+COMPILING OSG
+Scanning dependencies of target OpenThreads
+[  0%] [  0%] Building CXX object src/OpenThreads/pthreads/CMakeFiles/OpenThreads.dir/PThreadBarrier.o
+Building CXX object src/OpenThreads/pthreads/CMakeFiles/OpenThreads.dir/PThread.o
+[  0%] Building CXX object src/OpenThreads/pthreads/CMakeFiles/OpenThreads.dir/PThreadCondition.o
+[  0%] Building CXX object src/OpenThreads/pthreads/CMakeFiles/OpenThreads.dir/PThreadMutex.o
+[  0%] Building CXX object src/OpenThreads/pthreads/CMakeFiles/OpenThreads.dir/__/common/Version.o
+[  0%] Building CXX object src/OpenThreads/pthreads/CMakeFiles/OpenThreads.dir/__/common/Atomic.o
+Linking CXX shared library ../../../lib/libOpenThreads.so
+[  0%] Built target OpenThreads
+Scanning dependencies of target osg
+[  0%] [  0%] Building CXX object src/osg/CMakeFiles/osg.dir/AlphaFunc.o
+Building CXX object src/osg/CMakeFiles/osg.dir/AnimationPath.o
+[  0%] Building CXX object src/osg/CMakeFiles/osg.dir/ApplicationUsage.o
+[  0%] Building CXX object src/osg/CMakeFiles/osg.dir/ArgumentParser.o
+[  0%] Building CXX object src/osg/CMakeFiles/osg.dir/Array.o
+[  1%] Building CXX object src/osg/CMakeFiles/osg.dir/ArrayDispatchers.o
+[  1%] Building CXX object src/osg/CMakeFiles/osg.dir/AudioStream.o
+[  1%] Building CXX object src/osg/CMakeFiles/osg.dir/AutoTransform.o
+[  1%] Building CXX object src/osg/CMakeFiles/osg.dir/Billboard.o
+[  1%] Building CXX object src/osg/CMakeFiles/osg.dir/BlendColor.o
+[  1%] Building CXX object src/osg/CMakeFiles/osg.dir/BlendEquation.o
+[  1%] Building CXX object src/osg/CMakeFiles/osg.dir/BlendFunc.o
+[  1%] Building CXX object src/osg/CMakeFiles/osg.dir/BufferObject.o
+[  1%] Building CXX object src/osg/CMakeFiles/osg.dir/Camera.o
+[  1%] Building CXX object src/osg/CMakeFiles/osg.dir/CameraView.o
+[  1%] Building CXX object src/osg/CMakeFiles/osg.dir/ClampColor.o
+[  1%] Building CXX object src/osg/CMakeFiles/osg.dir/ClearNode.o
+[  2%] Building CXX object src/osg/CMakeFiles/osg.dir/ClipNode.o
+[  2%] Building CXX object src/osg/CMakeFiles/osg.dir/ClipPlane.o
+[  2%] Building CXX object src/osg/CMakeFiles/osg.dir/ClusterCullingCallback.o
+[  2%] Building CXX object src/osg/CMakeFiles/osg.dir/CollectOccludersVisitor.o
+[  2%] Building CXX object src/osg/CMakeFiles/osg.dir/ColorMask.o
+[  2%] Building CXX object src/osg/CMakeFiles/osg.dir/ColorMatrix.o
+[  2%] Building CXX object src/osg/CMakeFiles/osg.dir/ComputeBoundsVisitor.o
+[  2%] Building CXX object src/osg/CMakeFiles/osg.dir/ConvexPlanarOccluder.o
+[  2%] Building CXX object src/osg/CMakeFiles/osg.dir/ConvexPlanarPolygon.o
+[  2%] Building CXX object src/osg/CMakeFiles/osg.dir/CoordinateSystemNode.o
+[  2%] Building CXX object src/osg/CMakeFiles/osg.dir/CopyOp.o
+[  2%] Building CXX object src/osg/CMakeFiles/osg.dir/CullFace.o
+[  3%] Building CXX object src/osg/CMakeFiles/osg.dir/CullingSet.o
+[  3%] Building CXX object src/osg/CMakeFiles/osg.dir/CullSettings.o
+[  3%] Building CXX object src/osg/CMakeFiles/osg.dir/CullStack.o
+[  3%] Building CXX object src/osg/CMakeFiles/osg.dir/DeleteHandler.o
+[  3%] Building CXX object src/osg/CMakeFiles/osg.dir/Depth.o
+[  3%] Building CXX object src/osg/CMakeFiles/osg.dir/DisplaySettings.o
+[  3%] Building CXX object src/osg/CMakeFiles/osg.dir/Drawable.o
+[  3%] Building CXX object src/osg/CMakeFiles/osg.dir/DrawPixels.o
+[  3%] Building CXX object src/osg/CMakeFiles/osg.dir/dxtctool.o
+[  3%] Building CXX object src/osg/CMakeFiles/osg.dir/Fog.o
+[  3%] Building CXX object src/osg/CMakeFiles/osg.dir/FragmentProgram.o
+[  3%] Building CXX object src/osg/CMakeFiles/osg.dir/FrameBufferObject.o
+[  4%] Building CXX object src/osg/CMakeFiles/osg.dir/FrameStamp.o
+[  4%] Building CXX object src/osg/CMakeFiles/osg.dir/FrontFace.o
+[  4%] Building CXX object src/osg/CMakeFiles/osg.dir/Geode.o
+[  4%] Building CXX object src/osg/CMakeFiles/osg.dir/Geometry.o
+[  4%] Building CXX object src/osg/CMakeFiles/osg.dir/GL2Extensions.o
+/home/arnt/FG-git/OpenSceneGraph/src/osg/Geometry.cpp: In member function ‘virtual void osg::Geometry::accept(osg::PrimitiveIndexFunctor&) const’:
+/home/arnt/FG-git/OpenSceneGraph/src/osg/Geometry.cpp:1692:28: warning: variable ‘indices’ set but not used [-Wunused-but-set-variable]
+[  4%] Building CXX object src/osg/CMakeFiles/osg.dir/GLExtensions.o
+[  4%] Building CXX object src/osg/CMakeFiles/osg.dir/GLBeginEndAdapter.o
+[  4%] Building CXX object src/osg/CMakeFiles/osg.dir/GLObjects.o
+[  4%] Building CXX object src/osg/CMakeFiles/osg.dir/GLStaticLibrary.o
+[  4%] Building CXX object src/osg/CMakeFiles/osg.dir/GraphicsContext.o
+[  4%] Building CXX object src/osg/CMakeFiles/osg.dir/GraphicsThread.o
+[  4%] Building CXX object src/osg/CMakeFiles/osg.dir/Group.o
+[  4%] Building CXX object src/osg/CMakeFiles/osg.dir/Hint.o
+[  5%] Building CXX object src/osg/CMakeFiles/osg.dir/Image.o
+[  5%] Building CXX object src/osg/CMakeFiles/osg.dir/ImageSequence.o
+[  5%] Building CXX object src/osg/CMakeFiles/osg.dir/ImageStream.o
+[  5%] Building CXX object src/osg/CMakeFiles/osg.dir/ImageUtils.o
+[  5%] Building CXX object src/osg/CMakeFiles/osg.dir/KdTree.o
+[  5%] Building CXX object src/osg/CMakeFiles/osg.dir/Light.o
+[  5%] Building CXX object src/osg/CMakeFiles/osg.dir/LightModel.o
+[  5%] Building CXX object src/osg/CMakeFiles/osg.dir/LightSource.o
+[  5%] Building CXX object src/osg/CMakeFiles/osg.dir/LineSegment.o
+[  5%] Building CXX object src/osg/CMakeFiles/osg.dir/LineStipple.o
+[  5%] Building CXX object src/osg/CMakeFiles/osg.dir/LineWidth.o
+[  5%] Building CXX object src/osg/CMakeFiles/osg.dir/LOD.o
+[  6%] Building CXX object src/osg/CMakeFiles/osg.dir/LogicOp.o
+[  6%] Building CXX object src/osg/CMakeFiles/osg.dir/Material.o
+[  6%] Building CXX object src/osg/CMakeFiles/osg.dir/Math.o
+[  6%] Building CXX object src/osg/CMakeFiles/osg.dir/Matrixd.o
+[  6%] Building CXX object src/osg/CMakeFiles/osg.dir/MatrixDecomposition.o
+[  6%] Building CXX object src/osg/CMakeFiles/osg.dir/Matrixf.o
+[  6%] Building CXX object src/osg/CMakeFiles/osg.dir/MatrixTransform.o
+[  6%] Building CXX object src/osg/CMakeFiles/osg.dir/Multisample.o
+[  6%] Building CXX object src/osg/CMakeFiles/osg.dir/NodeCallback.o
+[  6%] Building CXX object src/osg/CMakeFiles/osg.dir/Node.o
+[  6%] Building CXX object src/osg/CMakeFiles/osg.dir/NodeTrackerCallback.o
+[  6%] Building CXX object src/osg/CMakeFiles/osg.dir/NodeVisitor.o
+[  7%] Building CXX object src/osg/CMakeFiles/osg.dir/Notify.o
+[  7%] Building CXX object src/osg/CMakeFiles/osg.dir/Object.o
+[  7%] Building CXX object src/osg/CMakeFiles/osg.dir/Observer.o
+[  7%] Building CXX object src/osg/CMakeFiles/osg.dir/ObserverNodePath.o
+[  7%] Building CXX object src/osg/CMakeFiles/osg.dir/OccluderNode.o
+[  7%] Building CXX object src/osg/CMakeFiles/osg.dir/OcclusionQueryNode.o
+[  7%] Building CXX object src/osg/CMakeFiles/osg.dir/OperationThread.o
+[  7%] Building CXX object src/osg/CMakeFiles/osg.dir/PagedLOD.o
+[  7%] Building CXX object src/osg/CMakeFiles/osg.dir/Point.o
+[  7%] Building CXX object src/osg/CMakeFiles/osg.dir/PointSprite.o
+[  7%] Building CXX object src/osg/CMakeFiles/osg.dir/PolygonMode.o
+[  7%] Building CXX object src/osg/CMakeFiles/osg.dir/PolygonOffset.o
+[  8%] Building CXX object src/osg/CMakeFiles/osg.dir/PolygonStipple.o
+[  8%] Building CXX object src/osg/CMakeFiles/osg.dir/PositionAttitudeTransform.o
+[  8%] Building CXX object src/osg/CMakeFiles/osg.dir/PrimitiveSet.o
+[  8%] Building CXX object src/osg/CMakeFiles/osg.dir/Program.o
+[  8%] Building CXX object src/osg/CMakeFiles/osg.dir/Projection.o
+[  8%] Building CXX object src/osg/CMakeFiles/osg.dir/ProxyNode.o
+[  8%] Building CXX object src/osg/CMakeFiles/osg.dir/Quat.o
+[  8%] Building CXX object src/osg/CMakeFiles/osg.dir/Referenced.o
+[  8%] Building CXX object src/osg/CMakeFiles/osg.dir/Scissor.o
+[  8%] Building CXX object src/osg/CMakeFiles/osg.dir/Sequence.o
+[  8%] Building CXX object src/osg/CMakeFiles/osg.dir/ShadeModel.o
+[  8%] Building CXX object src/osg/CMakeFiles/osg.dir/Shader.o
+[  9%] Building CXX object src/osg/CMakeFiles/osg.dir/ShaderAttribute.o
+[  9%] Building CXX object src/osg/CMakeFiles/osg.dir/ShaderComposer.o
+[  9%] Building CXX object src/osg/CMakeFiles/osg.dir/ShadowVolumeOccluder.o
+[  9%] Building CXX object src/osg/CMakeFiles/osg.dir/Shape.o
+[  9%] Building CXX object src/osg/CMakeFiles/osg.dir/ShapeDrawable.o
+[  9%] Building CXX object src/osg/CMakeFiles/osg.dir/StateAttribute.o
+/home/arnt/FG-git/OpenSceneGraph/src/osg/ShapeDrawable.cpp: In member function ‘void PrimitiveShapeVisitor::createHalfSphere(unsigned int, unsigned int, float, int, float, const Matrix&)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osg/ShapeDrawable.cpp:1409:11: warning: variable ‘nzBase’ set but not used [-Wunused-but-set-variable]
+/home/arnt/FG-git/OpenSceneGraph/src/osg/ShapeDrawable.cpp:1410:11: warning: variable ‘nRatioBase’ set but not used [-Wunused-but-set-variable]
+[  9%] Building CXX object src/osg/CMakeFiles/osg.dir/State.o
+[  9%] Building CXX object src/osg/CMakeFiles/osg.dir/StateSet.o
+[  9%] Building CXX object src/osg/CMakeFiles/osg.dir/Stats.o
+[  9%] Building CXX object src/osg/CMakeFiles/osg.dir/Stencil.o
+[  9%] Building CXX object src/osg/CMakeFiles/osg.dir/StencilTwoSided.o
+[  9%] Building CXX object src/osg/CMakeFiles/osg.dir/Switch.o
+[  9%] Building CXX object src/osg/CMakeFiles/osg.dir/TexEnvCombine.o
+[ 10%] Building CXX object src/osg/CMakeFiles/osg.dir/TexEnv.o
+[ 10%] Building CXX object src/osg/CMakeFiles/osg.dir/TexEnvFilter.o
+[ 10%] Building CXX object src/osg/CMakeFiles/osg.dir/TexGen.o
+[ 10%] Building CXX object src/osg/CMakeFiles/osg.dir/TexGenNode.o
+[ 10%] Building CXX object src/osg/CMakeFiles/osg.dir/TexMat.o
+[ 10%] Building CXX object src/osg/CMakeFiles/osg.dir/Texture1D.o
+[ 10%] Building CXX object src/osg/CMakeFiles/osg.dir/Texture2DArray.o
+[ 10%] Building CXX object src/osg/CMakeFiles/osg.dir/Texture2D.o
+[ 10%] Building CXX object src/osg/CMakeFiles/osg.dir/Texture2DMultisample.o
+[ 10%] Building CXX object src/osg/CMakeFiles/osg.dir/Texture3D.o
+[ 10%] Building CXX object src/osg/CMakeFiles/osg.dir/Texture.o
+[ 10%] Building CXX object src/osg/CMakeFiles/osg.dir/TextureCubeMap.o
+[ 11%] Building CXX object src/osg/CMakeFiles/osg.dir/TextureRectangle.o
+[ 11%] Building CXX object src/osg/CMakeFiles/osg.dir/Timer.o
+[ 11%] Building CXX object src/osg/CMakeFiles/osg.dir/TransferFunction.o
+[ 11%] Building CXX object src/osg/CMakeFiles/osg.dir/Transform.o
+[ 11%] Building CXX object src/osg/CMakeFiles/osg.dir/Uniform.o
+[ 11%] Building CXX object src/osg/CMakeFiles/osg.dir/Version.o
+[ 11%] Building CXX object src/osg/CMakeFiles/osg.dir/VertexProgram.o
+[ 11%] Building CXX object src/osg/CMakeFiles/osg.dir/View.o
+[ 11%] Building CXX object src/osg/CMakeFiles/osg.dir/Viewport.o
+Linking CXX shared library ../../lib/libosg.so
+[ 11%] Built target osg
+Scanning dependencies of target osgUtil
+[ 11%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/CubeMapGenerator.o
+Scanning dependencies of target osgDB
+[ 11%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/ObjectWrapper.o
+[ 11%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/CullVisitor.o
+[ 11%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/InputStream.o
+[ 11%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/DelaunayTriangulator.o
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/DelaunayTriangulator.cpp: In function ‘osgUtil::Triangle_list osgUtil::fillHole(osg::Vec3Array*, std::vector<unsigned int, std::allocator<unsigned int> >)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/DelaunayTriangulator.cpp:569:27: warning: variable ‘ptest’ set but not used [-Wunused-but-set-variable]
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/DelaunayTriangulator.cpp: In member function ‘bool osgUtil::DelaunayTriangulator::triangulate()’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/DelaunayTriangulator.cpp:979:45: warning: variable ‘curp’ set but not used [-Wunused-but-set-variable]
+[ 11%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/DisplayRequirementsVisitor.o
+[ 11%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/OutputStream.o
+[ 11%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/DrawElementTypeSimplifier.o
+[ 11%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/EdgeCollector.o
+[ 11%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/Compressors.o
+[ 12%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/GLObjectsVisitor.o
+[ 12%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/Archive.o
+[ 12%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/HalfWayMapGenerator.o
+[ 12%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/AuthenticationMap.o
+[ 12%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/HighlightMapGenerator.o
+[ 13%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/Callbacks.o
+[ 13%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/IntersectionVisitor.o
+[ 13%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/ConvertUTF.o
+[ 13%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/DatabasePager.o
+[ 13%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/IntersectVisitor.o
+[ 13%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/IncrementalCompileOperation.o
+[ 13%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/DatabaseRevisions.o
+[ 13%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/LineSegmentIntersector.o
+[ 13%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/DotOsgWrapper.o
+[ 13%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/MeshOptimizers.o
+[ 13%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/DynamicLibrary.o
+[ 13%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/Field.o
+[ 13%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/FieldReader.o
+[ 13%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/Optimizer.o
+[ 13%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/FieldReaderIterator.o
+[ 13%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/FileCache.o
+[ 13%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/FileNameUtils.o
+[ 13%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/FileUtils.o
+[ 14%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/fstream.o
+[ 14%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/ImageOptions.o
+[ 14%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/PlaneIntersector.o
+[ 14%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/ImagePager.o
+[ 14%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/PolytopeIntersector.o
+[ 14%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/Input.o
+[ 14%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/MimeTypes.o
+[ 14%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/Output.o
+[ 14%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/PositionalStateContainer.o
+[ 14%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/PrintVisitor.o
+[ 14%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/Options.o
+[ 15%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/RenderBin.o
+[ 15%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/PluginQuery.o
+[ 15%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/RenderLeaf.o
+[ 15%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/ReaderWriter.o
+[ 15%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/RenderStage.o
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/RenderStage.cpp: In member function ‘void osgUtil::RenderStage::runCameraSetUp(osg::RenderInfo&)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/RenderStage.cpp:629:18: warning: variable ‘stencilAttached’ set but not used [-Wunused-but-set-variable]
+[ 15%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/ReadFile.o
+[ 15%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/ReversePrimitiveFunctor.o
+[ 15%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/SceneView.o
+[ 15%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/Registry.o
+[ 15%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/ShaderGen.o
+[ 15%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/SharedStateManager.o
+[ 15%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/Simplifier.o
+[ 16%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/Version.o
+[ 16%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/WriteFile.o
+[ 16%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/XmlParser.o
+[ 16%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/SmoothingVisitor.o
+Linking CXX shared library ../../lib/libosgDB.so
+[ 16%] Built target osgDB
+Scanning dependencies of target osgText
+[ 16%] Building CXX object src/osgText/CMakeFiles/osgText.dir/DefaultFont.o
+[ 16%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/SceneGraphBuilder.o
+[ 16%] Building CXX object src/osgText/CMakeFiles/osgText.dir/Font.o
+[ 16%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/StateGraph.o
+[ 16%] Building CXX object src/osgText/CMakeFiles/osgText.dir/Font3D.o
+[ 16%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/Statistics.o
+[ 16%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/TangentSpaceGenerator.o
+[ 17%] Building CXX object src/osgText/CMakeFiles/osgText.dir/String.o
+[ 17%] Building CXX object src/osgText/CMakeFiles/osgText.dir/FadeText.o
+/home/arnt/FG-git/OpenSceneGraph/src/osgText/FadeText.cpp: In member function ‘void FadeTextPolytopeData::buildPolytope()’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgText/FadeText.cpp:74:20: warning: variable ‘edge23’ set but not used [-Wunused-but-set-variable]
+/home/arnt/FG-git/OpenSceneGraph/src/osgText/FadeText.cpp:75:20: warning: variable ‘edge30’ set but not used [-Wunused-but-set-variable]
+[ 18%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/Tessellator.o
+[ 18%] Building CXX object src/osgText/CMakeFiles/osgText.dir/TextBase.o
+[ 18%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/TransformAttributeFunctor.o
+[ 18%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/TransformCallback.o
+[ 18%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/tristripper/src/tri_stripper.o
+In file included from /home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/tri_stripper.h:41:0,
+                 from /home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:10:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/public_types.h:21:10: error: ‘size_t’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/public_types.h:22:22: error: ‘index’ was not declared in this scope
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/public_types.h:22:27: error: template argument 1 is invalid
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/public_types.h:22:27: error: template argument 2 is invalid
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/public_types.h:22:36: error: invalid type in declaration before ‘;’ token
+In file included from /home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/tri_stripper.h:43:0,
+                 from /home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:10:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:38:12: error: ‘index’ has not been declared
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:45:21: error: ‘index’ was not declared in this scope
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:45:26: error: template argument 1 is invalid
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:45:26: error: template argument 2 is invalid
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h: In member function ‘void triangle_stripper::detail::cache_simulator::clear()’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:71:10: error: request for member ‘clear’ in ‘((triangle_stripper::detail::cache_simulator*)this)->triangle_stripper::detail::cache_simulator::m_Cache’, which is of non-class type ‘triangle_stripper::detail::cache_simulator::indices_deque’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h: In member function ‘void triangle_stripper::detail::cache_simulator::resize(size_t)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:77:10: error: request for member ‘resize’ in ‘((triangle_stripper::detail::cache_simulator*)this)->triangle_stripper::detail::cache_simulator::m_Cache’, which is of non-class type ‘triangle_stripper::detail::cache_simulator::indices_deque’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:77:44: error: ‘index’ was not declared in this scope
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:77:49: error: template argument 1 is invalid
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h: In member function ‘void triangle_stripper::detail::cache_simulator::reset()’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:83:20: error: request for member ‘begin’ in ‘((triangle_stripper::detail::cache_simulator*)this)->triangle_stripper::detail::cache_simulator::m_Cache’, which is of non-class type ‘triangle_stripper::detail::cache_simulator::indices_deque’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:83:37: error: request for member ‘end’ in ‘((triangle_stripper::detail::cache_simulator*)this)->triangle_stripper::detail::cache_simulator::m_Cache’, which is of non-class type ‘triangle_stripper::detail::cache_simulator::indices_deque’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:83:65: error: ‘index’ was not declared in this scope
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:83:70: error: template argument 1 is invalid
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h: In member function ‘size_t triangle_stripper::detail::cache_simulator::size() const’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:96:17: error: request for member ‘size’ in ‘((const triangle_stripper::detail::cache_simulator*)this)->triangle_stripper::detail::cache_simulator::m_Cache’, which is of non-class type ‘const indices_deque’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h: At global scope:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:100:41: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:100:47: warning: ISO C++ forbids declaration of ‘i’ with no type [-fpermissive]
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h: In member function ‘void triangle_stripper::detail::cache_simulator::push(int, bool)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:104:25: error: request for member ‘begin’ in ‘((triangle_stripper::detail::cache_simulator*)this)->triangle_stripper::detail::cache_simulator::m_Cache’, which is of non-class type ‘triangle_stripper::detail::cache_simulator::indices_deque’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:104:42: error: request for member ‘end’ in ‘((triangle_stripper::detail::cache_simulator*)this)->triangle_stripper::detail::cache_simulator::m_Cache’, which is of non-class type ‘triangle_stripper::detail::cache_simulator::indices_deque’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:104:63: error: request for member ‘end’ in ‘((triangle_stripper::detail::cache_simulator*)this)->triangle_stripper::detail::cache_simulator::m_Cache’, which is of non-class type ‘triangle_stripper::detail::cache_simulator::indices_deque’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:117:10: error: request for member ‘push_front’ in ‘((triangle_stripper::detail::cache_simulator*)this)->triangle_stripper::detail::cache_simulator::m_Cache’, which is of non-class type ‘triangle_stripper::detail::cache_simulator::indices_deque’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:118:10: error: request for member ‘pop_back’ in ‘((triangle_stripper::detail::cache_simulator*)this)->triangle_stripper::detail::cache_simulator::m_Cache’, which is of non-class type ‘triangle_stripper::detail::cache_simulator::indices_deque’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h: In member function ‘void triangle_stripper::detail::cache_simulator::merge(const triangle_stripper::detail::cache_simulator&, size_t)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:127:26: error: invalid types ‘const indices_deque[size_t]’ for array subscript
+In file included from /home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/tri_stripper.h:46:0,
+                 from /home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:10:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h: At global scope:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:27:17: error: expected ‘)’ before ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:34:2: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:35:2: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:36:2: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:39:2: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:40:2: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:41:2: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:51:22: error: expected ‘)’ before ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:54:2: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:55:2: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:62:2: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:63:2: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h: In member function ‘bool triangle_stripper::detail::triangle_edge::operator==(const triangle_stripper::detail::triangle_edge&) const’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:58:14: error: ‘A’ was not declared in this scope
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:58:25: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:58:36: error: ‘B’ was not declared in this scope
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:58:47: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘B’
+In file included from /home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:10:0:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/tri_stripper.h: At global scope:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/tri_stripper.h:111:16: error: ‘index’ has not been declared
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/tri_stripper.h:112:20: error: ‘index’ has not been declared
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: In constructor ‘triangle_stripper::tri_stripper::tri_stripper(const indices&)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:28:27: error: request for member ‘size’ in ‘TriIndices’, which is of non-class type ‘const indices’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: In member function ‘triangle_stripper::detail::strip triangle_stripper::tri_stripper::BackExtendToStrip(size_t, triangle_stripper::detail::triangle_order, bool)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:219:53: error: ‘class triangle_stripper::detail::triangle_edge’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: In member function ‘triangle_stripper::tri_stripper::const_link_iterator triangle_stripper::tri_stripper::LinkToNeighbour(triangle_stripper::tri_stripper::const_tri_iterator, bool, triangle_stripper::detail::triangle_order&, bool)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:306:15: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:306:26: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:306:40: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:306:51: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:308:19: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:312:20: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:312:31: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:312:45: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:312:56: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:314:19: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:318:20: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:318:31: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:318:45: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:318:56: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:320:19: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: In member function ‘triangle_stripper::tri_stripper::const_link_iterator triangle_stripper::tri_stripper::BackLinkToNeighbour(triangle_stripper::tri_stripper::const_tri_iterator, bool, triangle_stripper::detail::triangle_order&)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:347:14: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:347:25: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:347:39: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:347:50: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:349:22: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:353:19: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:353:30: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:353:44: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:353:55: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:355:22: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:359:19: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:359:30: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:359:44: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:359:55: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:361:22: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: In static member function ‘static triangle_stripper::detail::triangle_edge triangle_stripper::tri_stripper::FirstEdge(const triangle_stripper::detail::triangle&, triangle_stripper::detail::triangle_order)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:409:33: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:409:47: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:412:33: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:412:47: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:415:33: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:415:47: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:419:28: error: no matching function for call to ‘triangle_stripper::detail::triangle_edge::triangle_edge(int, int)’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:419:28: note: candidates are:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:48:7: note: triangle_stripper::detail::triangle_edge::triangle_edge()
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:48:7: note:   candidate expects 0 arguments, 2 provided
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:48:7: note: triangle_stripper::detail::triangle_edge::triangle_edge(const triangle_stripper::detail::triangle_edge&)
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:48:7: note:   candidate expects 1 argument, 2 provided
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: In static member function ‘static triangle_stripper::detail::triangle_edge triangle_stripper::tri_stripper::LastEdge(const triangle_stripper::detail::triangle&, triangle_stripper::detail::triangle_order)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:430:33: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:430:47: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:433:33: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:433:47: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:436:33: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:436:47: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:440:28: error: no matching function for call to ‘triangle_stripper::detail::triangle_edge::triangle_edge(int, int)’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:440:28: note: candidates are:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:48:7: note: triangle_stripper::detail::triangle_edge::triangle_edge()
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:48:7: note:   candidate expects 0 arguments, 2 provided
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:48:7: note: triangle_stripper::detail::triangle_edge::triangle_edge(const triangle_stripper::detail::triangle_edge&)
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:48:7: note:   candidate expects 1 argument, 2 provided
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: At global scope:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:446:42: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:446:48: warning: ISO C++ forbids declaration of ‘i’ with no type [-fpermissive]
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: In member function ‘void triangle_stripper::tri_stripper::AddIndex(int, bool)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:452:37: error: request for member ‘push_back’ in ‘((triangle_stripper::tri_stripper*)this)->triangle_stripper::tri_stripper::m_PrimitivesVector.std::vector<_Tp, _Alloc>::back [with _Tp = triangle_stripper::primitive_group, _Alloc = std::allocator<triangle_stripper::primitive_group>, std::vector<_Tp, _Alloc>::reference = triangle_stripper::primitive_group&]()->triangle_stripper::primitive_group::Indices’, which is of non-class type ‘triangle_stripper::indices’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: At global scope:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:457:46: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:457:52: warning: ISO C++ forbids declaration of ‘i’ with no type [-fpermissive]
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: In member function ‘void triangle_stripper::tri_stripper::AddTriangle(const triangle_stripper::detail::triangle&, triangle_stripper::detail::triangle_order, bool)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:470:16: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:471:16: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:472:16: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:476:16: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:477:16: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:478:16: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:482:16: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:483:16: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:484:16: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: In member function ‘void triangle_stripper::tri_stripper::BackAddTriangle(const triangle_stripper::detail::triangle&, triangle_stripper::detail::triangle_order)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:496:20: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:497:20: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:498:20: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:502:20: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:503:20: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:504:20: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:508:20: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:509:20: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:510:20: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: In member function ‘void triangle_stripper::tri_stripper::AddLeftTriangles()’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:527:12: error: request for member ‘push_back’ in ‘Indices’, which is of non-class type ‘triangle_stripper::indices’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:527:38: error: ‘class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:528:12: error: request for member ‘push_back’ in ‘Indices’, which is of non-class type ‘triangle_stripper::indices’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:528:38: error: ‘class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:529:12: error: request for member ‘push_back’ in ‘Indices’, which is of non-class type ‘triangle_stripper::indices’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:529:38: error: ‘class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:533:14: error: request for member ‘size’ in ‘Indices’, which is of non-class type ‘triangle_stripper::indices’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h: In member function ‘size_t triangle_stripper::detail::cache_simulator::size() const’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:97:1: warning: control reaches end of non-void function [-Wreturn-type]
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: In static member function ‘static triangle_stripper::detail::triangle_edge triangle_stripper::tri_stripper::LastEdge(const triangle_stripper::detail::triangle&, triangle_stripper::detail::triangle_order)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:442:1: warning: control reaches end of non-void function [-Wreturn-type]
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: In static member function ‘static triangle_stripper::detail::triangle_edge triangle_stripper::tri_stripper::FirstEdge(const triangle_stripper::detail::triangle&, triangle_stripper::detail::triangle_order)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:421:1: warning: control reaches end of non-void function [-Wreturn-type]
+[ 18%] make[2]: *** [src/osgUtil/CMakeFiles/osgUtil.dir/tristripper/src/tri_stripper.o] Error 1
+make[1]: *** [src/osgUtil/CMakeFiles/osgUtil.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[ 18%] Building CXX object src/osgText/CMakeFiles/osgText.dir/Text.o
+Building CXX object src/osgText/CMakeFiles/osgText.dir/Text3D.o
+/home/arnt/FG-git/OpenSceneGraph/src/osgText/Text.cpp: In member function ‘void osgText::Text::computeBackdropPositions(unsigned int) const’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgText/Text.cpp:757:10: warning: variable ‘is_valid_size’ set but not used [-Wunused-but-set-variable]
+[ 18%] Building CXX object src/osgText/CMakeFiles/osgText.dir/Version.o
+Linking CXX shared library ../../lib/libosgText.so
+[ 18%] Built target osgText
+make: *** [all] Error 2
+INSTALLING OSG
+[  0%] Built target OpenThreads
+[ 11%] Built target osg
+[ 14%] Built target osgDB
+[ 14%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/tristripper/src/tri_stripper.o
+In file included from /home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/tri_stripper.h:41:0,
+                 from /home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:10:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/public_types.h:21:10: error: ‘size_t’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/public_types.h:22:22: error: ‘index’ was not declared in this scope
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/public_types.h:22:27: error: template argument 1 is invalid
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/public_types.h:22:27: error: template argument 2 is invalid
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/public_types.h:22:36: error: invalid type in declaration before ‘;’ token
+In file included from /home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/tri_stripper.h:43:0,
+                 from /home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:10:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:38:12: error: ‘index’ has not been declared
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:45:21: error: ‘index’ was not declared in this scope
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:45:26: error: template argument 1 is invalid
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:45:26: error: template argument 2 is invalid
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h: In member function ‘void triangle_stripper::detail::cache_simulator::clear()’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:71:10: error: request for member ‘clear’ in ‘((triangle_stripper::detail::cache_simulator*)this)->triangle_stripper::detail::cache_simulator::m_Cache’, which is of non-class type ‘triangle_stripper::detail::cache_simulator::indices_deque’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h: In member function ‘void triangle_stripper::detail::cache_simulator::resize(size_t)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:77:10: error: request for member ‘resize’ in ‘((triangle_stripper::detail::cache_simulator*)this)->triangle_stripper::detail::cache_simulator::m_Cache’, which is of non-class type ‘triangle_stripper::detail::cache_simulator::indices_deque’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:77:44: error: ‘index’ was not declared in this scope
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:77:49: error: template argument 1 is invalid
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h: In member function ‘void triangle_stripper::detail::cache_simulator::reset()’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:83:20: error: request for member ‘begin’ in ‘((triangle_stripper::detail::cache_simulator*)this)->triangle_stripper::detail::cache_simulator::m_Cache’, which is of non-class type ‘triangle_stripper::detail::cache_simulator::indices_deque’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:83:37: error: request for member ‘end’ in ‘((triangle_stripper::detail::cache_simulator*)this)->triangle_stripper::detail::cache_simulator::m_Cache’, which is of non-class type ‘triangle_stripper::detail::cache_simulator::indices_deque’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:83:65: error: ‘index’ was not declared in this scope
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:83:70: error: template argument 1 is invalid
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h: In member function ‘size_t triangle_stripper::detail::cache_simulator::size() const’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:96:17: error: request for member ‘size’ in ‘((const triangle_stripper::detail::cache_simulator*)this)->triangle_stripper::detail::cache_simulator::m_Cache’, which is of non-class type ‘const indices_deque’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h: At global scope:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:100:41: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:100:47: warning: ISO C++ forbids declaration of ‘i’ with no type [-fpermissive]
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h: In member function ‘void triangle_stripper::detail::cache_simulator::push(int, bool)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:104:25: error: request for member ‘begin’ in ‘((triangle_stripper::detail::cache_simulator*)this)->triangle_stripper::detail::cache_simulator::m_Cache’, which is of non-class type ‘triangle_stripper::detail::cache_simulator::indices_deque’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:104:42: error: request for member ‘end’ in ‘((triangle_stripper::detail::cache_simulator*)this)->triangle_stripper::detail::cache_simulator::m_Cache’, which is of non-class type ‘triangle_stripper::detail::cache_simulator::indices_deque’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:104:63: error: request for member ‘end’ in ‘((triangle_stripper::detail::cache_simulator*)this)->triangle_stripper::detail::cache_simulator::m_Cache’, which is of non-class type ‘triangle_stripper::detail::cache_simulator::indices_deque’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:117:10: error: request for member ‘push_front’ in ‘((triangle_stripper::detail::cache_simulator*)this)->triangle_stripper::detail::cache_simulator::m_Cache’, which is of non-class type ‘triangle_stripper::detail::cache_simulator::indices_deque’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:118:10: error: request for member ‘pop_back’ in ‘((triangle_stripper::detail::cache_simulator*)this)->triangle_stripper::detail::cache_simulator::m_Cache’, which is of non-class type ‘triangle_stripper::detail::cache_simulator::indices_deque’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h: In member function ‘void triangle_stripper::detail::cache_simulator::merge(const triangle_stripper::detail::cache_simulator&, size_t)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:127:26: error: invalid types ‘const indices_deque[size_t]’ for array subscript
+In file included from /home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/tri_stripper.h:46:0,
+                 from /home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:10:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h: At global scope:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:27:17: error: expected ‘)’ before ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:34:2: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:35:2: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:36:2: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:39:2: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:40:2: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:41:2: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:51:22: error: expected ‘)’ before ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:54:2: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:55:2: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:62:2: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:63:2: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h: In member function ‘bool triangle_stripper::detail::triangle_edge::operator==(const triangle_stripper::detail::triangle_edge&) const’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:58:14: error: ‘A’ was not declared in this scope
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:58:25: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:58:36: error: ‘B’ was not declared in this scope
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:58:47: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘B’
+In file included from /home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:10:0:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/tri_stripper.h: At global scope:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/tri_stripper.h:111:16: error: ‘index’ has not been declared
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/tri_stripper.h:112:20: error: ‘index’ has not been declared
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: In constructor ‘triangle_stripper::tri_stripper::tri_stripper(const indices&)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:28:27: error: request for member ‘size’ in ‘TriIndices’, which is of non-class type ‘const indices’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: In member function ‘triangle_stripper::detail::strip triangle_stripper::tri_stripper::BackExtendToStrip(size_t, triangle_stripper::detail::triangle_order, bool)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:219:53: error: ‘class triangle_stripper::detail::triangle_edge’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: In member function ‘triangle_stripper::tri_stripper::const_link_iterator triangle_stripper::tri_stripper::LinkToNeighbour(triangle_stripper::tri_stripper::const_tri_iterator, bool, triangle_stripper::detail::triangle_order&, bool)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:306:15: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:306:26: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:306:40: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:306:51: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:308:19: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:312:20: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:312:31: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:312:45: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:312:56: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:314:19: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:318:20: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:318:31: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:318:45: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:318:56: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:320:19: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: In member function ‘triangle_stripper::tri_stripper::const_link_iterator triangle_stripper::tri_stripper::BackLinkToNeighbour(triangle_stripper::tri_stripper::const_tri_iterator, bool, triangle_stripper::detail::triangle_order&)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:347:14: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:347:25: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:347:39: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:347:50: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:349:22: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:353:19: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:353:30: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:353:44: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:353:55: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:355:22: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:359:19: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:359:30: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:359:44: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:359:55: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:361:22: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: In static member function ‘static triangle_stripper::detail::triangle_edge triangle_stripper::tri_stripper::FirstEdge(const triangle_stripper::detail::triangle&, triangle_stripper::detail::triangle_order)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:409:33: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:409:47: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:412:33: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:412:47: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:415:33: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:415:47: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:419:28: error: no matching function for call to ‘triangle_stripper::detail::triangle_edge::triangle_edge(int, int)’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:419:28: note: candidates are:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:48:7: note: triangle_stripper::detail::triangle_edge::triangle_edge()
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:48:7: note:   candidate expects 0 arguments, 2 provided
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:48:7: note: triangle_stripper::detail::triangle_edge::triangle_edge(const triangle_stripper::detail::triangle_edge&)
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:48:7: note:   candidate expects 1 argument, 2 provided
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: In static member function ‘static triangle_stripper::detail::triangle_edge triangle_stripper::tri_stripper::LastEdge(const triangle_stripper::detail::triangle&, triangle_stripper::detail::triangle_order)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:430:33: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:430:47: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:433:33: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:433:47: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:436:33: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:436:47: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:440:28: error: no matching function for call to ‘triangle_stripper::detail::triangle_edge::triangle_edge(int, int)’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:440:28: note: candidates are:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:48:7: note: triangle_stripper::detail::triangle_edge::triangle_edge()
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:48:7: note:   candidate expects 0 arguments, 2 provided
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:48:7: note: triangle_stripper::detail::triangle_edge::triangle_edge(const triangle_stripper::detail::triangle_edge&)
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:48:7: note:   candidate expects 1 argument, 2 provided
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: At global scope:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:446:42: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:446:48: warning: ISO C++ forbids declaration of ‘i’ with no type [-fpermissive]
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: In member function ‘void triangle_stripper::tri_stripper::AddIndex(int, bool)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:452:37: error: request for member ‘push_back’ in ‘((triangle_stripper::tri_stripper*)this)->triangle_stripper::tri_stripper::m_PrimitivesVector.std::vector<_Tp, _Alloc>::back [with _Tp = triangle_stripper::primitive_group, _Alloc = std::allocator<triangle_stripper::primitive_group>, std::vector<_Tp, _Alloc>::reference = triangle_stripper::primitive_group&]()->triangle_stripper::primitive_group::Indices’, which is of non-class type ‘triangle_stripper::indices’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: At global scope:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:457:46: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:457:52: warning: ISO C++ forbids declaration of ‘i’ with no type [-fpermissive]
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: In member function ‘void triangle_stripper::tri_stripper::AddTriangle(const triangle_stripper::detail::triangle&, triangle_stripper::detail::triangle_order, bool)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:470:16: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:471:16: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:472:16: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:476:16: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:477:16: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:478:16: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:482:16: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:483:16: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:484:16: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: In member function ‘void triangle_stripper::tri_stripper::BackAddTriangle(const triangle_stripper::detail::triangle&, triangle_stripper::detail::triangle_order)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:496:20: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:497:20: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:498:20: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:502:20: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:503:20: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:504:20: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:508:20: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:509:20: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:510:20: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: In member function ‘void triangle_stripper::tri_stripper::AddLeftTriangles()’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:527:12: error: request for member ‘push_back’ in ‘Indices’, which is of non-class type ‘triangle_stripper::indices’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:527:38: error: ‘class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:528:12: error: request for member ‘push_back’ in ‘Indices’, which is of non-class type ‘triangle_stripper::indices’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:528:38: error: ‘class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:529:12: error: request for member ‘push_back’ in ‘Indices’, which is of non-class type ‘triangle_stripper::indices’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:529:38: error: ‘class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:533:14: error: request for member ‘size’ in ‘Indices’, which is of non-class type ‘triangle_stripper::indices’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h: In member function ‘size_t triangle_stripper::detail::cache_simulator::size() const’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:97:1: warning: control reaches end of non-void function [-Wreturn-type]
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: In static member function ‘static triangle_stripper::detail::triangle_edge triangle_stripper::tri_stripper::LastEdge(const triangle_stripper::detail::triangle&, triangle_stripper::detail::triangle_order)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:442:1: warning: control reaches end of non-void function [-Wreturn-type]
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: In static member function ‘static triangle_stripper::detail::triangle_edge triangle_stripper::tri_stripper::FirstEdge(const triangle_stripper::detail::triangle&, triangle_stripper::detail::triangle_order)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:421:1: warning: control reaches end of non-void function [-Wreturn-type]
+make[2]: *** [src/osgUtil/CMakeFiles/osgUtil.dir/tristripper/src/tri_stripper.o] Error 1
+make[1]: *** [src/osgUtil/CMakeFiles/osgUtil.dir/all] Error 2
+make: *** [all] Error 2

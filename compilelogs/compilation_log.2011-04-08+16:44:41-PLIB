@@ -1,0 +1,320 @@
+./download_and_compile.sh PLIB
+APT_GET_UPDATE=n
+DOWNLOAD_PACKAGES=n
+COMPILE=y
+RECONFIGURE=y
+DOWNLOAD=y
+JOPTION= -j2 
+DEBUG=
+***********************************
+DEBIAN I SUPPOUSE
+***********************************
+DIRECTORY= /home/arnt/FG-git
+***********************************
+****************************************
+**************** PLIB ******************
+****************************************
+COMPILING PLIB
+INSTALL_DIR_PLIB=/home/arnt/FG-git/install/plib
+updating plib svnAUTOGEN plib
+Running aclocal
+Running automake
+Running autoconf
+======================================
+Now you are ready to run './configure'
+======================================
+CONFIGURING plib
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+includedir changed to ${prefix}/include/plib libdir is ${exec_prefix}/lib
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for style of include used by make... GNU
+checking dependency style of gcc... gcc3
+checking how to run the C preprocessor... gcc -E
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... gcc3
+checking how to run the C++ preprocessor... g++ -E
+checking for ranlib... ranlib
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking for X... libraries , headers 
+checking for gethostbyname... yes
+checking for connect... yes
+checking for remove... yes
+checking for shmat... yes
+checking for IceConnectionNumber in -lICE... yes
+checking for pthread_create in -lpthread... yes
+checking for glNewList in -lGL... yes
+checking for dlclose in -ldl... yes
+checking for ALopenport in -laudio... no
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking windows.h usability... no
+checking windows.h presence... no
+checking for windows.h... no
+checking GL/gl.h usability... yes
+checking GL/gl.h presence... yes
+checking for GL/gl.h... yes
+checking for pthread_exit in -lc_r... no
+checking for socklen_t... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating src/js/Makefile
+config.status: creating src/util/Makefile
+config.status: creating src/sg/Makefile
+config.status: creating src/sl/Makefile
+config.status: creating src/psl/Makefile
+config.status: creating src/ssg/Makefile
+config.status: creating src/ssgAux/Makefile
+config.status: creating src/fnt/Makefile
+config.status: creating src/pui/Makefile
+config.status: creating src/puAux/Makefile
+config.status: creating src/pw/Makefile
+config.status: creating src/net/Makefile
+config.status: executing depfiles commands
+PLIB configuration information:
+
+  Building FNT library:     yes
+  Building JS library:      yes
+  Building NET library:     yes
+  Building PUI library:     yes
+  Building puAux library:   yes
+  Building SG library:      yes
+  Building PSL library:     yes
+  Building SL library:      yes
+  Building SSG library:     yes
+  Building ssgAux library:  yes
+  Building PW library:      yes
+  Building UTIL library:    yes
+
+MAKE plib
+make  -j2 
+Making all in src
+make[1]: Entering directory `/home/arnt/FG-git/plib/src'
+Making all in util
+make[2]: Entering directory `/home/arnt/FG-git/plib/src/util'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/arnt/FG-git/plib/src/util'
+Making all in js
+make[2]: Entering directory `/home/arnt/FG-git/plib/src/js'
+g++ -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"plib\" -DVERSION=\"1.8.5\" -DHAVE_LIBPTHREAD=1 -DHAVE_LIBGL=1 -DHAVE_LIBDL=1 -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -I. -I../../src/util    -g -O2 -Wall -MT jsMacOSX.o -MD -MP -MF .deps/jsMacOSX.Tpo -c -o jsMacOSX.o jsMacOSX.cxx
+g++ -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"plib\" -DVERSION=\"1.8.5\" -DHAVE_LIBPTHREAD=1 -DHAVE_LIBGL=1 -DHAVE_LIBDL=1 -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -I. -I../../src/util    -g -O2 -Wall -MT jsWindows.o -MD -MP -MF .deps/jsWindows.Tpo -c -o jsWindows.o jsWindows.cxx
+mv -f .deps/jsMacOSX.Tpo .deps/jsMacOSX.Po
+mv -f .deps/jsWindows.Tpo .deps/jsWindows.Po
+rm -f libplibjs.a
+ar cru libplibjs.a js.o jsLinux.o jsLinuxOld.o jsMacOS.o jsMacOSX.o jsWindows.o jsBSD.o jsNone.o 
+ranlib libplibjs.a
+make[2]: Leaving directory `/home/arnt/FG-git/plib/src/js'
+Making all in sl
+make[2]: Entering directory `/home/arnt/FG-git/plib/src/sl'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/arnt/FG-git/plib/src/sl'
+Making all in pui
+make[2]: Entering directory `/home/arnt/FG-git/plib/src/pui'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/arnt/FG-git/plib/src/pui'
+Making all in puAux
+make[2]: Entering directory `/home/arnt/FG-git/plib/src/puAux'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/arnt/FG-git/plib/src/puAux'
+Making all in sg
+make[2]: Entering directory `/home/arnt/FG-git/plib/src/sg'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/arnt/FG-git/plib/src/sg'
+Making all in ssg
+make[2]: Entering directory `/home/arnt/FG-git/plib/src/ssg'
+g++ -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"plib\" -DVERSION=\"1.8.5\" -DHAVE_LIBPTHREAD=1 -DHAVE_LIBGL=1 -DHAVE_LIBDL=1 -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -I. -I../../src/sg -I../../src/util    -g -O2 -Wall -MT ssgLoadBMP.o -MD -MP -MF .deps/ssgLoadBMP.Tpo -c -o ssgLoadBMP.o ssgLoadBMP.cxx
+mv -f .deps/ssgLoadBMP.Tpo .deps/ssgLoadBMP.Po
+rm -f libplibssg.a
+ar cru libplibssg.a ssg.o ssgAnimation.o ssgBase.o ssgBaseTransform.o ssgBranch.o ssgContext.o ssgCutout.o ssgDList.o ssgEntity.o ssgIsect.o ssgLeaf.o ssgList.o ssgLoadDOF.o ssgLoadAC.o ssgOptimiser.o ssgRoot.o ssgSaveAC.o ssgSelector.o ssgSimpleState.o ssgState.o ssgStateTables.o ssgStats.o ssgTween.o ssgTweenController.o ssgTexTrans.o ssgTexture.o ssgTransform.o ssgStateSelector.o ssgRangeSelector.o ssgLoadTexture.o ssgLoadBMP.o ssgLoadSGI.o ssgLoadPNG.o ssgLoadTGA.o ssgLoadPCX.o ssgInvisible.o ssgLoadSSG.o ssgVTable.o ssgSimpleList.o ssgVtxTable.o ssgIO.o ssgLoad3ds.o ssgSaveASE.o ssgLoadASE.o ssgParser.o ssgLoadDXF.o ssgSaveDXF.o ssgLoadTRI.o ssgSaveTRI.o ssgLoadOBJ.o ssgSaveOBJ.o ssgVtxArray.o ssgLoadMD2.o ssgLoadMDL.o ssgLoadX.o ssgSaveX.o ssgLoaderWriterStuff.o ssgLoadFLT.o ssgLoadM.o ssgSaveM.o ssgLoadStrip.o ssgLoadOFF.o ssgSaveOFF.o ssgSaveQHI.o ssgLoadVRML1.o ssgSaveVRML1.o ssgSave3ds.o ssgAxisTransform.o ssgLoadATG.o ssgSaveFLT.o ssgSaveATG.o ssgLoadIV.o ssgLoad.o ssgLoadMDL_BGLTexture.o ssgLoadXPlaneObj.o ssgLoadASC.o ssgSaveASC.o ssgSaveIV.o ssgAnimTransform.o ssgVertSplitter.o ssgStatistics.o 
+ranlib libplibssg.a
+make[2]: Leaving directory `/home/arnt/FG-git/plib/src/ssg'
+Making all in fnt
+make[2]: Entering directory `/home/arnt/FG-git/plib/src/fnt'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/arnt/FG-git/plib/src/fnt'
+Making all in ssgAux
+make[2]: Entering directory `/home/arnt/FG-git/plib/src/ssgAux'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/arnt/FG-git/plib/src/ssgAux'
+Making all in net
+make[2]: Entering directory `/home/arnt/FG-git/plib/src/net'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/arnt/FG-git/plib/src/net'
+Making all in psl
+make[2]: Entering directory `/home/arnt/FG-git/plib/src/psl'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/arnt/FG-git/plib/src/psl'
+Making all in pw
+make[2]: Entering directory `/home/arnt/FG-git/plib/src/pw'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/arnt/FG-git/plib/src/pw'
+make[2]: Entering directory `/home/arnt/FG-git/plib/src'
+make[2]: Nothing to be done for `all-am'.
+make[2]: Leaving directory `/home/arnt/FG-git/plib/src'
+make[1]: Leaving directory `/home/arnt/FG-git/plib/src'
+make[1]: Entering directory `/home/arnt/FG-git/plib'
+make[1]: Nothing to be done for `all-am'.
+make[1]: Leaving directory `/home/arnt/FG-git/plib'
+INSTALL plib
+make install
+Making install in src
+make[1]: Entering directory `/home/arnt/FG-git/plib/src'
+Making install in util
+make[2]: Entering directory `/home/arnt/FG-git/plib/src/util'
+make[3]: Entering directory `/home/arnt/FG-git/plib/src/util'
+test -z "/home/arnt/FG-git/install/plib/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/plib/lib"
+ /usr/bin/install -c -m 644  libplibul.a '/home/arnt/FG-git/install/plib/lib'
+ ( cd '/home/arnt/FG-git/install/plib/lib' && ranlib libplibul.a )
+test -z "/home/arnt/FG-git/install/plib/include/plib" || /bin/mkdir -p "/home/arnt/FG-git/install/plib/include/plib"
+ /usr/bin/install -c -m 644 ul.h ulRTTI.h '/home/arnt/FG-git/install/plib/include/plib'
+make[3]: Leaving directory `/home/arnt/FG-git/plib/src/util'
+make[2]: Leaving directory `/home/arnt/FG-git/plib/src/util'
+Making install in js
+make[2]: Entering directory `/home/arnt/FG-git/plib/src/js'
+make[3]: Entering directory `/home/arnt/FG-git/plib/src/js'
+test -z "/home/arnt/FG-git/install/plib/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/plib/lib"
+ /usr/bin/install -c -m 644  libplibjs.a '/home/arnt/FG-git/install/plib/lib'
+ ( cd '/home/arnt/FG-git/install/plib/lib' && ranlib libplibjs.a )
+test -z "/home/arnt/FG-git/install/plib/include/plib" || /bin/mkdir -p "/home/arnt/FG-git/install/plib/include/plib"
+ /usr/bin/install -c -m 644 js.h '/home/arnt/FG-git/install/plib/include/plib'
+make[3]: Leaving directory `/home/arnt/FG-git/plib/src/js'
+make[2]: Leaving directory `/home/arnt/FG-git/plib/src/js'
+Making install in sl
+make[2]: Entering directory `/home/arnt/FG-git/plib/src/sl'
+make[3]: Entering directory `/home/arnt/FG-git/plib/src/sl'
+test -z "/home/arnt/FG-git/install/plib/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/plib/lib"
+ /usr/bin/install -c -m 644  libplibsl.a libplibsm.a '/home/arnt/FG-git/install/plib/lib'
+ ( cd '/home/arnt/FG-git/install/plib/lib' && ranlib libplibsl.a )
+ ( cd '/home/arnt/FG-git/install/plib/lib' && ranlib libplibsm.a )
+test -z "/home/arnt/FG-git/install/plib/include/plib" || /bin/mkdir -p "/home/arnt/FG-git/install/plib/include/plib"
+ /usr/bin/install -c -m 644 sl.h slPortability.h sm.h '/home/arnt/FG-git/install/plib/include/plib'
+make[3]: Leaving directory `/home/arnt/FG-git/plib/src/sl'
+make[2]: Leaving directory `/home/arnt/FG-git/plib/src/sl'
+Making install in pui
+make[2]: Entering directory `/home/arnt/FG-git/plib/src/pui'
+make[3]: Entering directory `/home/arnt/FG-git/plib/src/pui'
+test -z "/home/arnt/FG-git/install/plib/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/plib/lib"
+ /usr/bin/install -c -m 644  libplibpu.a '/home/arnt/FG-git/install/plib/lib'
+ ( cd '/home/arnt/FG-git/install/plib/lib' && ranlib libplibpu.a )
+test -z "/home/arnt/FG-git/install/plib/include/plib" || /bin/mkdir -p "/home/arnt/FG-git/install/plib/include/plib"
+ /usr/bin/install -c -m 644 pu.h puGLUT.h puFLTK.h puSDL.h puNative.h puPW.h '/home/arnt/FG-git/install/plib/include/plib'
+make[3]: Leaving directory `/home/arnt/FG-git/plib/src/pui'
+make[2]: Leaving directory `/home/arnt/FG-git/plib/src/pui'
+Making install in puAux
+make[2]: Entering directory `/home/arnt/FG-git/plib/src/puAux'
+make[3]: Entering directory `/home/arnt/FG-git/plib/src/puAux'
+test -z "/home/arnt/FG-git/install/plib/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/plib/lib"
+ /usr/bin/install -c -m 644  libplibpuaux.a '/home/arnt/FG-git/install/plib/lib'
+ ( cd '/home/arnt/FG-git/install/plib/lib' && ranlib libplibpuaux.a )
+test -z "/home/arnt/FG-git/install/plib/include/plib" || /bin/mkdir -p "/home/arnt/FG-git/install/plib/include/plib"
+ /usr/bin/install -c -m 644 puAux.h puAuxLocal.h '/home/arnt/FG-git/install/plib/include/plib'
+make[3]: Leaving directory `/home/arnt/FG-git/plib/src/puAux'
+make[2]: Leaving directory `/home/arnt/FG-git/plib/src/puAux'
+Making install in sg
+make[2]: Entering directory `/home/arnt/FG-git/plib/src/sg'
+make[3]: Entering directory `/home/arnt/FG-git/plib/src/sg'
+test -z "/home/arnt/FG-git/install/plib/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/plib/lib"
+ /usr/bin/install -c -m 644  libplibsg.a '/home/arnt/FG-git/install/plib/lib'
+ ( cd '/home/arnt/FG-git/install/plib/lib' && ranlib libplibsg.a )
+test -z "/home/arnt/FG-git/install/plib/include/plib" || /bin/mkdir -p "/home/arnt/FG-git/install/plib/include/plib"
+ /usr/bin/install -c -m 644 sg.h '/home/arnt/FG-git/install/plib/include/plib'
+make[3]: Leaving directory `/home/arnt/FG-git/plib/src/sg'
+make[2]: Leaving directory `/home/arnt/FG-git/plib/src/sg'
+Making install in ssg
+make[2]: Entering directory `/home/arnt/FG-git/plib/src/ssg'
+make[3]: Entering directory `/home/arnt/FG-git/plib/src/ssg'
+test -z "/home/arnt/FG-git/install/plib/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/plib/lib"
+ /usr/bin/install -c -m 644  libplibssg.a '/home/arnt/FG-git/install/plib/lib'
+ ( cd '/home/arnt/FG-git/install/plib/lib' && ranlib libplibssg.a )
+test -z "/home/arnt/FG-git/install/plib/include/plib" || /bin/mkdir -p "/home/arnt/FG-git/install/plib/include/plib"
+ /usr/bin/install -c -m 644 ssg.h ssgconf.h ssgMSFSPalette.h ssgKeyFlier.h pcx.h '/home/arnt/FG-git/install/plib/include/plib'
+make[3]: Leaving directory `/home/arnt/FG-git/plib/src/ssg'
+make[2]: Leaving directory `/home/arnt/FG-git/plib/src/ssg'
+Making install in fnt
+make[2]: Entering directory `/home/arnt/FG-git/plib/src/fnt'
+make[3]: Entering directory `/home/arnt/FG-git/plib/src/fnt'
+test -z "/home/arnt/FG-git/install/plib/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/plib/lib"
+ /usr/bin/install -c -m 644  libplibfnt.a '/home/arnt/FG-git/install/plib/lib'
+ ( cd '/home/arnt/FG-git/install/plib/lib' && ranlib libplibfnt.a )
+test -z "/home/arnt/FG-git/install/plib/include/plib" || /bin/mkdir -p "/home/arnt/FG-git/install/plib/include/plib"
+ /usr/bin/install -c -m 644 fnt.h '/home/arnt/FG-git/install/plib/include/plib'
+make[3]: Leaving directory `/home/arnt/FG-git/plib/src/fnt'
+make[2]: Leaving directory `/home/arnt/FG-git/plib/src/fnt'
+Making install in ssgAux
+make[2]: Entering directory `/home/arnt/FG-git/plib/src/ssgAux'
+make[3]: Entering directory `/home/arnt/FG-git/plib/src/ssgAux'
+test -z "/home/arnt/FG-git/install/plib/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/plib/lib"
+ /usr/bin/install -c -m 644  libplibssgaux.a '/home/arnt/FG-git/install/plib/lib'
+ ( cd '/home/arnt/FG-git/install/plib/lib' && ranlib libplibssgaux.a )
+test -z "/home/arnt/FG-git/install/plib/include/plib" || /bin/mkdir -p "/home/arnt/FG-git/install/plib/include/plib"
+ /usr/bin/install -c -m 644 ssgAux.h ssgaShapes.h ssgaLensFlare.h ssgaParticleSystem.h ssgaWaveSystem.h ssgaScreenDump.h ssgaSky.h ssgaSphere.h ssgaFire.h ssgaBillboards.h '/home/arnt/FG-git/install/plib/include/plib'
+make[3]: Leaving directory `/home/arnt/FG-git/plib/src/ssgAux'
+make[2]: Leaving directory `/home/arnt/FG-git/plib/src/ssgAux'
+Making install in net
+make[2]: Entering directory `/home/arnt/FG-git/plib/src/net'
+make[3]: Entering directory `/home/arnt/FG-git/plib/src/net'
+test -z "/home/arnt/FG-git/install/plib/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/plib/lib"
+ /usr/bin/install -c -m 644  libplibnet.a '/home/arnt/FG-git/install/plib/lib'
+ ( cd '/home/arnt/FG-git/install/plib/lib' && ranlib libplibnet.a )
+test -z "/home/arnt/FG-git/install/plib/include/plib" || /bin/mkdir -p "/home/arnt/FG-git/install/plib/include/plib"
+ /usr/bin/install -c -m 644 netBuffer.h netChannel.h netChat.h netMessage.h netMonitor.h netSocket.h net.h '/home/arnt/FG-git/install/plib/include/plib'
+make[3]: Leaving directory `/home/arnt/FG-git/plib/src/net'
+make[2]: Leaving directory `/home/arnt/FG-git/plib/src/net'
+Making install in psl
+make[2]: Entering directory `/home/arnt/FG-git/plib/src/psl'
+make[3]: Entering directory `/home/arnt/FG-git/plib/src/psl'
+test -z "/home/arnt/FG-git/install/plib/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/plib/lib"
+ /usr/bin/install -c -m 644  libplibpsl.a '/home/arnt/FG-git/install/plib/lib'
+ ( cd '/home/arnt/FG-git/install/plib/lib' && ranlib libplibpsl.a )
+test -z "/home/arnt/FG-git/install/plib/include/plib" || /bin/mkdir -p "/home/arnt/FG-git/install/plib/include/plib"
+ /usr/bin/install -c -m 644 psl.h '/home/arnt/FG-git/install/plib/include/plib'
+make[3]: Leaving directory `/home/arnt/FG-git/plib/src/psl'
+make[2]: Leaving directory `/home/arnt/FG-git/plib/src/psl'
+Making install in pw
+make[2]: Entering directory `/home/arnt/FG-git/plib/src/pw'
+make[3]: Entering directory `/home/arnt/FG-git/plib/src/pw'
+test -z "/home/arnt/FG-git/install/plib/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/plib/lib"
+ /usr/bin/install -c -m 644  libplibpw.a '/home/arnt/FG-git/install/plib/lib'
+ ( cd '/home/arnt/FG-git/install/plib/lib' && ranlib libplibpw.a )
+test -z "/home/arnt/FG-git/install/plib/include/plib" || /bin/mkdir -p "/home/arnt/FG-git/install/plib/include/plib"
+ /usr/bin/install -c -m 644 pw.h '/home/arnt/FG-git/install/plib/include/plib'
+make[3]: Leaving directory `/home/arnt/FG-git/plib/src/pw'
+make[2]: Leaving directory `/home/arnt/FG-git/plib/src/pw'
+make[2]: Entering directory `/home/arnt/FG-git/plib/src'
+make[3]: Entering directory `/home/arnt/FG-git/plib/src'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/home/arnt/FG-git/plib/src'
+make[2]: Leaving directory `/home/arnt/FG-git/plib/src'
+make[1]: Leaving directory `/home/arnt/FG-git/plib/src'
+make[1]: Entering directory `/home/arnt/FG-git/plib'
+make[2]: Entering directory `/home/arnt/FG-git/plib'
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/home/arnt/FG-git/plib'
+make[1]: Leaving directory `/home/arnt/FG-git/plib'

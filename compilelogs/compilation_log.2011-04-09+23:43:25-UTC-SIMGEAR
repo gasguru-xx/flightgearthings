@@ -1,0 +1,610 @@
+./download_and_compile.sh SIMGEAR
+APT_GET_UPDATE=n
+DOWNLOAD_PACKAGES=n
+COMPILE=y
+RECONFIGURE=y
+DOWNLOAD=y
+JOPTION= -j2 
+DEBUG=
+***********************************
+DEBIAN I SUPPOUSE
+***********************************
+DIRECTORY= /home/arnt/FG-git
+***********************************
+****************************************
+*..we use system's OSG-2.9.11-1. ;o) ***
+****************************************
+2011-04-09+23:43:25-UTC
+****************************************
+**************** SIMGEAR ***************
+****************************************
+2011-04-09+23:43:25-UTC
+git FROM git://gitorious.org/fg/simgear.git ...  OK
+AUTOGEN SIMGEAR
+Host info: Linux x86_64
+ automake: 1.11.1 (111)
+
+Running aclocal
+Running autoheader
+Running automake --add-missing
+Running autoconf
+
+======================================
+Now you are ready to run './configure'
+======================================
+CONFIGURE SIMGEAR
+configure: WARNING: unrecognized options: --with-plib
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for -p flag to install... yes
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking for headless mode... 
+checking CXX... 
+checking CC... 
+checking whether make sets $(MAKE)... (cached) yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for style of include used by make... GNU
+checking dependency style of gcc... gcc3
+checking how to run the C preprocessor... gcc -E
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... gcc3
+checking how to run the C++ preprocessor... g++ -E
+checking for ranlib... ranlib
+checking whether ln -s works... yes
+checking for boostlib >= 1.37.0... yes
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+includedir changed to ${prefix}/include/simgear libdir is ${exec_prefix}/lib
+Building with Norman's jpeg image factory support
+checking for jpeg_start_compress in -ljpeg... yes
+osg prefix is /usr/include/osg
+checking for extra include and lib directories...
+checking for X... libraries , headers 
+checking for gethostbyname... yes
+checking for connect... yes
+checking for remove... yes
+checking for shmat... yes
+checking for IceConnectionNumber in -lICE... yes
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking pthread.h usability... yes
+checking pthread.h presence... yes
+checking for pthread.h... yes
+checking for library containing pthread_exit... none required
+checking for library containing inet_addr... none required
+checking for library containing socket... none required
+checking for library containing cos... -lm
+checking for library containing clock_gettime... -lrt
+checking for library containing XCreateWindow... -lX11
+checking for library containing XShmCreateImage... -lXext
+checking for library containing XGetExtensionVersion... -lXi
+checking for library containing IceOpenConnection... -lICE
+checking for library containing SmcOpenConnection... -lSM
+checking for library containing XtMalloc... -lXt
+checking for library containing XmuLookupStandardColormap... no
+checking for library containing glNewList... -lGL
+checking for library containing gluLookAt... -lGLU
+checking for library containing alGenBuffers... -lopenal
+checking for library containing alutInit... -lalut
+checking windows.h usability... no
+checking windows.h presence... no
+checking for windows.h... no
+checking for OpenThreadsGetVersion in -lOpenThreads... yes
+checking osg/Version usability... yes
+checking osg/Version presence... yes
+checking for osg/Version... yes
+checking boost/version.hpp usability... yes
+checking boost/version.hpp presence... yes
+checking for boost/version.hpp... yes
+checking RTI.hh usability... no
+checking RTI.hh presence... no
+checking for RTI.hh... no
+checking zlib.h usability... yes
+checking zlib.h presence... yes
+checking for zlib.h... yes
+checking for ANSI C header files... (cached) yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking getopt.h usability... yes
+checking getopt.h presence... yes
+checking for getopt.h... yes
+checking malloc.h usability... yes
+checking malloc.h presence... yes
+checking for malloc.h... yes
+checking for memory.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking sys/param.h usability... yes
+checking sys/param.h presence... yes
+checking for sys/param.h... yes
+checking for sys/stat.h... (cached) yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking sys/timeb.h usability... yes
+checking sys/timeb.h presence... yes
+checking for sys/timeb.h... yes
+checking for unistd.h... (cached) yes
+checking values.h usability... yes
+checking values.h presence... yes
+checking for values.h... yes
+checking for an ANSI C-conforming const... yes
+checking for size_t... yes
+checking for mode_t... yes
+checking whether time.h and sys/time.h may both be included... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking return type of signal handlers... void
+checking for vprintf... yes
+checking for _doprnt... no
+checking for ftime... yes
+checking for gettimeofday... yes
+checking for timegm... yes
+checking for memcpy... yes
+checking for bcopy... yes
+checking for mktime... yes
+checking for strstr... yes
+checking for rand... yes
+checking for random... yes
+checking for drand48... yes
+checking for setitimer... yes
+checking for getitimer... yes
+checking for signal... yes
+checking for GetLocalTime... no
+checking for rint... yes
+checking for getrusage... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating SimGear.spec
+config.status: creating simgear/Makefile
+config.status: creating simgear/version.h
+config.status: creating simgear/compatibility/Makefile
+config.status: creating simgear/compatibility/MIPSpro721/Makefile
+config.status: creating simgear/compatibility/MIPSpro740/Makefile
+config.status: creating simgear/bucket/Makefile
+config.status: creating simgear/debug/Makefile
+config.status: creating simgear/ephemeris/Makefile
+config.status: creating simgear/hla/Makefile
+config.status: creating simgear/io/Makefile
+config.status: creating simgear/magvar/Makefile
+config.status: creating simgear/math/Makefile
+config.status: creating simgear/environment/Makefile
+config.status: creating simgear/misc/Makefile
+config.status: creating simgear/nasal/Makefile
+config.status: creating simgear/props/Makefile
+config.status: creating simgear/route/Makefile
+config.status: creating simgear/scene/Makefile
+config.status: creating simgear/scene/bvh/Makefile
+config.status: creating simgear/scene/material/Makefile
+config.status: creating simgear/scene/model/Makefile
+config.status: creating simgear/scene/sky/Makefile
+config.status: creating simgear/scene/tgdb/Makefile
+config.status: creating simgear/scene/util/Makefile
+config.status: creating simgear/screen/Makefile
+config.status: creating simgear/serial/Makefile
+config.status: creating simgear/sound/Makefile
+config.status: creating simgear/structure/Makefile
+config.status: creating simgear/threads/Makefile
+config.status: creating simgear/timing/Makefile
+config.status: creating simgear/xml/Makefile
+config.status: creating simgear/simgear_config.h
+config.status: simgear/simgear_config.h is unchanged
+config.status: executing depfiles commands
+configure: WARNING: unrecognized options: --with-plib
+
+Configure Summary
+=================
+Prefix: /home/arnt/FG-git/install/simgear
+Debug messages: yes
+Automake version: automake (GNU automake) 1.11.1
+With JPEG Factory support
+Threads: pthread lib found.
+MAKE SIMGEAR
+make  -j2 
+Making all in simgear
+make[1]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear'
+(CDPATH="${ZSH_VERSION+.}:" && cd .. && /bin/sh /home/arnt/FG-git/simgear/simgear/missing --run autoheader)
+rm -f stamp-h1
+touch simgear_config.h.in
+cd .. && /bin/sh ./config.status simgear/simgear_config.h
+config.status: creating simgear/simgear_config.h
+config.status: simgear/simgear_config.h is unchanged
+make  all-recursive
+make[2]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear'
+Making all in xml
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/xml'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/xml'
+Making all in debug
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/debug'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/debug'
+Making all in misc
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/misc'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/misc'
+Making all in structure
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/structure'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/structure'
+Making all in bucket
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/bucket'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/bucket'
+Making all in ephemeris
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/ephemeris'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/ephemeris'
+Making all in io
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/io'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/io'
+Making all in magvar
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/magvar'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/magvar'
+Making all in math
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/math'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/math'
+Making all in nasal
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/nasal'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/nasal'
+Making all in props
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/props'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/props'
+Making all in route
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/route'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/route'
+Making all in serial
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/serial'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/serial'
+Making all in timing
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/timing'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/timing'
+Making all in environment
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/environment'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/environment'
+Making all in scene
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/scene'
+Making all in bvh
+make[4]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/bvh'
+make[4]: Nothing to be done for `all'.
+make[4]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/bvh'
+Making all in material
+make[4]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/material'
+make[4]: Nothing to be done for `all'.
+make[4]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/material'
+Making all in model
+make[4]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/model'
+make[4]: Nothing to be done for `all'.
+make[4]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/model'
+Making all in sky
+make[4]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/sky'
+make[4]: Nothing to be done for `all'.
+make[4]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/sky'
+Making all in tgdb
+make[4]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/tgdb'
+make[4]: Nothing to be done for `all'.
+make[4]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/tgdb'
+Making all in util
+make[4]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/util'
+make[4]: Nothing to be done for `all'.
+make[4]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/util'
+make[4]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/scene'
+make[4]: Nothing to be done for `all-am'.
+make[4]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/scene'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/scene'
+Making all in sound
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/sound'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/sound'
+Making all in screen
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/screen'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/screen'
+Making all in threads
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/threads'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/threads'
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear'
+make[2]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear'
+make[1]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear'
+make[1]: Entering directory `/home/arnt/FG-git/simgear/simgear'
+make[1]: Nothing to be done for `all-am'.
+make[1]: Leaving directory `/home/arnt/FG-git/simgear/simgear'
+INSTALL SIMGEAR
+Making install in simgear
+make[1]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear'
+Making install in xml
+make[2]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/xml'
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/xml'
+test -z "/home/arnt/FG-git/install/simgear/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/lib"
+ /usr/bin/install -c -p -m 644  libsgxml.a '/home/arnt/FG-git/install/simgear/lib'
+ ( cd '/home/arnt/FG-git/install/simgear/lib' && ranlib libsgxml.a )
+test -z "/home/arnt/FG-git/install/simgear/include/simgear/xml" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/include/simgear/xml"
+ /usr/bin/install -c -p -m 644 easyxml.hxx '/home/arnt/FG-git/install/simgear/include/simgear/xml'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/xml'
+make[2]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/xml'
+Making install in debug
+make[2]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/debug'
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/debug'
+test -z "/home/arnt/FG-git/install/simgear/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/lib"
+ /usr/bin/install -c -p -m 644  libsgdebug.a '/home/arnt/FG-git/install/simgear/lib'
+ ( cd '/home/arnt/FG-git/install/simgear/lib' && ranlib libsgdebug.a )
+test -z "/home/arnt/FG-git/install/simgear/include/simgear/debug" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/include/simgear/debug"
+ /usr/bin/install -c -p -m 644 debug_types.h logstream.hxx '/home/arnt/FG-git/install/simgear/include/simgear/debug'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/debug'
+make[2]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/debug'
+Making install in misc
+make[2]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/misc'
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/misc'
+test -z "/home/arnt/FG-git/install/simgear/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/lib"
+ /usr/bin/install -c -p -m 644  libsgmisc.a '/home/arnt/FG-git/install/simgear/lib'
+ ( cd '/home/arnt/FG-git/install/simgear/lib' && ranlib libsgmisc.a )
+test -z "/home/arnt/FG-git/install/simgear/include/simgear/misc" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/include/simgear/misc"
+ /usr/bin/install -c -p -m 644 sg_path.hxx sgstream.hxx stopwatch.hxx strutils.hxx tabbed_values.hxx texcoord.hxx zfstream.hxx interpolator.hxx stdint.hxx PathOptions.hxx sg_dir.hxx ResourceManager.hxx sg_sleep.hxx '/home/arnt/FG-git/install/simgear/include/simgear/misc'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/misc'
+make[2]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/misc'
+Making install in structure
+make[2]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/structure'
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/structure'
+test -z "/home/arnt/FG-git/install/simgear/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/lib"
+ /usr/bin/install -c -p -m 644  libsgstructure.a '/home/arnt/FG-git/install/simgear/lib'
+ ( cd '/home/arnt/FG-git/install/simgear/lib' && ranlib libsgstructure.a )
+test -z "/home/arnt/FG-git/install/simgear/include/simgear/structure" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/include/simgear/structure"
+ /usr/bin/install -c -p -m 644 callback.hxx commands.hxx exception.hxx event_mgr.hxx intern.hxx subsystem_mgr.hxx OSGUtils.hxx OSGVersion.hxx SGAtomic.hxx SGBinding.hxx SGExpression.hxx SGReferenced.hxx SGSharedPtr.hxx SGSmplhist.hxx SGSmplstat.hxx SGWeakPtr.hxx SGWeakReferenced.hxx Singleton.hxx StringTable.hxx '/home/arnt/FG-git/install/simgear/include/simgear/structure'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/structure'
+make[2]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/structure'
+Making install in bucket
+make[2]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/bucket'
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/bucket'
+test -z "/home/arnt/FG-git/install/simgear/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/lib"
+ /usr/bin/install -c -p -m 644  libsgbucket.a '/home/arnt/FG-git/install/simgear/lib'
+ ( cd '/home/arnt/FG-git/install/simgear/lib' && ranlib libsgbucket.a )
+test -z "/home/arnt/FG-git/install/simgear/include/simgear/bucket" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/include/simgear/bucket"
+ /usr/bin/install -c -p -m 644 newbucket.hxx '/home/arnt/FG-git/install/simgear/include/simgear/bucket'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/bucket'
+make[2]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/bucket'
+Making install in ephemeris
+make[2]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/ephemeris'
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/ephemeris'
+test -z "/home/arnt/FG-git/install/simgear/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/lib"
+ /usr/bin/install -c -p -m 644  libsgephem.a '/home/arnt/FG-git/install/simgear/lib'
+ ( cd '/home/arnt/FG-git/install/simgear/lib' && ranlib libsgephem.a )
+test -z "/home/arnt/FG-git/install/simgear/include/simgear/ephemeris" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/include/simgear/ephemeris"
+ /usr/bin/install -c -p -m 644 celestialBody.hxx ephemeris.hxx jupiter.hxx mars.hxx mercury.hxx moonpos.hxx neptune.hxx saturn.hxx star.hxx stardata.hxx uranus.hxx venus.hxx '/home/arnt/FG-git/install/simgear/include/simgear/ephemeris'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/ephemeris'
+make[2]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/ephemeris'
+Making install in io
+make[2]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/io'
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/io'
+test -z "/home/arnt/FG-git/install/simgear/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/lib"
+ /usr/bin/install -c -p -m 644  libsgio.a '/home/arnt/FG-git/install/simgear/lib'
+ ( cd '/home/arnt/FG-git/install/simgear/lib' && ranlib libsgio.a )
+test -z "/home/arnt/FG-git/install/simgear/include/simgear/io" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/include/simgear/io"
+ /usr/bin/install -c -p -m 644 iochannel.hxx lowlevel.hxx sg_binobj.hxx sg_file.hxx sg_serial.hxx sg_socket.hxx sg_socket_udp.hxx raw_socket.hxx sg_netBuffer.hxx sg_netChannel.hxx sg_netChat.hxx '/home/arnt/FG-git/install/simgear/include/simgear/io'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/io'
+make[2]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/io'
+Making install in magvar
+make[2]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/magvar'
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/magvar'
+test -z "/home/arnt/FG-git/install/simgear/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/lib"
+ /usr/bin/install -c -p -m 644  libsgmagvar.a '/home/arnt/FG-git/install/simgear/lib'
+ ( cd '/home/arnt/FG-git/install/simgear/lib' && ranlib libsgmagvar.a )
+test -z "/home/arnt/FG-git/install/simgear/include/simgear/magvar" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/include/simgear/magvar"
+ /usr/bin/install -c -p -m 644 magvar.hxx coremag.hxx '/home/arnt/FG-git/install/simgear/include/simgear/magvar'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/magvar'
+make[2]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/magvar'
+Making install in math
+make[2]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/math'
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/math'
+test -z "/home/arnt/FG-git/install/simgear/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/lib"
+ /usr/bin/install -c -p -m 644  libsgmath.a '/home/arnt/FG-git/install/simgear/lib'
+ ( cd '/home/arnt/FG-git/install/simgear/lib' && ranlib libsgmath.a )
+test -z "/home/arnt/FG-git/install/simgear/include/simgear/math" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/include/simgear/math"
+ /usr/bin/install -c -p -m 644 interpolater.hxx leastsqs.hxx sg_geodesy.hxx sg_random.h sg_types.hxx Math.hxx SGBox.hxx SGCMath.hxx SGGeoc.hxx SGGeod.hxx SGGeodesy.hxx SGGeometry.hxx SGGeometryFwd.hxx SGIntersect.hxx SGLimits.hxx SGLineSegment.hxx SGMatrix.hxx SGMath.hxx SGMathFwd.hxx SGMisc.hxx SGPlane.hxx SGQuat.hxx SGRay.hxx SGSphere.hxx SGTriangle.hxx SGVec2.hxx SGVec3.hxx SGVec4.hxx beziercurve.hxx project.hxx '/home/arnt/FG-git/install/simgear/include/simgear/math'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/math'
+make[2]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/math'
+Making install in nasal
+make[2]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/nasal'
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/nasal'
+test -z "/home/arnt/FG-git/install/simgear/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/lib"
+ /usr/bin/install -c -p -m 644  libsgnasal.a '/home/arnt/FG-git/install/simgear/lib'
+ ( cd '/home/arnt/FG-git/install/simgear/lib' && ranlib libsgnasal.a )
+test -z "/home/arnt/FG-git/install/simgear/include/simgear/nasal" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/include/simgear/nasal"
+ /usr/bin/install -c -p -m 644 nasal.h naref.h '/home/arnt/FG-git/install/simgear/include/simgear/nasal'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/nasal'
+make[2]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/nasal'
+Making install in props
+make[2]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/props'
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/props'
+test -z "/home/arnt/FG-git/install/simgear/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/lib"
+ /usr/bin/install -c -p -m 644  libsgprops.a '/home/arnt/FG-git/install/simgear/lib'
+ ( cd '/home/arnt/FG-git/install/simgear/lib' && ranlib libsgprops.a )
+test -z "/home/arnt/FG-git/install/simgear/include/simgear/props" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/include/simgear/props"
+ /usr/bin/install -c -p -m 644 condition.hxx props.hxx props_io.hxx AtomicChangeListener.hxx ExtendedPropertyAdapter.hxx propertyObject.hxx tiedpropertylist.hxx '/home/arnt/FG-git/install/simgear/include/simgear/props'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/props'
+make[2]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/props'
+Making install in route
+make[2]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/route'
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/route'
+test -z "/home/arnt/FG-git/install/simgear/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/lib"
+ /usr/bin/install -c -p -m 644  libsgroute.a '/home/arnt/FG-git/install/simgear/lib'
+ ( cd '/home/arnt/FG-git/install/simgear/lib' && ranlib libsgroute.a )
+test -z "/home/arnt/FG-git/install/simgear/include/simgear/route" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/include/simgear/route"
+ /usr/bin/install -c -p -m 644 route.hxx waypoint.hxx '/home/arnt/FG-git/install/simgear/include/simgear/route'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/route'
+make[2]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/route'
+Making install in serial
+make[2]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/serial'
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/serial'
+test -z "/home/arnt/FG-git/install/simgear/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/lib"
+ /usr/bin/install -c -p -m 644  libsgserial.a '/home/arnt/FG-git/install/simgear/lib'
+ ( cd '/home/arnt/FG-git/install/simgear/lib' && ranlib libsgserial.a )
+test -z "/home/arnt/FG-git/install/simgear/include/simgear/serial" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/include/simgear/serial"
+ /usr/bin/install -c -p -m 644 serial.hxx '/home/arnt/FG-git/install/simgear/include/simgear/serial'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/serial'
+make[2]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/serial'
+Making install in timing
+make[2]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/timing'
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/timing'
+test -z "/home/arnt/FG-git/install/simgear/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/lib"
+ /usr/bin/install -c -p -m 644  libsgtiming.a '/home/arnt/FG-git/install/simgear/lib'
+ ( cd '/home/arnt/FG-git/install/simgear/lib' && ranlib libsgtiming.a )
+test -z "/home/arnt/FG-git/install/simgear/include/simgear/timing" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/include/simgear/timing"
+ /usr/bin/install -c -p -m 644 lowleveltime.h sg_time.hxx timestamp.hxx timezone.h '/home/arnt/FG-git/install/simgear/include/simgear/timing'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/timing'
+make[2]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/timing'
+Making install in environment
+make[2]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/environment'
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/environment'
+test -z "/home/arnt/FG-git/install/simgear/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/lib"
+ /usr/bin/install -c -p -m 644  libsgenvironment.a '/home/arnt/FG-git/install/simgear/lib'
+ ( cd '/home/arnt/FG-git/install/simgear/lib' && ranlib libsgenvironment.a )
+test -z "/home/arnt/FG-git/install/simgear/include/simgear/environment" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/include/simgear/environment"
+ /usr/bin/install -c -p -m 644 metar.hxx visual_enviro.hxx precipitation.hxx '/home/arnt/FG-git/install/simgear/include/simgear/environment'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/environment'
+make[2]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/environment'
+Making install in scene
+make[2]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/scene'
+Making install in bvh
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/bvh'
+make[4]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/bvh'
+test -z "/home/arnt/FG-git/install/simgear/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/lib"
+ /usr/bin/install -c -p -m 644  libsgbvh.a '/home/arnt/FG-git/install/simgear/lib'
+ ( cd '/home/arnt/FG-git/install/simgear/lib' && ranlib libsgbvh.a )
+test -z "/home/arnt/FG-git/install/simgear/include/simgear/scene/bvh" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/include/simgear/scene/bvh"
+ /usr/bin/install -c -p -m 644 BVHBoundingBoxVisitor.hxx BVHDebugCollectVisitor.hxx BVHGroup.hxx BVHLineSegmentVisitor.hxx BVHLineGeometry.hxx BVHMotionTransform.hxx BVHNearestPointVisitor.hxx BVHNode.hxx BVHStaticBinary.hxx BVHStaticData.hxx BVHStaticGeometry.hxx BVHStaticGeometryBuilder.hxx BVHStaticLeaf.hxx BVHStaticNode.hxx BVHStaticTriangle.hxx BVHSubTreeCollector.hxx BVHTransform.hxx BVHVisitor.hxx '/home/arnt/FG-git/install/simgear/include/simgear/scene/bvh'
+make[4]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/bvh'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/bvh'
+Making install in material
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/material'
+make[4]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/material'
+test -z "/home/arnt/FG-git/install/simgear/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/lib"
+ /usr/bin/install -c -p -m 644  libsgmaterial.a '/home/arnt/FG-git/install/simgear/lib'
+ ( cd '/home/arnt/FG-git/install/simgear/lib' && ranlib libsgmaterial.a )
+test -z "/home/arnt/FG-git/install/simgear/include/simgear/scene/material" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/include/simgear/scene/material"
+ /usr/bin/install -c -p -m 644 Effect.hxx EffectBuilder.hxx EffectCullVisitor.hxx EffectGeode.hxx GLPredicate.hxx Pass.hxx Technique.hxx TextureBuilder.hxx mat.hxx matlib.hxx matmodel.hxx mipmap.hxx '/home/arnt/FG-git/install/simgear/include/simgear/scene/material'
+make[4]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/material'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/material'
+Making install in model
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/model'
+make[4]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/model'
+test -z "/home/arnt/FG-git/install/simgear/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/lib"
+ /usr/bin/install -c -p -m 644  libsgmodel.a '/home/arnt/FG-git/install/simgear/lib'
+ ( cd '/home/arnt/FG-git/install/simgear/lib' && ranlib libsgmodel.a )
+test -z "/home/arnt/FG-git/install/simgear/include/simgear/scene/model" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/include/simgear/scene/model"
+ /usr/bin/install -c -p -m 644 animation.hxx particles.hxx model.hxx modellib.hxx ModelRegistry.hxx persparam.hxx placement.hxx CheckSceneryVisitor.hxx ConditionNode.hxx SGClipGroup.hxx SGInteractionAnimation.hxx SGMaterialAnimation.hxx SGOffsetTransform.hxx SGPagedLOD.hxx SGReaderWriterXML.hxx SGReaderWriterXMLOptions.hxx SGRotateTransform.hxx SGScaleTransform.hxx SGTranslateTransform.hxx SGText.hxx '/home/arnt/FG-git/install/simgear/include/simgear/scene/model'
+make[4]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/model'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/model'
+Making install in sky
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/sky'
+make[4]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/sky'
+test -z "/home/arnt/FG-git/install/simgear/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/lib"
+ /usr/bin/install -c -p -m 644  libsgsky.a '/home/arnt/FG-git/install/simgear/lib'
+ ( cd '/home/arnt/FG-git/install/simgear/lib' && ranlib libsgsky.a )
+test -z "/home/arnt/FG-git/install/simgear/include/simgear/scene/sky" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/include/simgear/scene/sky"
+ /usr/bin/install -c -p -m 644 cloud.hxx dome.hxx moon.hxx oursun.hxx sky.hxx sphere.hxx stars.hxx cloudfield.hxx newcloud.hxx CloudShaderGeometry.hxx '/home/arnt/FG-git/install/simgear/include/simgear/scene/sky'
+make[4]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/sky'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/sky'
+Making install in tgdb
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/tgdb'
+make[4]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/tgdb'
+test -z "/home/arnt/FG-git/install/simgear/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/lib"
+ /usr/bin/install -c -p -m 644  libsgtgdb.a '/home/arnt/FG-git/install/simgear/lib'
+ ( cd '/home/arnt/FG-git/install/simgear/lib' && ranlib libsgtgdb.a )
+test -z "/home/arnt/FG-git/install/simgear/include/simgear/scene/tgdb" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/include/simgear/scene/tgdb"
+ /usr/bin/install -c -p -m 644 apt_signs.hxx obj.hxx pt_lights.hxx userdata.hxx ReaderWriterSTG.hxx SGVasiDrawable.hxx SGDirectionalLightBin.hxx SGLightBin.hxx SGOceanTile.hxx SGReaderWriterBTG.hxx SGReaderWriterBTGOptions.hxx SGTexturedTriangleBin.hxx SGTriangleBin.hxx SGVertexArrayBin.hxx GroundLightManager.hxx ShaderGeometry.hxx TileCache.hxx TileEntry.hxx '/home/arnt/FG-git/install/simgear/include/simgear/scene/tgdb'
+make[4]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/tgdb'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/tgdb'
+Making install in util
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/util'
+make[4]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/util'
+test -z "/home/arnt/FG-git/install/simgear/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/lib"
+ /usr/bin/install -c -p -m 644  libsgutil.a '/home/arnt/FG-git/install/simgear/lib'
+ ( cd '/home/arnt/FG-git/install/simgear/lib' && ranlib libsgutil.a )
+test -z "/home/arnt/FG-git/install/simgear/include/simgear/scene/util" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/include/simgear/scene/util"
+ /usr/bin/install -c -p -m 644 SGDebugDrawCallback.hxx SGEnlargeBoundingBox.hxx SGNodeMasks.hxx SGPickCallback.hxx SGSceneFeatures.hxx SGSceneUserData.hxx SGStateAttributeVisitor.hxx SGTextureStateAttributeVisitor.hxx SGUpdateVisitor.hxx CopyOp.hxx NodeAndDrawableVisitor.hxx PrimitiveUtils.hxx QuadTreeBuilder.hxx RenderConstants.hxx SplicingVisitor.hxx StateAttributeFactory.hxx UpdateOnceCallback.hxx VectorArrayAdapter.hxx '/home/arnt/FG-git/install/simgear/include/simgear/scene/util'
+make[4]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/util'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/util'
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/scene'
+make[4]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/scene'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/scene'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/scene'
+make[2]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/scene'
+Making install in sound
+make[2]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/sound'
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/sound'
+test -z "/home/arnt/FG-git/install/simgear/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/lib"
+ /usr/bin/install -c -p -m 644  libsgsound.a '/home/arnt/FG-git/install/simgear/lib'
+ ( cd '/home/arnt/FG-git/install/simgear/lib' && ranlib libsgsound.a )
+test -z "/home/arnt/FG-git/install/simgear/include/simgear/sound" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/include/simgear/sound"
+ /usr/bin/install -c -p -m 644 soundmgr_openal.hxx sample_group.hxx sample_openal.hxx sample_queue.hxx xmlsound.hxx '/home/arnt/FG-git/install/simgear/include/simgear/sound'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/sound'
+make[2]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/sound'
+Making install in screen
+make[2]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/screen'
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/screen'
+test -z "/home/arnt/FG-git/install/simgear/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/lib"
+ /usr/bin/install -c -p -m 644  libsgscreen.a '/home/arnt/FG-git/install/simgear/lib'
+ ( cd '/home/arnt/FG-git/install/simgear/lib' && ranlib libsgscreen.a )
+test -z "/home/arnt/FG-git/install/simgear/include/simgear/screen" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/include/simgear/screen"
+ /usr/bin/install -c -p -m 644 jpgfactory.hxx screen-dump.hxx colors.hxx tr.h extensions.hxx '/home/arnt/FG-git/install/simgear/include/simgear/screen'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/screen'
+make[2]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/screen'
+Making install in threads
+make[2]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/threads'
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/threads'
+test -z "/home/arnt/FG-git/install/simgear/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/lib"
+ /usr/bin/install -c -p -m 644  libsgthreads.a '/home/arnt/FG-git/install/simgear/lib'
+ ( cd '/home/arnt/FG-git/install/simgear/lib' && ranlib libsgthreads.a )
+test -z "/home/arnt/FG-git/install/simgear/include/simgear/threads" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/include/simgear/threads"
+ /usr/bin/install -c -p -m 644 SGGuard.hxx SGQueue.hxx SGThread.hxx '/home/arnt/FG-git/install/simgear/include/simgear/threads'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/threads'
+make[2]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/threads'
+make[2]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear'
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear'
+make[3]: Nothing to be done for `install-exec-am'.
+test -z "/home/arnt/FG-git/install/simgear/include/simgear" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/include/simgear"
+ /usr/bin/install -c -p -m 644 compiler.h constants.h sg_inlines.h version.h '/home/arnt/FG-git/install/simgear/include/simgear'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear'
+make[2]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear'
+make[1]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear'
+make[1]: Entering directory `/home/arnt/FG-git/simgear/simgear'
+make[2]: Entering directory `/home/arnt/FG-git/simgear/simgear'
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/home/arnt/FG-git/simgear/simgear'
+make[1]: Leaving directory `/home/arnt/FG-git/simgear/simgear'

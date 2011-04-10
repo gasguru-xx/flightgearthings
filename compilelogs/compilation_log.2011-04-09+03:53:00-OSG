@@ -1,0 +1,1282 @@
+./download_and_compile.sh OSG
+APT_GET_UPDATE=n
+DOWNLOAD_PACKAGES=n
+COMPILE=y
+RECONFIGURE=y
+DOWNLOAD=y
+JOPTION= -j2 
+DEBUG=
+***********************************
+DEBIAN I SUPPOUSE
+***********************************
+DIRECTORY= /home/arnt/FG-git
+***********************************
+****************************************
+**************** OSG *******************
+****************************************
+SVN FROM http://www.openscenegraph.org/svn/osg/OpenSceneGraph/tags/OpenSceneGraph-2.8.3 ...  OK
+RECONFIGURE OSG ...  OK
+-- Could NOT find CURL (missing:  CURL_LIBRARY CURL_INCLUDE_DIR) 
+-- Please set ITK_DIR to the directory containing ITKConfig.cmake.  This is either the root of the build tree, or PREFIX/lib/InsightToolkit for an installation.
+-- checking for module 'xulrunner-xpcom<=1.8.9'
+--   package 'xulrunner-xpcom<=1.8.9' not found
+-- checking for module 'xulrunner-js'
+--   package 'xulrunner-js' not found
+-- checking for module 'xulrunner-nspr'
+--   package 'xulrunner-nspr' not found
+-- checking for module 'xulrunner-nss'
+--   package 'xulrunner-nss' not found
+-- checking for module 'gtkglext-x11-1.0'
+--   package 'gtkglext-x11-1.0' not found
+-- checking for module 'librsvg-2.0'
+--   package 'librsvg-2.0' not found
+-- checking for module 'poppler-glib'
+--   package 'poppler-glib' not found
+CMake Warning (dev) at /usr/share/cmake-2.8/Modules/FindPNG.cmake:29 (find_package):
+  File /usr/share/cmake-2.8/Modules/FindPNG.cmake includes
+  /home/arnt/FG-git/OpenSceneGraph/CMakeModules/FindZLIB.cmake (found via
+  CMAKE_MODULE_PATH) which shadows
+  /usr/share/cmake-2.8/Modules/FindZLIB.cmake.  This may cause errors later
+  on .
+
+  Policy CMP0017 is not set: Prefer files from the CMake module directory
+  when including from there.  Run "cmake --help-policy CMP0017" for policy
+  details.  Use the cmake_policy command to set the policy and suppress this
+  warning.
+Call Stack (most recent call first):
+  CMakeLists.txt:429 (FIND_PACKAGE)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/arnt/FG-git/OpenSceneGraph
+RECONFIGURE OSG DONE.
+COMPILING OSG
+Scanning dependencies of target OpenThreads
+[  0%] [  0%] Building CXX object src/OpenThreads/pthreads/CMakeFiles/OpenThreads.dir/PThreadBarrier.o
+Building CXX object src/OpenThreads/pthreads/CMakeFiles/OpenThreads.dir/PThread.o
+[  0%] Building CXX object src/OpenThreads/pthreads/CMakeFiles/OpenThreads.dir/PThreadCondition.o
+[  0%] Building CXX object src/OpenThreads/pthreads/CMakeFiles/OpenThreads.dir/PThreadMutex.o
+[  0%] Building CXX object src/OpenThreads/pthreads/CMakeFiles/OpenThreads.dir/__/common/Version.o
+[  0%] Building CXX object src/OpenThreads/pthreads/CMakeFiles/OpenThreads.dir/__/common/Atomic.o
+Linking CXX shared library ../../../lib/libOpenThreads.so
+[  0%] Built target OpenThreads
+Scanning dependencies of target osg
+[  0%] [  0%] Building CXX object src/osg/CMakeFiles/osg.dir/AlphaFunc.o
+Building CXX object src/osg/CMakeFiles/osg.dir/AnimationPath.o
+[  0%] Building CXX object src/osg/CMakeFiles/osg.dir/ApplicationUsage.o
+[  0%] Building CXX object src/osg/CMakeFiles/osg.dir/ArgumentParser.o
+[  0%] Building CXX object src/osg/CMakeFiles/osg.dir/Array.o
+[  1%] Building CXX object src/osg/CMakeFiles/osg.dir/AudioStream.o
+[  1%] Building CXX object src/osg/CMakeFiles/osg.dir/AutoTransform.o
+[  1%] Building CXX object src/osg/CMakeFiles/osg.dir/Billboard.o
+[  1%] Building CXX object src/osg/CMakeFiles/osg.dir/BlendColor.o
+[  1%] Building CXX object src/osg/CMakeFiles/osg.dir/BlendEquation.o
+[  1%] Building CXX object src/osg/CMakeFiles/osg.dir/BlendFunc.o
+[  1%] Building CXX object src/osg/CMakeFiles/osg.dir/BufferObject.o
+[  1%] Building CXX object src/osg/CMakeFiles/osg.dir/Camera.o
+/home/arnt/FG-git/OpenSceneGraph/src/osg/BufferObject.cpp: In member function ‘virtual void osg::VertexBufferObject::compileBuffer(osg::State&) const’:
+/home/arnt/FG-git/OpenSceneGraph/src/osg/BufferObject.cpp:497:58: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+[  1%] Building CXX object src/osg/CMakeFiles/osg.dir/CameraView.o
+[  2%] Building CXX object src/osg/CMakeFiles/osg.dir/ClampColor.o
+[  2%] Building CXX object src/osg/CMakeFiles/osg.dir/ClearNode.o
+[  2%] Building CXX object src/osg/CMakeFiles/osg.dir/ClipNode.o
+[  2%] Building CXX object src/osg/CMakeFiles/osg.dir/ClipPlane.o
+[  2%] [  2%] Building CXX object src/osg/CMakeFiles/osg.dir/CollectOccludersVisitor.o
+Building CXX object src/osg/CMakeFiles/osg.dir/ClusterCullingCallback.o
+[  2%] Building CXX object src/osg/CMakeFiles/osg.dir/ColorMask.o
+[  2%] Building CXX object src/osg/CMakeFiles/osg.dir/ColorMatrix.o
+[  2%] Building CXX object src/osg/CMakeFiles/osg.dir/ComputeBoundsVisitor.o
+[  3%] Building CXX object src/osg/CMakeFiles/osg.dir/ConvexPlanarOccluder.o
+[  3%] Building CXX object src/osg/CMakeFiles/osg.dir/ConvexPlanarPolygon.o
+[  3%] Building CXX object src/osg/CMakeFiles/osg.dir/CoordinateSystemNode.o
+[  3%] Building CXX object src/osg/CMakeFiles/osg.dir/CopyOp.o
+[  3%] Building CXX object src/osg/CMakeFiles/osg.dir/CullFace.o
+[  3%] Building CXX object src/osg/CMakeFiles/osg.dir/CullingSet.o
+[  3%] Building CXX object src/osg/CMakeFiles/osg.dir/CullSettings.o
+[  3%] Building CXX object src/osg/CMakeFiles/osg.dir/CullStack.o
+[  3%] Building CXX object src/osg/CMakeFiles/osg.dir/DeleteHandler.o
+[  4%] Building CXX object src/osg/CMakeFiles/osg.dir/Depth.o
+[  4%] Building CXX object src/osg/CMakeFiles/osg.dir/DisplaySettings.o
+[  4%] Building CXX object src/osg/CMakeFiles/osg.dir/Drawable.o
+[  4%] Building CXX object src/osg/CMakeFiles/osg.dir/DrawPixels.o
+[  4%] Building CXX object src/osg/CMakeFiles/osg.dir/dxtctool.o
+[  4%] Building CXX object src/osg/CMakeFiles/osg.dir/Fog.o
+[  4%] Building CXX object src/osg/CMakeFiles/osg.dir/FragmentProgram.o
+[  4%] Building CXX object src/osg/CMakeFiles/osg.dir/FrameBufferObject.o
+[  4%] Building CXX object src/osg/CMakeFiles/osg.dir/FrameStamp.o
+[  5%] Building CXX object src/osg/CMakeFiles/osg.dir/FrontFace.o
+[  5%] Building CXX object src/osg/CMakeFiles/osg.dir/Geode.o
+[  5%] Building CXX object src/osg/CMakeFiles/osg.dir/Geometry.o
+[  5%] Building CXX object src/osg/CMakeFiles/osg.dir/GL2Extensions.o
+[  5%] Building CXX object src/osg/CMakeFiles/osg.dir/GLExtensions.o
+[  5%] Building CXX object src/osg/CMakeFiles/osg.dir/GLObjects.o
+[  5%] Building CXX object src/osg/CMakeFiles/osg.dir/GraphicsContext.o
+[  5%] Building CXX object src/osg/CMakeFiles/osg.dir/GraphicsThread.o
+[  5%] Building CXX object src/osg/CMakeFiles/osg.dir/Group.o
+[  6%] Building CXX object src/osg/CMakeFiles/osg.dir/Hint.o
+[  6%] Building CXX object src/osg/CMakeFiles/osg.dir/Image.o
+[  6%] Building CXX object src/osg/CMakeFiles/osg.dir/ImageSequence.o
+[  6%] Building CXX object src/osg/CMakeFiles/osg.dir/ImageStream.o
+[  6%] Building CXX object src/osg/CMakeFiles/osg.dir/ImageUtils.o
+[  6%] Building CXX object src/osg/CMakeFiles/osg.dir/KdTree.o
+[  6%] Building CXX object src/osg/CMakeFiles/osg.dir/Light.o
+[  6%] Building CXX object src/osg/CMakeFiles/osg.dir/LightModel.o
+[  6%] Building CXX object src/osg/CMakeFiles/osg.dir/LightSource.o
+[  7%] Building CXX object src/osg/CMakeFiles/osg.dir/LineSegment.o
+[  7%] Building CXX object src/osg/CMakeFiles/osg.dir/LineStipple.o
+[  7%] Building CXX object src/osg/CMakeFiles/osg.dir/LineWidth.o
+[  7%] Building CXX object src/osg/CMakeFiles/osg.dir/LOD.o
+[  7%] Building CXX object src/osg/CMakeFiles/osg.dir/LogicOp.o
+[  7%] Building CXX object src/osg/CMakeFiles/osg.dir/Material.o
+[  7%] Building CXX object src/osg/CMakeFiles/osg.dir/Math.o
+[  7%] Building CXX object src/osg/CMakeFiles/osg.dir/Matrixd.o
+[  8%] Building CXX object src/osg/CMakeFiles/osg.dir/MatrixDecomposition.o
+[  8%] Building CXX object src/osg/CMakeFiles/osg.dir/Matrixf.o
+[  8%] Building CXX object src/osg/CMakeFiles/osg.dir/MatrixTransform.o
+[  8%] Building CXX object src/osg/CMakeFiles/osg.dir/Multisample.o
+[  8%] Building CXX object src/osg/CMakeFiles/osg.dir/NodeCallback.o
+[  8%] Building CXX object src/osg/CMakeFiles/osg.dir/Node.o
+[  8%] Building CXX object src/osg/CMakeFiles/osg.dir/NodeTrackerCallback.o
+[  8%] Building CXX object src/osg/CMakeFiles/osg.dir/NodeVisitor.o
+[  8%] Building CXX object src/osg/CMakeFiles/osg.dir/Notify.o
+[  9%] Building CXX object src/osg/CMakeFiles/osg.dir/Object.o
+[  9%] Building CXX object src/osg/CMakeFiles/osg.dir/OccluderNode.o
+[  9%] Building CXX object src/osg/CMakeFiles/osg.dir/OcclusionQueryNode.o
+[  9%] Building CXX object src/osg/CMakeFiles/osg.dir/OperationThread.o
+[  9%] Building CXX object src/osg/CMakeFiles/osg.dir/PagedLOD.o
+[  9%] Building CXX object src/osg/CMakeFiles/osg.dir/Point.o
+[  9%] Building CXX object src/osg/CMakeFiles/osg.dir/PointSprite.o
+[  9%] Building CXX object src/osg/CMakeFiles/osg.dir/PolygonMode.o
+[  9%] Building CXX object src/osg/CMakeFiles/osg.dir/PolygonOffset.o
+[ 10%] Building CXX object src/osg/CMakeFiles/osg.dir/PolygonStipple.o
+[ 10%] Building CXX object src/osg/CMakeFiles/osg.dir/PositionAttitudeTransform.o
+[ 10%] Building CXX object src/osg/CMakeFiles/osg.dir/PrimitiveSet.o
+[ 10%] Building CXX object src/osg/CMakeFiles/osg.dir/Program.o
+[ 10%] Building CXX object src/osg/CMakeFiles/osg.dir/Projection.o
+[ 10%] Building CXX object src/osg/CMakeFiles/osg.dir/ProxyNode.o
+[ 10%] Building CXX object src/osg/CMakeFiles/osg.dir/Quat.o
+[ 10%] Building CXX object src/osg/CMakeFiles/osg.dir/Referenced.o
+[ 10%] Building CXX object src/osg/CMakeFiles/osg.dir/Scissor.o
+[ 11%] Building CXX object src/osg/CMakeFiles/osg.dir/Sequence.o
+[ 11%] Building CXX object src/osg/CMakeFiles/osg.dir/ShadeModel.o
+[ 11%] Building CXX object src/osg/CMakeFiles/osg.dir/Shader.o
+[ 11%] Building CXX object src/osg/CMakeFiles/osg.dir/ShadowVolumeOccluder.o
+[ 11%] Building CXX object src/osg/CMakeFiles/osg.dir/Shape.o
+[ 11%] Building CXX object src/osg/CMakeFiles/osg.dir/ShapeDrawable.o
+[ 11%] Building CXX object src/osg/CMakeFiles/osg.dir/StateAttribute.o
+/home/arnt/FG-git/OpenSceneGraph/src/osg/ShapeDrawable.cpp: In member function ‘void PrimitiveShapeVisitor::createHalfSphere(unsigned int, unsigned int, float, int, float, const Matrix&)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osg/ShapeDrawable.cpp:1390:11: warning: variable ‘nzBase’ set but not used [-Wunused-but-set-variable]
+/home/arnt/FG-git/OpenSceneGraph/src/osg/ShapeDrawable.cpp:1391:11: warning: variable ‘nRatioBase’ set but not used [-Wunused-but-set-variable]
+[ 11%] Building CXX object src/osg/CMakeFiles/osg.dir/State.o
+[ 11%] Building CXX object src/osg/CMakeFiles/osg.dir/StateSet.o
+[ 12%] Building CXX object src/osg/CMakeFiles/osg.dir/Stats.o
+[ 12%] Building CXX object src/osg/CMakeFiles/osg.dir/Stencil.o
+[ 12%] Building CXX object src/osg/CMakeFiles/osg.dir/StencilTwoSided.o
+[ 12%] Building CXX object src/osg/CMakeFiles/osg.dir/Switch.o
+[ 12%] Building CXX object src/osg/CMakeFiles/osg.dir/TexEnvCombine.o
+[ 12%] Building CXX object src/osg/CMakeFiles/osg.dir/TexEnv.o
+[ 12%] Building CXX object src/osg/CMakeFiles/osg.dir/TexEnvFilter.o
+[ 12%] Building CXX object src/osg/CMakeFiles/osg.dir/TexGen.o
+[ 12%] Building CXX object src/osg/CMakeFiles/osg.dir/TexGenNode.o
+[ 13%] Building CXX object src/osg/CMakeFiles/osg.dir/TexMat.o
+[ 13%] Building CXX object src/osg/CMakeFiles/osg.dir/Texture1D.o
+[ 13%] Building CXX object src/osg/CMakeFiles/osg.dir/Texture2DArray.o
+[ 13%] Building CXX object src/osg/CMakeFiles/osg.dir/Texture2D.o
+[ 13%] Building CXX object src/osg/CMakeFiles/osg.dir/Texture3D.o
+[ 13%] Building CXX object src/osg/CMakeFiles/osg.dir/Texture.o
+[ 13%] Building CXX object src/osg/CMakeFiles/osg.dir/TextureCubeMap.o
+[ 13%] Building CXX object src/osg/CMakeFiles/osg.dir/TextureRectangle.o
+[ 13%] Building CXX object src/osg/CMakeFiles/osg.dir/Timer.o
+[ 14%] Building CXX object src/osg/CMakeFiles/osg.dir/TransferFunction.o
+[ 14%] Building CXX object src/osg/CMakeFiles/osg.dir/Transform.o
+[ 14%] Building CXX object src/osg/CMakeFiles/osg.dir/Uniform.o
+[ 14%] Building CXX object src/osg/CMakeFiles/osg.dir/Version.o
+[ 14%] Building CXX object src/osg/CMakeFiles/osg.dir/VertexProgram.o
+[ 14%] Building CXX object src/osg/CMakeFiles/osg.dir/View.o
+[ 14%] Building CXX object src/osg/CMakeFiles/osg.dir/Viewport.o
+Linking CXX shared library ../../lib/libosg.so
+[ 14%] Built target osg
+Scanning dependencies of target osgDB
+[ 14%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/Archive.o
+Scanning dependencies of target osgUtil
+[ 14%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/CubeMapGenerator.o
+[ 14%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/CullVisitor.o
+[ 14%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/AuthenticationMap.o
+[ 14%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/ConvertUTF.o
+[ 15%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/DatabasePager.o
+/home/arnt/FG-git/OpenSceneGraph/src/osgDB/DatabasePager.cpp: In member function ‘virtual void osgDB::DatabasePager::capped_removeExpiredSubgraphs(const osg::FrameStamp&)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgDB/DatabasePager.cpp:1547:28: warning: variable ‘itr’ set but not used [-Wunused-but-set-variable]
+[ 15%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/DelaunayTriangulator.o
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/DelaunayTriangulator.cpp: In function ‘osgUtil::Triangle_list osgUtil::fillHole(osg::Vec3Array*, std::vector<unsigned int, std::allocator<unsigned int> >)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/DelaunayTriangulator.cpp:567:27: warning: variable ‘ptest’ set but not used [-Wunused-but-set-variable]
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/DelaunayTriangulator.cpp: In member function ‘bool osgUtil::DelaunayTriangulator::triangulate()’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/DelaunayTriangulator.cpp:963:45: warning: variable ‘curp’ set but not used [-Wunused-but-set-variable]
+[ 15%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/DotOsgWrapper.o
+[ 15%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/DynamicLibrary.o
+[ 15%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/DisplayRequirementsVisitor.o
+[ 15%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/DrawElementTypeSimplifier.o
+[ 15%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/Field.o
+[ 15%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/FieldReader.o
+[ 15%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/FieldReaderIterator.o
+[ 15%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/FileCache.o
+[ 15%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/EdgeCollector.o
+[ 15%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/FileNameUtils.o
+[ 15%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/GLObjectsVisitor.o
+[ 15%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/FileUtils.o
+[ 16%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/HalfWayMapGenerator.o
+[ 16%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/HighlightMapGenerator.o
+[ 17%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/fstream.o
+[ 17%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/IntersectionVisitor.o
+[ 17%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/ImageOptions.o
+[ 17%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/ImagePager.o
+[ 17%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/IntersectVisitor.o
+[ 17%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/Input.o
+[ 17%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/LineSegmentIntersector.o
+[ 17%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/Output.o
+[ 17%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/PluginQuery.o
+[ 17%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/Optimizer.o
+[ 17%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/ReaderWriter.o
+[ 17%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/ReadFile.o
+[ 17%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/Registry.o
+[ 17%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/PlaneIntersector.o
+[ 18%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/SharedStateManager.o
+[ 18%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/Version.o
+[ 18%] Building CXX object src/osgDB/CMakeFiles/osgDB.dir/WriteFile.o
+[ 18%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/PolytopeIntersector.o
+Linking CXX shared library ../../lib/libosgDB.so
+[ 18%] Built target osgDB
+Scanning dependencies of target osgText
+[ 18%] Building CXX object src/osgText/CMakeFiles/osgText.dir/DefaultFont.o
+[ 18%] Building CXX object src/osgText/CMakeFiles/osgText.dir/Font.o
+[ 18%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/PositionalStateContainer.o
+[ 19%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/RenderBin.o
+[ 19%] Building CXX object src/osgText/CMakeFiles/osgText.dir/Font3D.o
+[ 19%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/RenderLeaf.o
+[ 19%] Building CXX object src/osgText/CMakeFiles/osgText.dir/String.o
+[ 19%] Building CXX object src/osgText/CMakeFiles/osgText.dir/FadeText.o
+/home/arnt/FG-git/OpenSceneGraph/src/osgText/FadeText.cpp: In member function ‘void FadeTextPolytopeData::buildPolytope()’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgText/FadeText.cpp:74:20: warning: variable ‘edge23’ set but not used [-Wunused-but-set-variable]
+/home/arnt/FG-git/OpenSceneGraph/src/osgText/FadeText.cpp:75:20: warning: variable ‘edge30’ set but not used [-Wunused-but-set-variable]
+[ 19%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/RenderStage.o
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/RenderStage.cpp: In member function ‘void osgUtil::RenderStage::runCameraSetUp(osg::RenderInfo&)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/RenderStage.cpp:337:18: warning: variable ‘stencilAttached’ set but not used [-Wunused-but-set-variable]
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/RenderStage.cpp:555:18: warning: variable ‘stencilAttached’ set but not used [-Wunused-but-set-variable]
+[ 19%] Building CXX object src/osgText/CMakeFiles/osgText.dir/TextBase.o
+[ 19%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/ReversePrimitiveFunctor.o
+[ 19%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/SceneView.o
+[ 19%] Building CXX object src/osgText/CMakeFiles/osgText.dir/Text.o
+/home/arnt/FG-git/OpenSceneGraph/src/osgText/Text.cpp: In member function ‘void osgText::Text::computeBackdropPositions(unsigned int) const’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgText/Text.cpp:765:10: warning: variable ‘is_valid_size’ set but not used [-Wunused-but-set-variable]
+/home/arnt/FG-git/OpenSceneGraph/src/osgText/Text.cpp: In member function ‘void osgText::Text::convertRgbToHsv(float*, float*) const’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgText/Text.cpp:1655:11: warning: variable ‘cr’ set but not used [-Wunused-but-set-variable]
+/home/arnt/FG-git/OpenSceneGraph/src/osgText/Text.cpp:1655:15: warning: variable ‘cg’ set but not used [-Wunused-but-set-variable]
+/home/arnt/FG-git/OpenSceneGraph/src/osgText/Text.cpp:1655:19: warning: variable ‘cb’ set but not used [-Wunused-but-set-variable]
+[ 19%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/Simplifier.o
+[ 20%] Building CXX object src/osgText/CMakeFiles/osgText.dir/Text3D.o
+[ 20%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/SmoothingVisitor.o
+[ 20%] Building CXX object src/osgText/CMakeFiles/osgText.dir/Version.o
+Linking CXX shared library ../../lib/libosgText.so
+[ 20%] Built target osgText
+Scanning dependencies of target application_osgversion
+[ 20%] Building CXX object applications/osgversion/CMakeFiles/application_osgversion.dir/osgversion.o
+Linking CXX executable ../../bin/osgversion
+/usr/bin/ld: ../../lib/libosg.so.2.8.3: error: undefined reference to 'dlsym'
+/usr/bin/ld: ../../lib/libosgDB.so.2.8.3: error: undefined reference to 'dlclose'
+/usr/bin/ld: ../../lib/libosgDB.so.2.8.3: error: undefined reference to 'dlopen'
+/usr/bin/ld: ../../lib/libosgDB.so.2.8.3: error: undefined reference to 'dlerror'
+collect2: ld returned 1 exit status
+make[2]: *** [bin/osgversion] Error 1
+make[1]: *** [applications/osgversion/CMakeFiles/application_osgversion.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[ 20%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/SceneGraphBuilder.o
+[ 20%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/StateGraph.o
+[ 21%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/Statistics.o
+[ 21%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/TangentSpaceGenerator.o
+[ 21%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/Tessellator.o
+[ 21%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/TransformAttributeFunctor.o
+[ 21%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/TransformCallback.o
+[ 21%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/TriStrip_tri_stripper.o
+[ 21%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/TriStripVisitor.o
+[ 21%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/UpdateVisitor.o
+[ 21%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/Version.o
+Linking CXX shared library ../../lib/libosgUtil.so
+[ 21%] Built target osgUtil
+make: *** [all] Error 2
+INSTALLING OSG
+[  0%] Built target OpenThreads
+[ 14%] Built target osg
+[ 17%] Built target osgDB
+[ 20%] Built target osgUtil
+Scanning dependencies of target osgGA
+[ 20%] Building CXX object src/osgGA/CMakeFiles/osgGA.dir/AnimationPathManipulator.o
+[ 20%] Building CXX object src/osgGA/CMakeFiles/osgGA.dir/DriveManipulator.o
+[ 20%] Building CXX object src/osgGA/CMakeFiles/osgGA.dir/EventQueue.o
+[ 20%] Building CXX object src/osgGA/CMakeFiles/osgGA.dir/EventVisitor.o
+[ 21%] Building CXX object src/osgGA/CMakeFiles/osgGA.dir/FlightManipulator.o
+[ 21%] Building CXX object src/osgGA/CMakeFiles/osgGA.dir/GUIEventAdapter.o
+[ 21%] Building CXX object src/osgGA/CMakeFiles/osgGA.dir/GUIEventHandler.o
+[ 21%] Building CXX object src/osgGA/CMakeFiles/osgGA.dir/KeySwitchMatrixManipulator.o
+[ 21%] Building CXX object src/osgGA/CMakeFiles/osgGA.dir/MatrixManipulator.o
+[ 21%] Building CXX object src/osgGA/CMakeFiles/osgGA.dir/NodeTrackerManipulator.o
+/home/arnt/FG-git/OpenSceneGraph/src/osgGA/NodeTrackerManipulator.cpp: In member function ‘bool osgGA::NodeTrackerManipulator::calcMovement()’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgGA/NodeTrackerManipulator.cpp:455:24: warning: variable ‘lookVector’ set but not used [-Wunused-but-set-variable]
+/home/arnt/FG-git/OpenSceneGraph/src/osgGA/NodeTrackerManipulator.cpp:457:24: warning: variable ‘upVector’ set but not used [-Wunused-but-set-variable]
+[ 21%] Building CXX object src/osgGA/CMakeFiles/osgGA.dir/StateSetManipulator.o
+[ 21%] Building CXX object src/osgGA/CMakeFiles/osgGA.dir/TerrainManipulator.o
+/home/arnt/FG-git/OpenSceneGraph/src/osgGA/TerrainManipulator.cpp: In member function ‘bool osgGA::TerrainManipulator::calcMovement()’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgGA/TerrainManipulator.cpp:408:24: warning: variable ‘lookVector’ set but not used [-Wunused-but-set-variable]
+/home/arnt/FG-git/OpenSceneGraph/src/osgGA/TerrainManipulator.cpp:410:24: warning: variable ‘upVector’ set but not used [-Wunused-but-set-variable]
+/home/arnt/FG-git/OpenSceneGraph/src/osgGA/TerrainManipulator.cpp:448:20: warning: variable ‘lookVector’ set but not used [-Wunused-but-set-variable]
+/home/arnt/FG-git/OpenSceneGraph/src/osgGA/TerrainManipulator.cpp:450:20: warning: variable ‘upVector’ set but not used [-Wunused-but-set-variable]
+[ 22%] Building CXX object src/osgGA/CMakeFiles/osgGA.dir/TrackballManipulator.o
+[ 22%] Building CXX object src/osgGA/CMakeFiles/osgGA.dir/UFOManipulator.o
+[ 22%] Building CXX object src/osgGA/CMakeFiles/osgGA.dir/Version.o
+[ 22%] Building CXX object src/osgGA/CMakeFiles/osgGA.dir/CameraViewSwitchManipulator.o
+Linking CXX shared library ../../lib/libosgGA.so
+[ 22%] Built target osgGA
+[ 23%] Built target osgText
+Scanning dependencies of target osgViewer
+[ 24%] Building CXX object src/osgViewer/CMakeFiles/osgViewer.dir/CompositeViewer.o
+[ 24%] Building CXX object src/osgViewer/CMakeFiles/osgViewer.dir/HelpHandler.o
+[ 24%] Building CXX object src/osgViewer/CMakeFiles/osgViewer.dir/Renderer.o
+[ 24%] Building CXX object src/osgViewer/CMakeFiles/osgViewer.dir/Scene.o
+[ 24%] Building CXX object src/osgViewer/CMakeFiles/osgViewer.dir/ScreenCaptureHandler.o
+[ 24%] Building CXX object src/osgViewer/CMakeFiles/osgViewer.dir/StatsHandler.o
+[ 24%] Building CXX object src/osgViewer/CMakeFiles/osgViewer.dir/Version.o
+[ 24%] Building CXX object src/osgViewer/CMakeFiles/osgViewer.dir/View.o
+/home/arnt/FG-git/OpenSceneGraph/src/osgViewer/View.cpp: In function ‘osg::Geometry* create3DSphericalDisplayDistortionMesh(const Vec3&, const Vec3&, const Vec3&, double, double, osg::Image*, const Matrix&)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgViewer/View.cpp:780:15: warning: variable ‘cursor’ set but not used [-Wunused-but-set-variable]
+/home/arnt/FG-git/OpenSceneGraph/src/osgViewer/View.cpp: In function ‘osg::Geometry* createParoramicSphericalDisplayDistortionMesh(const Vec3&, const Vec3&, const Vec3&, double, double, osg::Image*, const Matrix&)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgViewer/View.cpp:1174:19: warning: variable ‘cursor’ set but not used [-Wunused-but-set-variable]
+/home/arnt/FG-git/OpenSceneGraph/src/osgViewer/View.cpp:1162:15: warning: variable ‘dx’ set but not used [-Wunused-but-set-variable]
+[ 24%] Building CXX object src/osgViewer/CMakeFiles/osgViewer.dir/Viewer.o
+[ 25%] Building CXX object src/osgViewer/CMakeFiles/osgViewer.dir/ViewerBase.o
+[ 25%] Building CXX object src/osgViewer/CMakeFiles/osgViewer.dir/ViewerEventHandlers.o
+[ 25%] Building CXX object src/osgViewer/CMakeFiles/osgViewer.dir/GraphicsWindowX11.o
+/home/arnt/FG-git/OpenSceneGraph/src/osgViewer/GraphicsWindowX11.cpp: In member function ‘virtual void osgViewer::GraphicsWindowX11::checkEvents()’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgViewer/GraphicsWindowX11.cpp:963:10: warning: variable ‘destroyWindowRequested’ set but not used [-Wunused-but-set-variable]
+[ 25%] Building CXX object src/osgViewer/CMakeFiles/osgViewer.dir/PixelBufferX11.o
+Linking CXX shared library ../../lib/libosgViewer.so
+[ 25%] Built target osgViewer
+Scanning dependencies of target osgAnimation
+[ 25%] Building CXX object src/osgAnimation/CMakeFiles/osgAnimation.dir/Action.o
+[ 25%] Building CXX object src/osgAnimation/CMakeFiles/osgAnimation.dir/ActionAnimation.o
+[ 26%] Building CXX object src/osgAnimation/CMakeFiles/osgAnimation.dir/ActionBlendIn.o
+[ 26%] Building CXX object src/osgAnimation/CMakeFiles/osgAnimation.dir/ActionBlendOut.o
+[ 26%] Building CXX object src/osgAnimation/CMakeFiles/osgAnimation.dir/ActionCallback.o
+[ 26%] Building CXX object src/osgAnimation/CMakeFiles/osgAnimation.dir/ActionStripAnimation.o
+[ 26%] Building CXX object src/osgAnimation/CMakeFiles/osgAnimation.dir/ActionVisitor.o
+[ 26%] Building CXX object src/osgAnimation/CMakeFiles/osgAnimation.dir/Animation.o
+[ 26%] Building CXX object src/osgAnimation/CMakeFiles/osgAnimation.dir/AnimationManagerBase.o
+[ 26%] Building CXX object src/osgAnimation/CMakeFiles/osgAnimation.dir/BasicAnimationManager.o
+[ 27%] Building CXX object src/osgAnimation/CMakeFiles/osgAnimation.dir/Bone.o
+[ 27%] Building CXX object src/osgAnimation/CMakeFiles/osgAnimation.dir/BoneMapVisitor.o
+[ 27%] Building CXX object src/osgAnimation/CMakeFiles/osgAnimation.dir/Channel.o
+[ 27%] Building CXX object src/osgAnimation/CMakeFiles/osgAnimation.dir/LinkVisitor.o
+[ 27%] Building CXX object src/osgAnimation/CMakeFiles/osgAnimation.dir/MorphGeometry.o
+[ 27%] Building CXX object src/osgAnimation/CMakeFiles/osgAnimation.dir/RigGeometry.o
+[ 27%] Building CXX object src/osgAnimation/CMakeFiles/osgAnimation.dir/RigTransformHardware.o
+[ 27%] Building CXX object src/osgAnimation/CMakeFiles/osgAnimation.dir/RigTransformSoftware.o
+[ 27%] Building CXX object src/osgAnimation/CMakeFiles/osgAnimation.dir/Skeleton.o
+[ 28%] Building CXX object src/osgAnimation/CMakeFiles/osgAnimation.dir/StackedMatrixElement.o
+[ 28%] Building CXX object src/osgAnimation/CMakeFiles/osgAnimation.dir/StackedQuaternionElement.o
+[ 28%] Building CXX object src/osgAnimation/CMakeFiles/osgAnimation.dir/StackedRotateAxisElement.o
+[ 28%] Building CXX object src/osgAnimation/CMakeFiles/osgAnimation.dir/StackedScaleElement.o
+[ 28%] Building CXX object src/osgAnimation/CMakeFiles/osgAnimation.dir/StackedTransform.o
+[ 28%] Building CXX object src/osgAnimation/CMakeFiles/osgAnimation.dir/StackedTranslateElement.o
+[ 28%] Building CXX object src/osgAnimation/CMakeFiles/osgAnimation.dir/StatsVisitor.o
+[ 28%] Building CXX object src/osgAnimation/CMakeFiles/osgAnimation.dir/StatsHandler.o
+[ 28%] Building CXX object src/osgAnimation/CMakeFiles/osgAnimation.dir/Target.o
+[ 29%] Building CXX object src/osgAnimation/CMakeFiles/osgAnimation.dir/TimelineAnimationManager.o
+[ 29%] Building CXX object src/osgAnimation/CMakeFiles/osgAnimation.dir/Timeline.o
+[ 29%] Building CXX object src/osgAnimation/CMakeFiles/osgAnimation.dir/UpdateBone.o
+[ 29%] Building CXX object src/osgAnimation/CMakeFiles/osgAnimation.dir/UpdateMaterial.o
+[ 29%] Building CXX object src/osgAnimation/CMakeFiles/osgAnimation.dir/UpdateMatrixTransform.o
+[ 29%] Building CXX object src/osgAnimation/CMakeFiles/osgAnimation.dir/VertexInfluence.o
+Linking CXX shared library ../../lib/libosgAnimation.so
+[ 29%] Built target osgAnimation
+Scanning dependencies of target osgFX
+[ 29%] Building CXX object src/osgFX/CMakeFiles/osgFX.dir/AnisotropicLighting.o
+[ 29%] Building CXX object src/osgFX/CMakeFiles/osgFX.dir/BumpMapping.o
+[ 29%] Building CXX object src/osgFX/CMakeFiles/osgFX.dir/Cartoon.o
+[ 29%] Building CXX object src/osgFX/CMakeFiles/osgFX.dir/Effect.o
+[ 29%] Building CXX object src/osgFX/CMakeFiles/osgFX.dir/MultiTextureControl.o
+[ 29%] Building CXX object src/osgFX/CMakeFiles/osgFX.dir/Registry.o
+[ 30%] Building CXX object src/osgFX/CMakeFiles/osgFX.dir/Scribe.o
+[ 30%] Building CXX object src/osgFX/CMakeFiles/osgFX.dir/SpecularHighlights.o
+[ 30%] Building CXX object src/osgFX/CMakeFiles/osgFX.dir/Technique.o
+[ 30%] Building CXX object src/osgFX/CMakeFiles/osgFX.dir/Validator.o
+[ 30%] Building CXX object src/osgFX/CMakeFiles/osgFX.dir/Version.o
+Linking CXX shared library ../../lib/libosgFX.so
+[ 30%] Built target osgFX
+Scanning dependencies of target osgManipulator
+[ 30%] Building CXX object src/osgManipulator/CMakeFiles/osgManipulator.dir/AntiSquish.o
+[ 30%] Building CXX object src/osgManipulator/CMakeFiles/osgManipulator.dir/Command.o
+[ 30%] Building CXX object src/osgManipulator/CMakeFiles/osgManipulator.dir/CommandManager.o
+[ 30%] Building CXX object src/osgManipulator/CMakeFiles/osgManipulator.dir/Constraint.o
+[ 30%] Building CXX object src/osgManipulator/CMakeFiles/osgManipulator.dir/Dragger.o
+[ 31%] Building CXX object src/osgManipulator/CMakeFiles/osgManipulator.dir/Projector.o
+[ 31%] Building CXX object src/osgManipulator/CMakeFiles/osgManipulator.dir/RotateCylinderDragger.o
+[ 31%] Building CXX object src/osgManipulator/CMakeFiles/osgManipulator.dir/RotateSphereDragger.o
+[ 31%] Building CXX object src/osgManipulator/CMakeFiles/osgManipulator.dir/Scale1DDragger.o
+[ 31%] Building CXX object src/osgManipulator/CMakeFiles/osgManipulator.dir/Scale2DDragger.o
+[ 31%] Building CXX object src/osgManipulator/CMakeFiles/osgManipulator.dir/ScaleAxisDragger.o
+[ 31%] Building CXX object src/osgManipulator/CMakeFiles/osgManipulator.dir/Selection.o
+[ 31%] Building CXX object src/osgManipulator/CMakeFiles/osgManipulator.dir/TabBoxDragger.o
+[ 31%] Building CXX object src/osgManipulator/CMakeFiles/osgManipulator.dir/TabPlaneDragger.o
+[ 32%] Building CXX object src/osgManipulator/CMakeFiles/osgManipulator.dir/TabPlaneTrackballDragger.o
+[ 32%] Building CXX object src/osgManipulator/CMakeFiles/osgManipulator.dir/TrackballDragger.o
+[ 32%] Building CXX object src/osgManipulator/CMakeFiles/osgManipulator.dir/Translate1DDragger.o
+[ 32%] Building CXX object src/osgManipulator/CMakeFiles/osgManipulator.dir/Translate2DDragger.o
+[ 32%] Building CXX object src/osgManipulator/CMakeFiles/osgManipulator.dir/TranslateAxisDragger.o
+[ 32%] Building CXX object src/osgManipulator/CMakeFiles/osgManipulator.dir/TranslatePlaneDragger.o
+[ 32%] Building CXX object src/osgManipulator/CMakeFiles/osgManipulator.dir/Version.o
+Linking CXX shared library ../../lib/libosgManipulator.so
+[ 32%] Built target osgManipulator
+Scanning dependencies of target osgParticle
+[ 32%] Building CXX object src/osgParticle/CMakeFiles/osgParticle.dir/ConnectedParticleSystem.o
+[ 32%] Building CXX object src/osgParticle/CMakeFiles/osgParticle.dir/Emitter.o
+[ 33%] Building CXX object src/osgParticle/CMakeFiles/osgParticle.dir/ExplosionDebrisEffect.o
+[ 33%] Building CXX object src/osgParticle/CMakeFiles/osgParticle.dir/ExplosionEffect.o
+[ 33%] Building CXX object src/osgParticle/CMakeFiles/osgParticle.dir/FireEffect.o
+[ 33%] Building CXX object src/osgParticle/CMakeFiles/osgParticle.dir/FluidFrictionOperator.o
+[ 33%] Building CXX object src/osgParticle/CMakeFiles/osgParticle.dir/FluidProgram.o
+/home/arnt/FG-git/OpenSceneGraph/src/osgParticle/FluidProgram.cpp: In member function ‘virtual void osgParticle::FluidProgram::execute(double)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgParticle/FluidProgram.cpp:38:23: warning: variable ‘velBefore’ set but not used [-Wunused-but-set-variable]
+[ 33%] Building CXX object src/osgParticle/CMakeFiles/osgParticle.dir/ModularEmitter.o
+[ 33%] Building CXX object src/osgParticle/CMakeFiles/osgParticle.dir/ModularProgram.o
+[ 33%] Building CXX object src/osgParticle/CMakeFiles/osgParticle.dir/MultiSegmentPlacer.o
+[ 33%] Building CXX object src/osgParticle/CMakeFiles/osgParticle.dir/Particle.o
+[ 34%] Building CXX object src/osgParticle/CMakeFiles/osgParticle.dir/ParticleEffect.o
+[ 34%] Building CXX object src/osgParticle/CMakeFiles/osgParticle.dir/ParticleProcessor.o
+[ 34%] Building CXX object src/osgParticle/CMakeFiles/osgParticle.dir/ParticleSystem.o
+[ 34%] Building CXX object src/osgParticle/CMakeFiles/osgParticle.dir/ParticleSystemUpdater.o
+[ 34%] Building CXX object src/osgParticle/CMakeFiles/osgParticle.dir/PrecipitationEffect.o
+[ 34%] Building CXX object src/osgParticle/CMakeFiles/osgParticle.dir/Program.o
+[ 34%] Building CXX object src/osgParticle/CMakeFiles/osgParticle.dir/SmokeEffect.o
+[ 34%] Building CXX object src/osgParticle/CMakeFiles/osgParticle.dir/SmokeTrailEffect.o
+[ 34%] Building CXX object src/osgParticle/CMakeFiles/osgParticle.dir/Version.o
+Linking CXX shared library ../../lib/libosgParticle.so
+[ 34%] Built target osgParticle
+Scanning dependencies of target osgShadow
+[ 35%] Building CXX object src/osgShadow/CMakeFiles/osgShadow.dir/OccluderGeometry.o
+[ 35%] Building CXX object src/osgShadow/CMakeFiles/osgShadow.dir/ShadowMap.o
+[ 35%] Building CXX object src/osgShadow/CMakeFiles/osgShadow.dir/ShadowTechnique.o
+[ 35%] Building CXX object src/osgShadow/CMakeFiles/osgShadow.dir/ShadowTexture.o
+[ 35%] Building CXX object src/osgShadow/CMakeFiles/osgShadow.dir/ShadowVolume.o
+[ 35%] Building CXX object src/osgShadow/CMakeFiles/osgShadow.dir/ShadowedScene.o
+[ 35%] Building CXX object src/osgShadow/CMakeFiles/osgShadow.dir/SoftShadowMap.o
+[ 35%] Building CXX object src/osgShadow/CMakeFiles/osgShadow.dir/ParallelSplitShadowMap.o
+/home/arnt/FG-git/OpenSceneGraph/src/osgShadow/ParallelSplitShadowMap.cpp: In member function ‘virtual void osgShadow::ParallelSplitShadowMap::cull(osgUtil::CullVisitor&)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgShadow/ParallelSplitShadowMap.cpp:591:22: warning: variable ‘bb’ set but not used [-Wunused-but-set-variable]
+[ 35%] Building CXX object src/osgShadow/CMakeFiles/osgShadow.dir/Version.o
+[ 36%] Building CXX object src/osgShadow/CMakeFiles/osgShadow.dir/ConvexPolyhedron.o
+[ 36%] Building CXX object src/osgShadow/CMakeFiles/osgShadow.dir/DebugShadowMap.o
+[ 36%] Building CXX object src/osgShadow/CMakeFiles/osgShadow.dir/LightSpacePerspectiveShadowMap.o
+[ 36%] Building CXX object src/osgShadow/CMakeFiles/osgShadow.dir/MinimalCullBoundsShadowMap.o
+[ 36%] Building CXX object src/osgShadow/CMakeFiles/osgShadow.dir/MinimalDrawBoundsShadowMap.o
+[ 36%] Building CXX object src/osgShadow/CMakeFiles/osgShadow.dir/MinimalShadowMap.o
+[ 36%] Building CXX object src/osgShadow/CMakeFiles/osgShadow.dir/StandardShadowMap.o
+[ 36%] Building CXX object src/osgShadow/CMakeFiles/osgShadow.dir/ViewDependentShadowTechnique.o
+Linking CXX shared library ../../lib/libosgShadow.so
+[ 36%] Built target osgShadow
+Scanning dependencies of target osgSim
+[ 36%] Building CXX object src/osgSim/CMakeFiles/osgSim.dir/BlinkSequence.o
+[ 37%] Building CXX object src/osgSim/CMakeFiles/osgSim.dir/ColorRange.o
+[ 37%] Building CXX object src/osgSim/CMakeFiles/osgSim.dir/DOFTransform.o
+[ 37%] Building CXX object src/osgSim/CMakeFiles/osgSim.dir/ElevationSlice.o
+[ 37%] Building CXX object src/osgSim/CMakeFiles/osgSim.dir/HeightAboveTerrain.o
+[ 37%] Building CXX object src/osgSim/CMakeFiles/osgSim.dir/Impostor.o
+[ 37%] Building CXX object src/osgSim/CMakeFiles/osgSim.dir/ImpostorSprite.o
+[ 37%] Building CXX object src/osgSim/CMakeFiles/osgSim.dir/InsertImpostorsVisitor.o
+[ 37%] Building CXX object src/osgSim/CMakeFiles/osgSim.dir/LightPoint.o
+[ 37%] Building CXX object src/osgSim/CMakeFiles/osgSim.dir/LightPointDrawable.o
+[ 38%] Building CXX object src/osgSim/CMakeFiles/osgSim.dir/LightPointNode.o
+[ 38%] Building CXX object src/osgSim/CMakeFiles/osgSim.dir/LightPointSpriteDrawable.o
+[ 38%] Building CXX object src/osgSim/CMakeFiles/osgSim.dir/LineOfSight.o
+[ 38%] Building CXX object src/osgSim/CMakeFiles/osgSim.dir/MultiSwitch.o
+[ 38%] Building CXX object src/osgSim/CMakeFiles/osgSim.dir/OverlayNode.o
+[ 38%] Building CXX object src/osgSim/CMakeFiles/osgSim.dir/ScalarBar.o
+[ 38%] Building CXX object src/osgSim/CMakeFiles/osgSim.dir/ScalarsToColors.o
+[ 38%] Building CXX object src/osgSim/CMakeFiles/osgSim.dir/Sector.o
+[ 39%] Building CXX object src/osgSim/CMakeFiles/osgSim.dir/ShapeAttribute.o
+[ 39%] Building CXX object src/osgSim/CMakeFiles/osgSim.dir/SphereSegment.o
+[ 39%] Building CXX object src/osgSim/CMakeFiles/osgSim.dir/Version.o
+[ 39%] Building CXX object src/osgSim/CMakeFiles/osgSim.dir/VisibilityGroup.o
+Linking CXX shared library ../../lib/libosgSim.so
+[ 39%] Built target osgSim
+Scanning dependencies of target osgTerrain
+[ 39%] Building CXX object src/osgTerrain/CMakeFiles/osgTerrain.dir/Layer.o
+[ 39%] Building CXX object src/osgTerrain/CMakeFiles/osgTerrain.dir/Locator.o
+[ 39%] Building CXX object src/osgTerrain/CMakeFiles/osgTerrain.dir/TerrainTile.o
+[ 39%] Building CXX object src/osgTerrain/CMakeFiles/osgTerrain.dir/TerrainTechnique.o
+[ 39%] Building CXX object src/osgTerrain/CMakeFiles/osgTerrain.dir/Terrain.o
+[ 40%] Building CXX object src/osgTerrain/CMakeFiles/osgTerrain.dir/GeometryTechnique.o
+[ 40%] Building CXX object src/osgTerrain/CMakeFiles/osgTerrain.dir/Version.o
+Linking CXX shared library ../../lib/libosgTerrain.so
+[ 40%] Built target osgTerrain
+Scanning dependencies of target osgWidget
+[ 40%] Building CXX object src/osgWidget/CMakeFiles/osgWidget.dir/Box.o
+[ 40%] Building CXX object src/osgWidget/CMakeFiles/osgWidget.dir/Browser.o
+[ 40%] Building CXX object src/osgWidget/CMakeFiles/osgWidget.dir/PdfReader.o
+[ 40%] Building CXX object src/osgWidget/CMakeFiles/osgWidget.dir/VncClient.o
+[ 41%] Building CXX object src/osgWidget/CMakeFiles/osgWidget.dir/Canvas.o
+[ 41%] Building CXX object src/osgWidget/CMakeFiles/osgWidget.dir/Frame.o
+[ 41%] Building CXX object src/osgWidget/CMakeFiles/osgWidget.dir/Input.o
+/home/arnt/FG-git/OpenSceneGraph/src/osgWidget/Input.cpp: In member function ‘void osgWidget::Input::_calculateCursorOffsets()’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgWidget/Input.cpp:67:19: warning: variable ‘ul’ set but not used [-Wunused-but-set-variable]
+/home/arnt/FG-git/OpenSceneGraph/src/osgWidget/Input.cpp:68:19: warning: variable ‘ll’ set but not used [-Wunused-but-set-variable]
+/home/arnt/FG-git/OpenSceneGraph/src/osgWidget/Input.cpp:70:19: warning: variable ‘ur’ set but not used [-Wunused-but-set-variable]
+[ 41%] Building CXX object src/osgWidget/CMakeFiles/osgWidget.dir/Label.o
+[ 41%] Building CXX object src/osgWidget/CMakeFiles/osgWidget.dir/Lua.o
+[ 41%] Building CXX object src/osgWidget/CMakeFiles/osgWidget.dir/Python.o
+[ 41%] Building CXX object src/osgWidget/CMakeFiles/osgWidget.dir/StyleManager.o
+[ 41%] Building CXX object src/osgWidget/CMakeFiles/osgWidget.dir/Table.o
+[ 41%] Building CXX object src/osgWidget/CMakeFiles/osgWidget.dir/Util.o
+[ 42%] Building CXX object src/osgWidget/CMakeFiles/osgWidget.dir/Version.o
+[ 42%] Building CXX object src/osgWidget/CMakeFiles/osgWidget.dir/ViewerEventHandlers.o
+[ 42%] Building CXX object src/osgWidget/CMakeFiles/osgWidget.dir/Widget.o
+[ 42%] Building CXX object src/osgWidget/CMakeFiles/osgWidget.dir/Window.o
+[ 42%] Building CXX object src/osgWidget/CMakeFiles/osgWidget.dir/WindowManager.o
+Linking CXX shared library ../../lib/libosgWidget.so
+[ 42%] Built target osgWidget
+Scanning dependencies of target osgVolume
+[ 42%] Building CXX object src/osgVolume/CMakeFiles/osgVolume.dir/FixedFunctionTechnique.o
+/home/arnt/FG-git/OpenSceneGraph/src/osgVolume/FixedFunctionTechnique.cpp: In member function ‘virtual void osgVolume::FixedFunctionTechnique::init()’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgVolume/FixedFunctionTechnique.cpp:124:30: warning: variable ‘tf’ set but not used [-Wunused-but-set-variable]
+[ 42%] Building CXX object src/osgVolume/CMakeFiles/osgVolume.dir/Layer.o
+[ 42%] Building CXX object src/osgVolume/CMakeFiles/osgVolume.dir/Locator.o
+[ 42%] Building CXX object src/osgVolume/CMakeFiles/osgVolume.dir/Property.o
+[ 43%] Building CXX object src/osgVolume/CMakeFiles/osgVolume.dir/RayTracedTechnique.o
+[ 43%] Building CXX object src/osgVolume/CMakeFiles/osgVolume.dir/Version.o
+[ 43%] Building CXX object src/osgVolume/CMakeFiles/osgVolume.dir/Volume.o
+[ 43%] Building CXX object src/osgVolume/CMakeFiles/osgVolume.dir/VolumeTechnique.o
+[ 43%] Building CXX object src/osgVolume/CMakeFiles/osgVolume.dir/VolumeTile.o
+Linking CXX shared library ../../lib/libosgVolume.so
+[ 43%] Built target osgVolume
+Scanning dependencies of target osgdb_osganimation
+[ 43%] Building CXX object src/osgPlugins/osgAnimation/CMakeFiles/osgdb_osganimation.dir/UpdateMatrixTransform.o
+[ 43%] Building CXX object src/osgPlugins/osgAnimation/CMakeFiles/osgdb_osganimation.dir/UpdateMaterial.o
+[ 43%] Building CXX object src/osgPlugins/osgAnimation/CMakeFiles/osgdb_osganimation.dir/ReaderWriter.o
+[ 43%] Building CXX object src/osgPlugins/osgAnimation/CMakeFiles/osgdb_osganimation.dir/StackedTransform.o
+[ 43%] Building CXX object src/osgPlugins/osgAnimation/CMakeFiles/osgdb_osganimation.dir/Matrix.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_osganimation.so
+[ 43%] Built target osgdb_osganimation
+Scanning dependencies of target osgdb_osgfx
+[ 43%] Building CXX object src/osgPlugins/osgFX/CMakeFiles/osgdb_osgfx.dir/IO_AnisotropicLighting.o
+[ 44%] Building CXX object src/osgPlugins/osgFX/CMakeFiles/osgdb_osgfx.dir/IO_BumpMapping.o
+[ 44%] Building CXX object src/osgPlugins/osgFX/CMakeFiles/osgdb_osgfx.dir/IO_Cartoon.o
+[ 44%] Building CXX object src/osgPlugins/osgFX/CMakeFiles/osgdb_osgfx.dir/IO_Effect.o
+[ 44%] Building CXX object src/osgPlugins/osgFX/CMakeFiles/osgdb_osgfx.dir/IO_MultiTextureControl.o
+[ 44%] Building CXX object src/osgPlugins/osgFX/CMakeFiles/osgdb_osgfx.dir/IO_Scribe.o
+[ 44%] Building CXX object src/osgPlugins/osgFX/CMakeFiles/osgdb_osgfx.dir/IO_SpecularHighlights.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_osgfx.so
+[ 44%] Built target osgdb_osgfx
+Scanning dependencies of target osgdb_osgparticle
+[ 44%] Building CXX object src/osgPlugins/osgParticle/CMakeFiles/osgdb_osgparticle.dir/IO_AccelOperator.o
+[ 44%] Building CXX object src/osgPlugins/osgParticle/CMakeFiles/osgdb_osgparticle.dir/IO_AngularAccelOperator.o
+[ 45%] Building CXX object src/osgPlugins/osgParticle/CMakeFiles/osgdb_osgparticle.dir/IO_BoxPlacer.o
+[ 45%] Building CXX object src/osgPlugins/osgParticle/CMakeFiles/osgdb_osgparticle.dir/IO_CenteredPlacer.o
+[ 45%] Building CXX object src/osgPlugins/osgParticle/CMakeFiles/osgdb_osgparticle.dir/IO_ConnectedParticleSystem.o
+[ 45%] Building CXX object src/osgPlugins/osgParticle/CMakeFiles/osgdb_osgparticle.dir/IO_ConstantRateCounter.o
+[ 45%] Building CXX object src/osgPlugins/osgParticle/CMakeFiles/osgdb_osgparticle.dir/IO_Emitter.o
+[ 45%] Building CXX object src/osgPlugins/osgParticle/CMakeFiles/osgdb_osgparticle.dir/IO_ExplosionDebrisEffect.o
+[ 45%] Building CXX object src/osgPlugins/osgParticle/CMakeFiles/osgdb_osgparticle.dir/IO_ExplosionEffect.o
+[ 45%] Building CXX object src/osgPlugins/osgParticle/CMakeFiles/osgdb_osgparticle.dir/IO_FireEffect.o
+[ 45%] Building CXX object src/osgPlugins/osgParticle/CMakeFiles/osgdb_osgparticle.dir/IO_FluidFrictionOperator.o
+[ 46%] Building CXX object src/osgPlugins/osgParticle/CMakeFiles/osgdb_osgparticle.dir/IO_FluidProgram.o
+[ 46%] Building CXX object src/osgPlugins/osgParticle/CMakeFiles/osgdb_osgparticle.dir/IO_ForceOperator.o
+[ 46%] Building CXX object src/osgPlugins/osgParticle/CMakeFiles/osgdb_osgparticle.dir/IO_LinearInterpolator.o
+[ 46%] Building CXX object src/osgPlugins/osgParticle/CMakeFiles/osgdb_osgparticle.dir/IO_ModularEmitter.o
+[ 46%] Building CXX object src/osgPlugins/osgParticle/CMakeFiles/osgdb_osgparticle.dir/IO_ModularProgram.o
+[ 46%] Building CXX object src/osgPlugins/osgParticle/CMakeFiles/osgdb_osgparticle.dir/IO_MultiSegmentPlacer.o
+[ 46%] Building CXX object src/osgPlugins/osgParticle/CMakeFiles/osgdb_osgparticle.dir/IO_Particle.o
+[ 46%] Building CXX object src/osgPlugins/osgParticle/CMakeFiles/osgdb_osgparticle.dir/IO_ParticleEffect.o
+[ 46%] Building CXX object src/osgPlugins/osgParticle/CMakeFiles/osgdb_osgparticle.dir/IO_ParticleProcessor.o
+[ 47%] Building CXX object src/osgPlugins/osgParticle/CMakeFiles/osgdb_osgparticle.dir/IO_ParticleSystem.o
+[ 47%] Building CXX object src/osgPlugins/osgParticle/CMakeFiles/osgdb_osgparticle.dir/IO_ParticleSystemUpdater.o
+[ 47%] Building CXX object src/osgPlugins/osgParticle/CMakeFiles/osgdb_osgparticle.dir/IO_PointPlacer.o
+[ 47%] Building CXX object src/osgPlugins/osgParticle/CMakeFiles/osgdb_osgparticle.dir/IO_Program.o
+[ 47%] Building CXX object src/osgPlugins/osgParticle/CMakeFiles/osgdb_osgparticle.dir/IO_RadialShooter.o
+[ 47%] Building CXX object src/osgPlugins/osgParticle/CMakeFiles/osgdb_osgparticle.dir/IO_RandomRateCounter.o
+[ 47%] Building CXX object src/osgPlugins/osgParticle/CMakeFiles/osgdb_osgparticle.dir/IO_SectorPlacer.o
+[ 47%] Building CXX object src/osgPlugins/osgParticle/CMakeFiles/osgdb_osgparticle.dir/IO_SegmentPlacer.o
+[ 47%] Building CXX object src/osgPlugins/osgParticle/CMakeFiles/osgdb_osgparticle.dir/IO_SmokeEffect.o
+[ 48%] Building CXX object src/osgPlugins/osgParticle/CMakeFiles/osgdb_osgparticle.dir/IO_SmokeTrailEffect.o
+[ 48%] Building CXX object src/osgPlugins/osgParticle/CMakeFiles/osgdb_osgparticle.dir/IO_VariableRateCounter.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_osgparticle.so
+[ 48%] Built target osgdb_osgparticle
+Scanning dependencies of target osgdb_osgsim
+[ 48%] Building CXX object src/osgPlugins/osgSim/CMakeFiles/osgdb_osgsim.dir/IO_ShapeAttribute.o
+[ 49%] Building CXX object src/osgPlugins/osgSim/CMakeFiles/osgdb_osgsim.dir/IO_BlinkSequence.o
+[ 49%] Building CXX object src/osgPlugins/osgSim/CMakeFiles/osgdb_osgsim.dir/IO_DOFTransform.o
+[ 49%] Building CXX object src/osgPlugins/osgSim/CMakeFiles/osgdb_osgsim.dir/IO_Impostor.o
+[ 49%] Building CXX object src/osgPlugins/osgSim/CMakeFiles/osgdb_osgsim.dir/IO_LightPoint.o
+[ 49%] Building CXX object src/osgPlugins/osgSim/CMakeFiles/osgdb_osgsim.dir/IO_LightPointNode.o
+[ 49%] Building CXX object src/osgPlugins/osgSim/CMakeFiles/osgdb_osgsim.dir/IO_MultiSwitch.o
+[ 49%] Building CXX object src/osgPlugins/osgSim/CMakeFiles/osgdb_osgsim.dir/IO_OverlayNode.o
+[ 49%] Building CXX object src/osgPlugins/osgSim/CMakeFiles/osgdb_osgsim.dir/IO_Sector.o
+[ 49%] Building CXX object src/osgPlugins/osgSim/CMakeFiles/osgdb_osgsim.dir/IO_VisibilityGroup.o
+[ 50%] Building CXX object src/osgPlugins/osgSim/CMakeFiles/osgdb_osgsim.dir/IO_ObjectRecordData.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_osgsim.so
+[ 50%] Built target osgdb_osgsim
+Scanning dependencies of target osgdb_osgtext
+[ 50%] Building CXX object src/osgPlugins/osgText/CMakeFiles/osgdb_osgtext.dir/IO_TextBase.o
+[ 50%] Building CXX object src/osgPlugins/osgText/CMakeFiles/osgdb_osgtext.dir/IO_Text.o
+[ 50%] Building CXX object src/osgPlugins/osgText/CMakeFiles/osgdb_osgtext.dir/IO_Text3D.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_osgtext.so
+[ 50%] Built target osgdb_osgtext
+Scanning dependencies of target osgdb_osgviewer
+[ 50%] Building CXX object src/osgPlugins/osgViewer/CMakeFiles/osgdb_osgviewer.dir/View.o
+[ 50%] Building CXX object src/osgPlugins/osgViewer/CMakeFiles/osgdb_osgviewer.dir/Viewer.o
+[ 50%] Building CXX object src/osgPlugins/osgViewer/CMakeFiles/osgdb_osgviewer.dir/CompositeViewer.o
+[ 50%] Building CXX object src/osgPlugins/osgViewer/CMakeFiles/osgdb_osgviewer.dir/ReaderWriterOsgViewer.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_osgviewer.so
+[ 50%] Built target osgdb_osgviewer
+Scanning dependencies of target osgdb_osgshadow
+[ 50%] Building CXX object src/osgPlugins/osgShadow/CMakeFiles/osgdb_osgshadow.dir/ReaderWriterOsgShadow.o
+[ 50%] Building CXX object src/osgPlugins/osgShadow/CMakeFiles/osgdb_osgshadow.dir/ShadowedScene.o
+[ 50%] Building CXX object src/osgPlugins/osgShadow/CMakeFiles/osgdb_osgshadow.dir/ShadowMap.o
+[ 50%] Building CXX object src/osgPlugins/osgShadow/CMakeFiles/osgdb_osgshadow.dir/ShadowTechnique.o
+[ 50%] Building CXX object src/osgPlugins/osgShadow/CMakeFiles/osgdb_osgshadow.dir/ShadowTexture.o
+[ 50%] Building CXX object src/osgPlugins/osgShadow/CMakeFiles/osgdb_osgshadow.dir/ShadowVolume.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_osgshadow.so
+[ 50%] Built target osgdb_osgshadow
+Scanning dependencies of target osgdb_osgterrain
+[ 50%] Building CXX object src/osgPlugins/osgTerrain/CMakeFiles/osgdb_osgterrain.dir/Locator.o
+[ 50%] Building CXX object src/osgPlugins/osgTerrain/CMakeFiles/osgdb_osgterrain.dir/ImageLayer.o
+[ 50%] Building CXX object src/osgPlugins/osgTerrain/CMakeFiles/osgdb_osgterrain.dir/HeightFieldLayer.o
+[ 50%] Building CXX object src/osgPlugins/osgTerrain/CMakeFiles/osgdb_osgterrain.dir/CompositeLayer.o
+[ 50%] Building CXX object src/osgPlugins/osgTerrain/CMakeFiles/osgdb_osgterrain.dir/SwitchLayer.o
+[ 50%] Building CXX object src/osgPlugins/osgTerrain/CMakeFiles/osgdb_osgterrain.dir/Layer.o
+[ 50%] Building CXX object src/osgPlugins/osgTerrain/CMakeFiles/osgdb_osgterrain.dir/TerrainTile.o
+[ 50%] Building CXX object src/osgPlugins/osgTerrain/CMakeFiles/osgdb_osgterrain.dir/GeometryTechnique.o
+[ 51%] Building CXX object src/osgPlugins/osgTerrain/CMakeFiles/osgdb_osgterrain.dir/ReaderWriterOsgTerrain.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_osgterrain.so
+[ 51%] Built target osgdb_osgterrain
+Scanning dependencies of target osgdb_osgvolume
+[ 52%] Building CXX object src/osgPlugins/osgVolume/CMakeFiles/osgdb_osgvolume.dir/Locator.o
+[ 52%] Building CXX object src/osgPlugins/osgVolume/CMakeFiles/osgdb_osgvolume.dir/ImageLayer.o
+[ 52%] Building CXX object src/osgPlugins/osgVolume/CMakeFiles/osgdb_osgvolume.dir/Layer.o
+[ 52%] Building CXX object src/osgPlugins/osgVolume/CMakeFiles/osgdb_osgvolume.dir/Volume.o
+[ 52%] Building CXX object src/osgPlugins/osgVolume/CMakeFiles/osgdb_osgvolume.dir/VolumeTile.o
+[ 52%] Building CXX object src/osgPlugins/osgVolume/CMakeFiles/osgdb_osgvolume.dir/RayTracedTechnique.o
+[ 52%] Building CXX object src/osgPlugins/osgVolume/CMakeFiles/osgdb_osgvolume.dir/FixedFunctionTechnique.o
+[ 52%] Building CXX object src/osgPlugins/osgVolume/CMakeFiles/osgdb_osgvolume.dir/Property.o
+[ 53%] Building CXX object src/osgPlugins/osgVolume/CMakeFiles/osgdb_osgvolume.dir/CompositeProperty.o
+[ 53%] Building CXX object src/osgPlugins/osgVolume/CMakeFiles/osgdb_osgvolume.dir/SwitchProperty.o
+[ 53%] Building CXX object src/osgPlugins/osgVolume/CMakeFiles/osgdb_osgvolume.dir/ScalarProperty.o
+[ 53%] Building CXX object src/osgPlugins/osgVolume/CMakeFiles/osgdb_osgvolume.dir/TransferFunctionProperty.o
+[ 53%] Building CXX object src/osgPlugins/osgVolume/CMakeFiles/osgdb_osgvolume.dir/PropertyAdjustmentCallback.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_osgvolume.so
+[ 53%] Built target osgdb_osgvolume
+Scanning dependencies of target osgdb_osgwidget
+[ 53%] Building CXX object src/osgPlugins/osgWidget/CMakeFiles/osgdb_osgwidget.dir/Box.o
+[ 53%] Building CXX object src/osgPlugins/osgWidget/CMakeFiles/osgdb_osgwidget.dir/EmbeddedWindow.o
+[ 53%] Building CXX object src/osgPlugins/osgWidget/CMakeFiles/osgdb_osgwidget.dir/Frame.o
+[ 53%] Building CXX object src/osgPlugins/osgWidget/CMakeFiles/osgdb_osgwidget.dir/Input.o
+[ 54%] Building CXX object src/osgPlugins/osgWidget/CMakeFiles/osgdb_osgwidget.dir/Label.o
+[ 54%] Building CXX object src/osgPlugins/osgWidget/CMakeFiles/osgdb_osgwidget.dir/Table.o
+[ 54%] Building CXX object src/osgPlugins/osgWidget/CMakeFiles/osgdb_osgwidget.dir/Widget.o
+[ 54%] Building CXX object src/osgPlugins/osgWidget/CMakeFiles/osgdb_osgwidget.dir/WindowManager.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_osgwidget.so
+[ 54%] Built target osgdb_osgwidget
+Scanning dependencies of target osgdb_osga
+[ 54%] Building CXX object src/osgPlugins/osga/CMakeFiles/osgdb_osga.dir/OSGA_Archive.o
+[ 54%] Building CXX object src/osgPlugins/osga/CMakeFiles/osgdb_osga.dir/ReaderWriterOSGA.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_osga.so
+[ 54%] Built target osgdb_osga
+Scanning dependencies of target osgdb_rot
+[ 54%] Building CXX object src/osgPlugins/rot/CMakeFiles/osgdb_rot.dir/ReaderWriterROT.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_rot.so
+[ 54%] Built target osgdb_rot
+Scanning dependencies of target osgdb_scale
+[ 54%] Building CXX object src/osgPlugins/scale/CMakeFiles/osgdb_scale.dir/ReaderWriterSCALE.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_scale.so
+[ 54%] Built target osgdb_scale
+Scanning dependencies of target osgdb_trans
+[ 54%] Building CXX object src/osgPlugins/trans/CMakeFiles/osgdb_trans.dir/ReaderWriterTRANS.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_trans.so
+[ 54%] Built target osgdb_trans
+Scanning dependencies of target osgdb_normals
+[ 54%] Building CXX object src/osgPlugins/normals/CMakeFiles/osgdb_normals.dir/ReaderWriterNormals.o
+[ 54%] Building CXX object src/osgPlugins/normals/CMakeFiles/osgdb_normals.dir/Normals.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_normals.so
+[ 54%] Built target osgdb_normals
+Scanning dependencies of target osgdb_osg
+[ 54%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/AlphaFunc.o
+[ 54%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/AnimationPath.o
+[ 54%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/AutoTransform.o
+[ 54%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/Billboard.o
+[ 54%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/BlendColor.o
+[ 54%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/BlendEquation.o
+[ 55%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/BlendFunc.o
+[ 55%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/Box.o
+[ 55%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/Camera.o
+[ 55%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/CameraView.o
+[ 55%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/Capsule.o
+[ 55%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/ClearNode.o
+[ 55%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/ClipNode.o
+[ 55%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/ClipPlane.o
+[ 55%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/ClusterCullingCallback.o
+[ 56%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/ColorMask.o
+[ 56%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/ColorMatrix.o
+[ 56%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/CompositeShape.o
+[ 56%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/Cone.o
+[ 56%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/ConvexPlanarOccluder.o
+[ 56%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/CoordinateSystemNode.o
+[ 56%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/Cylinder.o
+[ 56%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/CullFace.o
+[ 57%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/Depth.o
+[ 57%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/Drawable.o
+[ 57%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/EllipsoidModel.o
+[ 57%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/Fog.o
+[ 57%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/FragmentProgram.o
+[ 57%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/FrontFace.o
+[ 57%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/Geode.o
+[ 57%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/Geometry.o
+[ 57%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/Group.o
+[ 58%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/HeightField.o
+[ 58%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/Image.o
+[ 58%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/ImageSequence.o
+[ 58%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/Light.o
+[ 58%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/LightModel.o
+[ 58%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/LightSource.o
+[ 58%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/LineStipple.o
+[ 58%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/LineWidth.o
+[ 58%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/LOD.o
+[ 59%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/Material.o
+[ 59%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/Matrix.o
+[ 59%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/MatrixTransform.o
+[ 59%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/NodeCallback.o
+[ 59%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/Node.o
+[ 59%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/Object.o
+[ 59%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/OccluderNode.o
+[ 59%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/OcclusionQueryNode.o
+[ 59%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/PagedLOD.o
+[ 60%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/Point.o
+[ 60%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/PointSprite.o
+[ 60%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/PolygonMode.o
+[ 60%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/PolygonOffset.o
+[ 60%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/PositionAttitudeTransform.o
+[ 60%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/Program.o
+[ 60%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/Projection.o
+[ 60%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/ProxyNode.o
+[ 60%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/ReaderWriterOSG.o
+[ 61%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/Scissor.o
+[ 61%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/Sequence.o
+[ 61%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/ShadeModel.o
+[ 61%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/Shader.o
+[ 61%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/ShapeDrawable.o
+[ 61%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/Sphere.o
+[ 61%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/StateAttribute.o
+[ 61%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/StateSet.o
+[ 61%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/Stencil.o
+[ 62%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/Switch.o
+[ 62%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/TessellationHints.o
+[ 62%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/TexEnvCombine.o
+[ 62%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/TexEnv.o
+[ 62%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/TexEnvFilter.o
+[ 62%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/TexGen.o
+[ 62%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/TexGenNode.o
+[ 62%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/TexMat.o
+[ 62%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/Texture1D.o
+[ 63%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/Texture2D.o
+[ 63%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/Texture3D.o
+[ 63%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/Texture.o
+[ 63%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/TextureCubeMap.o
+[ 63%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/TextureRectangle.o
+[ 63%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/TransferFunction.o
+[ 63%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/Transform.o
+[ 63%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/Uniform.o
+[ 63%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/VertexProgram.o
+[ 64%] Building CXX object src/osgPlugins/osg/CMakeFiles/osgdb_osg.dir/Viewport.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_osg.so
+[ 64%] Built target osgdb_osg
+Scanning dependencies of target osgdb_ive
+[ 64%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/AlphaFunc.o
+[ 64%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/AnimationPathCallback.o
+[ 64%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/AnimationPath.o
+[ 64%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/AutoTransform.o
+[ 65%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/AzimElevationSector.o
+[ 65%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/AzimSector.o
+[ 65%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/Billboard.o
+[ 65%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/BlendColor.o
+[ 65%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/BlendEquation.o
+[ 65%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/BlendFunc.o
+[ 65%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/BlinkSequence.o
+[ 65%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/Camera.o
+[ 65%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/CameraView.o
+[ 66%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/ClipNode.o
+[ 66%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/ClipPlane.o
+[ 66%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/ClusterCullingCallback.o
+[ 66%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/ColorMask.o
+[ 66%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/CompositeLayer.o
+[ 66%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/SwitchLayer.o
+[ 66%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/ConeSector.o
+[ 66%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/ConvexPlanarOccluder.o
+[ 66%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/ConvexPlanarPolygon.o
+[ 67%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/CoordinateSystemNode.o
+[ 67%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/CullFace.o
+[ 67%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/DataInputStream.o
+[ 67%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/DataOutputStream.o
+[ 67%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/Depth.o
+[ 67%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/DirectionalSector.o
+[ 67%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/DOFTransform.o
+[ 67%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/Drawable.o
+[ 67%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/DrawArrayLengths.o
+[ 68%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/DrawArrays.o
+[ 68%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/DrawElementsUByte.o
+[ 68%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/DrawElementsUInt.o
+[ 68%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/DrawElementsUShort.o
+[ 68%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/ElevationSector.o
+[ 68%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/EllipsoidModel.o
+[ 68%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/Exception.o
+[ 68%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/Fog.o
+[ 68%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/FragmentProgram.o
+[ 69%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/FrontFace.o
+[ 69%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/Geode.o
+[ 69%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/Geometry.o
+[ 69%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/Group.o
+[ 69%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/HeightFieldLayer.o
+[ 69%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/Image.o
+[ 69%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/ImageSequence.o
+[ 69%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/ImageLayer.o
+[ 69%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/Impostor.o
+[ 70%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/Layer.o
+[ 70%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/Light.o
+[ 70%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/LightModel.o
+[ 70%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/LightPoint.o
+[ 70%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/LightPointNode.o
+[ 70%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/LightSource.o
+[ 70%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/LineStipple.o
+[ 70%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/LineWidth.o
+[ 71%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/Locator.o
+[ 71%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/LOD.o
+[ 71%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/Material.o
+[ 71%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/MatrixTransform.o
+[ 71%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/Multisample.o
+[ 71%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/MultiSwitch.o
+[ 71%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/MultiTextureControl.o
+[ 71%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/Node.o
+[ 71%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/Object.o
+[ 72%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/OccluderNode.o
+[ 72%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/OcclusionQueryNode.o
+[ 72%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/PagedLOD.o
+[ 72%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/Point.o
+[ 72%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/PointSprite.o
+[ 72%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/PolygonMode.o
+[ 72%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/PolygonOffset.o
+[ 72%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/PositionAttitudeTransform.o
+[ 72%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/PrimitiveSet.o
+[ 73%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/Program.o
+[ 73%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/ProxyNode.o
+[ 73%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/ReaderWriterIVE.o
+[ 73%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/Scissor.o
+[ 73%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/Sequence.o
+[ 73%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/ShadeModel.o
+[ 73%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/Shader.o
+[ 73%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/Shape.o
+[ 73%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/ShapeDrawable.o
+[ 74%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/ShapeAttributeList.o
+/home/arnt/FG-git/OpenSceneGraph/src/osgPlugins/ive/ShapeAttributeList.cpp: In member function ‘void ive::ShapeAttributeList::write(ive::DataOutputStream*)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgPlugins/ive/ShapeAttributeList.cpp:31:48: warning: variable ‘it’ set but not used [-Wunused-but-set-variable]
+[ 74%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/StateSet.o
+[ 74%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/Stencil.o
+[ 74%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/Switch.o
+[ 74%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/TerrainTile.o
+[ 74%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/TexEnvCombine.o
+[ 74%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/TexEnv.o
+[ 74%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/TexGen.o
+[ 74%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/TexGenNode.o
+[ 75%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/TexMat.o
+[ 75%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/Text.o
+[ 75%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/FadeText.o
+[ 75%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/Text3D.o
+[ 75%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/Texture1D.o
+[ 75%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/Texture2D.o
+[ 75%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/Texture3D.o
+[ 75%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/Texture.o
+[ 75%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/TextureCubeMap.o
+[ 76%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/TextureRectangle.o
+[ 76%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/Transform.o
+[ 76%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/Uniform.o
+[ 76%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/VertexProgram.o
+[ 76%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/Viewport.o
+[ 76%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/VisibilityGroup.o
+[ 76%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/Effect.o
+[ 76%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/AnisotropicLighting.o
+[ 76%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/BumpMapping.o
+[ 77%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/Cartoon.o
+[ 77%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/Scribe.o
+[ 77%] Building CXX object src/osgPlugins/ive/CMakeFiles/osgdb_ive.dir/SpecularHighlights.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_ive.so
+[ 77%] Built target osgdb_ive
+Scanning dependencies of target osgdb_cfg
+[ 77%] Building CXX object src/osgPlugins/cfg/CMakeFiles/osgdb_cfg.dir/CameraConfig.o
+[ 77%] Building CXX object src/osgPlugins/cfg/CMakeFiles/osgdb_cfg.dir/Camera.o
+[ 77%] Building CXX object src/osgPlugins/cfg/CMakeFiles/osgdb_cfg.dir/ConfigLexer.o
+[ 77%] Building CXX object src/osgPlugins/cfg/CMakeFiles/osgdb_cfg.dir/ConfigParser.o
+/home/arnt/FG-git/OpenSceneGraph/src/osgPlugins/cfg/ConfigParser.cpp: In member function ‘bool osgProducer::CameraConfig::parseFile(const string&)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgPlugins/cfg/ConfigParser.cpp:2247:13: warning: variable ‘result’ set but not used [-Wunused-but-set-variable]
+[ 78%] Building CXX object src/osgPlugins/cfg/CMakeFiles/osgdb_cfg.dir/ReaderWriterCFG.o
+[ 78%] Building CXX object src/osgPlugins/cfg/CMakeFiles/osgdb_cfg.dir/RenderSurface.o
+[ 78%] Building CXX object src/osgPlugins/cfg/CMakeFiles/osgdb_cfg.dir/VisualChooser.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_cfg.so
+[ 78%] Built target osgdb_cfg
+Scanning dependencies of target osgdb_glsl
+[ 79%] Building CXX object src/osgPlugins/glsl/CMakeFiles/osgdb_glsl.dir/ReaderWriterGLSL.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_glsl.so
+[ 79%] Built target osgdb_glsl
+Scanning dependencies of target osgdb_rgb
+[ 79%] Building CXX object src/osgPlugins/rgb/CMakeFiles/osgdb_rgb.dir/ReaderWriterRGB.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_rgb.so
+[ 79%] Built target osgdb_rgb
+Scanning dependencies of target osgdb_bmp
+[ 79%] Building CXX object src/osgPlugins/bmp/CMakeFiles/osgdb_bmp.dir/ReaderWriterBMP.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_bmp.so
+[ 79%] Built target osgdb_bmp
+Scanning dependencies of target osgdb_pnm
+[ 80%] Building CXX object src/osgPlugins/pnm/CMakeFiles/osgdb_pnm.dir/ReaderWriterPNM.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_pnm.so
+[ 80%] Built target osgdb_pnm
+Scanning dependencies of target osgdb_dds
+[ 80%] Building CXX object src/osgPlugins/dds/CMakeFiles/osgdb_dds.dir/ReaderWriterDDS.o
+/home/arnt/FG-git/OpenSceneGraph/src/osgPlugins/dds/ReaderWriterDDS.cpp: In function ‘osg::Image* ReadDDSFile(std::istream&)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgPlugins/dds/ReaderWriterDDS.cpp:265:10: warning: variable ‘is3dImage’ set but not used [-Wunused-but-set-variable]
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_dds.so
+[ 80%] Built target osgdb_dds
+Scanning dependencies of target osgdb_tga
+[ 81%] Building CXX object src/osgPlugins/tga/CMakeFiles/osgdb_tga.dir/ReaderWriterTGA.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_tga.so
+[ 81%] Built target osgdb_tga
+Scanning dependencies of target osgdb_hdr
+[ 81%] Building CXX object src/osgPlugins/hdr/CMakeFiles/osgdb_hdr.dir/ReaderWriterHDR.o
+[ 81%] Building CXX object src/osgPlugins/hdr/CMakeFiles/osgdb_hdr.dir/hdrloader.o
+/home/arnt/FG-git/OpenSceneGraph/src/osgPlugins/hdr/hdrloader.cpp: In static member function ‘static bool HDRLoader::load(const char*, bool, HDRLoaderResult&)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgPlugins/hdr/hdrloader.cpp:101:10: warning: variable ‘cmd’ set but not used [-Wunused-but-set-variable]
+[ 81%] Building CXX object src/osgPlugins/hdr/CMakeFiles/osgdb_hdr.dir/hdrwriter.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_hdr.so
+[ 81%] Built target osgdb_hdr
+Scanning dependencies of target osgdb_dot
+[ 81%] Building CXX object src/osgPlugins/dot/CMakeFiles/osgdb_dot.dir/SimpleDotVisitor.o
+[ 81%] Building CXX object src/osgPlugins/dot/CMakeFiles/osgdb_dot.dir/BaseDotVisitor.o
+[ 81%] Building CXX object src/osgPlugins/dot/CMakeFiles/osgdb_dot.dir/ReaderWriterDOT.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_dot.so
+[ 81%] Built target osgdb_dot
+Scanning dependencies of target osgdb_vtf
+[ 81%] Building CXX object src/osgPlugins/vtf/CMakeFiles/osgdb_vtf.dir/ReaderWriterVTF.o
+/home/arnt/FG-git/OpenSceneGraph/src/osgPlugins/vtf/ReaderWriterVTF.cpp: In function ‘osg::Image* ReadVTFFile(std::istream&)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgPlugins/vtf/ReaderWriterVTF.cpp:360:23: warning: variable ‘base’ set but not used [-Wunused-but-set-variable]
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_vtf.so
+[ 81%] Built target osgdb_vtf
+Scanning dependencies of target osgdb_jpeg
+[ 81%] Building CXX object src/osgPlugins/jpeg/CMakeFiles/osgdb_jpeg.dir/ReaderWriterJPEG.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_jpeg.so
+[ 81%] Built target osgdb_jpeg
+Scanning dependencies of target osgdb_jp2
+[ 81%] Building CXX object src/osgPlugins/jp2/CMakeFiles/osgdb_jp2.dir/ReaderWriterJP2.o
+/home/arnt/FG-git/OpenSceneGraph/src/osgPlugins/jp2/ReaderWriterJP2.cpp: In function ‘int putdata(jas_stream_t*, jas_image_t*, int)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgPlugins/jp2/ReaderWriterJP2.cpp:41:13: warning: variable ‘linelen’ set but not used [-Wunused-but-set-variable]
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_jp2.so
+[ 81%] Built target osgdb_jp2
+Scanning dependencies of target osgdb_exr
+[ 81%] Building CXX object src/osgPlugins/exr/CMakeFiles/osgdb_exr.dir/ReaderWriterEXR.o
+/home/arnt/FG-git/OpenSceneGraph/src/osgPlugins/exr/ReaderWriterEXR.cpp: In function ‘unsigned char* exr_load(std::istream&, int*, int*, int*, unsigned int*)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgPlugins/exr/ReaderWriterEXR.cpp:103:22: warning: unused variable ‘channels’ [-Wunused-variable]
+/home/arnt/FG-git/OpenSceneGraph/src/osgPlugins/exr/ReaderWriterEXR.cpp: In member function ‘bool ReaderWriterEXR::writeEXRStream(const osg::Image&, std::ostream&, const string&) const’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgPlugins/exr/ReaderWriterEXR.cpp:252:23: warning: unused variable ‘intenalTextureFormat’ [-Wunused-variable]
+/home/arnt/FG-git/OpenSceneGraph/src/osgPlugins/exr/ReaderWriterEXR.cpp: In member function ‘osgDB::ReaderWriter::ReadResult ReaderWriterEXR::readEXRStream(std::istream&) const’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgPlugins/exr/ReaderWriterEXR.cpp:365:13: warning: unused variable ‘internalFormat’ [-Wunused-variable]
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_exr.so
+[ 81%] Built target osgdb_exr
+Scanning dependencies of target osgdb_png
+[ 81%] Building CXX object src/osgPlugins/png/CMakeFiles/osgdb_png.dir/ReaderWriterPNG.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_png.so
+[ 81%] Built target osgdb_png
+Scanning dependencies of target osgdb_tiff
+[ 81%] Building CXX object src/osgPlugins/tiff/CMakeFiles/osgdb_tiff.dir/ReaderWriterTIFF.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_tiff.so
+[ 81%] Built target osgdb_tiff
+Scanning dependencies of target osgdb_dicom
+[ 81%] Building CXX object src/osgPlugins/dicom/CMakeFiles/osgdb_dicom.dir/ReaderWriterDICOM.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_dicom.so
+[ 81%] Built target osgdb_dicom
+Scanning dependencies of target osgdb_3dc
+[ 81%] Building CXX object src/osgPlugins/3dc/CMakeFiles/osgdb_3dc.dir/ReaderWriter3DC.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_3dc.so
+[ 81%] Built target osgdb_3dc
+Scanning dependencies of target osgdb_gz
+[ 81%] Building CXX object src/osgPlugins/gz/CMakeFiles/osgdb_gz.dir/ReaderWriterGZ.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_gz.so
+[ 81%] Built target osgdb_gz
+Scanning dependencies of target osgdb_lwo
+[ 81%] Building CXX object src/osgPlugins/lwo/CMakeFiles/osgdb_lwo.dir/Block.o
+[ 81%] Building CXX object src/osgPlugins/lwo/CMakeFiles/osgdb_lwo.dir/Clip.o
+[ 81%] Building CXX object src/osgPlugins/lwo/CMakeFiles/osgdb_lwo.dir/Converter.o
+[ 82%] Building CXX object src/osgPlugins/lwo/CMakeFiles/osgdb_lwo.dir/Object.o
+[ 82%] Building CXX object src/osgPlugins/lwo/CMakeFiles/osgdb_lwo.dir/old_lw.o
+[ 82%] Building CXX object src/osgPlugins/lwo/CMakeFiles/osgdb_lwo.dir/old_Lwo2.o
+[ 82%] Building CXX object src/osgPlugins/lwo/CMakeFiles/osgdb_lwo.dir/old_Lwo2Layer.o
+[ 82%] Building CXX object src/osgPlugins/lwo/CMakeFiles/osgdb_lwo.dir/Polygon.o
+[ 82%] Building CXX object src/osgPlugins/lwo/CMakeFiles/osgdb_lwo.dir/ReaderWriterLWO.o
+[ 82%] Building CXX object src/osgPlugins/lwo/CMakeFiles/osgdb_lwo.dir/Surface.o
+[ 82%] Building CXX object src/osgPlugins/lwo/CMakeFiles/osgdb_lwo.dir/Tessellator.o
+[ 83%] Building CXX object src/osgPlugins/lwo/CMakeFiles/osgdb_lwo.dir/Unit.o
+[ 83%] Building CXX object src/osgPlugins/lwo/CMakeFiles/osgdb_lwo.dir/VertexMap.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_lwo.so
+[ 83%] Built target osgdb_lwo
+Scanning dependencies of target osgdb_bvh
+[ 83%] Building CXX object src/osgPlugins/bvh/CMakeFiles/osgdb_bvh.dir/ReaderWriterBVH.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_bvh.so
+[ 83%] Built target osgdb_bvh
+Scanning dependencies of target osgdb_x
+[ 83%] Building CXX object src/osgPlugins/x/CMakeFiles/osgdb_x.dir/ReaderWriterDirectX.o
+[ 83%] Building CXX object src/osgPlugins/x/CMakeFiles/osgdb_x.dir/directx.o
+[ 83%] Building CXX object src/osgPlugins/x/CMakeFiles/osgdb_x.dir/mesh.o
+[ 83%] Building CXX object src/osgPlugins/x/CMakeFiles/osgdb_x.dir/types.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_x.so
+[ 83%] Built target osgdb_x
+Scanning dependencies of target osgdb_dw
+[ 84%] Building CXX object src/osgPlugins/dw/CMakeFiles/osgdb_dw.dir/ReaderWriterDW.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_dw.so
+[ 84%] Built target osgdb_dw
+Scanning dependencies of target osgdb_dxf
+[ 84%] Building CXX object src/osgPlugins/dxf/CMakeFiles/osgdb_dxf.dir/ReaderWriterDXF.o
+[ 84%] Building CXX object src/osgPlugins/dxf/CMakeFiles/osgdb_dxf.dir/aci.o
+[ 84%] Building CXX object src/osgPlugins/dxf/CMakeFiles/osgdb_dxf.dir/dxfBlock.o
+[ 84%] Building CXX object src/osgPlugins/dxf/CMakeFiles/osgdb_dxf.dir/dxfEntity.o
+[ 84%] Building CXX object src/osgPlugins/dxf/CMakeFiles/osgdb_dxf.dir/dxfFile.o
+[ 84%] Building CXX object src/osgPlugins/dxf/CMakeFiles/osgdb_dxf.dir/dxfReader.o
+[ 84%] Building CXX object src/osgPlugins/dxf/CMakeFiles/osgdb_dxf.dir/dxfSection.o
+[ 84%] Building CXX object src/osgPlugins/dxf/CMakeFiles/osgdb_dxf.dir/dxfTable.o
+[ 85%] Building CXX object src/osgPlugins/dxf/CMakeFiles/osgdb_dxf.dir/scene.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_dxf.so
+[ 85%] Built target osgdb_dxf
+Scanning dependencies of target osgdb_openflight
+[ 86%] Building CXX object src/osgPlugins/OpenFlight/CMakeFiles/osgdb_openflight.dir/AncillaryRecords.o
+[ 86%] Building CXX object src/osgPlugins/OpenFlight/CMakeFiles/osgdb_openflight.dir/AttrData.o
+[ 86%] Building CXX object src/osgPlugins/OpenFlight/CMakeFiles/osgdb_openflight.dir/ControlRecords.o
+[ 86%] Building CXX object src/osgPlugins/OpenFlight/CMakeFiles/osgdb_openflight.dir/DataInputStream.o
+[ 86%] Building CXX object src/osgPlugins/OpenFlight/CMakeFiles/osgdb_openflight.dir/DataOutputStream.o
+[ 86%] Building CXX object src/osgPlugins/OpenFlight/CMakeFiles/osgdb_openflight.dir/Document.o
+[ 86%] Building CXX object src/osgPlugins/OpenFlight/CMakeFiles/osgdb_openflight.dir/expAncillaryRecords.o
+[ 86%] Building CXX object src/osgPlugins/OpenFlight/CMakeFiles/osgdb_openflight.dir/expControlRecords.o
+[ 86%] Building CXX object src/osgPlugins/OpenFlight/CMakeFiles/osgdb_openflight.dir/expGeometryRecords.o
+[ 87%] Building CXX object src/osgPlugins/OpenFlight/CMakeFiles/osgdb_openflight.dir/expPrimaryRecords.o
+[ 87%] Building CXX object src/osgPlugins/OpenFlight/CMakeFiles/osgdb_openflight.dir/ExportOptions.o
+[ 87%] Building CXX object src/osgPlugins/OpenFlight/CMakeFiles/osgdb_openflight.dir/FltExportVisitor.o
+[ 87%] Building CXX object src/osgPlugins/OpenFlight/CMakeFiles/osgdb_openflight.dir/GeometryRecords.o
+/home/arnt/FG-git/OpenSceneGraph/src/osgPlugins/OpenFlight/GeometryRecords.cpp: In member function ‘virtual void flt::Face::readRecord(flt::RecordInputStream&, flt::Document&)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgPlugins/OpenFlight/GeometryRecords.cpp:269:19: warning: variable ‘secondaryPackedColor’ set but not used [-Wunused-but-set-variable]
+/home/arnt/FG-git/OpenSceneGraph/src/osgPlugins/OpenFlight/GeometryRecords.cpp: In member function ‘virtual void flt::Mesh::readRecord(flt::RecordInputStream&, flt::Document&)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgPlugins/OpenFlight/GeometryRecords.cpp:829:19: warning: variable ‘secondaryPackedColor’ set but not used [-Wunused-but-set-variable]
+[ 87%] Building CXX object src/osgPlugins/OpenFlight/CMakeFiles/osgdb_openflight.dir/LightPointRecords.o
+[ 87%] Building CXX object src/osgPlugins/OpenFlight/CMakeFiles/osgdb_openflight.dir/LightSourcePaletteManager.o
+[ 87%] Building CXX object src/osgPlugins/OpenFlight/CMakeFiles/osgdb_openflight.dir/MaterialPaletteManager.o
+[ 87%] Building CXX object src/osgPlugins/OpenFlight/CMakeFiles/osgdb_openflight.dir/PaletteRecords.o
+[ 87%] Building CXX object src/osgPlugins/OpenFlight/CMakeFiles/osgdb_openflight.dir/Pools.o
+[ 88%] Building CXX object src/osgPlugins/OpenFlight/CMakeFiles/osgdb_openflight.dir/PrimaryRecords.o
+[ 88%] Building CXX object src/osgPlugins/OpenFlight/CMakeFiles/osgdb_openflight.dir/ReaderWriterATTR.o
+[ 88%] Building CXX object src/osgPlugins/OpenFlight/CMakeFiles/osgdb_openflight.dir/ReaderWriterFLT.o
+/home/arnt/FG-git/OpenSceneGraph/src/osgPlugins/OpenFlight/ReaderWriterFLT.cpp: In member function ‘virtual osgDB::ReaderWriter::ReadResult FLTReaderWriter::readNode(std::istream&, const osgDB::ReaderWriter::Options*) const’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgPlugins/OpenFlight/ReaderWriterFLT.cpp:423:40: warning: variable ‘pos’ set but not used [-Wunused-but-set-variable]
+[ 88%] Building CXX object src/osgPlugins/OpenFlight/CMakeFiles/osgdb_openflight.dir/Record.o
+[ 88%] Building CXX object src/osgPlugins/OpenFlight/CMakeFiles/osgdb_openflight.dir/RecordInputStream.o
+[ 88%] Building CXX object src/osgPlugins/OpenFlight/CMakeFiles/osgdb_openflight.dir/Registry.o
+[ 88%] Building CXX object src/osgPlugins/OpenFlight/CMakeFiles/osgdb_openflight.dir/ReservedRecords.o
+[ 88%] Building CXX object src/osgPlugins/OpenFlight/CMakeFiles/osgdb_openflight.dir/RoadRecords.o
+[ 88%] Building CXX object src/osgPlugins/OpenFlight/CMakeFiles/osgdb_openflight.dir/TexturePaletteManager.o
+[ 89%] Building CXX object src/osgPlugins/OpenFlight/CMakeFiles/osgdb_openflight.dir/Vertex.o
+[ 89%] Building CXX object src/osgPlugins/OpenFlight/CMakeFiles/osgdb_openflight.dir/VertexPaletteManager.o
+[ 89%] Building CXX object src/osgPlugins/OpenFlight/CMakeFiles/osgdb_openflight.dir/VertexRecords.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_openflight.so
+[ 89%] Built target osgdb_openflight
+Scanning dependencies of target osgdb_geo
+[ 89%] Building CXX object src/osgPlugins/geo/CMakeFiles/osgdb_geo.dir/ClipRegion.o
+[ 89%] Building CXX object src/osgPlugins/geo/CMakeFiles/osgdb_geo.dir/ReaderWriterGEO.o
+[ 89%] Building CXX object src/osgPlugins/geo/CMakeFiles/osgdb_geo.dir/geoActions.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_geo.so
+[ 89%] Built target osgdb_geo
+Scanning dependencies of target osgdb_obj
+[ 89%] Building CXX object src/osgPlugins/obj/CMakeFiles/osgdb_obj.dir/OBJWriterNodeVisitor.o
+[ 89%] Building CXX object src/osgPlugins/obj/CMakeFiles/osgdb_obj.dir/ReaderWriterOBJ.o
+[ 89%] Building CXX object src/osgPlugins/obj/CMakeFiles/osgdb_obj.dir/obj.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_obj.so
+[ 89%] Built target osgdb_obj
+Scanning dependencies of target osgdb_pic
+[ 89%] Building CXX object src/osgPlugins/pic/CMakeFiles/osgdb_pic.dir/ReaderWriterPIC.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_pic.so
+[ 89%] Built target osgdb_pic
+Scanning dependencies of target osgdb_stl
+[ 89%] Building CXX object src/osgPlugins/stl/CMakeFiles/osgdb_stl.dir/ReaderWriterSTL.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_stl.so
+[ 89%] Built target osgdb_stl
+Scanning dependencies of target osgdb_3ds
+[ 89%] Building CXX object src/osgPlugins/3ds/CMakeFiles/osgdb_3ds.dir/ReaderWriter3DS.o
+[ 89%] Building CXX object src/osgPlugins/3ds/CMakeFiles/osgdb_3ds.dir/WriterNodeVisitor.o
+/home/arnt/FG-git/OpenSceneGraph/src/osgPlugins/3ds/WriterNodeVisitor.cpp: In member function ‘void plugin3ds::WriterNodeVisitor::writeMaterials()’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgPlugins/3ds/WriterNodeVisitor.cpp:523:14: warning: variable ‘found’ set but not used [-Wunused-but-set-variable]
+[ 89%] Building CXX object src/osgPlugins/3ds/CMakeFiles/osgdb_3ds.dir/WriterCompareTriangle.o
+[ 90%] Building CXX object src/osgPlugins/3ds/CMakeFiles/osgdb_3ds.dir/lib3ds/lib3ds_io.o
+[ 90%] Building C object src/osgPlugins/3ds/CMakeFiles/osgdb_3ds.dir/lib3ds/lib3ds_atmosphere.o
+[ 90%] Building C object src/osgPlugins/3ds/CMakeFiles/osgdb_3ds.dir/lib3ds/lib3ds_background.o
+[ 90%] Building C object src/osgPlugins/3ds/CMakeFiles/osgdb_3ds.dir/lib3ds/lib3ds_camera.o
+[ 90%] Building C object src/osgPlugins/3ds/CMakeFiles/osgdb_3ds.dir/lib3ds/lib3ds_chunk.o
+[ 90%] Building C object src/osgPlugins/3ds/CMakeFiles/osgdb_3ds.dir/lib3ds/lib3ds_chunktable.o
+[ 90%] Building C object src/osgPlugins/3ds/CMakeFiles/osgdb_3ds.dir/lib3ds/lib3ds_file.o
+[ 90%] Building C object src/osgPlugins/3ds/CMakeFiles/osgdb_3ds.dir/lib3ds/lib3ds_light.o
+[ 90%] Building C object src/osgPlugins/3ds/CMakeFiles/osgdb_3ds.dir/lib3ds/lib3ds_material.o
+[ 91%] Building C object src/osgPlugins/3ds/CMakeFiles/osgdb_3ds.dir/lib3ds/lib3ds_math.o
+[ 91%] Building C object src/osgPlugins/3ds/CMakeFiles/osgdb_3ds.dir/lib3ds/lib3ds_matrix.o
+[ 91%] Building C object src/osgPlugins/3ds/CMakeFiles/osgdb_3ds.dir/lib3ds/lib3ds_mesh.o
+[ 91%] Building C object src/osgPlugins/3ds/CMakeFiles/osgdb_3ds.dir/lib3ds/lib3ds_node.o
+[ 91%] Building C object src/osgPlugins/3ds/CMakeFiles/osgdb_3ds.dir/lib3ds/lib3ds_quat.o
+[ 91%] Building C object src/osgPlugins/3ds/CMakeFiles/osgdb_3ds.dir/lib3ds/lib3ds_shadow.o
+[ 91%] Building C object src/osgPlugins/3ds/CMakeFiles/osgdb_3ds.dir/lib3ds/lib3ds_track.o
+[ 91%] Building C object src/osgPlugins/3ds/CMakeFiles/osgdb_3ds.dir/lib3ds/lib3ds_util.o
+[ 91%] Building C object src/osgPlugins/3ds/CMakeFiles/osgdb_3ds.dir/lib3ds/lib3ds_vector.o
+[ 92%] Building C object src/osgPlugins/3ds/CMakeFiles/osgdb_3ds.dir/lib3ds/lib3ds_viewport.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_3ds.so
+[ 92%] Built target osgdb_3ds
+Scanning dependencies of target osgdb_ac
+[ 92%] Building CXX object src/osgPlugins/ac/CMakeFiles/osgdb_ac.dir/Exception.o
+[ 92%] Building CXX object src/osgPlugins/ac/CMakeFiles/osgdb_ac.dir/Geode.o
+/home/arnt/FG-git/OpenSceneGraph/src/osgPlugins/ac/Geode.cpp: In member function ‘void ac3d::Geode::ProcessGeometry(std::ostream&, unsigned int)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgPlugins/ac/Geode.cpp:806:35: warning: variable ‘fRep_s’ set but not used [-Wunused-but-set-variable]
+/home/arnt/FG-git/OpenSceneGraph/src/osgPlugins/ac/Geode.cpp:806:43: warning: variable ‘fRep_t’ set but not used [-Wunused-but-set-variable]
+/home/arnt/FG-git/OpenSceneGraph/src/osgPlugins/ac/Geode.cpp:807:35: warning: variable ‘fOffset_s’ set but not used [-Wunused-but-set-variable]
+/home/arnt/FG-git/OpenSceneGraph/src/osgPlugins/ac/Geode.cpp:807:46: warning: variable ‘fOffset_t’ set but not used [-Wunused-but-set-variable]
+/home/arnt/FG-git/OpenSceneGraph/src/osgPlugins/ac/Geode.cpp:797:85: warning: variable ‘ModeValuePair’ set but not used [-Wunused-but-set-variable]
+/home/arnt/FG-git/OpenSceneGraph/src/osgPlugins/ac/Geode.cpp:932:38: warning: variable ‘primLength’ set but not used [-Wunused-but-set-variable]
+[ 92%] Building CXX object src/osgPlugins/ac/CMakeFiles/osgdb_ac.dir/ac3d.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_ac.so
+[ 92%] Built target osgdb_ac
+Scanning dependencies of target osgdb_logo
+[ 92%] Building CXX object src/osgPlugins/logo/CMakeFiles/osgdb_logo.dir/ReaderWriterLOGO.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_logo.so
+[ 92%] Built target osgdb_logo
+Scanning dependencies of target osgdb_lws
+[ 92%] Building CXX object src/osgPlugins/lws/CMakeFiles/osgdb_lws.dir/ReaderWriterLWS.o
+[ 92%] Building CXX object src/osgPlugins/lws/CMakeFiles/osgdb_lws.dir/SceneLoader.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_lws.so
+[ 92%] Built target osgdb_lws
+Scanning dependencies of target osgdb_md2
+[ 92%] Building CXX object src/osgPlugins/md2/CMakeFiles/osgdb_md2.dir/ReaderWriterMD2.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_md2.so
+[ 92%] Built target osgdb_md2
+Scanning dependencies of target osgdb_osgtgz
+[ 92%] Building CXX object src/osgPlugins/osgtgz/CMakeFiles/osgdb_osgtgz.dir/ReaderWriterOSGTGZ.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_osgtgz.so
+[ 92%] Built target osgdb_osgtgz
+Scanning dependencies of target osgdb_tgz
+[ 92%] Building CXX object src/osgPlugins/tgz/CMakeFiles/osgdb_tgz.dir/ReaderWriterTGZ.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_tgz.so
+[ 92%] Built target osgdb_tgz
+Scanning dependencies of target osgdb_shp
+[ 92%] Building CXX object src/osgPlugins/shp/CMakeFiles/osgdb_shp.dir/ESRIShape.o
+[ 92%] Building CXX object src/osgPlugins/shp/CMakeFiles/osgdb_shp.dir/ESRIShapeParser.o
+[ 92%] Building CXX object src/osgPlugins/shp/CMakeFiles/osgdb_shp.dir/ESRIShapeReaderWriter.o
+[ 92%] Building CXX object src/osgPlugins/shp/CMakeFiles/osgdb_shp.dir/XBaseParser.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_shp.so
+[ 92%] Built target osgdb_shp
+Scanning dependencies of target osgdb_txf
+[ 92%] Building CXX object src/osgPlugins/txf/CMakeFiles/osgdb_txf.dir/ReaderWriterTXF.o
+[ 92%] Building CXX object src/osgPlugins/txf/CMakeFiles/osgdb_txf.dir/TXFFont.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_txf.so
+[ 92%] Built target osgdb_txf
+Scanning dependencies of target osgdb_bsp
+[ 92%] Building CXX object src/osgPlugins/bsp/CMakeFiles/osgdb_bsp.dir/ReaderWriterBSP.o
+[ 92%] Building CXX object src/osgPlugins/bsp/CMakeFiles/osgdb_bsp.dir/BITSET.o
+[ 92%] Building CXX object src/osgPlugins/bsp/CMakeFiles/osgdb_bsp.dir/Q3BSPReader.o
+[ 92%] Building CXX object src/osgPlugins/bsp/CMakeFiles/osgdb_bsp.dir/Q3BSPLoad.o
+[ 93%] Building CXX object src/osgPlugins/bsp/CMakeFiles/osgdb_bsp.dir/VBSPData.o
+[ 93%] Building CXX object src/osgPlugins/bsp/CMakeFiles/osgdb_bsp.dir/VBSPEntity.o
+[ 93%] Building CXX object src/osgPlugins/bsp/CMakeFiles/osgdb_bsp.dir/VBSPGeometry.o
+[ 93%] Building CXX object src/osgPlugins/bsp/CMakeFiles/osgdb_bsp.dir/VBSPReader.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_bsp.so
+[ 93%] Built target osgdb_bsp
+Scanning dependencies of target osgdb_mdl
+[ 93%] Building CXX object src/osgPlugins/mdl/CMakeFiles/osgdb_mdl.dir/ReaderWriterMDL.o
+[ 93%] Building CXX object src/osgPlugins/mdl/CMakeFiles/osgdb_mdl.dir/BodyPart.o
+[ 93%] Building CXX object src/osgPlugins/mdl/CMakeFiles/osgdb_mdl.dir/Mesh.o
+[ 93%] Building CXX object src/osgPlugins/mdl/CMakeFiles/osgdb_mdl.dir/Model.o
+[ 94%] Building CXX object src/osgPlugins/mdl/CMakeFiles/osgdb_mdl.dir/MDLReader.o
+[ 94%] Building CXX object src/osgPlugins/mdl/CMakeFiles/osgdb_mdl.dir/MDLRoot.o
+[ 94%] Building CXX object src/osgPlugins/mdl/CMakeFiles/osgdb_mdl.dir/VTXReader.o
+[ 94%] Building CXX object src/osgPlugins/mdl/CMakeFiles/osgdb_mdl.dir/VVDReader.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_mdl.so
+[ 94%] Built target osgdb_mdl
+Scanning dependencies of target osgdb_ply
+[ 94%] Building CXX object src/osgPlugins/ply/CMakeFiles/osgdb_ply.dir/ReaderWriterPLY.o
+[ 94%] Building CXX object src/osgPlugins/ply/CMakeFiles/osgdb_ply.dir/vertexData.o
+[ 94%] Building CXX object src/osgPlugins/ply/CMakeFiles/osgdb_ply.dir/plyfile.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_ply.so
+[ 94%] Built target osgdb_ply
+Scanning dependencies of target osgdb_txp
+[ 94%] Building CXX object src/osgPlugins/txp/CMakeFiles/osgdb_txp.dir/ReaderWriterTXP.o
+[ 94%] Building CXX object src/osgPlugins/txp/CMakeFiles/osgdb_txp.dir/TileMapper.o
+[ 94%] Building CXX object src/osgPlugins/txp/CMakeFiles/osgdb_txp.dir/trpage_basic.o
+[ 95%] Building CXX object src/osgPlugins/txp/CMakeFiles/osgdb_txp.dir/trpage_compat.o
+[ 95%] Building CXX object src/osgPlugins/txp/CMakeFiles/osgdb_txp.dir/trpage_geom.o
+/home/arnt/FG-git/OpenSceneGraph/src/osgPlugins/txp/trpage_geom.cpp: In member function ‘virtual bool trpgGeometry::Write(trpgWriteBuffer&)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgPlugins/txp/trpage_geom.cpp:615:10: warning: variable ‘u’ set but not used [-Wunused-but-set-variable]
+[ 95%] Building CXX object src/osgPlugins/txp/CMakeFiles/osgdb_txp.dir/trpage_header.o
+[ 95%] Building CXX object src/osgPlugins/txp/CMakeFiles/osgdb_txp.dir/trpage_label.o
+[ 95%] Building CXX object src/osgPlugins/txp/CMakeFiles/osgdb_txp.dir/trpage_light.o
+[ 95%] Building CXX object src/osgPlugins/txp/CMakeFiles/osgdb_txp.dir/trpage_main.o
+[ 95%] Building CXX object src/osgPlugins/txp/CMakeFiles/osgdb_txp.dir/trpage_managers.o
+[ 95%] Building CXX object src/osgPlugins/txp/CMakeFiles/osgdb_txp.dir/trpage_material.o
+/home/arnt/FG-git/OpenSceneGraph/src/osgPlugins/txp/trpage_material.cpp: In member function ‘int trpgMatTable::AddMaterial(const trpgMaterial&, bool)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgPlugins/txp/trpage_material.cpp:103:10: warning: variable ‘spaceInTable’ set but not used [-Wunused-but-set-variable]
+[ 95%] Building CXX object src/osgPlugins/txp/CMakeFiles/osgdb_txp.dir/trpage_model.o
+[ 96%] Building CXX object src/osgPlugins/txp/CMakeFiles/osgdb_txp.dir/trpage_nodes.o
+[ 96%] Building CXX object src/osgPlugins/txp/CMakeFiles/osgdb_txp.dir/trpage_parse.o
+[ 96%] Building CXX object src/osgPlugins/txp/CMakeFiles/osgdb_txp.dir/trpage_pparse.o
+[ 96%] Building CXX object src/osgPlugins/txp/CMakeFiles/osgdb_txp.dir/trpage_print.o
+[ 96%] Building CXX object src/osgPlugins/txp/CMakeFiles/osgdb_txp.dir/trpage_print_parse.o
+[ 96%] Building CXX object src/osgPlugins/txp/CMakeFiles/osgdb_txp.dir/trpage_range.o
+[ 96%] Building CXX object src/osgPlugins/txp/CMakeFiles/osgdb_txp.dir/trpage_rarchive.o
+/home/arnt/FG-git/OpenSceneGraph/src/osgPlugins/txp/trpage_rarchive.cpp: In member function ‘virtual bool trpgr_Archive::ReadHeader(bool)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgPlugins/txp/trpage_rarchive.cpp:261:14: warning: variable ‘headerHasTexTable’ set but not used [-Wunused-but-set-variable]
+[ 96%] Building CXX object src/osgPlugins/txp/CMakeFiles/osgdb_txp.dir/trpage_readbuf.o
+[ 96%] Building CXX object src/osgPlugins/txp/CMakeFiles/osgdb_txp.dir/trpage_scene.o
+[ 97%] Building CXX object src/osgPlugins/txp/CMakeFiles/osgdb_txp.dir/trpage_swap.o
+/home/arnt/FG-git/OpenSceneGraph/src/osgPlugins/txp/trpage_swap.cpp: In function ‘trpgEndian trpg_cpu_byte_order()’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgPlugins/txp/trpage_swap.cpp:205:36: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+[ 97%] Building CXX object src/osgPlugins/txp/CMakeFiles/osgdb_txp.dir/trpage_tile.o
+[ 97%] Building CXX object src/osgPlugins/txp/CMakeFiles/osgdb_txp.dir/trpage_util.o
+[ 97%] Building CXX object src/osgPlugins/txp/CMakeFiles/osgdb_txp.dir/trpage_warchive.o
+[ 97%] Building CXX object src/osgPlugins/txp/CMakeFiles/osgdb_txp.dir/trpage_writebuf.o
+[ 97%] Building CXX object src/osgPlugins/txp/CMakeFiles/osgdb_txp.dir/TXPArchive.o
+[ 97%] Building CXX object src/osgPlugins/txp/CMakeFiles/osgdb_txp.dir/TXPIO.o
+[ 97%] Building CXX object src/osgPlugins/txp/CMakeFiles/osgdb_txp.dir/TXPNode.o
+[ 97%] Building CXX object src/osgPlugins/txp/CMakeFiles/osgdb_txp.dir/TXPPagedLOD.o
+[ 98%] Building CXX object src/osgPlugins/txp/CMakeFiles/osgdb_txp.dir/TXPPageManager.o
+[ 98%] Building CXX object src/osgPlugins/txp/CMakeFiles/osgdb_txp.dir/TXPParser.o
+[ 98%] Building CXX object src/osgPlugins/txp/CMakeFiles/osgdb_txp.dir/TXPSeamLOD.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_txp.so
+[ 98%] Built target osgdb_txp
+Scanning dependencies of target osgdb_freetype
+[ 98%] Building CXX object src/osgPlugins/freetype/CMakeFiles/osgdb_freetype.dir/FreeTypeFont.o
+[ 98%] Building CXX object src/osgPlugins/freetype/CMakeFiles/osgdb_freetype.dir/FreeTypeFont3D.o
+[ 98%] Building CXX object src/osgPlugins/freetype/CMakeFiles/osgdb_freetype.dir/FreeTypeLibrary.o
+[ 98%] Building CXX object src/osgPlugins/freetype/CMakeFiles/osgdb_freetype.dir/ReaderWriterFreeType.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_freetype.so
+[ 98%] Built target osgdb_freetype
+Scanning dependencies of target osgdb_zip
+[ 99%] Building CXX object src/osgPlugins/zip/CMakeFiles/osgdb_zip.dir/ReaderWriterZIP.o
+Linking CXX shared module ../../../lib/osgPlugins-2.8.3/osgdb_zip.so
+[ 99%] Built target osgdb_zip
+Scanning dependencies of target application_osgviewer
+[ 99%] Building CXX object applications/osgviewer/CMakeFiles/application_osgviewer.dir/osgviewer.o
+Linking CXX executable ../../bin/osgviewer
+/usr/bin/ld: ../../lib/libosg.so.2.8.3: error: undefined reference to 'dlsym'
+/usr/bin/ld: ../../lib/libosgDB.so.2.8.3: error: undefined reference to 'dlclose'
+/usr/bin/ld: ../../lib/libosgDB.so.2.8.3: error: undefined reference to 'dlopen'
+/usr/bin/ld: ../../lib/libosgDB.so.2.8.3: error: undefined reference to 'dlerror'
+collect2: ld returned 1 exit status
+make[2]: *** [bin/osgviewer] Error 1
+make[1]: *** [applications/osgviewer/CMakeFiles/application_osgviewer.dir/all] Error 2
+make: *** [all] Error 2

@@ -1,0 +1,1612 @@
+./download_and_compile.sh ALL
+APT_GET_UPDATE=n
+DOWNLOAD_PACKAGES=n
+COMPILE=y
+RECONFIGURE=y
+DOWNLOAD=y
+JOPTION= -j2 
+DEBUG=
+***********************************
+DEBIAN I SUPPOUSE
+***********************************
+DIRECTORY= /home/arnt/FG-git
+***********************************
+****************************************
+**************** OSG *******************
+****************************************
+SVN FROM http://www.openscenegraph.org/svn/osg/OpenSceneGraph/tags/OpenSceneGraph-2.9.11 ...  OK
+COMPILING OSG
+[  0%] Built target OpenThreads
+[ 12%] Built target osg
+[ 12%] [ 12%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/tristripper/src/tri_stripper.o
+Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/tristripper/src/policy.o
+In file included from /home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/policy.h:13:0,
+                 from /home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/policy.cpp:10:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/public_types.h:21:10: error: ‘size_t’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/public_types.h:22:22: error: ‘index’ was not declared in this scope
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/public_types.h:22:27: error: template argument 1 is invalid
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/public_types.h:22:27: error: template argument 2 is invalid
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/public_types.h:22:36: error: invalid type in declaration before ‘;’ token
+In file included from /home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/policy.h:14:0,
+                 from /home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/policy.cpp:10:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:27:17: error: expected ‘)’ before ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:31:18: error: ‘size_t’ has not been declared
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:32:2: error: ‘size_t’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:34:2: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:35:2: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:36:2: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:39:2: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:40:2: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:41:2: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:43:2: error: ‘size_t’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h: In member function ‘void triangle_stripper::detail::triangle::ResetStripID()’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:30:30: error: ‘m_StripID’ was not declared in this scope
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h: In member function ‘void triangle_stripper::detail::triangle::SetStripID(int)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:31:39: error: ‘m_StripID’ was not declared in this scope
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h: At global scope:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:51:22: error: expected ‘)’ before ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:54:2: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:55:2: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:62:2: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:63:2: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h: In member function ‘bool triangle_stripper::detail::triangle_edge::operator==(const triangle_stripper::detail::triangle_edge&) const’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:58:14: error: ‘A’ was not declared in this scope
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:58:25: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:58:36: error: ‘B’ was not declared in this scope
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:58:47: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h: At global scope:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:78:15: error: expected ‘)’ before ‘Start’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:81:2: error: ‘size_t’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:83:2: error: ‘size_t’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:86:2: error: ‘size_t’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:88:2: error: ‘size_t’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h: In constructor ‘triangle_stripper::detail::strip::strip()’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:76:5: error: class ‘triangle_stripper::detail::strip’ does not have any field named ‘m_Start’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:76:31: error: class ‘triangle_stripper::detail::strip’ does not have any field named ‘m_Size’
+In file included from /home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/policy.cpp:10:0:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/policy.h: At global scope:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/policy.h:29:16: error: expected ‘)’ before ‘MinStripSize’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/policy.h:32:30: error: ‘size_t’ has not been declared
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/policy.h:32:45: error: ‘size_t’ has not been declared
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/policy.h:37:2: error: ‘size_t’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/policy.h:38:2: error: ‘size_t’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/policy.h:40:8: error: ‘size_t’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/policy.h:41:14: warning: non-static const member ‘const bool triangle_stripper::detail::policy::m_Cache’ in class without a constructor [-Wuninitialized]
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/policy.h:48:23: warning: ISO C++ forbids declaration of ‘policy’ with no type [-fpermissive]
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/policy.h:48:23: error: ‘triangle_stripper::detail::policy::policy’ declared as an ‘inline’ variable
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/policy.h:48:23: error: ‘int triangle_stripper::detail::policy::policy’ is not a static member of ‘class triangle_stripper::detail::policy’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/policy.h:48:23: error: ‘size_t’ was not declared in this scope
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/policy.h:48:23: note: suggested alternatives:
+/usr/include/c++/4.6/x86_64-linux-gnu/bits/c++config.h:155:26: note:   ‘std::size_t’
+/usr/include/c++/4.6/x86_64-linux-gnu/bits/c++config.h:155:26: note:   ‘std::size_t’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/policy.h:48:44: error: expected primary-expression before ‘bool’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/policy.h:48:54: warning: expression list treated as compound expression in initializer [-fpermissive]
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/policy.h:49:1: error: expected ‘,’ or ‘;’ before ‘:’ token
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/policy.cpp:22:37: error: ‘size_t’ has not been declared
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/policy.cpp:22:52: error: ‘size_t’ has not been declared
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/policy.cpp: In member function ‘void triangle_stripper::detail::policy::Challenge(triangle_stripper::detail::strip, int, int)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/policy.cpp:24:12: error: ‘class triangle_stripper::detail::strip’ has no member named ‘Size’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/policy.cpp:24:21: error: ‘m_MinStripSize’ was not declared in this scope
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/policy.cpp:30:13: error: ‘class triangle_stripper::detail::strip’ has no member named ‘Size’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/policy.cpp:30:30: error: ‘class triangle_stripper::detail::strip’ has no member named ‘Size’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/policy.cpp:37:19: error: ‘m_CacheHits’ was not declared in this scope
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/policy.cpp:39:4: error: ‘m_Degree’ was not declared in this scope
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/policy.cpp:45:17: error: ‘class triangle_stripper::detail::strip’ has no member named ‘Size’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/policy.cpp:45:43: error: ‘m_Degree’ was not declared in this scope
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/policy.cpp:50:21: error: ‘class triangle_stripper::detail::strip’ has no member named ‘Size’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/policy.cpp:50:38: error: ‘class triangle_stripper::detail::strip’ has no member named ‘Size’
+make[2]: *** [src/osgUtil/CMakeFiles/osgUtil.dir/tristripper/src/policy.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+In file included from /home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/tri_stripper.h:41:0,
+                 from /home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:10:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/public_types.h:21:10: error: ‘size_t’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/public_types.h:22:22: error: ‘index’ was not declared in this scope
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/public_types.h:22:27: error: template argument 1 is invalid
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/public_types.h:22:27: error: template argument 2 is invalid
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/public_types.h:22:36: error: invalid type in declaration before ‘;’ token
+In file included from /home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/tri_stripper.h:43:0,
+                 from /home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:10:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:38:12: error: ‘index’ has not been declared
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:45:21: error: ‘index’ was not declared in this scope
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:45:26: error: template argument 1 is invalid
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:45:26: error: template argument 2 is invalid
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h: In member function ‘void triangle_stripper::detail::cache_simulator::clear()’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:71:10: error: request for member ‘clear’ in ‘((triangle_stripper::detail::cache_simulator*)this)->triangle_stripper::detail::cache_simulator::m_Cache’, which is of non-class type ‘triangle_stripper::detail::cache_simulator::indices_deque’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h: In member function ‘void triangle_stripper::detail::cache_simulator::resize(size_t)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:77:10: error: request for member ‘resize’ in ‘((triangle_stripper::detail::cache_simulator*)this)->triangle_stripper::detail::cache_simulator::m_Cache’, which is of non-class type ‘triangle_stripper::detail::cache_simulator::indices_deque’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:77:44: error: ‘index’ was not declared in this scope
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:77:49: error: template argument 1 is invalid
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h: In member function ‘void triangle_stripper::detail::cache_simulator::reset()’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:83:20: error: request for member ‘begin’ in ‘((triangle_stripper::detail::cache_simulator*)this)->triangle_stripper::detail::cache_simulator::m_Cache’, which is of non-class type ‘triangle_stripper::detail::cache_simulator::indices_deque’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:83:37: error: request for member ‘end’ in ‘((triangle_stripper::detail::cache_simulator*)this)->triangle_stripper::detail::cache_simulator::m_Cache’, which is of non-class type ‘triangle_stripper::detail::cache_simulator::indices_deque’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:83:65: error: ‘index’ was not declared in this scope
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:83:70: error: template argument 1 is invalid
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h: In member function ‘size_t triangle_stripper::detail::cache_simulator::size() const’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:96:17: error: request for member ‘size’ in ‘((const triangle_stripper::detail::cache_simulator*)this)->triangle_stripper::detail::cache_simulator::m_Cache’, which is of non-class type ‘const indices_deque’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h: At global scope:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:100:41: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:100:47: warning: ISO C++ forbids declaration of ‘i’ with no type [-fpermissive]
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h: In member function ‘void triangle_stripper::detail::cache_simulator::push(int, bool)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:104:25: error: request for member ‘begin’ in ‘((triangle_stripper::detail::cache_simulator*)this)->triangle_stripper::detail::cache_simulator::m_Cache’, which is of non-class type ‘triangle_stripper::detail::cache_simulator::indices_deque’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:104:42: error: request for member ‘end’ in ‘((triangle_stripper::detail::cache_simulator*)this)->triangle_stripper::detail::cache_simulator::m_Cache’, which is of non-class type ‘triangle_stripper::detail::cache_simulator::indices_deque’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:104:63: error: request for member ‘end’ in ‘((triangle_stripper::detail::cache_simulator*)this)->triangle_stripper::detail::cache_simulator::m_Cache’, which is of non-class type ‘triangle_stripper::detail::cache_simulator::indices_deque’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:117:10: error: request for member ‘push_front’ in ‘((triangle_stripper::detail::cache_simulator*)this)->triangle_stripper::detail::cache_simulator::m_Cache’, which is of non-class type ‘triangle_stripper::detail::cache_simulator::indices_deque’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:118:10: error: request for member ‘pop_back’ in ‘((triangle_stripper::detail::cache_simulator*)this)->triangle_stripper::detail::cache_simulator::m_Cache’, which is of non-class type ‘triangle_stripper::detail::cache_simulator::indices_deque’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h: In member function ‘void triangle_stripper::detail::cache_simulator::merge(const triangle_stripper::detail::cache_simulator&, size_t)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:127:26: error: invalid types ‘const indices_deque[size_t]’ for array subscript
+In file included from /home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/tri_stripper.h:46:0,
+                 from /home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:10:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h: At global scope:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:27:17: error: expected ‘)’ before ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:34:2: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:35:2: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:36:2: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:39:2: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:40:2: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:41:2: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:51:22: error: expected ‘)’ before ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:54:2: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:55:2: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:62:2: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:63:2: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h: In member function ‘bool triangle_stripper::detail::triangle_edge::operator==(const triangle_stripper::detail::triangle_edge&) const’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:58:14: error: ‘A’ was not declared in this scope
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:58:25: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:58:36: error: ‘B’ was not declared in this scope
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:58:47: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘B’
+In file included from /home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:10:0:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/tri_stripper.h: At global scope:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/tri_stripper.h:111:16: error: ‘index’ has not been declared
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/tri_stripper.h:112:20: error: ‘index’ has not been declared
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: In constructor ‘triangle_stripper::tri_stripper::tri_stripper(const indices&)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:28:27: error: request for member ‘size’ in ‘TriIndices’, which is of non-class type ‘const indices’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: In member function ‘triangle_stripper::detail::strip triangle_stripper::tri_stripper::BackExtendToStrip(size_t, triangle_stripper::detail::triangle_order, bool)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:219:53: error: ‘class triangle_stripper::detail::triangle_edge’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: In member function ‘triangle_stripper::tri_stripper::const_link_iterator triangle_stripper::tri_stripper::LinkToNeighbour(triangle_stripper::tri_stripper::const_tri_iterator, bool, triangle_stripper::detail::triangle_order&, bool)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:306:15: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:306:26: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:306:40: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:306:51: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:308:19: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:312:20: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:312:31: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:312:45: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:312:56: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:314:19: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:318:20: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:318:31: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:318:45: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:318:56: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:320:19: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: In member function ‘triangle_stripper::tri_stripper::const_link_iterator triangle_stripper::tri_stripper::BackLinkToNeighbour(triangle_stripper::tri_stripper::const_tri_iterator, bool, triangle_stripper::detail::triangle_order&)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:347:14: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:347:25: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:347:39: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:347:50: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:349:22: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:353:19: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:353:30: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:353:44: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:353:55: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:355:22: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:359:19: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:359:30: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:359:44: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:359:55: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:361:22: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: In static member function ‘static triangle_stripper::detail::triangle_edge triangle_stripper::tri_stripper::FirstEdge(const triangle_stripper::detail::triangle&, triangle_stripper::detail::triangle_order)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:409:33: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:409:47: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:412:33: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:412:47: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:415:33: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:415:47: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:419:28: error: no matching function for call to ‘triangle_stripper::detail::triangle_edge::triangle_edge(int, int)’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:419:28: note: candidates are:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:48:7: note: triangle_stripper::detail::triangle_edge::triangle_edge()
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:48:7: note:   candidate expects 0 arguments, 2 provided
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:48:7: note: triangle_stripper::detail::triangle_edge::triangle_edge(const triangle_stripper::detail::triangle_edge&)
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:48:7: note:   candidate expects 1 argument, 2 provided
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: In static member function ‘static triangle_stripper::detail::triangle_edge triangle_stripper::tri_stripper::LastEdge(const triangle_stripper::detail::triangle&, triangle_stripper::detail::triangle_order)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:430:33: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:430:47: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:433:33: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:433:47: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:436:33: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:436:47: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:440:28: error: no matching function for call to ‘triangle_stripper::detail::triangle_edge::triangle_edge(int, int)’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:440:28: note: candidates are:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:48:7: note: triangle_stripper::detail::triangle_edge::triangle_edge()
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:48:7: note:   candidate expects 0 arguments, 2 provided
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:48:7: note: triangle_stripper::detail::triangle_edge::triangle_edge(const triangle_stripper::detail::triangle_edge&)
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:48:7: note:   candidate expects 1 argument, 2 provided
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: At global scope:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:446:42: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:446:48: warning: ISO C++ forbids declaration of ‘i’ with no type [-fpermissive]
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: In member function ‘void triangle_stripper::tri_stripper::AddIndex(int, bool)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:452:37: error: request for member ‘push_back’ in ‘((triangle_stripper::tri_stripper*)this)->triangle_stripper::tri_stripper::m_PrimitivesVector.std::vector<_Tp, _Alloc>::back [with _Tp = triangle_stripper::primitive_group, _Alloc = std::allocator<triangle_stripper::primitive_group>, std::vector<_Tp, _Alloc>::reference = triangle_stripper::primitive_group&]()->triangle_stripper::primitive_group::Indices’, which is of non-class type ‘triangle_stripper::indices’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: At global scope:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:457:46: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:457:52: warning: ISO C++ forbids declaration of ‘i’ with no type [-fpermissive]
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: In member function ‘void triangle_stripper::tri_stripper::AddTriangle(const triangle_stripper::detail::triangle&, triangle_stripper::detail::triangle_order, bool)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:470:16: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:471:16: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:472:16: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:476:16: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:477:16: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:478:16: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:482:16: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:483:16: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:484:16: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: In member function ‘void triangle_stripper::tri_stripper::BackAddTriangle(const triangle_stripper::detail::triangle&, triangle_stripper::detail::triangle_order)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:496:20: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:497:20: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:498:20: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:502:20: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:503:20: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:504:20: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:508:20: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:509:20: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:510:20: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: In member function ‘void triangle_stripper::tri_stripper::AddLeftTriangles()’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:527:12: error: request for member ‘push_back’ in ‘Indices’, which is of non-class type ‘triangle_stripper::indices’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:527:38: error: ‘class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:528:12: error: request for member ‘push_back’ in ‘Indices’, which is of non-class type ‘triangle_stripper::indices’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:528:38: error: ‘class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:529:12: error: request for member ‘push_back’ in ‘Indices’, which is of non-class type ‘triangle_stripper::indices’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:529:38: error: ‘class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:533:14: error: request for member ‘size’ in ‘Indices’, which is of non-class type ‘triangle_stripper::indices’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h: In member function ‘size_t triangle_stripper::detail::cache_simulator::size() const’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:97:1: warning: control reaches end of non-void function [-Wreturn-type]
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: In static member function ‘static triangle_stripper::detail::triangle_edge triangle_stripper::tri_stripper::LastEdge(const triangle_stripper::detail::triangle&, triangle_stripper::detail::triangle_order)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:442:1: warning: control reaches end of non-void function [-Wreturn-type]
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: In static member function ‘static triangle_stripper::detail::triangle_edge triangle_stripper::tri_stripper::FirstEdge(const triangle_stripper::detail::triangle&, triangle_stripper::detail::triangle_order)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:421:1: warning: control reaches end of non-void function [-Wreturn-type]
+make[2]: *** [src/osgUtil/CMakeFiles/osgUtil.dir/tristripper/src/tri_stripper.o] Error 1
+make[1]: *** [src/osgUtil/CMakeFiles/osgUtil.dir/all] Error 2
+make: *** [all] Error 2
+INSTALLING OSG
+[  0%] Built target OpenThreads
+[ 12%] Built target osg
+[ 12%] Building CXX object src/osgUtil/CMakeFiles/osgUtil.dir/tristripper/src/tri_stripper.o
+In file included from /home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/tri_stripper.h:41:0,
+                 from /home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:10:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/public_types.h:21:10: error: ‘size_t’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/public_types.h:22:22: error: ‘index’ was not declared in this scope
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/public_types.h:22:27: error: template argument 1 is invalid
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/public_types.h:22:27: error: template argument 2 is invalid
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/public_types.h:22:36: error: invalid type in declaration before ‘;’ token
+In file included from /home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/tri_stripper.h:43:0,
+                 from /home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:10:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:38:12: error: ‘index’ has not been declared
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:45:21: error: ‘index’ was not declared in this scope
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:45:26: error: template argument 1 is invalid
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:45:26: error: template argument 2 is invalid
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h: In member function ‘void triangle_stripper::detail::cache_simulator::clear()’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:71:10: error: request for member ‘clear’ in ‘((triangle_stripper::detail::cache_simulator*)this)->triangle_stripper::detail::cache_simulator::m_Cache’, which is of non-class type ‘triangle_stripper::detail::cache_simulator::indices_deque’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h: In member function ‘void triangle_stripper::detail::cache_simulator::resize(size_t)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:77:10: error: request for member ‘resize’ in ‘((triangle_stripper::detail::cache_simulator*)this)->triangle_stripper::detail::cache_simulator::m_Cache’, which is of non-class type ‘triangle_stripper::detail::cache_simulator::indices_deque’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:77:44: error: ‘index’ was not declared in this scope
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:77:49: error: template argument 1 is invalid
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h: In member function ‘void triangle_stripper::detail::cache_simulator::reset()’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:83:20: error: request for member ‘begin’ in ‘((triangle_stripper::detail::cache_simulator*)this)->triangle_stripper::detail::cache_simulator::m_Cache’, which is of non-class type ‘triangle_stripper::detail::cache_simulator::indices_deque’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:83:37: error: request for member ‘end’ in ‘((triangle_stripper::detail::cache_simulator*)this)->triangle_stripper::detail::cache_simulator::m_Cache’, which is of non-class type ‘triangle_stripper::detail::cache_simulator::indices_deque’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:83:65: error: ‘index’ was not declared in this scope
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:83:70: error: template argument 1 is invalid
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h: In member function ‘size_t triangle_stripper::detail::cache_simulator::size() const’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:96:17: error: request for member ‘size’ in ‘((const triangle_stripper::detail::cache_simulator*)this)->triangle_stripper::detail::cache_simulator::m_Cache’, which is of non-class type ‘const indices_deque’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h: At global scope:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:100:41: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:100:47: warning: ISO C++ forbids declaration of ‘i’ with no type [-fpermissive]
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h: In member function ‘void triangle_stripper::detail::cache_simulator::push(int, bool)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:104:25: error: request for member ‘begin’ in ‘((triangle_stripper::detail::cache_simulator*)this)->triangle_stripper::detail::cache_simulator::m_Cache’, which is of non-class type ‘triangle_stripper::detail::cache_simulator::indices_deque’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:104:42: error: request for member ‘end’ in ‘((triangle_stripper::detail::cache_simulator*)this)->triangle_stripper::detail::cache_simulator::m_Cache’, which is of non-class type ‘triangle_stripper::detail::cache_simulator::indices_deque’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:104:63: error: request for member ‘end’ in ‘((triangle_stripper::detail::cache_simulator*)this)->triangle_stripper::detail::cache_simulator::m_Cache’, which is of non-class type ‘triangle_stripper::detail::cache_simulator::indices_deque’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:117:10: error: request for member ‘push_front’ in ‘((triangle_stripper::detail::cache_simulator*)this)->triangle_stripper::detail::cache_simulator::m_Cache’, which is of non-class type ‘triangle_stripper::detail::cache_simulator::indices_deque’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:118:10: error: request for member ‘pop_back’ in ‘((triangle_stripper::detail::cache_simulator*)this)->triangle_stripper::detail::cache_simulator::m_Cache’, which is of non-class type ‘triangle_stripper::detail::cache_simulator::indices_deque’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h: In member function ‘void triangle_stripper::detail::cache_simulator::merge(const triangle_stripper::detail::cache_simulator&, size_t)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:127:26: error: invalid types ‘const indices_deque[size_t]’ for array subscript
+In file included from /home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/tri_stripper.h:46:0,
+                 from /home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:10:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h: At global scope:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:27:17: error: expected ‘)’ before ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:34:2: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:35:2: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:36:2: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:39:2: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:40:2: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:41:2: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:51:22: error: expected ‘)’ before ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:54:2: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:55:2: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:62:2: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:63:2: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h: In member function ‘bool triangle_stripper::detail::triangle_edge::operator==(const triangle_stripper::detail::triangle_edge&) const’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:58:14: error: ‘A’ was not declared in this scope
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:58:25: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:58:36: error: ‘B’ was not declared in this scope
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:58:47: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘B’
+In file included from /home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:10:0:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/tri_stripper.h: At global scope:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/tri_stripper.h:111:16: error: ‘index’ has not been declared
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/tri_stripper.h:112:20: error: ‘index’ has not been declared
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: In constructor ‘triangle_stripper::tri_stripper::tri_stripper(const indices&)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:28:27: error: request for member ‘size’ in ‘TriIndices’, which is of non-class type ‘const indices’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: In member function ‘triangle_stripper::detail::strip triangle_stripper::tri_stripper::BackExtendToStrip(size_t, triangle_stripper::detail::triangle_order, bool)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:219:53: error: ‘class triangle_stripper::detail::triangle_edge’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: In member function ‘triangle_stripper::tri_stripper::const_link_iterator triangle_stripper::tri_stripper::LinkToNeighbour(triangle_stripper::tri_stripper::const_tri_iterator, bool, triangle_stripper::detail::triangle_order&, bool)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:306:15: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:306:26: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:306:40: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:306:51: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:308:19: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:312:20: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:312:31: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:312:45: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:312:56: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:314:19: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:318:20: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:318:31: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:318:45: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:318:56: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:320:19: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: In member function ‘triangle_stripper::tri_stripper::const_link_iterator triangle_stripper::tri_stripper::BackLinkToNeighbour(triangle_stripper::tri_stripper::const_tri_iterator, bool, triangle_stripper::detail::triangle_order&)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:347:14: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:347:25: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:347:39: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:347:50: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:349:22: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:353:19: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:353:30: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:353:44: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:353:55: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:355:22: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:359:19: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:359:30: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:359:44: error: ‘const class triangle_stripper::detail::triangle_edge’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:359:55: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:361:22: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: In static member function ‘static triangle_stripper::detail::triangle_edge triangle_stripper::tri_stripper::FirstEdge(const triangle_stripper::detail::triangle&, triangle_stripper::detail::triangle_order)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:409:33: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:409:47: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:412:33: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:412:47: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:415:33: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:415:47: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:419:28: error: no matching function for call to ‘triangle_stripper::detail::triangle_edge::triangle_edge(int, int)’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:419:28: note: candidates are:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:48:7: note: triangle_stripper::detail::triangle_edge::triangle_edge()
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:48:7: note:   candidate expects 0 arguments, 2 provided
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:48:7: note: triangle_stripper::detail::triangle_edge::triangle_edge(const triangle_stripper::detail::triangle_edge&)
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:48:7: note:   candidate expects 1 argument, 2 provided
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: In static member function ‘static triangle_stripper::detail::triangle_edge triangle_stripper::tri_stripper::LastEdge(const triangle_stripper::detail::triangle&, triangle_stripper::detail::triangle_order)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:430:33: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:430:47: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:433:33: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:433:47: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:436:33: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:436:47: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:440:28: error: no matching function for call to ‘triangle_stripper::detail::triangle_edge::triangle_edge(int, int)’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:440:28: note: candidates are:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:48:7: note: triangle_stripper::detail::triangle_edge::triangle_edge()
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:48:7: note:   candidate expects 0 arguments, 2 provided
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:48:7: note: triangle_stripper::detail::triangle_edge::triangle_edge(const triangle_stripper::detail::triangle_edge&)
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/types.h:48:7: note:   candidate expects 1 argument, 2 provided
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: At global scope:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:446:42: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:446:48: warning: ISO C++ forbids declaration of ‘i’ with no type [-fpermissive]
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: In member function ‘void triangle_stripper::tri_stripper::AddIndex(int, bool)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:452:37: error: request for member ‘push_back’ in ‘((triangle_stripper::tri_stripper*)this)->triangle_stripper::tri_stripper::m_PrimitivesVector.std::vector<_Tp, _Alloc>::back [with _Tp = triangle_stripper::primitive_group, _Alloc = std::allocator<triangle_stripper::primitive_group>, std::vector<_Tp, _Alloc>::reference = triangle_stripper::primitive_group&]()->triangle_stripper::primitive_group::Indices’, which is of non-class type ‘triangle_stripper::indices’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: At global scope:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:457:46: error: ‘index’ does not name a type
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:457:52: warning: ISO C++ forbids declaration of ‘i’ with no type [-fpermissive]
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: In member function ‘void triangle_stripper::tri_stripper::AddTriangle(const triangle_stripper::detail::triangle&, triangle_stripper::detail::triangle_order, bool)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:470:16: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:471:16: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:472:16: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:476:16: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:477:16: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:478:16: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:482:16: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:483:16: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:484:16: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: In member function ‘void triangle_stripper::tri_stripper::BackAddTriangle(const triangle_stripper::detail::triangle&, triangle_stripper::detail::triangle_order)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:496:20: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:497:20: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:498:20: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:502:20: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:503:20: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:504:20: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:508:20: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:509:20: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:510:20: error: ‘const class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: In member function ‘void triangle_stripper::tri_stripper::AddLeftTriangles()’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:527:12: error: request for member ‘push_back’ in ‘Indices’, which is of non-class type ‘triangle_stripper::indices’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:527:38: error: ‘class triangle_stripper::detail::triangle’ has no member named ‘A’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:528:12: error: request for member ‘push_back’ in ‘Indices’, which is of non-class type ‘triangle_stripper::indices’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:528:38: error: ‘class triangle_stripper::detail::triangle’ has no member named ‘B’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:529:12: error: request for member ‘push_back’ in ‘Indices’, which is of non-class type ‘triangle_stripper::indices’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:529:38: error: ‘class triangle_stripper::detail::triangle’ has no member named ‘C’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:533:14: error: request for member ‘size’ in ‘Indices’, which is of non-class type ‘triangle_stripper::indices’
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h: In member function ‘size_t triangle_stripper::detail::cache_simulator::size() const’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/include/detail/cache_simulator.h:97:1: warning: control reaches end of non-void function [-Wreturn-type]
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: In static member function ‘static triangle_stripper::detail::triangle_edge triangle_stripper::tri_stripper::LastEdge(const triangle_stripper::detail::triangle&, triangle_stripper::detail::triangle_order)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:442:1: warning: control reaches end of non-void function [-Wreturn-type]
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp: In static member function ‘static triangle_stripper::detail::triangle_edge triangle_stripper::tri_stripper::FirstEdge(const triangle_stripper::detail::triangle&, triangle_stripper::detail::triangle_order)’:
+/home/arnt/FG-git/OpenSceneGraph/src/osgUtil/tristripper/src/tri_stripper.cpp:421:1: warning: control reaches end of non-void function [-Wreturn-type]
+make[2]: *** [src/osgUtil/CMakeFiles/osgUtil.dir/tristripper/src/tri_stripper.o] Error 1
+make[1]: *** [src/osgUtil/CMakeFiles/osgUtil.dir/all] Error 2
+make: *** [all] Error 2
+****************************************
+**************** SIMGEAR ***************
+****************************************
+git FROM git://gitorious.org/fg/simgear.git ...  OK
+MAKE SIMGEAR
+make  -j2 
+Making all in simgear
+make[1]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear'
+make  all-recursive
+make[2]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear'
+Making all in xml
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/xml'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/xml'
+Making all in debug
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/debug'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/debug'
+Making all in misc
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/misc'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/misc'
+Making all in structure
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/structure'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/structure'
+Making all in bucket
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/bucket'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/bucket'
+Making all in ephemeris
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/ephemeris'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/ephemeris'
+Making all in io
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/io'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/io'
+Making all in magvar
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/magvar'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/magvar'
+Making all in math
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/math'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/math'
+Making all in nasal
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/nasal'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/nasal'
+Making all in props
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/props'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/props'
+Making all in route
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/route'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/route'
+Making all in serial
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/serial'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/serial'
+Making all in timing
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/timing'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/timing'
+Making all in environment
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/environment'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/environment'
+Making all in scene
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/scene'
+Making all in bvh
+make[4]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/bvh'
+make[4]: Nothing to be done for `all'.
+make[4]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/bvh'
+Making all in material
+make[4]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/material'
+make[4]: Nothing to be done for `all'.
+make[4]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/material'
+Making all in model
+make[4]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/model'
+make[4]: Nothing to be done for `all'.
+make[4]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/model'
+Making all in sky
+make[4]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/sky'
+make[4]: Nothing to be done for `all'.
+make[4]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/sky'
+Making all in tgdb
+make[4]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/tgdb'
+make[4]: Nothing to be done for `all'.
+make[4]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/tgdb'
+Making all in util
+make[4]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/util'
+make[4]: Nothing to be done for `all'.
+make[4]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/util'
+make[4]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/scene'
+make[4]: Nothing to be done for `all-am'.
+make[4]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/scene'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/scene'
+Making all in sound
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/sound'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/sound'
+Making all in screen
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/screen'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/screen'
+Making all in threads
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/threads'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/threads'
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear'
+make[2]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear'
+make[1]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear'
+make[1]: Entering directory `/home/arnt/FG-git/simgear/simgear'
+make[1]: Nothing to be done for `all-am'.
+make[1]: Leaving directory `/home/arnt/FG-git/simgear/simgear'
+INSTALL SIMGEAR
+Making install in simgear
+make[1]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear'
+Making install in xml
+make[2]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/xml'
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/xml'
+test -z "/home/arnt/FG-git/install/simgear/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/lib"
+ /usr/bin/install -c -p -m 644  libsgxml.a '/home/arnt/FG-git/install/simgear/lib'
+ ( cd '/home/arnt/FG-git/install/simgear/lib' && ranlib libsgxml.a )
+test -z "/home/arnt/FG-git/install/simgear/include/simgear/xml" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/include/simgear/xml"
+ /usr/bin/install -c -p -m 644 easyxml.hxx '/home/arnt/FG-git/install/simgear/include/simgear/xml'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/xml'
+make[2]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/xml'
+Making install in debug
+make[2]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/debug'
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/debug'
+test -z "/home/arnt/FG-git/install/simgear/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/lib"
+ /usr/bin/install -c -p -m 644  libsgdebug.a '/home/arnt/FG-git/install/simgear/lib'
+ ( cd '/home/arnt/FG-git/install/simgear/lib' && ranlib libsgdebug.a )
+test -z "/home/arnt/FG-git/install/simgear/include/simgear/debug" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/include/simgear/debug"
+ /usr/bin/install -c -p -m 644 debug_types.h logstream.hxx '/home/arnt/FG-git/install/simgear/include/simgear/debug'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/debug'
+make[2]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/debug'
+Making install in misc
+make[2]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/misc'
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/misc'
+test -z "/home/arnt/FG-git/install/simgear/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/lib"
+ /usr/bin/install -c -p -m 644  libsgmisc.a '/home/arnt/FG-git/install/simgear/lib'
+ ( cd '/home/arnt/FG-git/install/simgear/lib' && ranlib libsgmisc.a )
+test -z "/home/arnt/FG-git/install/simgear/include/simgear/misc" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/include/simgear/misc"
+ /usr/bin/install -c -p -m 644 sg_path.hxx sgstream.hxx stopwatch.hxx strutils.hxx tabbed_values.hxx texcoord.hxx zfstream.hxx interpolator.hxx stdint.hxx PathOptions.hxx sg_dir.hxx ResourceManager.hxx sg_sleep.hxx '/home/arnt/FG-git/install/simgear/include/simgear/misc'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/misc'
+make[2]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/misc'
+Making install in structure
+make[2]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/structure'
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/structure'
+test -z "/home/arnt/FG-git/install/simgear/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/lib"
+ /usr/bin/install -c -p -m 644  libsgstructure.a '/home/arnt/FG-git/install/simgear/lib'
+ ( cd '/home/arnt/FG-git/install/simgear/lib' && ranlib libsgstructure.a )
+test -z "/home/arnt/FG-git/install/simgear/include/simgear/structure" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/include/simgear/structure"
+ /usr/bin/install -c -p -m 644 callback.hxx commands.hxx exception.hxx event_mgr.hxx intern.hxx subsystem_mgr.hxx OSGUtils.hxx OSGVersion.hxx SGAtomic.hxx SGBinding.hxx SGExpression.hxx SGReferenced.hxx SGSharedPtr.hxx SGSmplhist.hxx SGSmplstat.hxx SGWeakPtr.hxx SGWeakReferenced.hxx Singleton.hxx StringTable.hxx '/home/arnt/FG-git/install/simgear/include/simgear/structure'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/structure'
+make[2]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/structure'
+Making install in bucket
+make[2]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/bucket'
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/bucket'
+test -z "/home/arnt/FG-git/install/simgear/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/lib"
+ /usr/bin/install -c -p -m 644  libsgbucket.a '/home/arnt/FG-git/install/simgear/lib'
+ ( cd '/home/arnt/FG-git/install/simgear/lib' && ranlib libsgbucket.a )
+test -z "/home/arnt/FG-git/install/simgear/include/simgear/bucket" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/include/simgear/bucket"
+ /usr/bin/install -c -p -m 644 newbucket.hxx '/home/arnt/FG-git/install/simgear/include/simgear/bucket'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/bucket'
+make[2]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/bucket'
+Making install in ephemeris
+make[2]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/ephemeris'
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/ephemeris'
+test -z "/home/arnt/FG-git/install/simgear/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/lib"
+ /usr/bin/install -c -p -m 644  libsgephem.a '/home/arnt/FG-git/install/simgear/lib'
+ ( cd '/home/arnt/FG-git/install/simgear/lib' && ranlib libsgephem.a )
+test -z "/home/arnt/FG-git/install/simgear/include/simgear/ephemeris" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/include/simgear/ephemeris"
+ /usr/bin/install -c -p -m 644 celestialBody.hxx ephemeris.hxx jupiter.hxx mars.hxx mercury.hxx moonpos.hxx neptune.hxx saturn.hxx star.hxx stardata.hxx uranus.hxx venus.hxx '/home/arnt/FG-git/install/simgear/include/simgear/ephemeris'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/ephemeris'
+make[2]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/ephemeris'
+Making install in io
+make[2]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/io'
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/io'
+test -z "/home/arnt/FG-git/install/simgear/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/lib"
+ /usr/bin/install -c -p -m 644  libsgio.a '/home/arnt/FG-git/install/simgear/lib'
+ ( cd '/home/arnt/FG-git/install/simgear/lib' && ranlib libsgio.a )
+test -z "/home/arnt/FG-git/install/simgear/include/simgear/io" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/include/simgear/io"
+ /usr/bin/install -c -p -m 644 iochannel.hxx lowlevel.hxx sg_binobj.hxx sg_file.hxx sg_serial.hxx sg_socket.hxx sg_socket_udp.hxx raw_socket.hxx sg_netBuffer.hxx sg_netChannel.hxx sg_netChat.hxx '/home/arnt/FG-git/install/simgear/include/simgear/io'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/io'
+make[2]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/io'
+Making install in magvar
+make[2]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/magvar'
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/magvar'
+test -z "/home/arnt/FG-git/install/simgear/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/lib"
+ /usr/bin/install -c -p -m 644  libsgmagvar.a '/home/arnt/FG-git/install/simgear/lib'
+ ( cd '/home/arnt/FG-git/install/simgear/lib' && ranlib libsgmagvar.a )
+test -z "/home/arnt/FG-git/install/simgear/include/simgear/magvar" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/include/simgear/magvar"
+ /usr/bin/install -c -p -m 644 magvar.hxx coremag.hxx '/home/arnt/FG-git/install/simgear/include/simgear/magvar'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/magvar'
+make[2]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/magvar'
+Making install in math
+make[2]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/math'
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/math'
+test -z "/home/arnt/FG-git/install/simgear/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/lib"
+ /usr/bin/install -c -p -m 644  libsgmath.a '/home/arnt/FG-git/install/simgear/lib'
+ ( cd '/home/arnt/FG-git/install/simgear/lib' && ranlib libsgmath.a )
+test -z "/home/arnt/FG-git/install/simgear/include/simgear/math" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/include/simgear/math"
+ /usr/bin/install -c -p -m 644 interpolater.hxx leastsqs.hxx sg_geodesy.hxx sg_random.h sg_types.hxx Math.hxx SGBox.hxx SGCMath.hxx SGGeoc.hxx SGGeod.hxx SGGeodesy.hxx SGGeometry.hxx SGGeometryFwd.hxx SGIntersect.hxx SGLimits.hxx SGLineSegment.hxx SGMatrix.hxx SGMath.hxx SGMathFwd.hxx SGMisc.hxx SGPlane.hxx SGQuat.hxx SGRay.hxx SGSphere.hxx SGTriangle.hxx SGVec2.hxx SGVec3.hxx SGVec4.hxx beziercurve.hxx project.hxx '/home/arnt/FG-git/install/simgear/include/simgear/math'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/math'
+make[2]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/math'
+Making install in nasal
+make[2]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/nasal'
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/nasal'
+test -z "/home/arnt/FG-git/install/simgear/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/lib"
+ /usr/bin/install -c -p -m 644  libsgnasal.a '/home/arnt/FG-git/install/simgear/lib'
+ ( cd '/home/arnt/FG-git/install/simgear/lib' && ranlib libsgnasal.a )
+test -z "/home/arnt/FG-git/install/simgear/include/simgear/nasal" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/include/simgear/nasal"
+ /usr/bin/install -c -p -m 644 nasal.h naref.h '/home/arnt/FG-git/install/simgear/include/simgear/nasal'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/nasal'
+make[2]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/nasal'
+Making install in props
+make[2]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/props'
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/props'
+test -z "/home/arnt/FG-git/install/simgear/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/lib"
+ /usr/bin/install -c -p -m 644  libsgprops.a '/home/arnt/FG-git/install/simgear/lib'
+ ( cd '/home/arnt/FG-git/install/simgear/lib' && ranlib libsgprops.a )
+test -z "/home/arnt/FG-git/install/simgear/include/simgear/props" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/include/simgear/props"
+ /usr/bin/install -c -p -m 644 condition.hxx props.hxx props_io.hxx AtomicChangeListener.hxx ExtendedPropertyAdapter.hxx propertyObject.hxx tiedpropertylist.hxx '/home/arnt/FG-git/install/simgear/include/simgear/props'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/props'
+make[2]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/props'
+Making install in route
+make[2]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/route'
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/route'
+test -z "/home/arnt/FG-git/install/simgear/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/lib"
+ /usr/bin/install -c -p -m 644  libsgroute.a '/home/arnt/FG-git/install/simgear/lib'
+ ( cd '/home/arnt/FG-git/install/simgear/lib' && ranlib libsgroute.a )
+test -z "/home/arnt/FG-git/install/simgear/include/simgear/route" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/include/simgear/route"
+ /usr/bin/install -c -p -m 644 route.hxx waypoint.hxx '/home/arnt/FG-git/install/simgear/include/simgear/route'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/route'
+make[2]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/route'
+Making install in serial
+make[2]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/serial'
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/serial'
+test -z "/home/arnt/FG-git/install/simgear/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/lib"
+ /usr/bin/install -c -p -m 644  libsgserial.a '/home/arnt/FG-git/install/simgear/lib'
+ ( cd '/home/arnt/FG-git/install/simgear/lib' && ranlib libsgserial.a )
+test -z "/home/arnt/FG-git/install/simgear/include/simgear/serial" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/include/simgear/serial"
+ /usr/bin/install -c -p -m 644 serial.hxx '/home/arnt/FG-git/install/simgear/include/simgear/serial'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/serial'
+make[2]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/serial'
+Making install in timing
+make[2]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/timing'
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/timing'
+test -z "/home/arnt/FG-git/install/simgear/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/lib"
+ /usr/bin/install -c -p -m 644  libsgtiming.a '/home/arnt/FG-git/install/simgear/lib'
+ ( cd '/home/arnt/FG-git/install/simgear/lib' && ranlib libsgtiming.a )
+test -z "/home/arnt/FG-git/install/simgear/include/simgear/timing" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/include/simgear/timing"
+ /usr/bin/install -c -p -m 644 lowleveltime.h sg_time.hxx timestamp.hxx timezone.h '/home/arnt/FG-git/install/simgear/include/simgear/timing'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/timing'
+make[2]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/timing'
+Making install in environment
+make[2]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/environment'
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/environment'
+test -z "/home/arnt/FG-git/install/simgear/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/lib"
+ /usr/bin/install -c -p -m 644  libsgenvironment.a '/home/arnt/FG-git/install/simgear/lib'
+ ( cd '/home/arnt/FG-git/install/simgear/lib' && ranlib libsgenvironment.a )
+test -z "/home/arnt/FG-git/install/simgear/include/simgear/environment" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/include/simgear/environment"
+ /usr/bin/install -c -p -m 644 metar.hxx visual_enviro.hxx precipitation.hxx '/home/arnt/FG-git/install/simgear/include/simgear/environment'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/environment'
+make[2]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/environment'
+Making install in scene
+make[2]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/scene'
+Making install in bvh
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/bvh'
+make[4]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/bvh'
+test -z "/home/arnt/FG-git/install/simgear/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/lib"
+ /usr/bin/install -c -p -m 644  libsgbvh.a '/home/arnt/FG-git/install/simgear/lib'
+ ( cd '/home/arnt/FG-git/install/simgear/lib' && ranlib libsgbvh.a )
+test -z "/home/arnt/FG-git/install/simgear/include/simgear/scene/bvh" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/include/simgear/scene/bvh"
+ /usr/bin/install -c -p -m 644 BVHBoundingBoxVisitor.hxx BVHDebugCollectVisitor.hxx BVHGroup.hxx BVHLineSegmentVisitor.hxx BVHLineGeometry.hxx BVHMotionTransform.hxx BVHNearestPointVisitor.hxx BVHNode.hxx BVHStaticBinary.hxx BVHStaticData.hxx BVHStaticGeometry.hxx BVHStaticGeometryBuilder.hxx BVHStaticLeaf.hxx BVHStaticNode.hxx BVHStaticTriangle.hxx BVHSubTreeCollector.hxx BVHTransform.hxx BVHVisitor.hxx '/home/arnt/FG-git/install/simgear/include/simgear/scene/bvh'
+make[4]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/bvh'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/bvh'
+Making install in material
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/material'
+make[4]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/material'
+test -z "/home/arnt/FG-git/install/simgear/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/lib"
+ /usr/bin/install -c -p -m 644  libsgmaterial.a '/home/arnt/FG-git/install/simgear/lib'
+ ( cd '/home/arnt/FG-git/install/simgear/lib' && ranlib libsgmaterial.a )
+test -z "/home/arnt/FG-git/install/simgear/include/simgear/scene/material" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/include/simgear/scene/material"
+ /usr/bin/install -c -p -m 644 Effect.hxx EffectBuilder.hxx EffectCullVisitor.hxx EffectGeode.hxx GLPredicate.hxx Pass.hxx Technique.hxx TextureBuilder.hxx mat.hxx matlib.hxx matmodel.hxx mipmap.hxx '/home/arnt/FG-git/install/simgear/include/simgear/scene/material'
+make[4]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/material'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/material'
+Making install in model
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/model'
+make[4]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/model'
+test -z "/home/arnt/FG-git/install/simgear/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/lib"
+ /usr/bin/install -c -p -m 644  libsgmodel.a '/home/arnt/FG-git/install/simgear/lib'
+ ( cd '/home/arnt/FG-git/install/simgear/lib' && ranlib libsgmodel.a )
+test -z "/home/arnt/FG-git/install/simgear/include/simgear/scene/model" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/include/simgear/scene/model"
+ /usr/bin/install -c -p -m 644 animation.hxx particles.hxx model.hxx modellib.hxx ModelRegistry.hxx persparam.hxx placement.hxx CheckSceneryVisitor.hxx ConditionNode.hxx SGClipGroup.hxx SGInteractionAnimation.hxx SGMaterialAnimation.hxx SGOffsetTransform.hxx SGPagedLOD.hxx SGReaderWriterXML.hxx SGReaderWriterXMLOptions.hxx SGRotateTransform.hxx SGScaleTransform.hxx SGTranslateTransform.hxx SGText.hxx '/home/arnt/FG-git/install/simgear/include/simgear/scene/model'
+make[4]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/model'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/model'
+Making install in sky
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/sky'
+make[4]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/sky'
+test -z "/home/arnt/FG-git/install/simgear/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/lib"
+ /usr/bin/install -c -p -m 644  libsgsky.a '/home/arnt/FG-git/install/simgear/lib'
+ ( cd '/home/arnt/FG-git/install/simgear/lib' && ranlib libsgsky.a )
+test -z "/home/arnt/FG-git/install/simgear/include/simgear/scene/sky" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/include/simgear/scene/sky"
+ /usr/bin/install -c -p -m 644 cloud.hxx dome.hxx moon.hxx oursun.hxx sky.hxx sphere.hxx stars.hxx cloudfield.hxx newcloud.hxx CloudShaderGeometry.hxx '/home/arnt/FG-git/install/simgear/include/simgear/scene/sky'
+make[4]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/sky'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/sky'
+Making install in tgdb
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/tgdb'
+make[4]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/tgdb'
+test -z "/home/arnt/FG-git/install/simgear/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/lib"
+ /usr/bin/install -c -p -m 644  libsgtgdb.a '/home/arnt/FG-git/install/simgear/lib'
+ ( cd '/home/arnt/FG-git/install/simgear/lib' && ranlib libsgtgdb.a )
+test -z "/home/arnt/FG-git/install/simgear/include/simgear/scene/tgdb" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/include/simgear/scene/tgdb"
+ /usr/bin/install -c -p -m 644 apt_signs.hxx obj.hxx pt_lights.hxx userdata.hxx ReaderWriterSTG.hxx SGVasiDrawable.hxx SGDirectionalLightBin.hxx SGLightBin.hxx SGOceanTile.hxx SGReaderWriterBTG.hxx SGReaderWriterBTGOptions.hxx SGTexturedTriangleBin.hxx SGTriangleBin.hxx SGVertexArrayBin.hxx GroundLightManager.hxx ShaderGeometry.hxx TileCache.hxx TileEntry.hxx '/home/arnt/FG-git/install/simgear/include/simgear/scene/tgdb'
+make[4]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/tgdb'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/tgdb'
+Making install in util
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/util'
+make[4]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/util'
+test -z "/home/arnt/FG-git/install/simgear/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/lib"
+ /usr/bin/install -c -p -m 644  libsgutil.a '/home/arnt/FG-git/install/simgear/lib'
+ ( cd '/home/arnt/FG-git/install/simgear/lib' && ranlib libsgutil.a )
+test -z "/home/arnt/FG-git/install/simgear/include/simgear/scene/util" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/include/simgear/scene/util"
+ /usr/bin/install -c -p -m 644 SGDebugDrawCallback.hxx SGEnlargeBoundingBox.hxx SGNodeMasks.hxx SGPickCallback.hxx SGSceneFeatures.hxx SGSceneUserData.hxx SGStateAttributeVisitor.hxx SGTextureStateAttributeVisitor.hxx SGUpdateVisitor.hxx CopyOp.hxx NodeAndDrawableVisitor.hxx PrimitiveUtils.hxx QuadTreeBuilder.hxx RenderConstants.hxx SplicingVisitor.hxx StateAttributeFactory.hxx UpdateOnceCallback.hxx VectorArrayAdapter.hxx '/home/arnt/FG-git/install/simgear/include/simgear/scene/util'
+make[4]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/util'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/scene/util'
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/scene'
+make[4]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/scene'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/scene'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/scene'
+make[2]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/scene'
+Making install in sound
+make[2]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/sound'
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/sound'
+test -z "/home/arnt/FG-git/install/simgear/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/lib"
+ /usr/bin/install -c -p -m 644  libsgsound.a '/home/arnt/FG-git/install/simgear/lib'
+ ( cd '/home/arnt/FG-git/install/simgear/lib' && ranlib libsgsound.a )
+test -z "/home/arnt/FG-git/install/simgear/include/simgear/sound" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/include/simgear/sound"
+ /usr/bin/install -c -p -m 644 soundmgr_openal.hxx sample_group.hxx sample_openal.hxx sample_queue.hxx xmlsound.hxx '/home/arnt/FG-git/install/simgear/include/simgear/sound'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/sound'
+make[2]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/sound'
+Making install in screen
+make[2]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/screen'
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/screen'
+test -z "/home/arnt/FG-git/install/simgear/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/lib"
+ /usr/bin/install -c -p -m 644  libsgscreen.a '/home/arnt/FG-git/install/simgear/lib'
+ ( cd '/home/arnt/FG-git/install/simgear/lib' && ranlib libsgscreen.a )
+test -z "/home/arnt/FG-git/install/simgear/include/simgear/screen" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/include/simgear/screen"
+ /usr/bin/install -c -p -m 644 jpgfactory.hxx screen-dump.hxx colors.hxx tr.h extensions.hxx '/home/arnt/FG-git/install/simgear/include/simgear/screen'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/screen'
+make[2]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/screen'
+Making install in threads
+make[2]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/threads'
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear/threads'
+test -z "/home/arnt/FG-git/install/simgear/lib" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/lib"
+ /usr/bin/install -c -p -m 644  libsgthreads.a '/home/arnt/FG-git/install/simgear/lib'
+ ( cd '/home/arnt/FG-git/install/simgear/lib' && ranlib libsgthreads.a )
+test -z "/home/arnt/FG-git/install/simgear/include/simgear/threads" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/include/simgear/threads"
+ /usr/bin/install -c -p -m 644 SGGuard.hxx SGQueue.hxx SGThread.hxx '/home/arnt/FG-git/install/simgear/include/simgear/threads'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/threads'
+make[2]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear/threads'
+make[2]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear'
+make[3]: Entering directory `/home/arnt/FG-git/simgear/simgear/simgear'
+make[3]: Nothing to be done for `install-exec-am'.
+test -z "/home/arnt/FG-git/install/simgear/include/simgear" || /bin/mkdir -p "/home/arnt/FG-git/install/simgear/include/simgear"
+ /usr/bin/install -c -p -m 644 compiler.h constants.h sg_inlines.h version.h '/home/arnt/FG-git/install/simgear/include/simgear'
+make[3]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear'
+make[2]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear'
+make[1]: Leaving directory `/home/arnt/FG-git/simgear/simgear/simgear'
+make[1]: Entering directory `/home/arnt/FG-git/simgear/simgear'
+make[2]: Entering directory `/home/arnt/FG-git/simgear/simgear'
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/home/arnt/FG-git/simgear/simgear'
+make[1]: Leaving directory `/home/arnt/FG-git/simgear/simgear'
+****************************************
+**************** FGFS ******************
+****************************************
+GIT FROM git://gitorious.org/fg/flightgear.git ...  OK
+MAKE FGFS
+make  -j2 
+Making all in tests
+make[1]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/tests'
+make[1]: Nothing to be done for `all'.
+make[1]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/tests'
+Making all in man
+make[1]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/man'
+make[1]: Nothing to be done for `all'.
+make[1]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/man'
+Making all in scripts
+make[1]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/scripts'
+Making all in debug
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/scripts/debug'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/scripts/debug'
+Making all in perl
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/scripts/perl'
+Making all in examples
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/scripts/perl/examples'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/scripts/perl/examples'
+Making all in traffic
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/scripts/perl/traffic'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/scripts/perl/traffic'
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/scripts/perl'
+make[3]: Nothing to be done for `all-am'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/scripts/perl'
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/scripts/perl'
+Making all in python
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/scripts/python'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/scripts/python'
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/scripts'
+make[2]: Nothing to be done for `all-am'.
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/scripts'
+make[1]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/scripts'
+Making all in src
+make[1]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src'
+Making all in Include
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Include'
+make  all-am
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Include'
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Include'
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Include'
+Making all in Aircraft
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Aircraft'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Aircraft'
+Making all in Airports
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Airports'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Airports'
+Making all in ATC
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/ATC'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/ATC'
+Making all in ATCDCL
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/ATCDCL'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/ATCDCL'
+Making all in Autopilot
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Autopilot'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Autopilot'
+Making all in Cockpit
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Cockpit'
+Making all in built_in
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Cockpit/built_in'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Cockpit/built_in'
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Cockpit'
+make[3]: Nothing to be done for `all-am'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Cockpit'
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Cockpit'
+Making all in Environment
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Environment'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Environment'
+Making all in FDM
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM'
+Making all in JSBSim
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim'
+Making all in initialization
+make[4]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/initialization'
+make[4]: Nothing to be done for `all'.
+make[4]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/initialization'
+Making all in models
+make[4]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models'
+Making all in atmosphere
+make[5]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models/atmosphere'
+make[5]: Nothing to be done for `all'.
+make[5]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models/atmosphere'
+Making all in propulsion
+make[5]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models/propulsion'
+make[5]: Nothing to be done for `all'.
+make[5]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models/propulsion'
+Making all in flight_control
+make[5]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models/flight_control'
+make[5]: Nothing to be done for `all'.
+make[5]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models/flight_control'
+make[5]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models'
+make[5]: Nothing to be done for `all-am'.
+make[5]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models'
+make[4]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models'
+Making all in input_output
+make[4]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/input_output'
+make[4]: Nothing to be done for `all'.
+make[4]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/input_output'
+Making all in math
+make[4]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/math'
+make[4]: Nothing to be done for `all'.
+make[4]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/math'
+make[4]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim'
+make[4]: Nothing to be done for `all-am'.
+make[4]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim'
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim'
+Making all in LaRCsim
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/LaRCsim'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/LaRCsim'
+Making all in UIUCModel
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/UIUCModel'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/UIUCModel'
+Making all in YASim
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/YASim'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/YASim'
+Making all in SP
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/SP'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/SP'
+Making all in ExternalNet
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/ExternalNet'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/ExternalNet'
+Making all in ExternalPipe
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/ExternalPipe'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/ExternalPipe'
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM'
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src/FDM/JSBSim  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/home/arnt/FG-git/install/OpenSceneGraph/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT flightProperties.o -MD -MP -MF .deps/flightProperties.Tpo -c -o flightProperties.o flightProperties.cxx
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src/FDM/JSBSim  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/home/arnt/FG-git/install/OpenSceneGraph/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT groundcache.o -MD -MP -MF .deps/groundcache.Tpo -c -o groundcache.o groundcache.cxx
+In file included from flightProperties.cxx:23:0:
+../../src/FDM/flightProperties.hxx:48:44: error: ‘NULL’ was not declared in this scope
+make[3]: *** [flightProperties.o] Error 1
+make[3]: *** Waiting for unfinished jobs....
+mv -f .deps/groundcache.Tpo .deps/groundcache.Po
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM'
+make[2]: *** [all-recursive] Error 1
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM'
+make[1]: *** [all-recursive] Error 1
+make[1]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src'
+make: *** [all-recursive] Error 1
+INSTALL FGFS
+Making install in tests
+make[1]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/tests'
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/tests'
+test -z "/home/arnt/FG-git/install/fgfs/bin" || /bin/mkdir -p "/home/arnt/FG-git/install/fgfs/bin"
+  /usr/bin/install -c -p  est-epsilon gl-info alcinfo '/home/arnt/FG-git/install/fgfs/bin'
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/tests'
+make[1]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/tests'
+Making install in man
+make[1]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/man'
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/man'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/home/arnt/FG-git/install/fgfs/share/man/man1" || /bin/mkdir -p "/home/arnt/FG-git/install/fgfs/share/man/man1"
+ /usr/bin/install -c -p -m 644 est-epsilon.1 fgfs.1 fgjs.1 gl-info.1 js_demo.1 pstest.1 '/home/arnt/FG-git/install/fgfs/share/man/man1'
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/man'
+make[1]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/man'
+Making install in scripts
+make[1]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/scripts'
+Making install in debug
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/scripts/debug'
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/scripts/debug'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/scripts/debug'
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/scripts/debug'
+Making install in perl
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/scripts/perl'
+Making install in examples
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/scripts/perl/examples'
+make[4]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/scripts/perl/examples'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/scripts/perl/examples'
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/scripts/perl/examples'
+Making install in traffic
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/scripts/perl/traffic'
+make[4]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/scripts/perl/traffic'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/scripts/perl/traffic'
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/scripts/perl/traffic'
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/scripts/perl'
+make[4]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/scripts/perl'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/scripts/perl'
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/scripts/perl'
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/scripts/perl'
+Making install in python
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/scripts/python'
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/scripts/python'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/scripts/python'
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/scripts/python'
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/scripts'
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/scripts'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/scripts'
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/scripts'
+make[1]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/scripts'
+Making install in src
+make[1]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src'
+Making install in Include
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Include'
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Include'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Include'
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Include'
+Making install in Aircraft
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Aircraft'
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Aircraft'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Aircraft'
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Aircraft'
+Making install in Airports
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Airports'
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Airports'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Airports'
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Airports'
+Making install in ATC
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/ATC'
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/ATC'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/ATC'
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/ATC'
+Making install in ATCDCL
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/ATCDCL'
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/ATCDCL'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/ATCDCL'
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/ATCDCL'
+Making install in Autopilot
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Autopilot'
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Autopilot'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Autopilot'
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Autopilot'
+Making install in Cockpit
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Cockpit'
+Making install in built_in
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Cockpit/built_in'
+make[4]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Cockpit/built_in'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Cockpit/built_in'
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Cockpit/built_in'
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Cockpit'
+make[4]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Cockpit'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Cockpit'
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Cockpit'
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Cockpit'
+Making install in Environment
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Environment'
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Environment'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Environment'
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Environment'
+Making install in FDM
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM'
+Making install in JSBSim
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim'
+Making install in initialization
+make[4]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/initialization'
+make[5]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/initialization'
+make[5]: Nothing to be done for `install-exec-am'.
+make[5]: Nothing to be done for `install-data-am'.
+make[5]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/initialization'
+make[4]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/initialization'
+Making install in models
+make[4]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models'
+Making install in atmosphere
+make[5]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models/atmosphere'
+make[6]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models/atmosphere'
+make[6]: Nothing to be done for `install-exec-am'.
+make[6]: Nothing to be done for `install-data-am'.
+make[6]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models/atmosphere'
+make[5]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models/atmosphere'
+Making install in propulsion
+make[5]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models/propulsion'
+make[6]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models/propulsion'
+make[6]: Nothing to be done for `install-exec-am'.
+make[6]: Nothing to be done for `install-data-am'.
+make[6]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models/propulsion'
+make[5]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models/propulsion'
+Making install in flight_control
+make[5]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models/flight_control'
+make[6]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models/flight_control'
+make[6]: Nothing to be done for `install-exec-am'.
+make[6]: Nothing to be done for `install-data-am'.
+make[6]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models/flight_control'
+make[5]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models/flight_control'
+make[5]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models'
+make[6]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models'
+make[6]: Nothing to be done for `install-exec-am'.
+make[6]: Nothing to be done for `install-data-am'.
+make[6]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models'
+make[5]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models'
+make[4]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models'
+Making install in input_output
+make[4]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/input_output'
+make[5]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/input_output'
+make[5]: Nothing to be done for `install-exec-am'.
+make[5]: Nothing to be done for `install-data-am'.
+make[5]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/input_output'
+make[4]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/input_output'
+Making install in math
+make[4]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/math'
+make[5]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/math'
+make[5]: Nothing to be done for `install-exec-am'.
+make[5]: Nothing to be done for `install-data-am'.
+make[5]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/math'
+make[4]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/math'
+make[4]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim'
+make[5]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim'
+make[5]: Nothing to be done for `install-exec-am'.
+make[5]: Nothing to be done for `install-data-am'.
+make[5]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim'
+make[4]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim'
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim'
+Making install in LaRCsim
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/LaRCsim'
+make[4]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/LaRCsim'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/LaRCsim'
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/LaRCsim'
+Making install in UIUCModel
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/UIUCModel'
+make[4]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/UIUCModel'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/UIUCModel'
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/UIUCModel'
+Making install in YASim
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/YASim'
+make[4]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/YASim'
+test -z "/home/arnt/FG-git/install/fgfs/bin" || /bin/mkdir -p "/home/arnt/FG-git/install/fgfs/bin"
+  /usr/bin/install -c -p  yasim '/home/arnt/FG-git/install/fgfs/bin'
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/YASim'
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/YASim'
+Making install in SP
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/SP'
+make[4]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/SP'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/SP'
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/SP'
+Making install in ExternalNet
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/ExternalNet'
+make[4]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/ExternalNet'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/ExternalNet'
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/ExternalNet'
+Making install in ExternalPipe
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/ExternalPipe'
+make[4]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/ExternalPipe'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/ExternalPipe'
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/ExternalPipe'
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM'
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src/FDM/JSBSim  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/home/arnt/FG-git/install/OpenSceneGraph/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT flightProperties.o -MD -MP -MF .deps/flightProperties.Tpo -c -o flightProperties.o flightProperties.cxx
+In file included from flightProperties.cxx:23:0:
+../../src/FDM/flightProperties.hxx:48:44: error: ‘NULL’ was not declared in this scope
+make[3]: *** [flightProperties.o] Error 1
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM'
+make[2]: *** [install-recursive] Error 1
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM'
+make[1]: *** [install-recursive] Error 1
+make[1]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src'
+make: *** [install-recursive] Error 1
+****************************************
+**************** FGRUN *****************
+****************************************
+SVN FROM http://fgrun.svn.sourceforge.net/svnroot/fgrun ...  OK
+MAKE FGRUN
+make  -j2 
+CDPATH="${ZSH_VERSION+.}:" && cd . && /bin/sh /home/arnt/FG-git/fgrun/fgrun/missing --run aclocal-1.11 -I m4
+CDPATH="${ZSH_VERSION+.}:" && cd . && /bin/sh /home/arnt/FG-git/fgrun/fgrun/missing --run autoconf
+ cd . && /bin/sh /home/arnt/FG-git/fgrun/fgrun/missing --run automake-1.11 --gnu
+/bin/sh ./config.status --recheck
+running CONFIG_SHELL=/bin/sh /bin/sh ./configure --prefix=/home/arnt/FG-git/install/fgrun --exec-prefix=/home/arnt/FG-git/install/fgrun --with-osg=/home/arnt/FG-git/install/OpenSceneGraph --with-simgear=/home/arnt/FG-git/install/simgear CPPFLAGS=-I/home/arnt/FG-git/install/plib/include LDFLAGS=-L/home/arnt/FG-git/install/plib/lib --no-create --no-recursion
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking target system type... x86_64-unknown-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make sets $(MAKE)... (cached) yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for style of include used by make... GNU
+checking dependency style of gcc... gcc3
+checking how to run the C preprocessor... gcc -E
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... gcc3
+checking how to run the C++ preprocessor... g++ -E
+checking for ranlib... ranlib
+checking whether ln -s works... yes
+checking for boostlib >= 1.34.0... yes
+checking for cos in -lm... yes
+checking for an ANSI C-conforming const... yes
+checking for X... libraries , headers 
+checking for gethostbyname... yes
+checking for connect... yes
+checking for remove... yes
+checking for shmat... yes
+checking for IceConnectionNumber in -lICE... yes
+checking for XCreateWindow in -lX11... yes
+checking for XShmCreateImage in -lXext... yes
+checking for XGetExtensionVersion in -lXi... yes
+checking for IceOpenConnection in -lICE... yes
+checking for SmcOpenConnection in -lSM... yes
+checking for XtMalloc in -lXt... yes
+checking for XmuLookupStandardColormap in -lXmu... no
+checking for library containing glNewList... -lGL
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking whether time.h and sys/time.h may both be included... yes
+checking for sys/wait.h that is POSIX.1 compatible... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking libutil.h usability... no
+checking libutil.h presence... no
+checking for libutil.h... no
+checking pty.h usability... yes
+checking pty.h presence... yes
+checking for pty.h... yes
+checking termios.h usability... yes
+checking termios.h presence... yes
+checking for termios.h... yes
+checking utmp.h usability... yes
+checking utmp.h presence... yes
+checking for utmp.h... yes
+checking util.h usability... no
+checking util.h presence... no
+checking for util.h... no
+checking windows.h usability... no
+checking windows.h presence... no
+checking for windows.h... no
+checking zlib.h usability... yes
+checking zlib.h presence... yes
+checking for zlib.h... yes
+checking for gzopen in -lz... yes
+osg prefix is /home/arnt/FG-git/install/OpenSceneGraph
+SimGear prefix path is /home/arnt/FG-git/install/simgear
+checking for extra include and lib directories...
+   + found /home/arnt/FG-git/install/fgrun/bin
+   + found /home/arnt/FG-git/install/OpenSceneGraph/include
+   + found /home/arnt/FG-git/install/OpenSceneGraph/lib
+   + found /home/arnt/FG-git/install/OpenSceneGraph/bin
+   + found /home/arnt/FG-git/install/simgear/include
+   + found /home/arnt/FG-git/install/simgear/lib
+checking simgear/props/props_io.hxx usability... yes
+checking simgear/props/props_io.hxx presence... yes
+checking for simgear/props/props_io.hxx... yes
+checking for size_t... yes
+checking for pid_t... yes
+checking return type of signal handlers... void
+checking for strdup... yes
+checking for strlcat... no
+checking for strlcpy... no
+checking vfork.h usability... no
+checking vfork.h presence... no
+checking for vfork.h... no
+checking for fork... yes
+checking for vfork... yes
+checking for working fork... yes
+checking for working vfork... (cached) yes
+checking for waitpid... yes
+checking for openpty... no
+checking for openpty in -lutil... yes
+checking for forkpty... yes
+checking for login_tty... yes
+checking for _getpty... no
+checking for grantpt... yes
+checking for unlockpt... yes
+checking for /dev/ptmx... yes
+checking for /dev/ptc... no
+checking FL/Fl.H usability... yes
+checking FL/Fl.H presence... yes
+checking for FL/Fl.H... yes
+checking for pthread_create in -lpthread... yes
+checking for XineramaIsActive in -lXinerama... yes
+checking for XftFontOpen in -lfltk... yes
+checking for gl_start in -lfltk_gl... yes
+checking osg/Version usability... yes
+checking osg/Version presence... yes
+checking for osg/Version... yes
+checking for OpenThreadsGetVersion in -lOpenThreads... yes
+checking for osgGetVersion in -losg... yes
+checking for osgUtilGetVersion in -losgUtil... yes
+checking for osgDBGetVersion in -losgDB... yes
+checking for osgTextGetVersion in -losgText... yes
+checking for osgGAGetVersion in -losgGA... yes
+checking for osgViewerGetVersion in -losgViewer... yes
+checking for osgSimGetVersion in -losgSim... yes
+checking for osgParticleGetVersion in -losgParticle... yes
+checking whether NLS is requested... yes
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for ld used by GCC... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for shared library run path origin... done
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyCurrent... no
+checking for GNU gettext in libc... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+configure: creating ./config.status
+ /bin/sh ./config.status
+config.status: creating po/Makefile.in
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating src/config.h
+config.status: executing depfiles commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+Making all in src
+make[1]: Entering directory `/home/arnt/FG-git/fgrun/fgrun/src'
+(CDPATH="${ZSH_VERSION+.}:" && cd .. && /bin/sh /home/arnt/FG-git/fgrun/fgrun/missing --run autoheader)
+rm -f stamp-h1
+touch config.h.in
+make  all-am
+make[2]: Entering directory `/home/arnt/FG-git/fgrun/fgrun/src'
+cd .. && /bin/sh ./config.status src/config.h
+g++ -DHAVE_CONFIG_H -I.   -I/home/arnt/FG-git/install/simgear -I/home/arnt/FG-git/install/plib/include  -I/home/arnt/FG-git/install/OpenSceneGraph/include -I/home/arnt/FG-git/install/simgear/include -DLOCALEDIR=\"/home/arnt/FG-git/install/fgrun/share/locale\" -g -O2 -MT parkingloader.o -MD -MP -MF .deps/parkingloader.Tpo -c -o parkingloader.o parkingloader.cxx
+config.status: creating src/config.h
+g++ -DHAVE_CONFIG_H -I.   -I/home/arnt/FG-git/install/simgear -I/home/arnt/FG-git/install/plib/include  -I/home/arnt/FG-git/install/OpenSceneGraph/include -I/home/arnt/FG-git/install/simgear/include -DLOCALEDIR=\"/home/arnt/FG-git/install/fgrun/share/locale\" -g -O2 -MT wizard.o -MD -MP -MF .deps/wizard.Tpo -c -o wizard.o wizard.cxx
+mv -f .deps/parkingloader.Tpo .deps/parkingloader.Po
+g++ -DHAVE_CONFIG_H -I.   -I/home/arnt/FG-git/install/simgear -I/home/arnt/FG-git/install/plib/include  -I/home/arnt/FG-git/install/OpenSceneGraph/include -I/home/arnt/FG-git/install/simgear/include -DLOCALEDIR=\"/home/arnt/FG-git/install/fgrun/share/locale\" -g -O2 -MT wizard_funcs.o -MD -MP -MF .deps/wizard_funcs.Tpo -c -o wizard_funcs.o wizard_funcs.cxx
+mv -f .deps/wizard.Tpo .deps/wizard.Po
+g++ -DHAVE_CONFIG_H -I.   -I/home/arnt/FG-git/install/simgear -I/home/arnt/FG-git/install/plib/include  -I/home/arnt/FG-git/install/OpenSceneGraph/include -I/home/arnt/FG-git/install/simgear/include -DLOCALEDIR=\"/home/arnt/FG-git/install/fgrun/share/locale\" -g -O2 -MT advanced.o -MD -MP -MF .deps/advanced.Tpo -c -o advanced.o advanced.cxx
+mv -f .deps/advanced.Tpo .deps/advanced.Po
+g++ -DHAVE_CONFIG_H -I.   -I/home/arnt/FG-git/install/simgear -I/home/arnt/FG-git/install/plib/include  -I/home/arnt/FG-git/install/OpenSceneGraph/include -I/home/arnt/FG-git/install/simgear/include -DLOCALEDIR=\"/home/arnt/FG-git/install/fgrun/share/locale\" -g -O2 -MT advanced_funcs.o -MD -MP -MF .deps/advanced_funcs.Tpo -c -o advanced_funcs.o advanced_funcs.cxx
+mv -f .deps/advanced_funcs.Tpo .deps/advanced_funcs.Po
+g++ -DHAVE_CONFIG_H -I.   -I/home/arnt/FG-git/install/simgear -I/home/arnt/FG-git/install/plib/include  -I/home/arnt/FG-git/install/OpenSceneGraph/include -I/home/arnt/FG-git/install/simgear/include -DLOCALEDIR=\"/home/arnt/FG-git/install/fgrun/share/locale\" -g -O2 -MT AirportBrowser.o -MD -MP -MF .deps/AirportBrowser.Tpo -c -o AirportBrowser.o AirportBrowser.cxx
+mv -f .deps/wizard_funcs.Tpo .deps/wizard_funcs.Po
+g++ -DHAVE_CONFIG_H -I.   -I/home/arnt/FG-git/install/simgear -I/home/arnt/FG-git/install/plib/include  -I/home/arnt/FG-git/install/OpenSceneGraph/include -I/home/arnt/FG-git/install/simgear/include -DLOCALEDIR=\"/home/arnt/FG-git/install/fgrun/share/locale\" -g -O2 -MT AirportTable.o -MD -MP -MF .deps/AirportTable.Tpo -c -o AirportTable.o AirportTable.cxx
+mv -f .deps/AirportTable.Tpo .deps/AirportTable.Po
+g++ -DHAVE_CONFIG_H -I.   -I/home/arnt/FG-git/install/simgear -I/home/arnt/FG-git/install/plib/include  -I/home/arnt/FG-git/install/OpenSceneGraph/include -I/home/arnt/FG-git/install/simgear/include -DLOCALEDIR=\"/home/arnt/FG-git/install/fgrun/share/locale\" -g -O2 -MT main.o -MD -MP -MF .deps/main.Tpo -c -o main.o main.cxx
+mv -f .deps/AirportBrowser.Tpo .deps/AirportBrowser.Po
+g++ -DHAVE_CONFIG_H -I.   -I/home/arnt/FG-git/install/simgear -I/home/arnt/FG-git/install/plib/include  -I/home/arnt/FG-git/install/OpenSceneGraph/include -I/home/arnt/FG-git/install/simgear/include -DLOCALEDIR=\"/home/arnt/FG-git/install/fgrun/share/locale\" -g -O2 -MT io.o -MD -MP -MF .deps/io.Tpo -c -o io.o io.cxx
+mv -f .deps/io.Tpo .deps/io.Po
+g++ -DHAVE_CONFIG_H -I.   -I/home/arnt/FG-git/install/simgear -I/home/arnt/FG-git/install/plib/include  -I/home/arnt/FG-git/install/OpenSceneGraph/include -I/home/arnt/FG-git/install/simgear/include -DLOCALEDIR=\"/home/arnt/FG-git/install/fgrun/share/locale\" -g -O2 -MT fgfsrc.o -MD -MP -MF .deps/fgfsrc.Tpo -c -o fgfsrc.o fgfsrc.cxx
+mv -f .deps/main.Tpo .deps/main.Po
+g++ -DHAVE_CONFIG_H -I.   -I/home/arnt/FG-git/install/simgear -I/home/arnt/FG-git/install/plib/include  -I/home/arnt/FG-git/install/OpenSceneGraph/include -I/home/arnt/FG-git/install/simgear/include -DLOCALEDIR=\"/home/arnt/FG-git/install/fgrun/share/locale\" -g -O2 -MT logwin.o -MD -MP -MF .deps/logwin.Tpo -c -o logwin.o logwin.cxx
+mv -f .deps/logwin.Tpo .deps/logwin.Po
+g++ -DHAVE_CONFIG_H -I.   -I/home/arnt/FG-git/install/simgear -I/home/arnt/FG-git/install/plib/include  -I/home/arnt/FG-git/install/OpenSceneGraph/include -I/home/arnt/FG-git/install/simgear/include -DLOCALEDIR=\"/home/arnt/FG-git/install/fgrun/share/locale\" -g -O2 -MT settings.o -MD -MP -MF .deps/settings.Tpo -c -o settings.o settings.cxx
+mv -f .deps/settings.Tpo .deps/settings.Po
+g++ -DHAVE_CONFIG_H -I.   -I/home/arnt/FG-git/install/simgear -I/home/arnt/FG-git/install/plib/include  -I/home/arnt/FG-git/install/OpenSceneGraph/include -I/home/arnt/FG-git/install/simgear/include -DLOCALEDIR=\"/home/arnt/FG-git/install/fgrun/share/locale\" -g -O2 -MT util.o -MD -MP -MF .deps/util.Tpo -c -o util.o util.cxx
+mv -f .deps/util.Tpo .deps/util.Po
+g++ -DHAVE_CONFIG_H -I.   -I/home/arnt/FG-git/install/simgear -I/home/arnt/FG-git/install/plib/include  -I/home/arnt/FG-git/install/OpenSceneGraph/include -I/home/arnt/FG-git/install/simgear/include -DLOCALEDIR=\"/home/arnt/FG-git/install/fgrun/share/locale\" -g -O2 -MT run_posix.o -MD -MP -MF .deps/run_posix.Tpo -c -o run_posix.o run_posix.cxx
+mv -f .deps/fgfsrc.Tpo .deps/fgfsrc.Po
+g++ -DHAVE_CONFIG_H -I.   -I/home/arnt/FG-git/install/simgear -I/home/arnt/FG-git/install/plib/include  -I/home/arnt/FG-git/install/OpenSceneGraph/include -I/home/arnt/FG-git/install/simgear/include -DLOCALEDIR=\"/home/arnt/FG-git/install/fgrun/share/locale\" -g -O2 -MT fgrun_pty.o -MD -MP -MF .deps/fgrun_pty.Tpo -c -o fgrun_pty.o fgrun_pty.cxx
+mv -f .deps/fgrun_pty.Tpo .deps/fgrun_pty.Po
+mv -f .deps/run_posix.Tpo .deps/run_posix.Po
+g++ -DLOCALEDIR=\"/home/arnt/FG-git/install/fgrun/share/locale\" -g -O2  -L/home/arnt/FG-git/install/plib/lib  -L/home/arnt/FG-git/install/OpenSceneGraph/lib -L/home/arnt/FG-git/install/simgear/lib -o fgrun wizard.o wizard_funcs.o advanced.o advanced_funcs.o AirportBrowser.o AirportTable.o Fl_Table.o Fl_Table_Row.o Fl_OSG.o Fl_Heading_Dial.o main.o io.o fgfsrc.o logwin.o parkingloader.o settings.o util.o run_posix.o fgrun_pty.o -lsgmodel -lsgscreen -lsgprops -lsgxml -lsgdebug -lsgbvh -lsgmaterial -lsgmodel -lsgutil -lsgstructure -lsgprops -lsgtgdb -lsgmath -lsgmisc -lsgbvh -lsgio -lsgbucket -lsgmodel -lsgutil -losgParticle -losgSim -losgViewer -losgGA -losgText -losgDB -losgUtil -losg -lOpenThreads -lfltk_gl  -lfltk -lXft -lXinerama -lpthread -lGL -lXt -lSM -lICE -lXi -lXext -lX11  -lm -lz -lutil -losgFX
+make[2]: Leaving directory `/home/arnt/FG-git/fgrun/fgrun/src'
+make[1]: Leaving directory `/home/arnt/FG-git/fgrun/fgrun/src'
+Making all in po
+make[1]: Entering directory `/home/arnt/FG-git/fgrun/fgrun/po'
+test ! -f ./fgrun.pot || \
+	  test -z "fr.gmo nl.gmo pt.gmo de.gmo it.gmo pl.gmo es.gmo" || make fr.gmo nl.gmo pt.gmo de.gmo it.gmo pl.gmo es.gmo
+make[2]: Entering directory `/home/arnt/FG-git/fgrun/fgrun/po'
+rm -f fr.gmo && /usr/bin/msgfmt -c --statistics -o fr.gmo fr.po
+rm -f nl.gmo && /usr/bin/msgfmt -c --statistics -o nl.gmo nl.po
+rm -f pt.gmo && /usr/bin/msgfmt -c --statistics -o pt.gmo pt.po
+rm -f de.gmo && /usr/bin/msgfmt -c --statistics -o de.gmo de.po
+rm -f it.gmo && /usr/bin/msgfmt -c --statistics -o it.gmo it.po
+rm -f pl.gmo && /usr/bin/msgfmt -c --statistics -o pl.gmo pl.po
+rm -f es.gmo && /usr/bin/msgfmt -c --statistics -o es.gmo es.po
+make[2]: Leaving directory `/home/arnt/FG-git/fgrun/fgrun/po'
+touch stamp-po
+make[1]: Leaving directory `/home/arnt/FG-git/fgrun/fgrun/po'
+make[1]: Entering directory `/home/arnt/FG-git/fgrun/fgrun'
+make[1]: Nothing to be done for `all-am'.
+make[1]: Leaving directory `/home/arnt/FG-git/fgrun/fgrun'
+INSTALL FGRUN
+Making install in src
+make[1]: Entering directory `/home/arnt/FG-git/fgrun/fgrun/src'
+make  install-am
+make[2]: Entering directory `/home/arnt/FG-git/fgrun/fgrun/src'
+make[3]: Entering directory `/home/arnt/FG-git/fgrun/fgrun/src'
+test -z "/home/arnt/FG-git/install/fgrun/bin" || /bin/mkdir -p "/home/arnt/FG-git/install/fgrun/bin"
+  /usr/bin/install -c fgrun '/home/arnt/FG-git/install/fgrun/bin'
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgrun/fgrun/src'
+make[2]: Leaving directory `/home/arnt/FG-git/fgrun/fgrun/src'
+make[1]: Leaving directory `/home/arnt/FG-git/fgrun/fgrun/src'
+Making install in po
+make[1]: Entering directory `/home/arnt/FG-git/fgrun/fgrun/po'
+/bin/mkdir -p /home/arnt/FG-git/install/fgrun/share
+installing fr.gmo as /home/arnt/FG-git/install/fgrun/share/locale/fr/LC_MESSAGES/fgrun.mo
+installing nl.gmo as /home/arnt/FG-git/install/fgrun/share/locale/nl/LC_MESSAGES/fgrun.mo
+installing pt.gmo as /home/arnt/FG-git/install/fgrun/share/locale/pt/LC_MESSAGES/fgrun.mo
+installing de.gmo as /home/arnt/FG-git/install/fgrun/share/locale/de/LC_MESSAGES/fgrun.mo
+installing it.gmo as /home/arnt/FG-git/install/fgrun/share/locale/it/LC_MESSAGES/fgrun.mo
+installing pl.gmo as /home/arnt/FG-git/install/fgrun/share/locale/pl/LC_MESSAGES/fgrun.mo
+installing es.gmo as /home/arnt/FG-git/install/fgrun/share/locale/es/LC_MESSAGES/fgrun.mo
+if test "fgrun" = "gettext-tools"; then \
+	  /bin/mkdir -p /home/arnt/FG-git/install/fgrun/share/gettext/po; \
+	  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+	    /usr/bin/install -c -m 644 ./$file \
+			    /home/arnt/FG-git/install/fgrun/share/gettext/po/$file; \
+	  done; \
+	  for file in Makevars; do \
+	    rm -f /home/arnt/FG-git/install/fgrun/share/gettext/po/$file; \
+	  done; \
+	else \
+	  : ; \
+	fi
+make[1]: Leaving directory `/home/arnt/FG-git/fgrun/fgrun/po'
+make[1]: Entering directory `/home/arnt/FG-git/fgrun/fgrun'
+make[2]: Entering directory `/home/arnt/FG-git/fgrun/fgrun'
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/home/arnt/FG-git/fgrun/fgrun'
+make[1]: Leaving directory `/home/arnt/FG-git/fgrun/fgrun'
+****************************************
+**************** FGCOM *****************
+****************************************
+SVN FROM https://appfgcom.svn.sourceforge.net/svnroot/fgcom/trunk ...  OK
+MAKE FGCOM
+make  -j2 
+Makefile:34: *** missing separator.  Stop.
+INSTALL FGCOM
+Makefile:34: *** missing separator.  Stop.
+****************************************
+*************** FGCOMGUI ***************
+****************************************
+SVN FROM https://fgcomgui.googlecode.com/svn/trunk ...  OK
+SCONS FGCOMGUI
+scons prefix="/home/arnt/FG-git/install/fgcomgui"  -j2 
+scons: Reading SConscript files ...
+
+scons: warning: BuildDir() and the build_dir keyword have been deprecated;
+	use VariantDir() and the variant_dir keyword instead.
+File "/home/arnt/FG-git/fgcomgui/SConstruct", line 57, in <module>
+scons: done reading SConscript files.
+scons: Building targets ...
+scons: `linux/fgcomgui' is up to date.
+scons: done building targets.
+INSTALL FGCOM
+scons: Reading SConscript files ...
+
+scons: warning: BuildDir() and the build_dir keyword have been deprecated;
+	use VariantDir() and the variant_dir keyword instead.
+File "/home/arnt/FG-git/fgcomgui/SConstruct", line 57, in <module>
+scons: done reading SConscript files.
+scons: Building targets ...
+scons: `install' is up to date.
+scons: done building targets.
+****************************************
+**************** ATLAS *****************
+****************************************
+CSV FROM atlas.cvs.sourceforge.net:/cvsroot/atlas ...  OK
+MAKE ATLAS
+make  -j2 
+Making all in src
+make[1]: Entering directory `/home/arnt/FG-git/Atlas/src'
+make  all-recursive
+make[2]: Entering directory `/home/arnt/FG-git/Atlas/src'
+Making all in data
+make[3]: Entering directory `/home/arnt/FG-git/Atlas/src/data'
+Making all in Fonts
+make[4]: Entering directory `/home/arnt/FG-git/Atlas/src/data/Fonts'
+make[4]: Nothing to be done for `all'.
+make[4]: Leaving directory `/home/arnt/FG-git/Atlas/src/data/Fonts'
+Making all in Palettes
+make[4]: Entering directory `/home/arnt/FG-git/Atlas/src/data/Palettes'
+make[4]: Nothing to be done for `all'.
+make[4]: Leaving directory `/home/arnt/FG-git/Atlas/src/data/Palettes'
+make[4]: Entering directory `/home/arnt/FG-git/Atlas/src/data'
+make[4]: Nothing to be done for `all-am'.
+make[4]: Leaving directory `/home/arnt/FG-git/Atlas/src/data'
+make[3]: Leaving directory `/home/arnt/FG-git/Atlas/src/data'
+make[3]: Entering directory `/home/arnt/FG-git/Atlas/src'
+g++  -I/home/arnt/FG-git/OpenSceneGraph/include -DFGBASE_DIR='"/home/arnt/FG-git/install/fgfs/fgdata"'  -L/home/arnt/FG-git/install/plib/lib -L/usr/local//lib -o Atlas Notifications.o Atlas.o FlightTrack.o Image.o Overlays.o AirportsOverlay.o AirwaysOverlay.o FixesOverlay.o NavaidsOverlay.o FlightTracksOverlay.o CrosshairsOverlay.o Tiles.o Searcher.o Search.o Preferences.o Graphs.o Culler.o Scenery.o Cache.o LayoutManager.o Bucket.o Subbucket.o Palette.o misc.o Globals.o Geographics.o -lsgmagvar -lsgtiming -lsgmisc -lsgio -lsgserial -lsgdebug -lsgbucket -lsgstructure -lsgmath -lplibsg -lplibpuaux -lplibpu -lplibul -lplibfnt -lplibnet -lglut -lGLU -lGL -lXmu -lXt -lSM -lICE -lXi -lXext -lX11 -lpthread -lrt -lm  -lpng -lz -ljpeg -lplibul -lrt -lm 
+g++  -I/home/arnt/FG-git/OpenSceneGraph/include -DFGBASE_DIR='"/home/arnt/FG-git/install/fgfs/fgdata"'  -L/home/arnt/FG-git/install/plib/lib -L/usr/local//lib -o Map Map.o Tiles.o TileMapper.o Bucket.o Subbucket.o Palette.o Image.o misc.o -lsgmagvar -lsgtiming -lsgmisc -lsgio -lsgdebug -lsgbucket -lsgstructure -lsgmath -lplibfnt -lplibsg -lglut -lGLU -lGL -lXmu -lXt -lSM -lICE -lXi -lXext -lX11 -lpthread -lrt -lm  -lpng -lz -ljpeg -lplibul -lrt -lm 
+/usr/bin/ld: error: cannot find -lXmu
+collect2: ld returned 1 exit status
+make[3]: *** [Map] Error 1
+make[3]: *** Waiting for unfinished jobs....
+/usr/bin/ld: error: cannot find -lXmu
+collect2: ld returned 1 exit status
+make[3]: *** [Atlas] Error 1
+make[3]: Leaving directory `/home/arnt/FG-git/Atlas/src'
+make[2]: *** [all-recursive] Error 1
+make[2]: Leaving directory `/home/arnt/FG-git/Atlas/src'
+make[1]: *** [all] Error 2
+make[1]: Leaving directory `/home/arnt/FG-git/Atlas/src'
+make: *** [all-recursive] Error 1
+INSTALL ATLAS
+Making install in src
+make[1]: Entering directory `/home/arnt/FG-git/Atlas/src'
+Making install in data
+make[2]: Entering directory `/home/arnt/FG-git/Atlas/src/data'
+Making install in Fonts
+make[3]: Entering directory `/home/arnt/FG-git/Atlas/src/data/Fonts'
+make[4]: Entering directory `/home/arnt/FG-git/Atlas/src/data/Fonts'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/home/arnt/FG-git/Atlas/src/data/Fonts'
+make[3]: Leaving directory `/home/arnt/FG-git/Atlas/src/data/Fonts'
+Making install in Palettes
+make[3]: Entering directory `/home/arnt/FG-git/Atlas/src/data/Palettes'
+make[4]: Entering directory `/home/arnt/FG-git/Atlas/src/data/Palettes'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/home/arnt/FG-git/Atlas/src/data/Palettes'
+make[3]: Leaving directory `/home/arnt/FG-git/Atlas/src/data/Palettes'
+make[3]: Entering directory `/home/arnt/FG-git/Atlas/src/data'
+make[4]: Entering directory `/home/arnt/FG-git/Atlas/src/data'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/home/arnt/FG-git/Atlas/src/data'
+make[3]: Leaving directory `/home/arnt/FG-git/Atlas/src/data'
+make[2]: Leaving directory `/home/arnt/FG-git/Atlas/src/data'
+make[2]: Entering directory `/home/arnt/FG-git/Atlas/src'
+g++  -I/home/arnt/FG-git/OpenSceneGraph/include -DFGBASE_DIR='"/home/arnt/FG-git/install/fgfs/fgdata"'  -L/home/arnt/FG-git/install/plib/lib -L/usr/local//lib -o Atlas Notifications.o Atlas.o FlightTrack.o Image.o Overlays.o AirportsOverlay.o AirwaysOverlay.o FixesOverlay.o NavaidsOverlay.o FlightTracksOverlay.o CrosshairsOverlay.o Tiles.o Searcher.o Search.o Preferences.o Graphs.o Culler.o Scenery.o Cache.o LayoutManager.o Bucket.o Subbucket.o Palette.o misc.o Globals.o Geographics.o -lsgmagvar -lsgtiming -lsgmisc -lsgio -lsgserial -lsgdebug -lsgbucket -lsgstructure -lsgmath -lplibsg -lplibpuaux -lplibpu -lplibul -lplibfnt -lplibnet -lglut -lGLU -lGL -lXmu -lXt -lSM -lICE -lXi -lXext -lX11 -lpthread -lrt -lm  -lpng -lz -ljpeg -lplibul -lrt -lm 
+/usr/bin/ld: error: cannot find -lXmu
+collect2: ld returned 1 exit status
+make[2]: *** [Atlas] Error 1
+make[2]: Leaving directory `/home/arnt/FG-git/Atlas/src'
+make[1]: *** [install-recursive] Error 1
+make[1]: Leaving directory `/home/arnt/FG-git/Atlas/src'
+make: *** [install-recursive] Error 1
