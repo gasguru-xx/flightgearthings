@@ -1,0 +1,27 @@
+./download_and_compile.sh FGCOM
+APT_GET_UPDATE=n
+DOWNLOAD_PACKAGES=n
+COMPILE=y
+RECONFIGURE=y
+DOWNLOAD=y
+JOPTION= -j2 
+DEBUG=
+***********************************
+DEBIAN I SUPPOUSE
+***********************************
+DIRECTORY= /home/arnt/FG-git
+***********************************
+****************************************
+*..we use system's OSG-2.9.11-1. ;o) ***
+****************************************
+2011-04-10+17:50:17-UTC
+****************************************
+**************** FGCOM *****************
+****************************************
+2011-04-10+17:50:17-UTC
+SVN FROM https://appfgcom.svn.sourceforge.net/svnroot/fgcom/trunk ...  OK
+MAKE FGCOM
+make  -j2 
+Makefile:34: *** missing separator.  Stop.
+INSTALL FGCOM
+Makefile:34: *** missing separator.  Stop.

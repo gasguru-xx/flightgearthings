@@ -1,0 +1,257 @@
+./download_and_compile.sh FGRUN
+APT_GET_UPDATE=n
+DOWNLOAD_PACKAGES=n
+COMPILE=y
+RECONFIGURE=y
+DOWNLOAD=y
+JOPTION= -j2 
+DEBUG=
+***********************************
+DEBIAN I SUPPOUSE
+***********************************
+DIRECTORY= /home/arnt/FG-git
+***********************************
+****************************************
+*..we use system's OSG-2.9.11-1. ;o) ***
+****************************************
+2011-04-10+17:48:38-UTC
+****************************************
+**************** FGRUN *****************
+****************************************
+2011-04-10+17:48:38-UTC
+SVN FROM http://fgrun.svn.sourceforge.net/svnroot/fgrun ...  OK
+AUTOGEN FGRUN
+CONFIGURE FGRUN
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking target system type... x86_64-unknown-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make sets $(MAKE)... (cached) yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for style of include used by make... GNU
+checking dependency style of gcc... gcc3
+checking how to run the C preprocessor... gcc -E
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... gcc3
+checking how to run the C++ preprocessor... g++ -E
+checking for ranlib... ranlib
+checking whether ln -s works... yes
+checking for boostlib >= 1.34.0... yes
+checking for cos in -lm... yes
+checking for an ANSI C-conforming const... yes
+checking for X... libraries , headers 
+checking for gethostbyname... yes
+checking for connect... yes
+checking for remove... yes
+checking for shmat... yes
+checking for IceConnectionNumber in -lICE... yes
+checking for XCreateWindow in -lX11... yes
+checking for XShmCreateImage in -lXext... yes
+checking for XGetExtensionVersion in -lXi... yes
+checking for IceOpenConnection in -lICE... yes
+checking for SmcOpenConnection in -lSM... yes
+checking for XtMalloc in -lXt... yes
+checking for XmuLookupStandardColormap in -lXmu... no
+checking for library containing glNewList... -lGL
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking whether time.h and sys/time.h may both be included... yes
+checking for sys/wait.h that is POSIX.1 compatible... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking libutil.h usability... no
+checking libutil.h presence... no
+checking for libutil.h... no
+checking pty.h usability... yes
+checking pty.h presence... yes
+checking for pty.h... yes
+checking termios.h usability... yes
+checking termios.h presence... yes
+checking for termios.h... yes
+checking utmp.h usability... yes
+checking utmp.h presence... yes
+checking for utmp.h... yes
+checking util.h usability... no
+checking util.h presence... no
+checking for util.h... no
+checking windows.h usability... no
+checking windows.h presence... no
+checking for windows.h... no
+checking zlib.h usability... yes
+checking zlib.h presence... yes
+checking for zlib.h... yes
+checking for gzopen in -lz... yes
+osg prefix is /usr/include/osg
+SimGear prefix path is /home/arnt/FG-git/install/simgear
+checking for extra include and lib directories...
+   + found /home/arnt/FG-git/install/fgrun/bin
+   + found /home/arnt/FG-git/install/simgear/include
+   + found /home/arnt/FG-git/install/simgear/lib
+checking simgear/props/props_io.hxx usability... yes
+checking simgear/props/props_io.hxx presence... yes
+checking for simgear/props/props_io.hxx... yes
+checking for size_t... yes
+checking for pid_t... yes
+checking return type of signal handlers... void
+checking for strdup... yes
+checking for strlcat... no
+checking for strlcpy... no
+checking vfork.h usability... no
+checking vfork.h presence... no
+checking for vfork.h... no
+checking for fork... yes
+checking for vfork... yes
+checking for working fork... yes
+checking for working vfork... (cached) yes
+checking for waitpid... yes
+checking for openpty... no
+checking for openpty in -lutil... yes
+checking for forkpty... yes
+checking for login_tty... yes
+checking for _getpty... no
+checking for grantpt... yes
+checking for unlockpt... yes
+checking for /dev/ptmx... yes
+checking for /dev/ptc... no
+checking FL/Fl.H usability... yes
+checking FL/Fl.H presence... yes
+checking for FL/Fl.H... yes
+checking for pthread_create in -lpthread... yes
+checking for XineramaIsActive in -lXinerama... yes
+checking for XftFontOpen in -lfltk... yes
+checking for gl_start in -lfltk_gl... yes
+checking osg/Version usability... yes
+checking osg/Version presence... yes
+checking for osg/Version... yes
+checking for OpenThreadsGetVersion in -lOpenThreads... yes
+checking for osgGetVersion in -losg... yes
+checking for osgUtilGetVersion in -losgUtil... yes
+checking for osgDBGetVersion in -losgDB... yes
+checking for osgTextGetVersion in -losgText... yes
+checking for osgGAGetVersion in -losgGA... yes
+checking for osgViewerGetVersion in -losgViewer... yes
+checking for osgSimGetVersion in -losgSim... yes
+checking for osgParticleGetVersion in -losgParticle... yes
+checking whether NLS is requested... yes
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for ld used by GCC... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for shared library run path origin... done
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyCurrent... no
+checking for GNU gettext in libc... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+configure: creating ./config.status
+config.status: creating po/Makefile.in
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating src/config.h
+config.status: src/config.h is unchanged
+config.status: executing depfiles commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+MAKE FGRUN
+make  -j2 
+Making all in src
+make[1]: Entering directory `/home/arnt/FG-git/fgrun/fgrun/src'
+(CDPATH="${ZSH_VERSION+.}:" && cd .. && /bin/sh /home/arnt/FG-git/fgrun/fgrun/missing --run autoheader)
+rm -f stamp-h1
+touch config.h.in
+cd .. && /bin/sh ./config.status src/config.h
+config.status: creating src/config.h
+config.status: src/config.h is unchanged
+make  all-am
+make[2]: Entering directory `/home/arnt/FG-git/fgrun/fgrun/src'
+g++ -DHAVE_CONFIG_H -I.   -I/home/arnt/FG-git/install/simgear -I/home/arnt/FG-git/install/plib/include  -I/home/arnt/FG-git/install/simgear/include -DLOCALEDIR=\"/home/arnt/FG-git/install/fgrun/share/locale\" -g -O2 -MT Fl_OSG.o -MD -MP -MF .deps/Fl_OSG.Tpo -c -o Fl_OSG.o Fl_OSG.cxx
+g++ -DHAVE_CONFIG_H -I.   -I/home/arnt/FG-git/install/simgear -I/home/arnt/FG-git/install/plib/include  -I/home/arnt/FG-git/install/simgear/include -DLOCALEDIR=\"/home/arnt/FG-git/install/fgrun/share/locale\" -g -O2 -MT main.o -MD -MP -MF .deps/main.Tpo -c -o main.o main.cxx
+mv -f .deps/main.Tpo .deps/main.Po
+mv -f .deps/Fl_OSG.Tpo .deps/Fl_OSG.Po
+g++ -DHAVE_CONFIG_H -I.   -I/home/arnt/FG-git/install/simgear -I/home/arnt/FG-git/install/plib/include  -I/home/arnt/FG-git/install/simgear/include -DLOCALEDIR=\"/home/arnt/FG-git/install/fgrun/share/locale\" -g -O2 -MT fgfsrc.o -MD -MP -MF .deps/fgfsrc.Tpo -c -o fgfsrc.o fgfsrc.cxx
+g++ -DHAVE_CONFIG_H -I.   -I/home/arnt/FG-git/install/simgear -I/home/arnt/FG-git/install/plib/include  -I/home/arnt/FG-git/install/simgear/include -DLOCALEDIR=\"/home/arnt/FG-git/install/fgrun/share/locale\" -g -O2 -MT run_posix.o -MD -MP -MF .deps/run_posix.Tpo -c -o run_posix.o run_posix.cxx
+mv -f .deps/run_posix.Tpo .deps/run_posix.Po
+g++ -DHAVE_CONFIG_H -I.   -I/home/arnt/FG-git/install/simgear -I/home/arnt/FG-git/install/plib/include  -I/home/arnt/FG-git/install/simgear/include -DLOCALEDIR=\"/home/arnt/FG-git/install/fgrun/share/locale\" -g -O2 -MT wizard.o -MD -MP -MF .deps/wizard.Tpo -c -o wizard.o wizard.cxx
+mv -f .deps/fgfsrc.Tpo .deps/fgfsrc.Po
+g++ -DHAVE_CONFIG_H -I.   -I/home/arnt/FG-git/install/simgear -I/home/arnt/FG-git/install/plib/include  -I/home/arnt/FG-git/install/simgear/include -DLOCALEDIR=\"/home/arnt/FG-git/install/fgrun/share/locale\" -g -O2 -MT wizard_funcs.o -MD -MP -MF .deps/wizard_funcs.Tpo -c -o wizard_funcs.o wizard_funcs.cxx
+mv -f .deps/wizard.Tpo .deps/wizard.Po
+mv -f .deps/wizard_funcs.Tpo .deps/wizard_funcs.Po
+g++ -DLOCALEDIR=\"/home/arnt/FG-git/install/fgrun/share/locale\" -g -O2  -L/home/arnt/FG-git/install/plib/lib  -L/home/arnt/FG-git/install/simgear/lib -o fgrun wizard.o wizard_funcs.o advanced.o advanced_funcs.o AirportBrowser.o AirportTable.o Fl_Table.o Fl_Table_Row.o Fl_OSG.o Fl_Heading_Dial.o main.o io.o fgfsrc.o logwin.o parkingloader.o settings.o util.o run_posix.o fgrun_pty.o -lsgmodel -lsgscreen -lsgprops -lsgxml -lsgdebug -lsgbvh -lsgmaterial -lsgmodel -lsgutil -lsgstructure -lsgprops -lsgtgdb -lsgmath -lsgmisc -lsgbvh -lsgio -lsgbucket -lsgmodel -lsgutil -losgParticle -losgSim -losgViewer -losgGA -losgText -losgDB -losgUtil -losg -lOpenThreads -lfltk_gl  -lfltk -lXft -lXinerama -lpthread -lGL -lXt -lSM -lICE -lXi -lXext -lX11  -lm -lz -lutil -losgFX
+make[2]: Leaving directory `/home/arnt/FG-git/fgrun/fgrun/src'
+make[1]: Leaving directory `/home/arnt/FG-git/fgrun/fgrun/src'
+Making all in po
+make[1]: Entering directory `/home/arnt/FG-git/fgrun/fgrun/po'
+make[1]: Nothing to be done for `all'.
+make[1]: Leaving directory `/home/arnt/FG-git/fgrun/fgrun/po'
+make[1]: Entering directory `/home/arnt/FG-git/fgrun/fgrun'
+make[1]: Nothing to be done for `all-am'.
+make[1]: Leaving directory `/home/arnt/FG-git/fgrun/fgrun'
+INSTALL FGRUN
+Making install in src
+make[1]: Entering directory `/home/arnt/FG-git/fgrun/fgrun/src'
+make  install-am
+make[2]: Entering directory `/home/arnt/FG-git/fgrun/fgrun/src'
+make[3]: Entering directory `/home/arnt/FG-git/fgrun/fgrun/src'
+test -z "/home/arnt/FG-git/install/fgrun/bin" || /bin/mkdir -p "/home/arnt/FG-git/install/fgrun/bin"
+  /usr/bin/install -c fgrun '/home/arnt/FG-git/install/fgrun/bin'
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgrun/fgrun/src'
+make[2]: Leaving directory `/home/arnt/FG-git/fgrun/fgrun/src'
+make[1]: Leaving directory `/home/arnt/FG-git/fgrun/fgrun/src'
+Making install in po
+make[1]: Entering directory `/home/arnt/FG-git/fgrun/fgrun/po'
+/bin/mkdir -p /home/arnt/FG-git/install/fgrun/share
+installing fr.gmo as /home/arnt/FG-git/install/fgrun/share/locale/fr/LC_MESSAGES/fgrun.mo
+installing nl.gmo as /home/arnt/FG-git/install/fgrun/share/locale/nl/LC_MESSAGES/fgrun.mo
+installing pt.gmo as /home/arnt/FG-git/install/fgrun/share/locale/pt/LC_MESSAGES/fgrun.mo
+installing de.gmo as /home/arnt/FG-git/install/fgrun/share/locale/de/LC_MESSAGES/fgrun.mo
+installing it.gmo as /home/arnt/FG-git/install/fgrun/share/locale/it/LC_MESSAGES/fgrun.mo
+installing pl.gmo as /home/arnt/FG-git/install/fgrun/share/locale/pl/LC_MESSAGES/fgrun.mo
+installing es.gmo as /home/arnt/FG-git/install/fgrun/share/locale/es/LC_MESSAGES/fgrun.mo
+if test "fgrun" = "gettext-tools"; then \
+	  /bin/mkdir -p /home/arnt/FG-git/install/fgrun/share/gettext/po; \
+	  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+	    /usr/bin/install -c -m 644 ./$file \
+			    /home/arnt/FG-git/install/fgrun/share/gettext/po/$file; \
+	  done; \
+	  for file in Makevars; do \
+	    rm -f /home/arnt/FG-git/install/fgrun/share/gettext/po/$file; \
+	  done; \
+	else \
+	  : ; \
+	fi
+make[1]: Leaving directory `/home/arnt/FG-git/fgrun/fgrun/po'
+make[1]: Entering directory `/home/arnt/FG-git/fgrun/fgrun'
+make[2]: Entering directory `/home/arnt/FG-git/fgrun/fgrun'
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/home/arnt/FG-git/fgrun/fgrun'
+make[1]: Leaving directory `/home/arnt/FG-git/fgrun/fgrun'

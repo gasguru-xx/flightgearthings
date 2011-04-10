@@ -1,0 +1,51 @@
+./download_and_compile.sh FGCOM
+APT_GET_UPDATE=n
+DOWNLOAD_PACKAGES=n
+COMPILE=y
+RECONFIGURE=y
+DOWNLOAD=y
+JOPTION= -j2 
+DEBUG=
+***********************************
+DEBIAN I SUPPOUSE
+***********************************
+DIRECTORY= /home/arnt/FG-git
+***********************************
+****************************************
+*..we use system's OSG-2.9.11-1. ;o) ***
+****************************************
+2011-04-10+21:04:14-UTC
+****************************************
+**************** FGCOM *****************
+****************************************
+2011-04-10+21:04:15-UTC
+SVN FROM https://appfgcom.svn.sourceforge.net/svnroot/fgcom/trunk ...  OK
+MAKE FGCOM
+make  -j2 
+g++ -O0 -Wall -ggdb -D'SVN_REV="257M"' -I /usr/local/src/fgfs-builder/install -I ../iaxclient/lib -I /usr/local/src/fgfs-builder/install/include -I /home/arnt/FG-git/install/simgear/include -I /usr/include/osg/include -c -o fgcom.o fgcom.cpp
+g++ -O0 -Wall -ggdb -D'SVN_REV="257M"' -I /usr/local/src/fgfs-builder/install -I ../iaxclient/lib -I /usr/local/src/fgfs-builder/install/include -I /home/arnt/FG-git/install/simgear/include -I /usr/include/osg/include -c -o fgcom_init.o fgcom_init.cpp
+fgcom.cpp: In function ‘int main(int, char**)’:
+fgcom.cpp:374:53: error: ‘SPECIAL_FREQUENCIES_FILE’ was not declared in this scope
+fgcom.cpp:378:31: error: ‘DEFAULT_POSITIONS_FILE’ was not declared in this scope
+fgcom.cpp:226:7: warning: unused variable ‘c’ [-Wunused-variable]
+fgcom.cpp:227:7: warning: unused variable ‘ret’ [-Wunused-variable]
+fgcom.cpp: In function ‘airport* read_airports(const char*)’:
+fgcom.cpp:962:35: error: ‘DEFAULT_POSITIONS_FILE’ was not declared in this scope
+fgcom.cpp: At global scope:
+fgcom.cpp:79:20: warning: ‘mode_map’ defined but not used [-Wunused-variable]
+make: *** [fgcom.o] Error 1
+make: *** Waiting for unfinished jobs....
+fgcom_init.cpp: In function ‘int _parseOption(const string&, const string&)’:
+fgcom_init.cpp:473:11: warning: enumeration value ‘OPTION_FREQ’ not handled in switch [-Wswitch]
+INSTALL FGCOM
+g++ -O0 -Wall -ggdb -D'SVN_REV="257M"' -I /usr/local/src/fgfs-builder/install -I ../iaxclient/lib -I /usr/local/src/fgfs-builder/install/include -I /home/arnt/FG-git/install/simgear/include -I /usr/include/osg/include -c -o fgcom.o fgcom.cpp
+fgcom.cpp: In function ‘int main(int, char**)’:
+fgcom.cpp:374:53: error: ‘SPECIAL_FREQUENCIES_FILE’ was not declared in this scope
+fgcom.cpp:378:31: error: ‘DEFAULT_POSITIONS_FILE’ was not declared in this scope
+fgcom.cpp:226:7: warning: unused variable ‘c’ [-Wunused-variable]
+fgcom.cpp:227:7: warning: unused variable ‘ret’ [-Wunused-variable]
+fgcom.cpp: In function ‘airport* read_airports(const char*)’:
+fgcom.cpp:962:35: error: ‘DEFAULT_POSITIONS_FILE’ was not declared in this scope
+fgcom.cpp: At global scope:
+fgcom.cpp:79:20: warning: ‘mode_map’ defined but not used [-Wunused-variable]
+make: *** [fgcom.o] Error 1
