@@ -1,0 +1,1395 @@
+./download_and_compile.sh FGFS
+APT_GET_UPDATE=n
+DOWNLOAD_PACKAGES=n
+COMPILE=y
+RECONFIGURE=y
+DOWNLOAD=y
+JOPTION= -j2 
+DEBUG=
+***********************************
+DEBIAN I SUPPOUSE
+***********************************
+DIRECTORY= /home/arnt/FG-git
+***********************************
+****************************************
+*..we use system's OSG-2.9.11-1. ;o) ***
+****************************************
+2011-04-10+09:22:42-UTC
+****************************************
+**************** FGFS ******************
+****************************************
+2011-04-10+09:22:42-UTC
+GIT FROM git://gitorious.org/fg/flightgear.git ...  OK
+AUTOGEN FGFS
+Running aclocal
+Running autoheader
+Running automake --add-missing
+tests/Makefile.am:6: variable `test_up_LDFLAGS' is defined but no program or
+tests/Makefile.am:6: library has `test_up' as canonical name (possible typo)
+Running autoconf
+
+======================================
+Now you are ready to run './configure'
+======================================
+CONFIGURE FGFS
+configure: WARNING: you should use --build, --host, --target
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking target system type... x86_64-unknown-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for -p flag to install... yes
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking for git... 1
+checking whether make sets $(MAKE)... (cached) yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for style of include used by make... GNU
+checking dependency style of gcc... gcc3
+checking how to run the C preprocessor... gcc -E
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... gcc3
+checking how to run the C++ preprocessor... g++ -E
+checking for ranlib... ranlib
+checking whether ln -s works... yes
+checking for boostlib >= 1.37.0... yes
+SimGear prefix path is /home/arnt/FG-git/install/simgear
+plib prefix is /home/arnt/FG-git/install/plib
+osg prefix is /usr/include/osg
+checking for extra include and lib directories...
+   + found /home/arnt/FG-git/install/fgfs/bin
+   + found /home/arnt/FG-git/install/simgear/include
+   + found /home/arnt/FG-git/install/simgear/lib
+   + found /home/arnt/FG-git/install/plib/include
+   + found /home/arnt/FG-git/install/plib/lib
+   + found /usr/local/include
+   + found /usr/local/lib
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking pthread.h usability... yes
+checking pthread.h presence... yes
+checking for pthread.h... yes
+checking for simgear HLA/RTI support... no
+checking windows.h usability... no
+checking windows.h presence... no
+checking for windows.h... no
+checking int daylight variable... yes
+checking long timezone variable... yes
+checking for library containing hid_init... no
+checking for X... libraries , headers 
+checking for gethostbyname... yes
+checking for connect... yes
+checking for remove... yes
+checking for shmat... yes
+checking for IceConnectionNumber in -lICE... yes
+checking for library containing pthread_create... -lpthread
+checking for library containing inet_addr... none required
+checking for library containing socket... none required
+checking for library containing main... none required
+checking for library containing sqrt... -lm
+checking for library containing ceil... none required
+checking for library containing dlclose... -ldl
+checking for library containing clock_gettime... -lrt
+checking for library containing XCreateWindow... -lX11
+checking for library containing XShmCreateImage... -lXext
+checking for library containing XGetExtensionVersion... -lXi
+checking for library containing IceOpenConnection... -lICE
+checking for library containing SmcOpenConnection... -lSM
+checking for library containing XtMalloc... -lXt
+checking for library containing XmuLookupStandardColormap... no
+checking for library containing glNewList... -lGL
+checking for library containing gluLookAt... -lGLU
+checking for library containing glutGetModifiers... -lglut
+checking for library containing alGenBuffers... -lopenal
+checking for library containing alutInit... -lalut
+checking /home/arnt/FG-git/install/simgear/include/simgear/version.h usability... yes
+checking /home/arnt/FG-git/install/simgear/include/simgear/version.h presence... yes
+checking for /home/arnt/FG-git/install/simgear/include/simgear/version.h... yes
+checking for SimGear 2.2.0 or newer... [found 2.2.0] ... yes
+checking /home/arnt/FG-git/install/simgear/include/simgear/screen/jpgfactory.hxx usability... yes
+checking /home/arnt/FG-git/install/simgear/include/simgear/screen/jpgfactory.hxx presence... yes
+checking for /home/arnt/FG-git/install/simgear/include/simgear/screen/jpgfactory.hxx... yes
+checking for jpeg_start_compress in -ljpeg... yes
+checking plib/ul.h usability... yes
+checking plib/ul.h presence... yes
+checking for plib/ul.h... yes
+
+checking for plib 1.8.5 or newer... yes
+checking for OpenThreadsGetVersion in -lOpenThreads... yes
+checking for osgGetVersion in -losg... yes
+checking for osgUtilGetVersion in -losgUtil... yes
+checking for osgDBGetVersion in -losgDB... yes
+checking for osgTextGetVersion in -losgText... yes
+checking for osgGAGetVersion in -losgGA... yes
+checking for osgViewerGetVersion in -losgViewer... yes
+checking for osgSimGetVersion in -losgSim... yes
+checking for osgParticleGetVersion in -losgParticle... yes
+checking for osgFXGetVersion in -losgFX... yes
+checking osg/Version usability... yes
+checking osg/Version presence... yes
+checking for osg/Version... yes
+checking checking for osg::CullSettings::CLEAR_MASK... yes
+checking zlib.h usability... yes
+checking zlib.h presence... yes
+checking for zlib.h... yes
+./configure: line 10739: apr-1-config: command not found
+./configure: line 10740: apr-1-config: command not found
+checking svn_client.h usability... no
+checking svn_client.h presence... no
+checking for svn_client.h... no
+Libsvn not found. TerraSync will use command line subversion
+checking for feenableexcept... yes
+checking for ANSI C header files... (cached) yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking getopt.h usability... yes
+checking getopt.h presence... yes
+checking for getopt.h... yes
+checking malloc.h usability... yes
+checking malloc.h presence... yes
+checking for malloc.h... yes
+checking for memory.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking sys/param.h usability... yes
+checking sys/param.h presence... yes
+checking for sys/param.h... yes
+checking for sys/stat.h... (cached) yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking sys/timeb.h usability... yes
+checking sys/timeb.h presence... yes
+checking for sys/timeb.h... yes
+checking for unistd.h... (cached) yes
+checking for windows.h... (cached) no
+checking values.h usability... yes
+checking values.h presence... yes
+checking for values.h... yes
+checking for an ANSI C-conforming const... yes
+checking for size_t... yes
+checking whether time.h and sys/time.h may both be included... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking return type of signal handlers... void
+checking for vprintf... yes
+checking for _doprnt... no
+checking for ftime... yes
+checking for gettimeofday... yes
+checking for timegm... yes
+checking for memcpy... yes
+checking for bcopy... yes
+checking for mktime... yes
+checking for strstr... yes
+checking for rand... yes
+checking for mkfifo... yes
+checking for random... yes
+checking for drand48... yes
+checking for setitimer... yes
+checking for getitimer... yes
+checking for signal... yes
+checking for GetLocalTime... no
+checking for rint... yes
+checking for getrusage... yes
+checking for truncf... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating man/Makefile
+config.status: creating man/est-epsilon.1
+config.status: creating man/fgfs.1
+config.status: creating man/fgjs.1
+config.status: creating man/gl-info.1
+config.status: creating man/js_demo.1
+config.status: creating man/pstest.1
+config.status: creating scripts/Makefile
+config.status: creating scripts/debug/Makefile
+config.status: creating scripts/perl/Makefile
+config.status: creating scripts/perl/examples/Makefile
+config.status: creating scripts/perl/traffic/Makefile
+config.status: creating scripts/python/Makefile
+config.status: creating src/Makefile
+config.status: creating src/Include/Makefile
+config.status: creating src/Include/version.h
+config.status: creating src/Aircraft/Makefile
+config.status: creating src/Airports/Makefile
+config.status: creating src/ATC/Makefile
+config.status: creating src/ATCDCL/Makefile
+config.status: creating src/Autopilot/Makefile
+config.status: creating src/Cockpit/Makefile
+config.status: creating src/Cockpit/built_in/Makefile
+config.status: creating src/Environment/Makefile
+config.status: creating src/FDM/ExternalNet/Makefile
+config.status: creating src/FDM/ExternalPipe/Makefile
+config.status: creating src/FDM/JSBSim/Makefile
+config.status: creating src/FDM/JSBSim/initialization/Makefile
+config.status: creating src/FDM/JSBSim/input_output/Makefile
+config.status: creating src/FDM/JSBSim/math/Makefile
+config.status: creating src/FDM/JSBSim/models/Makefile
+config.status: creating src/FDM/JSBSim/models/flight_control/Makefile
+config.status: creating src/FDM/JSBSim/models/atmosphere/Makefile
+config.status: creating src/FDM/JSBSim/models/propulsion/Makefile
+config.status: creating src/FDM/LaRCsim/Makefile
+config.status: creating src/FDM/SP/Makefile
+config.status: creating src/FDM/UIUCModel/Makefile
+config.status: creating src/FDM/YASim/Makefile
+config.status: creating src/FDM/Makefile
+config.status: creating src/GUI/Makefile
+config.status: creating src/Input/Makefile
+config.status: creating src/Instrumentation/Makefile
+config.status: creating src/Instrumentation/KLN89/Makefile
+config.status: creating src/Instrumentation/HUD/Makefile
+config.status: creating src/Main/Makefile
+config.status: creating src/Main/runfgfs
+config.status: creating src/Main/runfgfs.bat
+config.status: creating src/Model/Makefile
+config.status: creating src/AIModel/Makefile
+config.status: creating src/MultiPlayer/Makefile
+config.status: creating src/Navaids/Makefile
+config.status: creating src/Network/Makefile
+config.status: creating src/Network/HLA/Makefile
+config.status: creating src/Scenery/Makefile
+config.status: creating src/Scripting/Makefile
+config.status: creating src/Sound/Makefile
+config.status: creating src/Systems/Makefile
+config.status: creating src/Time/Makefile
+config.status: creating src/Traffic/Makefile
+config.status: creating tests/Makefile
+config.status: creating utils/Makefile
+config.status: creating utils/GPSsmooth/Makefile
+config.status: creating utils/fgadmin/Makefile
+config.status: creating utils/fgadmin/src/Makefile
+config.status: creating utils/js_server/Makefile
+config.status: creating utils/Modeller/Makefile
+config.status: creating utils/propmerge/Makefile
+config.status: creating utils/TerraSync/Makefile
+config.status: creating utils/xmlgrep/Makefile
+config.status: creating utils/fgviewer/Makefile
+config.status: creating src/Include/config.h
+config.status: src/Include/config.h is unchanged
+config.status: executing depfiles commands
+
+Configure Summary
+=================
+Prefix: /home/arnt/FG-git/install/fgfs
+Log messages: yes
+Automake version: automake (GNU automake) 1.11.1
+Building with multiplayer support
+Threads: yes
+Event input: yes
+Include special purpose flight models: yes
+MAKE FGFS
+make  -j2 
+Making all in tests
+make[1]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/tests'
+make[1]: Nothing to be done for `all'.
+make[1]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/tests'
+Making all in man
+make[1]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/man'
+make[1]: Nothing to be done for `all'.
+make[1]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/man'
+Making all in scripts
+make[1]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/scripts'
+Making all in debug
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/scripts/debug'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/scripts/debug'
+Making all in perl
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/scripts/perl'
+Making all in examples
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/scripts/perl/examples'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/scripts/perl/examples'
+Making all in traffic
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/scripts/perl/traffic'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/scripts/perl/traffic'
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/scripts/perl'
+make[3]: Nothing to be done for `all-am'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/scripts/perl'
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/scripts/perl'
+Making all in python
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/scripts/python'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/scripts/python'
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/scripts'
+make[2]: Nothing to be done for `all-am'.
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/scripts'
+make[1]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/scripts'
+Making all in src
+make[1]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src'
+Making all in Include
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Include'
+make  all-am
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Include'
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Include'
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Include'
+Making all in Aircraft
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Aircraft'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Aircraft'
+Making all in Airports
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Airports'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Airports'
+Making all in ATC
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/ATC'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/ATC'
+Making all in ATCDCL
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/ATCDCL'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/ATCDCL'
+Making all in Autopilot
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Autopilot'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Autopilot'
+Making all in Cockpit
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Cockpit'
+Making all in built_in
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Cockpit/built_in'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Cockpit/built_in'
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Cockpit'
+make[3]: Nothing to be done for `all-am'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Cockpit'
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Cockpit'
+Making all in Environment
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Environment'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Environment'
+Making all in FDM
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM'
+Making all in JSBSim
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim'
+Making all in initialization
+make[4]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/initialization'
+make[4]: Nothing to be done for `all'.
+make[4]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/initialization'
+Making all in models
+make[4]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models'
+Making all in atmosphere
+make[5]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models/atmosphere'
+make[5]: Nothing to be done for `all'.
+make[5]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models/atmosphere'
+Making all in propulsion
+make[5]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models/propulsion'
+make[5]: Nothing to be done for `all'.
+make[5]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models/propulsion'
+Making all in flight_control
+make[5]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models/flight_control'
+make[5]: Nothing to be done for `all'.
+make[5]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models/flight_control'
+make[5]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models'
+make[5]: Nothing to be done for `all-am'.
+make[5]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models'
+make[4]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models'
+Making all in input_output
+make[4]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/input_output'
+make[4]: Nothing to be done for `all'.
+make[4]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/input_output'
+Making all in math
+make[4]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/math'
+make[4]: Nothing to be done for `all'.
+make[4]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/math'
+make[4]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim'
+make[4]: Nothing to be done for `all-am'.
+make[4]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim'
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim'
+Making all in LaRCsim
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/LaRCsim'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/LaRCsim'
+Making all in UIUCModel
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/UIUCModel'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/UIUCModel'
+Making all in YASim
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/YASim'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/YASim'
+Making all in SP
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/SP'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/SP'
+Making all in ExternalNet
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/ExternalNet'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/ExternalNet'
+Making all in ExternalPipe
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/ExternalPipe'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/ExternalPipe'
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM'
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src/FDM/JSBSim  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT flightProperties.o -MD -MP -MF .deps/flightProperties.Tpo -c -o flightProperties.o flightProperties.cxx
+mv -f .deps/flightProperties.Tpo .deps/flightProperties.Po
+rm -f libFlight.a
+ar cru libFlight.a flight.o fdm_shell.o flightProperties.o TankProperties.o groundcache.o UFO.o NullFDM.o 
+ranlib libFlight.a
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM'
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM'
+Making all in GUI
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/GUI'
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT new_gui.o -MD -MP -MF .deps/new_gui.Tpo -c -o new_gui.o new_gui.cxx
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT dialog.o -MD -MP -MF .deps/dialog.Tpo -c -o dialog.o dialog.cxx
+mv -f .deps/dialog.Tpo .deps/dialog.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT menubar.o -MD -MP -MF .deps/menubar.Tpo -c -o menubar.o menubar.cxx
+mv -f .deps/new_gui.Tpo .deps/new_gui.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT gui.o -MD -MP -MF .deps/gui.Tpo -c -o gui.o gui.cxx
+mv -f .deps/menubar.Tpo .deps/menubar.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT gui_funcs.o -MD -MP -MF .deps/gui_funcs.Tpo -c -o gui_funcs.o gui_funcs.cxx
+mv -f .deps/gui.Tpo .deps/gui.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT fonts.o -MD -MP -MF .deps/fonts.Tpo -c -o fonts.o fonts.cxx
+mv -f .deps/fonts.Tpo .deps/fonts.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT AirportList.o -MD -MP -MF .deps/AirportList.Tpo -c -o AirportList.o AirportList.cxx
+mv -f .deps/AirportList.Tpo .deps/AirportList.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT property_list.o -MD -MP -MF .deps/property_list.Tpo -c -o property_list.o property_list.cxx
+mv -f .deps/gui_funcs.Tpo .deps/gui_funcs.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT layout.o -MD -MP -MF .deps/layout.Tpo -c -o layout.o layout.cxx
+mv -f .deps/layout.Tpo .deps/layout.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT layout-props.o -MD -MP -MF .deps/layout-props.Tpo -c -o layout-props.o layout-props.cxx
+mv -f .deps/property_list.Tpo .deps/property_list.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT SafeTexFont.o -MD -MP -MF .deps/SafeTexFont.Tpo -c -o SafeTexFont.o SafeTexFont.cxx
+mv -f .deps/layout-props.Tpo .deps/layout-props.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT WaypointList.o -MD -MP -MF .deps/WaypointList.Tpo -c -o WaypointList.o WaypointList.cxx
+mv -f .deps/SafeTexFont.Tpo .deps/SafeTexFont.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT MapWidget.o -MD -MP -MF .deps/MapWidget.Tpo -c -o MapWidget.o MapWidget.cxx
+mv -f .deps/WaypointList.Tpo .deps/WaypointList.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT layout-test.o -MD -MP -MF .deps/layout-test.Tpo -c -o layout-test.o layout-test.cxx
+mv -f .deps/layout-test.Tpo .deps/layout-test.Po
+mv -f .deps/MapWidget.Tpo .deps/MapWidget.Po
+rm -f libGUI.a
+ar cru libGUI.a new_gui.o dialog.o menubar.o gui.o gui_funcs.o fonts.o AirportList.o property_list.o layout.o layout-props.o SafeTexFont.o WaypointList.o MapWidget.o 
+ranlib libGUI.a
+g++  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT   -L/home/arnt/FG-git/install/simgear/lib -L/home/arnt/FG-git/install/plib/lib -L/usr/local/lib -o layout-test layout-test.o libGUI.a -lsgprops -lsgdebug -lsgstructure -lsgmisc -lsgxml -lsgtiming -lplibpw -lplibpu -lplibfnt -lplibul -lglut -lGLU -lGL -lXt -lSM -lICE -lXi -lXext -lX11 -lrt -ldl -lm  -losgFX -losgParticle -losgSim -losgViewer -losgGA -losgText -losgDB -losgUtil -losg -lOpenThreads -ljpeg 
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/GUI'
+Making all in Input
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Input'
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src/Main -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/lib/dbus-1.0/include  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include -DPKGLIBDIR=\"/home/arnt/FG-git/install/fgfs/share/flightgear\" -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT input.o -MD -MP -MF .deps/input.Tpo -c -o input.o input.cxx
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src/Main -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/lib/dbus-1.0/include  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include -DPKGLIBDIR=\"/home/arnt/FG-git/install/fgfs/share/flightgear\" -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT FGCommonInput.o -MD -MP -MF .deps/FGCommonInput.Tpo -c -o FGCommonInput.o FGCommonInput.cxx
+mv -f .deps/FGCommonInput.Tpo .deps/FGCommonInput.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src/Main -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/lib/dbus-1.0/include  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include -DPKGLIBDIR=\"/home/arnt/FG-git/install/fgfs/share/flightgear\" -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT FGDeviceConfigurationMap.o -MD -MP -MF .deps/FGDeviceConfigurationMap.Tpo -c -o FGDeviceConfigurationMap.o FGDeviceConfigurationMap.cxx
+mv -f .deps/input.Tpo .deps/input.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src/Main -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/lib/dbus-1.0/include  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include -DPKGLIBDIR=\"/home/arnt/FG-git/install/fgfs/share/flightgear\" -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT FGButton.o -MD -MP -MF .deps/FGButton.Tpo -c -o FGButton.o FGButton.cxx
+mv -f .deps/FGDeviceConfigurationMap.Tpo .deps/FGDeviceConfigurationMap.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src/Main -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/lib/dbus-1.0/include  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include -DPKGLIBDIR=\"/home/arnt/FG-git/install/fgfs/share/flightgear\" -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT FGMouseInput.o -MD -MP -MF .deps/FGMouseInput.Tpo -c -o FGMouseInput.o FGMouseInput.cxx
+mv -f .deps/FGButton.Tpo .deps/FGButton.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src/Main -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/lib/dbus-1.0/include  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include -DPKGLIBDIR=\"/home/arnt/FG-git/install/fgfs/share/flightgear\" -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT FGKeyboardInput.o -MD -MP -MF .deps/FGKeyboardInput.Tpo -c -o FGKeyboardInput.o FGKeyboardInput.cxx
+mv -f .deps/FGMouseInput.Tpo .deps/FGMouseInput.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src/Main -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/lib/dbus-1.0/include  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include -DPKGLIBDIR=\"/home/arnt/FG-git/install/fgfs/share/flightgear\" -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT FGJoystickInput.o -MD -MP -MF .deps/FGJoystickInput.Tpo -c -o FGJoystickInput.o FGJoystickInput.cxx
+mv -f .deps/FGKeyboardInput.Tpo .deps/FGKeyboardInput.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src/Main -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/lib/dbus-1.0/include  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include -DPKGLIBDIR=\"/home/arnt/FG-git/install/fgfs/share/flightgear\" -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT FGEventInput.o -MD -MP -MF .deps/FGEventInput.Tpo -c -o FGEventInput.o FGEventInput.cxx
+mv -f .deps/FGJoystickInput.Tpo .deps/FGJoystickInput.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src/Main -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/lib/dbus-1.0/include  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include -DPKGLIBDIR=\"/home/arnt/FG-git/install/fgfs/share/flightgear\" -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT FGLinuxEventInput.o -MD -MP -MF .deps/FGLinuxEventInput.Tpo -c -o FGLinuxEventInput.o FGLinuxEventInput.cxx
+mv -f .deps/FGEventInput.Tpo .deps/FGEventInput.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src/Main -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/lib/dbus-1.0/include  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include -DPKGLIBDIR=\"/home/arnt/FG-git/install/fgfs/share/flightgear\" -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT js_demo.o -MD -MP -MF .deps/js_demo.Tpo -c -o js_demo.o js_demo.cxx
+mv -f .deps/js_demo.Tpo .deps/js_demo.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src/Main -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/lib/dbus-1.0/include  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include -DPKGLIBDIR=\"/home/arnt/FG-git/install/fgfs/share/flightgear\" -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT fgjs.o -MD -MP -MF .deps/fgjs.Tpo -c -o fgjs.o fgjs.cxx
+mv -f .deps/fgjs.Tpo .deps/fgjs.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src/Main -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/lib/dbus-1.0/include  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include -DPKGLIBDIR=\"/home/arnt/FG-git/install/fgfs/share/flightgear\" -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT jsinput.o -MD -MP -MF .deps/jsinput.Tpo -c -o jsinput.o jsinput.cxx
+mv -f .deps/jsinput.Tpo .deps/jsinput.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src/Main -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -I/usr/lib/dbus-1.0/include  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include -DPKGLIBDIR=\"/home/arnt/FG-git/install/fgfs/share/flightgear\" -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT jssuper.o -MD -MP -MF .deps/jssuper.Tpo -c -o jssuper.o jssuper.cxx
+mv -f .deps/jssuper.Tpo .deps/jssuper.Po
+g++ -DPKGLIBDIR=\"/home/arnt/FG-git/install/fgfs/share/flightgear\" -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT  -L/home/arnt/FG-git/install/simgear/lib -L/home/arnt/FG-git/install/plib/lib -L/usr/local/lib -o js_demo js_demo.o -lplibjs -lplibul -lrt -ldl -lm   -losgFX -losgParticle -losgSim -losgViewer -losgGA -losgText -losgDB -losgUtil -losg -lOpenThreads -ljpeg 
+g++ -DPKGLIBDIR=\"/home/arnt/FG-git/install/fgfs/share/flightgear\" -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT  -L/home/arnt/FG-git/install/simgear/lib -L/home/arnt/FG-git/install/plib/lib -L/usr/local/lib -o fgjs fgjs.o jsinput.o jssuper.o -lplibjs -lplibul -lrt -ldl -lm   -lsgprops -lsgmisc -lsgio -lsgdebug -lsgstructure -lsgxml -lz  -losgFX -losgParticle -losgSim -losgViewer -losgGA -losgText -losgDB -losgUtil -losg -lOpenThreads -ljpeg 
+mv -f .deps/FGLinuxEventInput.Tpo .deps/FGLinuxEventInput.Po
+rm -f libInput.a
+ar cru libInput.a input.o FGCommonInput.o FGDeviceConfigurationMap.o FGButton.o FGMouseInput.o FGKeyboardInput.o FGJoystickInput.o FGEventInput.o FGLinuxEventInput.o
+ranlib libInput.a
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Input'
+Making all in Instrumentation
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Instrumentation'
+Making all in KLN89
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Instrumentation/KLN89'
+g++ -DHAVE_CONFIG_H -I. -I../../../src/Include -I../../.. -I../../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT kln89.o -MD -MP -MF .deps/kln89.Tpo -c -o kln89.o kln89.cxx
+g++ -DHAVE_CONFIG_H -I. -I../../../src/Include -I../../.. -I../../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT kln89_page.o -MD -MP -MF .deps/kln89_page.Tpo -c -o kln89_page.o kln89_page.cxx
+kln89.cxx: In member function ‘void KLN89::DrawMap(bool)’:
+kln89.cxx:764:9: warning: variable ‘bottomLeft’ set but not used [-Wunused-but-set-variable]
+kln89.cxx:765:9: warning: variable ‘topRight’ set but not used [-Wunused-but-set-variable]
+mv -f .deps/kln89_page.Tpo .deps/kln89_page.Po
+g++ -DHAVE_CONFIG_H -I. -I../../../src/Include -I../../.. -I../../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT kln89_page_act.o -MD -MP -MF .deps/kln89_page_act.Tpo -c -o kln89_page_act.o kln89_page_act.cxx
+mv -f .deps/kln89_page_act.Tpo .deps/kln89_page_act.Po
+g++ -DHAVE_CONFIG_H -I. -I../../../src/Include -I../../.. -I../../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT kln89_page_alt.o -MD -MP -MF .deps/kln89_page_alt.Tpo -c -o kln89_page_alt.o kln89_page_alt.cxx
+mv -f .deps/kln89.Tpo .deps/kln89.Po
+g++ -DHAVE_CONFIG_H -I. -I../../../src/Include -I../../.. -I../../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT kln89_page_apt.o -MD -MP -MF .deps/kln89_page_apt.Tpo -c -o kln89_page_apt.o kln89_page_apt.cxx
+mv -f .deps/kln89_page_alt.Tpo .deps/kln89_page_alt.Po
+g++ -DHAVE_CONFIG_H -I. -I../../../src/Include -I../../.. -I../../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT kln89_page_cal.o -MD -MP -MF .deps/kln89_page_cal.Tpo -c -o kln89_page_cal.o kln89_page_cal.cxx
+mv -f .deps/kln89_page_cal.Tpo .deps/kln89_page_cal.Po
+g++ -DHAVE_CONFIG_H -I. -I../../../src/Include -I../../.. -I../../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT kln89_page_dir.o -MD -MP -MF .deps/kln89_page_dir.Tpo -c -o kln89_page_dir.o kln89_page_dir.cxx
+mv -f .deps/kln89_page_apt.Tpo .deps/kln89_page_apt.Po
+g++ -DHAVE_CONFIG_H -I. -I../../../src/Include -I../../.. -I../../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT kln89_page_fpl.o -MD -MP -MF .deps/kln89_page_fpl.Tpo -c -o kln89_page_fpl.o kln89_page_fpl.cxx
+mv -f .deps/kln89_page_dir.Tpo .deps/kln89_page_dir.Po
+g++ -DHAVE_CONFIG_H -I. -I../../../src/Include -I../../.. -I../../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT kln89_page_int.o -MD -MP -MF .deps/kln89_page_int.Tpo -c -o kln89_page_int.o kln89_page_int.cxx
+mv -f .deps/kln89_page_int.Tpo .deps/kln89_page_int.Po
+g++ -DHAVE_CONFIG_H -I. -I../../../src/Include -I../../.. -I../../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT kln89_page_nav.o -MD -MP -MF .deps/kln89_page_nav.Tpo -c -o kln89_page_nav.o kln89_page_nav.cxx
+mv -f .deps/kln89_page_fpl.Tpo .deps/kln89_page_fpl.Po
+g++ -DHAVE_CONFIG_H -I. -I../../../src/Include -I../../.. -I../../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT kln89_page_ndb.o -MD -MP -MF .deps/kln89_page_ndb.Tpo -c -o kln89_page_ndb.o kln89_page_ndb.cxx
+mv -f .deps/kln89_page_ndb.Tpo .deps/kln89_page_ndb.Po
+g++ -DHAVE_CONFIG_H -I. -I../../../src/Include -I../../.. -I../../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT kln89_page_nrst.o -MD -MP -MF .deps/kln89_page_nrst.Tpo -c -o kln89_page_nrst.o kln89_page_nrst.cxx
+mv -f .deps/kln89_page_nav.Tpo .deps/kln89_page_nav.Po
+g++ -DHAVE_CONFIG_H -I. -I../../../src/Include -I../../.. -I../../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT kln89_page_oth.o -MD -MP -MF .deps/kln89_page_oth.Tpo -c -o kln89_page_oth.o kln89_page_oth.cxx
+mv -f .deps/kln89_page_nrst.Tpo .deps/kln89_page_nrst.Po
+g++ -DHAVE_CONFIG_H -I. -I../../../src/Include -I../../.. -I../../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT kln89_page_set.o -MD -MP -MF .deps/kln89_page_set.Tpo -c -o kln89_page_set.o kln89_page_set.cxx
+mv -f .deps/kln89_page_oth.Tpo .deps/kln89_page_oth.Po
+g++ -DHAVE_CONFIG_H -I. -I../../../src/Include -I../../.. -I../../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT kln89_page_usr.o -MD -MP -MF .deps/kln89_page_usr.Tpo -c -o kln89_page_usr.o kln89_page_usr.cxx
+mv -f .deps/kln89_page_usr.Tpo .deps/kln89_page_usr.Po
+g++ -DHAVE_CONFIG_H -I. -I../../../src/Include -I../../.. -I../../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT kln89_page_vor.o -MD -MP -MF .deps/kln89_page_vor.Tpo -c -o kln89_page_vor.o kln89_page_vor.cxx
+mv -f .deps/kln89_page_set.Tpo .deps/kln89_page_set.Po
+mv -f .deps/kln89_page_vor.Tpo .deps/kln89_page_vor.Po
+rm -f libKLN89.a
+ar cru libKLN89.a kln89.o kln89_page.o kln89_page_act.o kln89_page_alt.o kln89_page_apt.o kln89_page_cal.o kln89_page_dir.o kln89_page_fpl.o kln89_page_int.o kln89_page_nav.o kln89_page_ndb.o kln89_page_nrst.o kln89_page_oth.o kln89_page_set.o kln89_page_usr.o kln89_page_vor.o 
+ranlib libKLN89.a
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Instrumentation/KLN89'
+Making all in HUD
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Instrumentation/HUD'
+g++ -DHAVE_CONFIG_H -I. -I../../../src/Include -I../../.. -I../../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT HUD.o -MD -MP -MF .deps/HUD.Tpo -c -o HUD.o HUD.cxx
+g++ -DHAVE_CONFIG_H -I. -I../../../src/Include -I../../.. -I../../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT HUD_tape.o -MD -MP -MF .deps/HUD_tape.Tpo -c -o HUD_tape.o HUD_tape.cxx
+HUD_tape.cxx: In member function ‘void HUD::Tape::draw_vertical(float)’:
+HUD_tape.cxx:92:23: warning: variable ‘vmax’ set but not used [-Wunused-but-set-variable]
+HUD_tape.cxx: In member function ‘void HUD::Tape::draw_horizontal(float)’:
+HUD_tape.cxx:351:23: warning: variable ‘vmax’ set but not used [-Wunused-but-set-variable]
+HUD_tape.cxx:353:11: warning: variable ‘marker_xe’ set but not used [-Wunused-but-set-variable]
+HUD_tape.cxx:356:11: warning: variable ‘text_y’ set but not used [-Wunused-but-set-variable]
+mv -f .deps/HUD_tape.Tpo .deps/HUD_tape.Po
+g++ -DHAVE_CONFIG_H -I. -I../../../src/Include -I../../.. -I../../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT HUD_dial.o -MD -MP -MF .deps/HUD_dial.Tpo -c -o HUD_dial.o HUD_dial.cxx
+mv -f .deps/HUD.Tpo .deps/HUD.Po
+g++ -DHAVE_CONFIG_H -I. -I../../../src/Include -I../../.. -I../../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT HUD_gauge.o -MD -MP -MF .deps/HUD_gauge.Tpo -c -o HUD_gauge.o HUD_gauge.cxx
+mv -f .deps/HUD_dial.Tpo .deps/HUD_dial.Po
+g++ -DHAVE_CONFIG_H -I. -I../../../src/Include -I../../.. -I../../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT HUD_instrument.o -MD -MP -MF .deps/HUD_instrument.Tpo -c -o HUD_instrument.o HUD_instrument.cxx
+mv -f .deps/HUD_gauge.Tpo .deps/HUD_gauge.Po
+g++ -DHAVE_CONFIG_H -I. -I../../../src/Include -I../../.. -I../../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT HUD_label.o -MD -MP -MF .deps/HUD_label.Tpo -c -o HUD_label.o HUD_label.cxx
+mv -f .deps/HUD_instrument.Tpo .deps/HUD_instrument.Po
+g++ -DHAVE_CONFIG_H -I. -I../../../src/Include -I../../.. -I../../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT HUD_ladder.o -MD -MP -MF .deps/HUD_ladder.Tpo -c -o HUD_ladder.o HUD_ladder.cxx
+mv -f .deps/HUD_label.Tpo .deps/HUD_label.Po
+g++ -DHAVE_CONFIG_H -I. -I../../../src/Include -I../../.. -I../../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT HUD_misc.o -MD -MP -MF .deps/HUD_misc.Tpo -c -o HUD_misc.o HUD_misc.cxx
+HUD_ladder.cxx: In member function ‘virtual void HUD::Ladder::draw()’:
+HUD_ladder.cxx:141:72: warning: variable ‘t1’ set but not used [-Wunused-but-set-variable]
+mv -f .deps/HUD_ladder.Tpo .deps/HUD_ladder.Po
+g++ -DHAVE_CONFIG_H -I. -I../../../src/Include -I../../.. -I../../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT HUD_runway.o -MD -MP -MF .deps/HUD_runway.Tpo -c -o HUD_runway.o HUD_runway.cxx
+mv -f .deps/HUD_misc.Tpo .deps/HUD_misc.Po
+g++ -DHAVE_CONFIG_H -I. -I../../../src/Include -I../../.. -I../../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT HUD_scale.o -MD -MP -MF .deps/HUD_scale.Tpo -c -o HUD_scale.o HUD_scale.cxx
+HUD_runway.cxx: In member function ‘virtual void HUD::Runway::draw()’:
+HUD_runway.cxx:125:9: warning: variable ‘result’ set but not used [-Wunused-but-set-variable]
+mv -f .deps/HUD_scale.Tpo .deps/HUD_scale.Po
+g++ -DHAVE_CONFIG_H -I. -I../../../src/Include -I../../.. -I../../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT HUD_tbi.o -MD -MP -MF .deps/HUD_tbi.Tpo -c -o HUD_tbi.o HUD_tbi.cxx
+mv -f .deps/HUD_runway.Tpo .deps/HUD_runway.Po
+mv -f .deps/HUD_tbi.Tpo .deps/HUD_tbi.Po
+rm -f libHUD.a
+ar cru libHUD.a HUD.o HUD_tape.o HUD_dial.o HUD_gauge.o HUD_instrument.o HUD_label.o HUD_ladder.o HUD_misc.o HUD_runway.o HUD_scale.o HUD_tbi.o 
+ranlib libHUD.a
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Instrumentation/HUD'
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Instrumentation'
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT instrument_mgr.o -MD -MP -MF .deps/instrument_mgr.Tpo -c -o instrument_mgr.o instrument_mgr.cxx
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT adf.o -MD -MP -MF .deps/adf.Tpo -c -o adf.o adf.cxx
+mv -f .deps/adf.Tpo .deps/adf.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT airspeed_indicator.o -MD -MP -MF .deps/airspeed_indicator.Tpo -c -o airspeed_indicator.o airspeed_indicator.cxx
+mv -f .deps/airspeed_indicator.Tpo .deps/airspeed_indicator.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT altimeter.o -MD -MP -MF .deps/altimeter.Tpo -c -o altimeter.o altimeter.cxx
+mv -f .deps/altimeter.Tpo .deps/altimeter.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT attitude_indicator.o -MD -MP -MF .deps/attitude_indicator.Tpo -c -o attitude_indicator.o attitude_indicator.cxx
+mv -f .deps/attitude_indicator.Tpo .deps/attitude_indicator.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT clock.o -MD -MP -MF .deps/clock.Tpo -c -o clock.o clock.cxx
+mv -f .deps/instrument_mgr.Tpo .deps/instrument_mgr.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT dme.o -MD -MP -MF .deps/dme.Tpo -c -o dme.o dme.cxx
+mv -f .deps/clock.Tpo .deps/clock.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT gps.o -MD -MP -MF .deps/gps.Tpo -c -o gps.o gps.cxx
+mv -f .deps/dme.Tpo .deps/dme.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT gsdi.o -MD -MP -MF .deps/gsdi.Tpo -c -o gsdi.o gsdi.cxx
+mv -f .deps/gsdi.Tpo .deps/gsdi.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT heading_indicator.o -MD -MP -MF .deps/heading_indicator.Tpo -c -o heading_indicator.o heading_indicator.cxx
+mv -f .deps/heading_indicator.Tpo .deps/heading_indicator.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT heading_indicator_fg.o -MD -MP -MF .deps/heading_indicator_fg.Tpo -c -o heading_indicator_fg.o heading_indicator_fg.cxx
+mv -f .deps/gps.Tpo .deps/gps.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT heading_indicator_dg.o -MD -MP -MF .deps/heading_indicator_dg.Tpo -c -o heading_indicator_dg.o heading_indicator_dg.cxx
+mv -f .deps/heading_indicator_fg.Tpo .deps/heading_indicator_fg.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT kr_87.o -MD -MP -MF .deps/kr_87.Tpo -c -o kr_87.o kr_87.cxx
+mv -f .deps/heading_indicator_dg.Tpo .deps/heading_indicator_dg.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT kt_70.o -MD -MP -MF .deps/kt_70.Tpo -c -o kt_70.o kt_70.cxx
+mv -f .deps/kr_87.Tpo .deps/kr_87.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT mag_compass.o -MD -MP -MF .deps/mag_compass.Tpo -c -o mag_compass.o mag_compass.cxx
+mv -f .deps/mag_compass.Tpo .deps/mag_compass.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT marker_beacon.o -MD -MP -MF .deps/marker_beacon.Tpo -c -o marker_beacon.o marker_beacon.cxx
+mv -f .deps/kt_70.Tpo .deps/kt_70.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT mrg.o -MD -MP -MF .deps/mrg.Tpo -c -o mrg.o mrg.cxx
+mv -f .deps/marker_beacon.Tpo .deps/marker_beacon.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT navradio.o -MD -MP -MF .deps/navradio.Tpo -c -o navradio.o navradio.cxx
+mv -f .deps/mrg.Tpo .deps/mrg.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT slip_skid_ball.o -MD -MP -MF .deps/slip_skid_ball.Tpo -c -o slip_skid_ball.o slip_skid_ball.cxx
+navradio.cxx: In member function ‘void FGNavRadio::updateAudio()’:
+navradio.cxx:900:46: warning: operation on ‘((FGNavRadio*)this)->FGNavRadio::play_count’ may be undefined [-Wsequence-point]
+mv -f .deps/slip_skid_ball.Tpo .deps/slip_skid_ball.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT transponder.o -MD -MP -MF .deps/transponder.Tpo -c -o transponder.o transponder.cxx
+mv -f .deps/transponder.Tpo .deps/transponder.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT turn_indicator.o -MD -MP -MF .deps/turn_indicator.Tpo -c -o turn_indicator.o turn_indicator.cxx
+mv -f .deps/turn_indicator.Tpo .deps/turn_indicator.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT vertical_speed_indicator.o -MD -MP -MF .deps/vertical_speed_indicator.Tpo -c -o vertical_speed_indicator.o vertical_speed_indicator.cxx
+mv -f .deps/navradio.Tpo .deps/navradio.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT inst_vertical_speed_indicator.o -MD -MP -MF .deps/inst_vertical_speed_indicator.Tpo -c -o inst_vertical_speed_indicator.o inst_vertical_speed_indicator.cxx
+mv -f .deps/vertical_speed_indicator.Tpo .deps/vertical_speed_indicator.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT od_gauge.o -MD -MP -MF .deps/od_gauge.Tpo -c -o od_gauge.o od_gauge.cxx
+mv -f .deps/inst_vertical_speed_indicator.Tpo .deps/inst_vertical_speed_indicator.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT wxradar.o -MD -MP -MF .deps/wxradar.Tpo -c -o wxradar.o wxradar.cxx
+wxradar.cxx: In member function ‘virtual void wxRadarBg::init()’:
+wxradar.cxx:140:50: warning: converting ‘false’ to pointer type for argument 2 of ‘osg::Texture2D* SGLoadTexture2D(const SGPath&, const Options*, bool, bool, int)’ [-Wconversion-null]
+mv -f .deps/od_gauge.Tpo .deps/od_gauge.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT tacan.o -MD -MP -MF .deps/tacan.Tpo -c -o tacan.o tacan.cxx
+mv -f .deps/wxradar.Tpo .deps/wxradar.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT mk_viii.o -MD -MP -MF .deps/mk_viii.Tpo -c -o mk_viii.o mk_viii.cxx
+mv -f .deps/tacan.Tpo .deps/tacan.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT dclgps.o -MD -MP -MF .deps/dclgps.Tpo -c -o dclgps.o dclgps.cxx
+mv -f .deps/dclgps.Tpo .deps/dclgps.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT render_area_2d.o -MD -MP -MF .deps/render_area_2d.Tpo -c -o render_area_2d.o render_area_2d.cxx
+mv -f .deps/mk_viii.Tpo .deps/mk_viii.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT groundradar.o -MD -MP -MF .deps/groundradar.Tpo -c -o groundradar.o groundradar.cxx
+mv -f .deps/render_area_2d.Tpo .deps/render_area_2d.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT agradar.o -MD -MP -MF .deps/agradar.Tpo -c -o agradar.o agradar.cxx
+mv -f .deps/agradar.Tpo .deps/agradar.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT rad_alt.o -MD -MP -MF .deps/rad_alt.Tpo -c -o rad_alt.o rad_alt.cxx
+mv -f .deps/groundradar.Tpo .deps/groundradar.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT rnav_waypt_controller.o -MD -MP -MF .deps/rnav_waypt_controller.Tpo -c -o rnav_waypt_controller.o rnav_waypt_controller.cxx
+mv -f .deps/rnav_waypt_controller.Tpo .deps/rnav_waypt_controller.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT tcas.o -MD -MP -MF .deps/tcas.Tpo -c -o tcas.o tcas.cxx
+mv -f .deps/rad_alt.Tpo .deps/rad_alt.Po
+mv -f .deps/tcas.Tpo .deps/tcas.Po
+rm -f libInstrumentation.a
+ar cru libInstrumentation.a instrument_mgr.o adf.o airspeed_indicator.o altimeter.o attitude_indicator.o clock.o dme.o gps.o gsdi.o gyro.o heading_indicator.o heading_indicator_fg.o heading_indicator_dg.o kr_87.o kt_70.o mag_compass.o marker_beacon.o mrg.o navradio.o slip_skid_ball.o transponder.o turn_indicator.o vertical_speed_indicator.o inst_vertical_speed_indicator.o od_gauge.o wxradar.o tacan.o mk_viii.o dclgps.o render_area_2d.o groundradar.o agradar.o rad_alt.o rnav_waypt_controller.o tcas.o 
+ranlib libInstrumentation.a
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Instrumentation'
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Instrumentation'
+Making all in Model
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Model'
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT acmodel.o -MD -MP -MF .deps/acmodel.Tpo -c -o acmodel.o acmodel.cxx
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT model_panel.o -MD -MP -MF .deps/model_panel.Tpo -c -o model_panel.o model_panel.cxx
+mv -f .deps/model_panel.Tpo .deps/model_panel.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT modelmgr.o -MD -MP -MF .deps/modelmgr.Tpo -c -o modelmgr.o modelmgr.cxx
+mv -f .deps/acmodel.Tpo .deps/acmodel.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT panelnode.o -MD -MP -MF .deps/panelnode.Tpo -c -o panelnode.o panelnode.cxx
+modelmgr.cxx: In member function ‘virtual void FGModelMgr::update(double)’:
+modelmgr.cxx:202:42: warning: ‘heading’ may be used uninitialized in this function [-Wuninitialized]
+modelmgr.cxx:163:45: note: ‘heading’ was declared here
+modelmgr.cxx:200:38: warning: ‘pitch’ may be used uninitialized in this function [-Wuninitialized]
+modelmgr.cxx:163:38: note: ‘pitch’ was declared here
+modelmgr.cxx:198:36: warning: ‘roll’ may be used uninitialized in this function [-Wuninitialized]
+modelmgr.cxx:163:32: note: ‘roll’ was declared here
+modelmgr.cxx:194:40: warning: ‘elev’ may be used uninitialized in this function [-Wuninitialized]
+modelmgr.cxx:163:26: note: ‘elev’ was declared here
+modelmgr.cxx:192:39: warning: ‘lat’ may be used uninitialized in this function [-Wuninitialized]
+modelmgr.cxx:163:21: note: ‘lat’ was declared here
+modelmgr.cxx:190:40: warning: ‘lon’ may be used uninitialized in this function [-Wuninitialized]
+modelmgr.cxx:163:16: note: ‘lon’ was declared here
+mv -f .deps/modelmgr.Tpo .deps/modelmgr.Po
+mv -f .deps/panelnode.Tpo .deps/panelnode.Po
+rm -f libModel.a
+ar cru libModel.a acmodel.o model_panel.o modelmgr.o panelnode.o 
+ranlib libModel.a
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Model'
+Making all in AIModel
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/AIModel'
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT submodel.o -MD -MP -MF .deps/submodel.Tpo -c -o submodel.o submodel.cxx
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT AIManager.o -MD -MP -MF .deps/AIManager.Tpo -c -o AIManager.o AIManager.cxx
+mv -f .deps/submodel.Tpo .deps/submodel.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT AIBase.o -MD -MP -MF .deps/AIBase.Tpo -c -o AIBase.o AIBase.cxx
+mv -f .deps/AIManager.Tpo .deps/AIManager.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT AIAircraft.o -MD -MP -MF .deps/AIAircraft.Tpo -c -o AIAircraft.o AIAircraft.cxx
+AIAircraft.cxx: In member function ‘void FGAIAircraft::updateHeading()’:
+AIAircraft.cxx:914:20: warning: variable ‘bank_sense’ set but not used [-Wunused-but-set-variable]
+mv -f .deps/AIBase.Tpo .deps/AIBase.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT AIMultiplayer.o -MD -MP -MF .deps/AIMultiplayer.Tpo -c -o AIMultiplayer.o AIMultiplayer.cxx
+mv -f .deps/AIAircraft.Tpo .deps/AIAircraft.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT AIShip.o -MD -MP -MF .deps/AIShip.Tpo -c -o AIShip.o AIShip.cxx
+AIShip.cxx: In member function ‘virtual void FGAIShip::update(double)’:
+AIShip.cxx:260:13: warning: variable ‘cartPos’ set but not used [-Wunused-but-set-variable]
+mv -f .deps/AIMultiplayer.Tpo .deps/AIMultiplayer.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT AIBallistic.o -MD -MP -MF .deps/AIBallistic.Tpo -c -o AIBallistic.o AIBallistic.cxx
+AIBallistic.cxx: In member function ‘void FGAIBallistic::slaveToAC(double)’:
+AIBallistic.cxx:629:27: warning: variable ‘agl’ set but not used [-Wunused-but-set-variable]
+mv -f .deps/AIShip.Tpo .deps/AIShip.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT AIStorm.o -MD -MP -MF .deps/AIStorm.Tpo -c -o AIStorm.o AIStorm.cxx
+mv -f .deps/AIBallistic.Tpo .deps/AIBallistic.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT AIThermal.o -MD -MP -MF .deps/AIThermal.Tpo -c -o AIThermal.o AIThermal.cxx
+mv -f .deps/AIStorm.Tpo .deps/AIStorm.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT AIFlightPlan.o -MD -MP -MF .deps/AIFlightPlan.Tpo -c -o AIFlightPlan.o AIFlightPlan.cxx
+AIFlightPlan.cxx: In constructor ‘FGAIFlightPlan::FGAIFlightPlan(FGAIAircraft*, const string&, double, time_t, FGAirport*, FGAirport*, bool, double, double, double, double, double, const string&, const string&, const string&)’:
+AIFlightPlan.cxx:133:8: warning: variable ‘useInitialWayPoint’ set but not used [-Wunused-but-set-variable]
+AIFlightPlan.cxx:134:8: warning: variable ‘useCurrentWayPoint’ set but not used [-Wunused-but-set-variable]
+mv -f .deps/AIFlightPlan.Tpo .deps/AIFlightPlan.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT AIFlightPlanCreate.o -MD -MP -MF .deps/AIFlightPlanCreate.Tpo -c -o AIFlightPlanCreate.o AIFlightPlanCreate.cxx
+mv -f .deps/AIThermal.Tpo .deps/AIThermal.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT AIFlightPlanCreatePushBack.o -MD -MP -MF .deps/AIFlightPlanCreatePushBack.Tpo -c -o AIFlightPlanCreatePushBack.o AIFlightPlanCreatePushBack.cxx
+AIFlightPlanCreate.cxx: In member function ‘void FGAIFlightPlan::createDescent(FGAIAircraft*, FGAirport*, double, double, double, double, const string&, double)’:
+AIFlightPlanCreate.cxx:614:12: warning: variable ‘lat’ set but not used [-Wunused-but-set-variable]
+AIFlightPlanCreate.cxx:615:12: warning: variable ‘lon’ set but not used [-Wunused-but-set-variable]
+mv -f .deps/AIFlightPlanCreatePushBack.Tpo .deps/AIFlightPlanCreatePushBack.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT AIFlightPlanCreateCruise.o -MD -MP -MF .deps/AIFlightPlanCreateCruise.Tpo -c -o AIFlightPlanCreateCruise.o AIFlightPlanCreateCruise.cxx
+mv -f .deps/AIFlightPlanCreate.Tpo .deps/AIFlightPlanCreate.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT AICarrier.o -MD -MP -MF .deps/AICarrier.Tpo -c -o AICarrier.o AICarrier.cxx
+mv -f .deps/AIFlightPlanCreateCruise.Tpo .deps/AIFlightPlanCreateCruise.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT AIStatic.o -MD -MP -MF .deps/AIStatic.Tpo -c -o AIStatic.o AIStatic.cxx
+mv -f .deps/AICarrier.Tpo .deps/AICarrier.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT AITanker.o -MD -MP -MF .deps/AITanker.Tpo -c -o AITanker.o AITanker.cxx
+mv -f .deps/AIStatic.Tpo .deps/AIStatic.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT AIWingman.o -MD -MP -MF .deps/AIWingman.Tpo -c -o AIWingman.o AIWingman.cxx
+mv -f .deps/AITanker.Tpo .deps/AITanker.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT AIGroundVehicle.o -MD -MP -MF .deps/AIGroundVehicle.Tpo -c -o AIGroundVehicle.o AIGroundVehicle.cxx
+mv -f .deps/AIWingman.Tpo .deps/AIWingman.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT AIEscort.o -MD -MP -MF .deps/AIEscort.Tpo -c -o AIEscort.o AIEscort.cxx
+mv -f .deps/AIGroundVehicle.Tpo .deps/AIGroundVehicle.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT performancedata.o -MD -MP -MF .deps/performancedata.Tpo -c -o performancedata.o performancedata.cxx
+mv -f .deps/performancedata.Tpo .deps/performancedata.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT performancedb.o -MD -MP -MF .deps/performancedb.Tpo -c -o performancedb.o performancedb.cxx
+mv -f .deps/performancedb.Tpo .deps/performancedb.Po
+mv -f .deps/AIEscort.Tpo .deps/AIEscort.Po
+rm -f libAIModel.a
+ar cru libAIModel.a submodel.o AIManager.o AIBase.o AIAircraft.o AIMultiplayer.o AIShip.o AIBallistic.o AIStorm.o AIThermal.o AIFlightPlan.o AIFlightPlanCreate.o AIFlightPlanCreatePushBack.o AIFlightPlanCreateCruise.o AICarrier.o AIStatic.o AITanker.o AIWingman.o AIGroundVehicle.o AIEscort.o performancedata.o performancedb.o 
+ranlib libAIModel.a
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/AIModel'
+Making all in Navaids
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Navaids'
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT navdb.o -MD -MP -MF .deps/navdb.Tpo -c -o navdb.o navdb.cxx
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT fixlist.o -MD -MP -MF .deps/fixlist.Tpo -c -o fixlist.o fixlist.cxx
+mv -f .deps/fixlist.Tpo .deps/fixlist.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT navrecord.o -MD -MP -MF .deps/navrecord.Tpo -c -o navrecord.o navrecord.cxx
+mv -f .deps/navdb.Tpo .deps/navdb.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT navlist.o -MD -MP -MF .deps/navlist.Tpo -c -o navlist.o navlist.cxx
+mv -f .deps/navrecord.Tpo .deps/navrecord.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT positioned.o -MD -MP -MF .deps/positioned.Tpo -c -o positioned.o positioned.cxx
+mv -f .deps/navlist.Tpo .deps/navlist.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT markerbeacon.o -MD -MP -MF .deps/markerbeacon.Tpo -c -o markerbeacon.o markerbeacon.cxx
+mv -f .deps/markerbeacon.Tpo .deps/markerbeacon.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT routePath.o -MD -MP -MF .deps/routePath.Tpo -c -o routePath.o routePath.cxx
+mv -f .deps/positioned.Tpo .deps/positioned.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT airways.o -MD -MP -MF .deps/airways.Tpo -c -o airways.o airways.cxx
+mv -f .deps/routePath.Tpo .deps/routePath.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT route.o -MD -MP -MF .deps/route.Tpo -c -o route.o route.cxx
+mv -f .deps/airways.Tpo .deps/airways.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT waypoint.o -MD -MP -MF .deps/waypoint.Tpo -c -o waypoint.o waypoint.cxx
+mv -f .deps/waypoint.Tpo .deps/waypoint.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT procedure.o -MD -MP -MF .deps/procedure.Tpo -c -o procedure.o procedure.cxx
+mv -f .deps/route.Tpo .deps/route.Po
+mv -f .deps/procedure.Tpo .deps/procedure.Po
+rm -f libNavaids.a
+ar cru libNavaids.a navdb.o fixlist.o navrecord.o navlist.o positioned.o markerbeacon.o routePath.o airways.o route.o waypoint.o procedure.o 
+ranlib libNavaids.a
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Navaids'
+Making all in Network
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Network'
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Network'
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT protocol.o -MD -MP -MF .deps/protocol.Tpo -c -o protocol.o protocol.cxx
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT ATC-Main.o -MD -MP -MF .deps/ATC-Main.Tpo -c -o ATC-Main.o ATC-Main.cxx
+mv -f .deps/protocol.Tpo .deps/protocol.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT ATC-Inputs.o -MD -MP -MF .deps/ATC-Inputs.Tpo -c -o ATC-Inputs.o ATC-Inputs.cxx
+mv -f .deps/ATC-Inputs.Tpo .deps/ATC-Inputs.Po
+mv -f .deps/ATC-Main.Tpo .deps/ATC-Main.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT ATC-Outputs.o -MD -MP -MF .deps/ATC-Outputs.Tpo -c -o ATC-Outputs.o ATC-Outputs.cxx
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT atlas.o -MD -MP -MF .deps/atlas.Tpo -c -o atlas.o atlas.cxx
+mv -f .deps/ATC-Outputs.Tpo .deps/ATC-Outputs.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT AV400.o -MD -MP -MF .deps/AV400.Tpo -c -o AV400.o AV400.cxx
+mv -f .deps/atlas.Tpo .deps/atlas.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT AV400Sim.o -MD -MP -MF .deps/AV400Sim.Tpo -c -o AV400Sim.o AV400Sim.cxx
+mv -f .deps/AV400Sim.Tpo .deps/AV400Sim.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT garmin.o -MD -MP -MF .deps/garmin.Tpo -c -o garmin.o garmin.cxx
+mv -f .deps/AV400.Tpo .deps/AV400.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT lfsglass.o -MD -MP -MF .deps/lfsglass.Tpo -c -o lfsglass.o lfsglass.cxx
+mv -f .deps/lfsglass.Tpo .deps/lfsglass.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT httpd.o -MD -MP -MF .deps/httpd.Tpo -c -o httpd.o httpd.cxx
+mv -f .deps/garmin.Tpo .deps/garmin.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT jpg-httpd.o -MD -MP -MF .deps/jpg-httpd.Tpo -c -o jpg-httpd.o jpg-httpd.cxx
+mv -f .deps/httpd.Tpo .deps/httpd.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT joyclient.o -MD -MP -MF .deps/joyclient.Tpo -c -o joyclient.o joyclient.cxx
+mv -f .deps/joyclient.Tpo .deps/joyclient.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT jsclient.o -MD -MP -MF .deps/jsclient.Tpo -c -o jsclient.o jsclient.cxx
+mv -f .deps/jsclient.Tpo .deps/jsclient.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT native.o -MD -MP -MF .deps/native.Tpo -c -o native.o native.cxx
+mv -f .deps/jpg-httpd.Tpo .deps/jpg-httpd.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT native_ctrls.o -MD -MP -MF .deps/native_ctrls.Tpo -c -o native_ctrls.o native_ctrls.cxx
+mv -f .deps/native.Tpo .deps/native.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT native_fdm.o -MD -MP -MF .deps/native_fdm.Tpo -c -o native_fdm.o native_fdm.cxx
+mv -f .deps/native_ctrls.Tpo .deps/native_ctrls.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT native_gui.o -MD -MP -MF .deps/native_gui.Tpo -c -o native_gui.o native_gui.cxx
+mv -f .deps/native_fdm.Tpo .deps/native_fdm.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT nmea.o -MD -MP -MF .deps/nmea.Tpo -c -o nmea.o nmea.cxx
+mv -f .deps/nmea.Tpo .deps/nmea.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT opengc.o -MD -MP -MF .deps/opengc.Tpo -c -o opengc.o opengc.cxx
+mv -f .deps/opengc.Tpo .deps/opengc.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT multiplay.o -MD -MP -MF .deps/multiplay.Tpo -c -o multiplay.o multiplay.cxx
+mv -f .deps/native_gui.Tpo .deps/native_gui.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT props.o -MD -MP -MF .deps/props.Tpo -c -o props.o props.cxx
+mv -f .deps/multiplay.Tpo .deps/multiplay.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT pve.o -MD -MP -MF .deps/pve.Tpo -c -o pve.o pve.cxx
+mv -f .deps/props.Tpo .deps/props.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT ray.o -MD -MP -MF .deps/ray.Tpo -c -o ray.o ray.cxx
+mv -f .deps/pve.Tpo .deps/pve.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT rul.o -MD -MP -MF .deps/rul.Tpo -c -o rul.o rul.cxx
+mv -f .deps/ray.Tpo .deps/ray.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT generic.o -MD -MP -MF .deps/generic.Tpo -c -o generic.o generic.cxx
+mv -f .deps/rul.Tpo .deps/rul.Po
+mv -f .deps/generic.Tpo .deps/generic.Po
+rm -f libNetwork.a
+ar cru libNetwork.a protocol.o ATC-Main.o ATC-Inputs.o ATC-Outputs.o atlas.o AV400.o AV400Sim.o garmin.o lfsglass.o httpd.o jpg-httpd.o joyclient.o jsclient.o native.o native_ctrls.o native_fdm.o native_gui.o nmea.o opengc.o multiplay.o props.o pve.o ray.o rul.o generic.o 
+ranlib libNetwork.a
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Network'
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Network'
+Making all in MultiPlayer
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/MultiPlayer'
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT multiplaymgr.o -MD -MP -MF .deps/multiplaymgr.Tpo -c -o multiplaymgr.o multiplaymgr.cxx
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT tiny_xdr.o -MD -MP -MF .deps/tiny_xdr.Tpo -c -o tiny_xdr.o tiny_xdr.cxx
+mv -f .deps/tiny_xdr.Tpo .deps/tiny_xdr.Po
+mv -f .deps/multiplaymgr.Tpo .deps/multiplaymgr.Po
+rm -f libMultiPlayer.a
+ar cru libMultiPlayer.a multiplaymgr.o tiny_xdr.o 
+ranlib libMultiPlayer.a
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/MultiPlayer'
+Making all in Scenery
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Scenery'
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT redout.o -MD -MP -MF .deps/redout.Tpo -c -o redout.o redout.cxx
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT scenery.o -MD -MP -MF .deps/scenery.Tpo -c -o scenery.o scenery.cxx
+mv -f .deps/redout.Tpo .deps/redout.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT SceneryPager.o -MD -MP -MF .deps/SceneryPager.Tpo -c -o SceneryPager.o SceneryPager.cxx
+mv -f .deps/scenery.Tpo .deps/scenery.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT tilemgr.o -MD -MP -MF .deps/tilemgr.Tpo -c -o tilemgr.o tilemgr.cxx
+mv -f .deps/SceneryPager.Tpo .deps/SceneryPager.Po
+mv -f .deps/tilemgr.Tpo .deps/tilemgr.Po
+rm -f libScenery.a
+ar cru libScenery.a redout.o scenery.o SceneryPager.o tilemgr.o 
+ranlib libScenery.a
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Scenery'
+Making all in Scripting
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Scripting'
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT NasalSys.o -MD -MP -MF .deps/NasalSys.Tpo -c -o NasalSys.o NasalSys.cxx
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT nasal-props.o -MD -MP -MF .deps/nasal-props.Tpo -c -o nasal-props.o nasal-props.cxx
+nasal-props.cxx: In function ‘naRef f_getType(naContext, naRef, int, naRef*)’:
+nasal-props.cxx:67:5: warning: variable ‘argv’ set but not used [-Wunused-but-set-variable]
+nasal-props.cxx: In function ‘naRef f_getName(naContext, naRef, int, naRef*)’:
+nasal-props.cxx:142:5: warning: variable ‘argv’ set but not used [-Wunused-but-set-variable]
+nasal-props.cxx: In function ‘naRef f_getIndex(naContext, naRef, int, naRef*)’:
+nasal-props.cxx:148:5: warning: variable ‘argv’ set but not used [-Wunused-but-set-variable]
+nasal-props.cxx: In function ‘naRef f_getValue(naContext, naRef, int, naRef*)’:
+nasal-props.cxx:167:5: warning: variable ‘argv’ set but not used [-Wunused-but-set-variable]
+nasal-props.cxx: In function ‘naRef f_getParent(naContext, naRef, int, naRef*)’:
+nasal-props.cxx:280:5: warning: variable ‘argv’ set but not used [-Wunused-but-set-variable]
+nasal-props.cxx: In function ‘naRef f_unalias(naContext, naRef, int, naRef*)’:
+nasal-props.cxx:391:5: warning: variable ‘argv’ set but not used [-Wunused-but-set-variable]
+nasal-props.cxx: In function ‘naRef f_getAliasTarget(naContext, naRef, int, naRef*)’:
+nasal-props.cxx:397:5: warning: variable ‘argv’ set but not used [-Wunused-but-set-variable]
+mv -f .deps/nasal-props.Tpo .deps/nasal-props.Po
+mv -f .deps/NasalSys.Tpo .deps/NasalSys.Po
+rm -f libScripting.a
+ar cru libScripting.a NasalSys.o nasal-props.o 
+ranlib libScripting.a
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Scripting'
+Making all in Sound
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Sound'
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT beacon.o -MD -MP -MF .deps/beacon.Tpo -c -o beacon.o beacon.cxx
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT fg_fx.o -MD -MP -MF .deps/fg_fx.Tpo -c -o fg_fx.o fg_fx.cxx
+mv -f .deps/beacon.Tpo .deps/beacon.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT morse.o -MD -MP -MF .deps/morse.Tpo -c -o morse.o morse.cxx
+mv -f .deps/fg_fx.Tpo .deps/fg_fx.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT voice.o -MD -MP -MF .deps/voice.Tpo -c -o voice.o voice.cxx
+mv -f .deps/morse.Tpo .deps/morse.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT sample_queue.o -MD -MP -MF .deps/sample_queue.Tpo -c -o sample_queue.o sample_queue.cxx
+mv -f .deps/sample_queue.Tpo .deps/sample_queue.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT voiceplayer.o -MD -MP -MF .deps/voiceplayer.Tpo -c -o voiceplayer.o voiceplayer.cxx
+mv -f .deps/voice.Tpo .deps/voice.Po
+mv -f .deps/voiceplayer.Tpo .deps/voiceplayer.Po
+rm -f libSound.a
+ar cru libSound.a beacon.o fg_fx.o morse.o voice.o sample_queue.o voiceplayer.o 
+ranlib libSound.a
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Sound'
+Making all in Systems
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Systems'
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT system_mgr.o -MD -MP -MF .deps/system_mgr.Tpo -c -o system_mgr.o system_mgr.cxx
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT electrical.o -MD -MP -MF .deps/electrical.Tpo -c -o electrical.o electrical.cxx
+mv -f .deps/system_mgr.Tpo .deps/system_mgr.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT pitot.o -MD -MP -MF .deps/pitot.Tpo -c -o pitot.o pitot.cxx
+mv -f .deps/pitot.Tpo .deps/pitot.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT static.o -MD -MP -MF .deps/static.Tpo -c -o static.o static.cxx
+mv -f .deps/electrical.Tpo .deps/electrical.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT vacuum.o -MD -MP -MF .deps/vacuum.Tpo -c -o vacuum.o vacuum.cxx
+mv -f .deps/static.Tpo .deps/static.Po
+mv -f .deps/vacuum.Tpo .deps/vacuum.Po
+rm -f libSystems.a
+ar cru libSystems.a system_mgr.o electrical.o pitot.o static.o vacuum.o 
+ranlib libSystems.a
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Systems'
+Making all in Time
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Time'
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT light.o -MD -MP -MF .deps/light.Tpo -c -o light.o light.cxx
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT sunsolver.o -MD -MP -MF .deps/sunsolver.Tpo -c -o sunsolver.o sunsolver.cxx
+mv -f .deps/sunsolver.Tpo .deps/sunsolver.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT TimeManager.o -MD -MP -MF .deps/TimeManager.Tpo -c -o TimeManager.o TimeManager.cxx
+light.cxx: In member function ‘void FGLight::update_adj_fog_color()’:
+light.cxx:336:26: warning: variable ‘vert_rotation’ set but not used [-Wunused-but-set-variable]
+mv -f .deps/TimeManager.Tpo .deps/TimeManager.Po
+mv -f .deps/light.Tpo .deps/light.Po
+rm -f libTime.a
+ar cru libTime.a light.o sunsolver.o TimeManager.o 
+ranlib libTime.a
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Time'
+Making all in Traffic
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Traffic'
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT SchedFlight.o -MD -MP -MF .deps/SchedFlight.Tpo -c -o SchedFlight.o SchedFlight.cxx
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT Schedule.o -MD -MP -MF .deps/Schedule.Tpo -c -o Schedule.o Schedule.cxx
+Schedule.cxx: In member function ‘bool FGAISchedule::update(time_t, const SGVec3d&)’:
+Schedule.cxx:224:22: warning: converting to non-pointer type ‘int’ from NULL [-Wconversion-null]
+Schedule.cxx:193:5: warning: variable ‘remainingTimeEnroute’ set but not used [-Wunused-but-set-variable]
+mv -f .deps/SchedFlight.Tpo .deps/SchedFlight.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include  -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT TrafficMgr.o -MD -MP -MF .deps/TrafficMgr.Tpo -c -o TrafficMgr.o TrafficMgr.cxx
+mv -f .deps/Schedule.Tpo .deps/Schedule.Po
+mv -f .deps/TrafficMgr.Tpo .deps/TrafficMgr.Po
+rm -f libTraffic.a
+ar cru libTraffic.a SchedFlight.o Schedule.o TrafficMgr.o 
+ranlib libTraffic.a
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Traffic'
+Making all in Main
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Main'
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src -I/include  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include -DPKGLIBDIR=\"/home/arnt/FG-git/install/fgfs/share/flightgear\" -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT main.o -MD -MP -MF .deps/main.Tpo -c -o main.o main.cxx
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src -I/include  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include -DPKGLIBDIR=\"/home/arnt/FG-git/install/fgfs/share/flightgear\" -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT renderer.o -MD -MP -MF .deps/renderer.Tpo -c -o renderer.o renderer.cxx
+mv -f .deps/main.Tpo .deps/main.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src -I/include  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include -DPKGLIBDIR=\"/home/arnt/FG-git/install/fgfs/share/flightgear\" -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT fgviewer.o -MD -MP -MF .deps/fgviewer.Tpo -c -o fgviewer.o fgviewer.cxx
+mv -f .deps/renderer.Tpo .deps/renderer.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src -I/include  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include -DPKGLIBDIR=\"/home/arnt/FG-git/install/fgfs/share/flightgear\" -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT fg_commands.o -MD -MP -MF .deps/fg_commands.Tpo -c -o fg_commands.o fg_commands.cxx
+mv -f .deps/fgviewer.Tpo .deps/fgviewer.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src -I/include  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include -DPKGLIBDIR=\"/home/arnt/FG-git/install/fgfs/share/flightgear\" -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT fg_init.o -MD -MP -MF .deps/fg_init.Tpo -c -o fg_init.o fg_init.cxx
+mv -f .deps/fg_commands.Tpo .deps/fg_commands.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src -I/include  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include -DPKGLIBDIR=\"/home/arnt/FG-git/install/fgfs/share/flightgear\" -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT fg_io.o -MD -MP -MF .deps/fg_io.Tpo -c -o fg_io.o fg_io.cxx
+mv -f .deps/fg_io.Tpo .deps/fg_io.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src -I/include  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include -DPKGLIBDIR=\"/home/arnt/FG-git/install/fgfs/share/flightgear\" -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT fg_props.o -MD -MP -MF .deps/fg_props.Tpo -c -o fg_props.o fg_props.cxx
+mv -f .deps/fg_init.Tpo .deps/fg_init.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src -I/include  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include -DPKGLIBDIR=\"/home/arnt/FG-git/install/fgfs/share/flightgear\" -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT globals.o -MD -MP -MF .deps/globals.Tpo -c -o globals.o globals.cxx
+mv -f .deps/fg_props.Tpo .deps/fg_props.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src -I/include  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include -DPKGLIBDIR=\"/home/arnt/FG-git/install/fgfs/share/flightgear\" -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT logger.o -MD -MP -MF .deps/logger.Tpo -c -o logger.o logger.cxx
+mv -f .deps/logger.Tpo .deps/logger.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src -I/include  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include -DPKGLIBDIR=\"/home/arnt/FG-git/install/fgfs/share/flightgear\" -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT options.o -MD -MP -MF .deps/options.Tpo -c -o options.o options.cxx
+mv -f .deps/globals.Tpo .deps/globals.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src -I/include  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include -DPKGLIBDIR=\"/home/arnt/FG-git/install/fgfs/share/flightgear\" -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT splash.o -MD -MP -MF .deps/splash.Tpo -c -o splash.o splash.cxx
+mv -f .deps/options.Tpo .deps/options.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src -I/include  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include -DPKGLIBDIR=\"/home/arnt/FG-git/install/fgfs/share/flightgear\" -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT util.o -MD -MP -MF .deps/util.Tpo -c -o util.o util.cxx
+mv -f .deps/util.Tpo .deps/util.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src -I/include  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include -DPKGLIBDIR=\"/home/arnt/FG-git/install/fgfs/share/flightgear\" -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT viewer.o -MD -MP -MF .deps/viewer.Tpo -c -o viewer.o viewer.cxx
+mv -f .deps/splash.Tpo .deps/splash.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src -I/include  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include -DPKGLIBDIR=\"/home/arnt/FG-git/install/fgfs/share/flightgear\" -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT viewmgr.o -MD -MP -MF .deps/viewmgr.Tpo -c -o viewmgr.o viewmgr.cxx
+mv -f .deps/viewer.Tpo .deps/viewer.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src -I/include  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include -DPKGLIBDIR=\"/home/arnt/FG-git/install/fgfs/share/flightgear\" -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT CameraGroup.o -MD -MP -MF .deps/CameraGroup.Tpo -c -o CameraGroup.o CameraGroup.cxx
+mv -f .deps/viewmgr.Tpo .deps/viewmgr.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src -I/include  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include -DPKGLIBDIR=\"/home/arnt/FG-git/install/fgfs/share/flightgear\" -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT FGEventHandler.o -MD -MP -MF .deps/FGEventHandler.Tpo -c -o FGEventHandler.o FGEventHandler.cxx
+CameraGroup.cxx: In function ‘osg::Geometry* flightgear::createParoramicSphericalDisplayDistortionMesh(const Vec3&, const Vec3&, const Vec3&, double, double, osg::Image*, const Matrix&)’:
+CameraGroup.cxx:369:19: warning: variable ‘cursor’ set but not used [-Wunused-but-set-variable]
+CameraGroup.cxx:330:16: warning: variable ‘projector’ set but not used [-Wunused-but-set-variable]
+CameraGroup.cxx:357:15: warning: variable ‘dx’ set but not used [-Wunused-but-set-variable]
+mv -f .deps/FGEventHandler.Tpo .deps/FGEventHandler.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src -I/include  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include -DPKGLIBDIR=\"/home/arnt/FG-git/install/fgfs/share/flightgear\" -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT WindowSystemAdapter.o -MD -MP -MF .deps/WindowSystemAdapter.Tpo -c -o WindowSystemAdapter.o WindowSystemAdapter.cxx
+mv -f .deps/CameraGroup.Tpo .deps/CameraGroup.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src -I/include  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include -DPKGLIBDIR=\"/home/arnt/FG-git/install/fgfs/share/flightgear\" -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT WindowBuilder.o -MD -MP -MF .deps/WindowBuilder.Tpo -c -o WindowBuilder.o WindowBuilder.cxx
+mv -f .deps/WindowSystemAdapter.Tpo .deps/WindowSystemAdapter.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src -I/include  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include -DPKGLIBDIR=\"/home/arnt/FG-git/install/fgfs/share/flightgear\" -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT fg_os_osgviewer.o -MD -MP -MF .deps/fg_os_osgviewer.Tpo -c -o fg_os_osgviewer.o fg_os_osgviewer.cxx
+mv -f .deps/WindowBuilder.Tpo .deps/WindowBuilder.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src -I/include  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include -DPKGLIBDIR=\"/home/arnt/FG-git/install/fgfs/share/flightgear\" -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT fg_os_common.o -MD -MP -MF .deps/fg_os_common.Tpo -c -o fg_os_common.o fg_os_common.cxx
+mv -f .deps/fg_os_common.Tpo .deps/fg_os_common.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src -I/include  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include -DPKGLIBDIR=\"/home/arnt/FG-git/install/fgfs/share/flightgear\" -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT bootstrap.o -MD -MP -MF .deps/bootstrap.Tpo -c -o bootstrap.o bootstrap.cxx
+mv -f .deps/fg_os_osgviewer.Tpo .deps/fg_os_osgviewer.Po
+g++ -DHAVE_CONFIG_H -I. -I../../src/Include -I../.. -I../../src -I../../src -I/include  -I/home/arnt/FG-git/install/simgear/include -I/home/arnt/FG-git/install/plib/include -I/usr/local/include -DPKGLIBDIR=\"/home/arnt/FG-git/install/fgfs/share/flightgear\" -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT -MT metar_main.o -MD -MP -MF .deps/metar_main.Tpo -c -o metar_main.o metar_main.cxx
+bootstrap.cxx:118:13: warning: ‘void handleFPE(int)’ defined but not used [-Wunused-function]
+mv -f .deps/bootstrap.Tpo .deps/bootstrap.Po
+rm -f libMain.a
+ar cru libMain.a main.o renderer.o fgviewer.o fg_commands.o fg_init.o fg_io.o fg_props.o globals.o logger.o options.o splash.o util.o viewer.o viewmgr.o CameraGroup.o FGEventHandler.o WindowSystemAdapter.o WindowBuilder.o fg_os_osgviewer.o fg_os_common.o 
+mv -f .deps/metar_main.Tpo .deps/metar_main.Po
+g++ -DPKGLIBDIR=\"/home/arnt/FG-git/install/fgfs/share/flightgear\" -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT  -L/home/arnt/FG-git/install/simgear/lib -L/home/arnt/FG-git/install/plib/lib -L/usr/local/lib -o metar metar_main.o -lsgenvironment -lsgio -lsgbucket -lsgmisc -lsgstructure -lsgdebug  -lz -lrt -ldl -lm  -losgFX -losgParticle -losgSim -losgViewer -losgGA -losgText -losgDB -losgUtil -losg -lOpenThreads -ljpeg 
+ranlib libMain.a
+g++ -DPKGLIBDIR=\"/home/arnt/FG-git/install/fgfs/share/flightgear\" -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT   -L/home/arnt/FG-git/install/simgear/lib -L/home/arnt/FG-git/install/plib/lib -L/usr/local/lib -L/home/arnt/FG-git/install/simgear/lib -L/home/arnt/FG-git/install/plib/lib -L/usr/local/lib -o fgfs bootstrap.o libMain.a ../../src/Aircraft/libAircraft.a ../../src/ATCDCL/libATCDCL.a ../../src/Cockpit/libCockpit.a ../../src/Cockpit/built_in/libBuilt_in.a ../../src/Network/libNetwork.a ../../src/FDM/libFlight.a ../../src/FDM/ExternalNet/libExternalNet.a ../../src/FDM/ExternalPipe/libExternalPipe.a ../../src/FDM/JSBSim/libJSBSim.a ../../src/FDM/JSBSim/initialization/libInit.a ../../src/FDM/JSBSim/models/libModels.a ../../src/FDM/JSBSim/models/flight_control/libFlightControl.a ../../src/FDM/JSBSim/models/atmosphere/libAtmosphere.a ../../src/FDM/JSBSim/models/propulsion/libPropulsion.a ../../src/FDM/JSBSim/input_output/libInputOutput.a ../../src/FDM/JSBSim/math/libMath.a ../../src/FDM/YASim/libYASim.a ../../src/FDM/LaRCsim/libLaRCsim.a ../../src/FDM/UIUCModel/libUIUCModel.a ../../src/FDM/SP/libSPFDM.a ../../src/GUI/libGUI.a ../../src/Autopilot/libAutopilot.a ../../src/Input/libInput.a ../../src/Instrumentation/KLN89/libKLN89.a ../../src/Instrumentation/libInstrumentation.a ../../src/Instrumentation/HUD/libHUD.a ../../src/Model/libModel.a ../../src/Navaids/libNavaids.a ../../src/Scenery/libScenery.a ../../src/Scripting/libScripting.a ../../src/Sound/libSound.a ../../src/Airports/libAirports.a ../../src/MultiPlayer/libMultiPlayer.a ../../src/AIModel/libAIModel.a ../../src/ATC/libATC.a ../../src/Systems/libSystems.a ../../src/Time/libTime.a ../../src/Traffic/libTraffic.a ../../src/Environment/libEnvironment.a  -lsgroute -lsgsky -lsgsound -lsgephem -lsgtgdb -lsgmodel -lsgbvh -lsgmaterial -lsgutil -lsgtiming -lsgio -lsgscreen -lsgmath -lsgbucket -lsgprops -lsgdebug -lsgmagvar -lsgmisc -lsgnasal -lsgxml -lsgsound -lsgserial -lsgstructure -lsgenvironment -lplibpuaux -lplibpu -lplibfnt -lplibjs -lplibsg -lplibul   -lpthread   -lz -lglut -lGLU -lGL -lXt -lSM -lICE -lXi -lXext -lX11 -lrt -ldl -lm  -lalut -lopenal -lrt -ldl -lm   -lpthread  -ldbus-1 -lhal -losgFX -losgParticle -losgSim -losgViewer -losgGA -losgText -losgDB -losgUtil -losg -lOpenThreads -ljpeg 
+/usr/bin/ld: /home/arnt/FG-git/install/simgear/lib/libsgmodel.a(SGPagedLOD.o): in function vtable for simgear::SGPagedLOD:SGPagedLOD.cxx(.rodata._ZTVN7simgear10SGPagedLODE+0x110): error: undefined reference to 'osg::PagedLOD::removeExpiredChildren(double, int, std::vector<osg::ref_ptr<osg::Node>, std::allocator<osg::ref_ptr<osg::Node> > >&)'
+/usr/bin/ld: /home/arnt/FG-git/install/simgear/lib/libsgmodel.a(SGPagedLOD.o): in function vtable for simgear::SGPagedLOD:SGPagedLOD.cxx(.rodata._ZTVN7simgear10SGPagedLODE+0x118): error: undefined reference to 'osg::PagedLOD::releaseGLObjectsOnExpiredChildren(double, int)'
+collect2: ld returned 1 exit status
+make[2]: *** [fgfs] Error 1
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Main'
+make[1]: *** [all-recursive] Error 1
+make[1]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src'
+make: *** [all-recursive] Error 1
+INSTALL FGFS
+Making install in tests
+make[1]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/tests'
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/tests'
+test -z "/home/arnt/FG-git/install/fgfs/bin" || /bin/mkdir -p "/home/arnt/FG-git/install/fgfs/bin"
+  /usr/bin/install -c -p  est-epsilon gl-info alcinfo '/home/arnt/FG-git/install/fgfs/bin'
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/tests'
+make[1]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/tests'
+Making install in man
+make[1]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/man'
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/man'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/home/arnt/FG-git/install/fgfs/share/man/man1" || /bin/mkdir -p "/home/arnt/FG-git/install/fgfs/share/man/man1"
+ /usr/bin/install -c -p -m 644 est-epsilon.1 fgfs.1 fgjs.1 gl-info.1 js_demo.1 pstest.1 '/home/arnt/FG-git/install/fgfs/share/man/man1'
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/man'
+make[1]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/man'
+Making install in scripts
+make[1]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/scripts'
+Making install in debug
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/scripts/debug'
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/scripts/debug'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/scripts/debug'
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/scripts/debug'
+Making install in perl
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/scripts/perl'
+Making install in examples
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/scripts/perl/examples'
+make[4]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/scripts/perl/examples'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/scripts/perl/examples'
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/scripts/perl/examples'
+Making install in traffic
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/scripts/perl/traffic'
+make[4]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/scripts/perl/traffic'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/scripts/perl/traffic'
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/scripts/perl/traffic'
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/scripts/perl'
+make[4]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/scripts/perl'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/scripts/perl'
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/scripts/perl'
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/scripts/perl'
+Making install in python
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/scripts/python'
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/scripts/python'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/scripts/python'
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/scripts/python'
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/scripts'
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/scripts'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/scripts'
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/scripts'
+make[1]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/scripts'
+Making install in src
+make[1]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src'
+Making install in Include
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Include'
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Include'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Include'
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Include'
+Making install in Aircraft
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Aircraft'
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Aircraft'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Aircraft'
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Aircraft'
+Making install in Airports
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Airports'
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Airports'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Airports'
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Airports'
+Making install in ATC
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/ATC'
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/ATC'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/ATC'
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/ATC'
+Making install in ATCDCL
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/ATCDCL'
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/ATCDCL'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/ATCDCL'
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/ATCDCL'
+Making install in Autopilot
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Autopilot'
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Autopilot'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Autopilot'
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Autopilot'
+Making install in Cockpit
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Cockpit'
+Making install in built_in
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Cockpit/built_in'
+make[4]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Cockpit/built_in'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Cockpit/built_in'
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Cockpit/built_in'
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Cockpit'
+make[4]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Cockpit'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Cockpit'
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Cockpit'
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Cockpit'
+Making install in Environment
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Environment'
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Environment'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Environment'
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Environment'
+Making install in FDM
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM'
+Making install in JSBSim
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim'
+Making install in initialization
+make[4]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/initialization'
+make[5]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/initialization'
+make[5]: Nothing to be done for `install-exec-am'.
+make[5]: Nothing to be done for `install-data-am'.
+make[5]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/initialization'
+make[4]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/initialization'
+Making install in models
+make[4]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models'
+Making install in atmosphere
+make[5]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models/atmosphere'
+make[6]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models/atmosphere'
+make[6]: Nothing to be done for `install-exec-am'.
+make[6]: Nothing to be done for `install-data-am'.
+make[6]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models/atmosphere'
+make[5]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models/atmosphere'
+Making install in propulsion
+make[5]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models/propulsion'
+make[6]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models/propulsion'
+make[6]: Nothing to be done for `install-exec-am'.
+make[6]: Nothing to be done for `install-data-am'.
+make[6]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models/propulsion'
+make[5]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models/propulsion'
+Making install in flight_control
+make[5]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models/flight_control'
+make[6]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models/flight_control'
+make[6]: Nothing to be done for `install-exec-am'.
+make[6]: Nothing to be done for `install-data-am'.
+make[6]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models/flight_control'
+make[5]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models/flight_control'
+make[5]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models'
+make[6]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models'
+make[6]: Nothing to be done for `install-exec-am'.
+make[6]: Nothing to be done for `install-data-am'.
+make[6]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models'
+make[5]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models'
+make[4]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/models'
+Making install in input_output
+make[4]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/input_output'
+make[5]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/input_output'
+make[5]: Nothing to be done for `install-exec-am'.
+make[5]: Nothing to be done for `install-data-am'.
+make[5]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/input_output'
+make[4]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/input_output'
+Making install in math
+make[4]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/math'
+make[5]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/math'
+make[5]: Nothing to be done for `install-exec-am'.
+make[5]: Nothing to be done for `install-data-am'.
+make[5]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/math'
+make[4]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim/math'
+make[4]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim'
+make[5]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim'
+make[5]: Nothing to be done for `install-exec-am'.
+make[5]: Nothing to be done for `install-data-am'.
+make[5]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim'
+make[4]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim'
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/JSBSim'
+Making install in LaRCsim
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/LaRCsim'
+make[4]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/LaRCsim'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/LaRCsim'
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/LaRCsim'
+Making install in UIUCModel
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/UIUCModel'
+make[4]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/UIUCModel'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/UIUCModel'
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/UIUCModel'
+Making install in YASim
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/YASim'
+make[4]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/YASim'
+test -z "/home/arnt/FG-git/install/fgfs/bin" || /bin/mkdir -p "/home/arnt/FG-git/install/fgfs/bin"
+  /usr/bin/install -c -p  yasim '/home/arnt/FG-git/install/fgfs/bin'
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/YASim'
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/YASim'
+Making install in SP
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/SP'
+make[4]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/SP'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/SP'
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/SP'
+Making install in ExternalNet
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/ExternalNet'
+make[4]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/ExternalNet'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/ExternalNet'
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/ExternalNet'
+Making install in ExternalPipe
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/ExternalPipe'
+make[4]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/ExternalPipe'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/ExternalPipe'
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM/ExternalPipe'
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM'
+make[4]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM'
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM'
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/FDM'
+Making install in GUI
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/GUI'
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/GUI'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/GUI'
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/GUI'
+Making install in Input
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Input'
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Input'
+test -z "/home/arnt/FG-git/install/fgfs/bin" || /bin/mkdir -p "/home/arnt/FG-git/install/fgfs/bin"
+  /usr/bin/install -c -p  js_demo fgjs '/home/arnt/FG-git/install/fgfs/bin'
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Input'
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Input'
+Making install in Instrumentation
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Instrumentation'
+Making install in KLN89
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Instrumentation/KLN89'
+make[4]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Instrumentation/KLN89'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Instrumentation/KLN89'
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Instrumentation/KLN89'
+Making install in HUD
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Instrumentation/HUD'
+make[4]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Instrumentation/HUD'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Instrumentation/HUD'
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Instrumentation/HUD'
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Instrumentation'
+make[4]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Instrumentation'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Instrumentation'
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Instrumentation'
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Instrumentation'
+Making install in Model
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Model'
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Model'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Model'
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Model'
+Making install in AIModel
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/AIModel'
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/AIModel'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/AIModel'
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/AIModel'
+Making install in Navaids
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Navaids'
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Navaids'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Navaids'
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Navaids'
+Making install in Network
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Network'
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Network'
+make[4]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Network'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Network'
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Network'
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Network'
+Making install in MultiPlayer
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/MultiPlayer'
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/MultiPlayer'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/MultiPlayer'
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/MultiPlayer'
+Making install in Scenery
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Scenery'
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Scenery'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Scenery'
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Scenery'
+Making install in Scripting
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Scripting'
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Scripting'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Scripting'
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Scripting'
+Making install in Sound
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Sound'
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Sound'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Sound'
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Sound'
+Making install in Systems
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Systems'
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Systems'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Systems'
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Systems'
+Making install in Time
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Time'
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Time'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Time'
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Time'
+Making install in Traffic
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Traffic'
+make[3]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Traffic'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Traffic'
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Traffic'
+Making install in Main
+make[2]: Entering directory `/home/arnt/FG-git/fgfs/flightgear/src/Main'
+g++ -DPKGLIBDIR=\"/home/arnt/FG-git/install/fgfs/share/flightgear\" -g -O2 -Wall -I/home/arnt/FG-git/install/simgear -D_REENTRANT   -L/home/arnt/FG-git/install/simgear/lib -L/home/arnt/FG-git/install/plib/lib -L/usr/local/lib -L/home/arnt/FG-git/install/simgear/lib -L/home/arnt/FG-git/install/plib/lib -L/usr/local/lib -o fgfs bootstrap.o libMain.a ../../src/Aircraft/libAircraft.a ../../src/ATCDCL/libATCDCL.a ../../src/Cockpit/libCockpit.a ../../src/Cockpit/built_in/libBuilt_in.a ../../src/Network/libNetwork.a ../../src/FDM/libFlight.a ../../src/FDM/ExternalNet/libExternalNet.a ../../src/FDM/ExternalPipe/libExternalPipe.a ../../src/FDM/JSBSim/libJSBSim.a ../../src/FDM/JSBSim/initialization/libInit.a ../../src/FDM/JSBSim/models/libModels.a ../../src/FDM/JSBSim/models/flight_control/libFlightControl.a ../../src/FDM/JSBSim/models/atmosphere/libAtmosphere.a ../../src/FDM/JSBSim/models/propulsion/libPropulsion.a ../../src/FDM/JSBSim/input_output/libInputOutput.a ../../src/FDM/JSBSim/math/libMath.a ../../src/FDM/YASim/libYASim.a ../../src/FDM/LaRCsim/libLaRCsim.a ../../src/FDM/UIUCModel/libUIUCModel.a ../../src/FDM/SP/libSPFDM.a ../../src/GUI/libGUI.a ../../src/Autopilot/libAutopilot.a ../../src/Input/libInput.a ../../src/Instrumentation/KLN89/libKLN89.a ../../src/Instrumentation/libInstrumentation.a ../../src/Instrumentation/HUD/libHUD.a ../../src/Model/libModel.a ../../src/Navaids/libNavaids.a ../../src/Scenery/libScenery.a ../../src/Scripting/libScripting.a ../../src/Sound/libSound.a ../../src/Airports/libAirports.a ../../src/MultiPlayer/libMultiPlayer.a ../../src/AIModel/libAIModel.a ../../src/ATC/libATC.a ../../src/Systems/libSystems.a ../../src/Time/libTime.a ../../src/Traffic/libTraffic.a ../../src/Environment/libEnvironment.a  -lsgroute -lsgsky -lsgsound -lsgephem -lsgtgdb -lsgmodel -lsgbvh -lsgmaterial -lsgutil -lsgtiming -lsgio -lsgscreen -lsgmath -lsgbucket -lsgprops -lsgdebug -lsgmagvar -lsgmisc -lsgnasal -lsgxml -lsgsound -lsgserial -lsgstructure -lsgenvironment -lplibpuaux -lplibpu -lplibfnt -lplibjs -lplibsg -lplibul   -lpthread   -lz -lglut -lGLU -lGL -lXt -lSM -lICE -lXi -lXext -lX11 -lrt -ldl -lm  -lalut -lopenal -lrt -ldl -lm   -lpthread  -ldbus-1 -lhal -losgFX -losgParticle -losgSim -losgViewer -losgGA -losgText -losgDB -losgUtil -losg -lOpenThreads -ljpeg 
+/usr/bin/ld: /home/arnt/FG-git/install/simgear/lib/libsgmodel.a(SGPagedLOD.o): in function vtable for simgear::SGPagedLOD:SGPagedLOD.cxx(.rodata._ZTVN7simgear10SGPagedLODE+0x110): error: undefined reference to 'osg::PagedLOD::removeExpiredChildren(double, int, std::vector<osg::ref_ptr<osg::Node>, std::allocator<osg::ref_ptr<osg::Node> > >&)'
+/usr/bin/ld: /home/arnt/FG-git/install/simgear/lib/libsgmodel.a(SGPagedLOD.o): in function vtable for simgear::SGPagedLOD:SGPagedLOD.cxx(.rodata._ZTVN7simgear10SGPagedLODE+0x118): error: undefined reference to 'osg::PagedLOD::releaseGLObjectsOnExpiredChildren(double, int)'
+collect2: ld returned 1 exit status
+make[2]: *** [fgfs] Error 1
+make[2]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src/Main'
+make[1]: *** [install-recursive] Error 1
+make[1]: Leaving directory `/home/arnt/FG-git/fgfs/flightgear/src'
+make: *** [install-recursive] Error 1
